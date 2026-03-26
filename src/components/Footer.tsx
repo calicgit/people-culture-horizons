@@ -118,10 +118,33 @@ const Footer = () => {
           </div>
         </div>
 
-        <div className="border-t border-primary-foreground/5 pt-4 text-center text-xs text-primary-foreground/30">
-          © 2026 People &amp; Culture HORIZONS.
+        <div className="border-t border-primary-foreground/5 pt-4 flex flex-col sm:flex-row items-center justify-between gap-2 text-xs text-primary-foreground/30">
+          <span>© 2026 People &amp; Culture HORIZONS.</span>
+          <button
+            type="button"
+            onClick={() => setIsPrivacyOpen(true)}
+            className="text-primary-foreground/30 underline underline-offset-4 transition-colors hover:text-primary"
+          >
+            Politika privatnosti
+          </button>
         </div>
       </div>
+
+      <Dialog open={isPrivacyOpen} onOpenChange={setIsPrivacyOpen}>
+        <DialogContent className="max-w-3xl max-h-[85vh] overflow-y-auto rounded-3xl border-border p-0">
+          <DialogHeader className="border-b border-border px-6 py-5">
+            <DialogTitle className="text-2xl font-display text-foreground">Politika privatnosti</DialogTitle>
+            <DialogDescription className="text-muted-foreground">
+              Detalji o privatnosti i korištenju kolačića.
+            </DialogDescription>
+          </DialogHeader>
+          <div className="px-6 py-5">
+            <pre className="whitespace-pre-wrap break-words font-sans text-sm leading-7 text-foreground">
+              {privacyText}
+            </pre>
+          </div>
+        </DialogContent>
+      </Dialog>
     </footer>
   );
 };
