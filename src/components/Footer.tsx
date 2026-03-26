@@ -123,7 +123,7 @@ const Footer = () => {
           <button
             type="button"
             onClick={() => setIsPrivacyOpen(true)}
-            className="text-primary-foreground/30 underline underline-offset-4 transition-colors hover:text-primary"
+            className="text-primary-foreground/30 underline underline-offset-4 transition-colors hover:text-primary sm:ml-auto"
           >
             Politika privatnosti
           </button>
