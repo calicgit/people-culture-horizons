@@ -1,0 +1,193 @@
+import { useState } from "react";
+import { Clock, MapPin, Mic2, Coffee, Utensils, ChevronDown } from "lucide-react";
+import { useLanguage } from "@/contexts/LanguageContext";
+
+type SessionType = "keynote" | "talk" | "panel" | "workshop" | "break" | "networking";
+
+interface Session {
+  time: string;
+  endTime: string;
+  titleKey?: string;
+  speaker?: string;
+  locationKey?: string;
+  type: SessionType;
+  trackKey?: string;
+  descKey?: string;
+}
+
+const agendaData: Record<string, Session[]> = {
+  day1: [
+    { time: "", endTime: "", type: "break" },
+    { time: "", endTime: "", type: "keynote" },
+    { time: "", endTime: "", type: "break" },
+    { time: "", endTime: "", type: "talk" },
+    { time: "", endTime: "", type: "talk" },
+    { time: "", endTime: "", type: "break" },
+    { time: "", endTime: "", type: "panel" },
+    { time: "", endTime: "", type: "workshop" },
+    { time: "", endTime: "", type: "break" },
+    { time: "", endTime: "", type: "panel" },
+    { time: "", endTime: "", type: "networking" },
+  ],
+  day2: [
+    { time: "", endTime: "", type: "break" },
+    { time: "", endTime: "", type: "keynote" },
+    { time: "", endTime: "", type: "break" },
+    { time: "", endTime: "", type: "talk" },
+    { time: "", endTime: "", type: "talk" },
+    { time: "", endTime: "", type: "break" },
+    { time: "", endTime: "", type: "workshop" },
+    { time: "", endTime: "", type: "panel" },
+    { time: "", endTime: "", type: "keynote" },
+    { time: "", endTime: "", type: "networking" },
+  ],
+};
+
+const typeStyles: Record<SessionType, { dot: string; border: string }> = {
+  keynote: { dot: "bg-accent", border: "border-l-accent" },
+  talk: { dot: "bg-primary", border: "border-l-primary" },
+  panel: { dot: "bg-foreground/60", border: "border-l-foreground/40" },
+  workshop: { dot: "bg-chart-4", border: "border-l-chart-4" },
+  break: { dot: "bg-muted-foreground/30", border: "border-l-muted-foreground/20" },
+  networking: { dot: "bg-chart-2", border: "border-l-chart-2" },
+};
+
+const TypeIcon = ({ type }: { type: SessionType }) => {
+  switch (type) {
+    case "keynote": return <Mic2 className="w-4 h-4" />;
+    case "break": return <Coffee className="w-4 h-4" />;
+    case "networking": return <Utensils className="w-4 h-4" />;
+    default: return null;
+  }
+};
+
+const AgendaSection = () => {
+  const { t } = useLanguage();
+  const dayKeys = ["day1", "day2"];
+  const dayLabels = [t("agenda.day1"), t("agenda.day2")];
+  const [activeDayIdx, setActiveDayIdx] = useState(0);
+  const [expandedItems, setExpandedItems] = useState<Set<string>>(new Set());
+
+  const typeLabels: Record<SessionType, string> = {
+    keynote: t("agenda.type.keynote"),
+    talk: t("agenda.type.talk"),
+    panel: t("agenda.type.panel"),
+    workshop: t("agenda.type.workshop"),
+    break: t("agenda.type.break"),
+    networking: t("agenda.type.networking"),
+  };
+
+  const toggleItem = (key: string) => {
+    setExpandedItems((prev) => {
+      const next = new Set(prev);
+      if (next.has(key)) { next.delete(key); } else { next.add(key); }
+      return next;
+    });
+  };
+
+  const sessions = agendaData[dayKeys[activeDayIdx]];
+
+  return (
+    <section id="agenda" className="bg-background py-20 md:py-24">
+      <div className="container mx-auto px-6">
+        <div className="mb-14 text-center md:mb-16">
+          <span className="text-accent font-semibold text-xs uppercase tracking-[0.25em]">{t("agenda.label")}</span>
+          <h2 className="text-2xl md:text-3xl lg:text-4xl font-bold text-foreground mt-4 mb-5 font-display">{t("agenda.title")}</h2>
+          <div className="section-divider mb-6" />
+        </div>
+
+        <div className="mb-12 flex justify-center gap-3 md:mb-14">
+          {dayLabels.map((label, idx) => (
+            <button
+              key={idx}
+              onClick={() => setActiveDayIdx(idx)}
+              className={`px-8 py-3.5 rounded-full font-semibold text-sm transition-all duration-300 ${
+                activeDayIdx === idx
+                  ? "bg-accent text-accent-foreground shadow-lg"
+                  : "bg-secondary text-muted-foreground hover:text-foreground hover:bg-secondary/80"
+              }`}
+            >
+              {label}
+            </button>
+          ))}
+        </div>
+
+        <div className="max-w-3xl mx-auto space-y-3">
+          {sessions.map((session, i) => {
+            const style = typeStyles[session.type];
+            const isBreak = session.type === "break" || session.type === "networking";
+            const itemKey = `${dayKeys[activeDayIdx]}-${session.time}-${i}`;
+            const isExpanded = expandedItems.has(itemKey);
+            const hasDescription = !!session.descKey;
+            const isPlaceholder = !session.titleKey && !session.speaker && !session.locationKey && !session.trackKey && !session.descKey;
+            const title = session.titleKey ? t(session.titleKey) : "";
+            const timeRange = session.time && session.endTime ? `${session.time} – ${session.endTime}` : "";
+
+            return (
+              <div
+                key={itemKey}
+                className={`rounded-xl border border-border bg-card border-l-4 ${style.border} transition-all duration-300 hover:shadow-card ${hasDescription ? "cursor-pointer" : ""}`}
+                onClick={() => hasDescription && toggleItem(itemKey)}
+              >
+                <div className="flex gap-4 p-5">
+                  <div className="flex-shrink-0 pt-0.5">
+                    <div className="flex items-center gap-1.5 text-muted-foreground whitespace-nowrap">
+                      <Clock className="w-3.5 h-3.5 flex-shrink-0" />
+                      <span className="text-sm font-medium">{timeRange || "\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0"}</span>
+                    </div>
+                  </div>
+                  <div className="flex-1 min-w-0">
+                    <div className="flex items-start justify-between gap-3">
+                      <div>
+                        <h3 className={`font-semibold ${isBreak ? "text-muted-foreground" : "text-foreground"}`}>
+                          {title || "\u00A0"}
+                        </h3>
+                        {session.speaker && (
+                          <p className="text-muted-foreground text-sm mt-0.5 font-light">{session.speaker}</p>
+                        )}
+                        <div className="flex items-center gap-3 mt-1.5 flex-wrap">
+                          {session.locationKey && (
+                            <span className="flex items-center gap-1 text-xs text-muted-foreground/70">
+                              <MapPin className="w-3 h-3" /> {t(session.locationKey)}
+                            </span>
+                          )}
+                          {session.trackKey && (
+                            <span className="text-xs px-2.5 py-0.5 rounded-full bg-accent/10 text-accent font-medium">
+                              {t(session.trackKey)}
+                            </span>
+                          )}
+                        </div>
+                      </div>
+                      <div className="flex items-center gap-2 flex-shrink-0 mt-0.5">
+                        {!isPlaceholder && (
+                          <span className="flex items-center gap-1 text-xs text-muted-foreground/60">
+                            <TypeIcon type={session.type} />
+                            {typeLabels[session.type]}
+                          </span>
+                        )}
+                        {hasDescription && (
+                          <ChevronDown
+                            className={`w-4 h-4 text-muted-foreground/50 transition-transform duration-200 ${isExpanded ? "rotate-180" : ""}`}
+                          />
+                        )}
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                {hasDescription && (
+                  <div className={`overflow-hidden transition-all duration-300 ease-in-out ${isExpanded ? "max-h-40 opacity-100" : "max-h-0 opacity-0"}`}>
+                    <div className="px-5 pb-5 pl-[6.5rem]">
+                      <p className="text-sm text-muted-foreground leading-relaxed font-light">{t(session.descKey!)}</p>
+                    </div>
+                  </div>
+                )}
+              </div>
+            );
+          })}
+        </div>
+      </div>
+    </section>
+  );
+};
+
+export default AgendaSection;
