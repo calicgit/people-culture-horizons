@@ -64,7 +64,10 @@ const Footer = () => {
               aria-label="People & Culture HORIZONS na LinkedInu"
               className="inline-flex items-center justify-center md:justify-start"
             >
-              <img src={linkedinLogo} alt="LinkedIn" className="h-10 w-10 rounded-lg" loading="lazy" width={512} height={512} />
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 72 72" className="h-10 w-10" aria-hidden="true">
+                <rect width="72" height="72" rx="8" fill="#0A66C2" />
+                <path d="M20.1 29.2h6.13V51.2H20.1zM23.17 18.48a3.56 3.56 0 1 1 0 7.12 3.56 3.56 0 0 1 0-7.12M31.63 29.2h5.87v3h.08a6.44 6.44 0 0 1 5.8-3.19c6.21 0 7.36 4.09 7.36 9.4V51.2h-6.13V39.81c0-2.72-.05-6.22-3.79-6.22s-4.37 2.96-4.37 6.02V51.2h-6.13V29.2z" fill="#fff" />
+              </svg>
             </a>
           </div>
 
