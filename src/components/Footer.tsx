@@ -118,8 +118,8 @@ const Footer = () => {
           </div>
         </div>
 
-        <div className="border-t border-primary-foreground/5 pt-4 flex flex-col items-center gap-2 text-xs text-primary-foreground/30">
-          <span>© 2026 People &amp; Culture HORIZONS.</span>
+        <div className="border-t border-primary-foreground/5 pt-4 flex flex-col sm:flex-row items-center justify-center gap-2 text-xs text-primary-foreground/30 relative">
+          <span className="sm:absolute sm:left-1/2 sm:-translate-x-1/2">© 2026 People &amp; Culture HORIZONS.</span>
           <button
             type="button"
             onClick={() => setIsPrivacyOpen(true)}
