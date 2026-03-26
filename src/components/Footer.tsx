@@ -1,6 +1,6 @@
 import { Mail, MapPin, Phone, Smartphone } from "lucide-react";
 import { useState } from "react";
-import linkedinLogo from "@/assets/linkedin-logo.png";
+
 import {
   Dialog,
   DialogContent,
