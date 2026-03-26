@@ -1,4 +1,6 @@
 import { Mail, MapPin, Phone, Smartphone } from "lucide-react";
+import { Link } from "react-router-dom";
+
 const Footer = () => {
   return (
     <footer className="border-t border-primary-foreground/5 bg-hero py-7 md:py-8">
@@ -7,7 +9,7 @@ const Footer = () => {
           <div className="space-y-4 text-center md:text-left">
             <h3 className="font-semibold text-primary-foreground">Pratite nas</h3>
             <a
-              href="https://www.linkedin.com/company/103946511"
+              href="https://www.linkedin.com/company/108869392"
               target="_blank"
               rel="noreferrer"
               aria-label="People & Culture HORIZONS na LinkedInu"
