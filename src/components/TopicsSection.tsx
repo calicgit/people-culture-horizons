@@ -87,7 +87,6 @@ const TopicsSection = () => {
             );
           })}
         </div>
-      </div>
     </section>
   );
 };
