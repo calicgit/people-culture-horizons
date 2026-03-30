@@ -5,12 +5,11 @@ const TopicsSection = () => {
   const { t } = useLanguage();
 
   const topics = [
-    { icon: Users, titleKey: "topics.talent.title", descKey: "topics.talent.desc", color: "from-accent/20 to-accent/5" },
-    { icon: Brain, titleKey: "topics.experience.title", descKey: "topics.experience.desc", color: "from-accent/15 to-accent/5" },
-    { icon: TrendingUp, titleKey: "topics.performance.title", descKey: "topics.performance.desc", color: "from-accent/20 to-accent/5" },
-    { icon: Shield, titleKey: "topics.compliance.title", descKey: "topics.compliance.desc", color: "from-accent/15 to-accent/5" },
-    { icon: Lightbulb, titleKey: "topics.leadership.title", descKey: "topics.leadership.desc", color: "from-accent/20 to-accent/5" },
-    { icon: Globe, titleKey: "topics.global.title", descKey: "topics.global.desc", color: "from-accent/15 to-accent/5" },
+    { icon: Shield, titleKey: "topics.foundations.title", descKey: "topics.foundations.desc", color: "from-accent/20 to-accent/5" },
+    { icon: TrendingUp, titleKey: "topics.functioning.title", descKey: "topics.functioning.desc", color: "from-accent/15 to-accent/5" },
+    { icon: Users, titleKey: "topics.results.title", descKey: "topics.results.desc", color: "from-accent/20 to-accent/5" },
+    { icon: Brain, titleKey: "topics.people.title", descKey: "topics.people.desc", color: "from-accent/15 to-accent/5" },
+    { icon: Globe, titleKey: "topics.future.title", descKey: "topics.future.desc", color: "from-accent/20 to-accent/5" },
   ];
 
   return (

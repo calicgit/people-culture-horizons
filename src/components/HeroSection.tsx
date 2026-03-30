@@ -3,7 +3,7 @@ import { Button } from "@/components/ui/button";
 import { CalendarDays, MapPin, ArrowDown } from "lucide-react";
 import { useLanguage } from "@/contexts/LanguageContext";
 
-const CONFERENCE_DATE = new Date("2026-11-04T09:00:00");
+const CONFERENCE_DATE = new Date("2026-11-26T09:00:00");
 
 const useCountdown = (targetDate: Date) => {
   const [timeLeft, setTimeLeft] = useState(() => {
