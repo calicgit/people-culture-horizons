@@ -1,4 +1,4 @@
-import { Users, Brain, TrendingUp, Shield, Lightbulb, Globe } from "lucide-react";
+import { Users, Brain, TrendingUp, Shield, Globe } from "lucide-react";
 import { useLanguage } from "@/contexts/LanguageContext";
 
 const TopicsSection = () => {
