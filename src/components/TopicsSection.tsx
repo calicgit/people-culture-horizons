@@ -7,7 +7,7 @@ const TopicCard = ({ topic, t }: { topic: { icon: any; titleKey: string; descKey
   const Icon = topic.icon;
 
   return (
-    <div className="group relative p-8 rounded-2xl bg-card border border-border hover:border-accent/30 hover:shadow-elevated transition-all duration-500 overflow-hidden">
+    <div className="group relative p-8 rounded-2xl bg-card border border-border hover:border-accent/30 hover:shadow-elevated transition-all duration-500 overflow-hidden text-center">
       <div className={`absolute inset-0 bg-gradient-to-br ${topic.color} opacity-0 group-hover:opacity-100 transition-opacity duration-500`} />
       <div className="relative z-10">
         <div className="w-14 h-14 rounded-2xl bg-accent/10 flex items-center justify-center mb-6 group-hover:bg-accent/20 transition-colors duration-300">
