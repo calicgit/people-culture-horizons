@@ -25,11 +25,11 @@ const TopicsSection = () => {
   const { t } = useLanguage();
 
   const topics = [
-    { icon: Shield, titleKey: "topics.foundations.title", descKey: "topics.foundations.desc", color: "from-accent/20 to-accent/5" },
-    { icon: TrendingUp, titleKey: "topics.functioning.title", descKey: "topics.functioning.desc", color: "from-accent/15 to-accent/5" },
-    { icon: Users, titleKey: "topics.results.title", descKey: "topics.results.desc", color: "from-accent/20 to-accent/5" },
-    { icon: Brain, titleKey: "topics.people.title", descKey: "topics.people.desc", color: "from-accent/15 to-accent/5" },
-    { icon: Globe, titleKey: "topics.future.title", descKey: "topics.future.desc", color: "from-accent/20 to-accent/5" },
+    { icon: Shield, titleKey: "topics.foundations.title", subtitleKey: "topics.foundations.subtitle", descKey: "topics.foundations.desc", color: "from-accent/20 to-accent/5" },
+    { icon: TrendingUp, titleKey: "topics.functioning.title", subtitleKey: "topics.functioning.subtitle", descKey: "topics.functioning.desc", color: "from-accent/15 to-accent/5" },
+    { icon: Users, titleKey: "topics.results.title", subtitleKey: "topics.results.subtitle", descKey: "topics.results.desc", color: "from-accent/20 to-accent/5" },
+    { icon: Brain, titleKey: "topics.people.title", subtitleKey: "topics.people.subtitle", descKey: "topics.people.desc", color: "from-accent/15 to-accent/5" },
+    { icon: Globe, titleKey: "topics.future.title", subtitleKey: "topics.future.subtitle", descKey: "topics.future.desc", color: "from-accent/20 to-accent/5" },
   ];
 
   return (
