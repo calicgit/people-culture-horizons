@@ -3,8 +3,8 @@ import { useLanguage } from "@/contexts/LanguageContext";
 
 const TopicCard = ({ topic, t }: { topic: { icon: any; titleKey: string; subtitleKey: string; descKey: string; color: string }; t: (key: string) => string }) => {
   const title = t(topic.titleKey);
+  const subtitle = t(topic.subtitleKey);
   const description = t(topic.descKey);
-  const Icon = topic.icon;
 
   return (
     <div className="group relative p-8 rounded-2xl bg-card border border-border hover:border-accent/30 hover:shadow-elevated transition-all duration-500 overflow-hidden text-center">
