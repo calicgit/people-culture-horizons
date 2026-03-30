@@ -182,7 +182,7 @@ const translations: Record<Language, Record<string, string>> = {
     "cta.refund": "",
 
     // Footer
-    "footer.tagline": "Vodeća HR i poslovna konferencija • 04. – 05. studenog 2026.",
+    "footer.tagline": "Vodeća HR i poslovna konferencija • 26. – 27. studenog 2026.",
     "footer.privacy": "Privatnost",
     "footer.terms": "Uvjeti",
     "footer.contact": "Kontakt",
