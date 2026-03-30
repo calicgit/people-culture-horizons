@@ -27,7 +27,7 @@ const translations: Record<Language, Record<string, string>> = {
     "hero.subtitle": "Vodeća HR & Business konferencija",
     "hero.buyTicket": "Rezerviraj kotizaciju",
     "hero.viewAgenda": "Pogledaj program",
-    "hero.date": "04.-05. studenoga 2026.",
+    "hero.date": "26.-27. studenoga 2026.",
     "hero.location": "Mozaik Event Centar, Zagreb",
     "hero.days": "Dana",
     "hero.hours": "Sati",
