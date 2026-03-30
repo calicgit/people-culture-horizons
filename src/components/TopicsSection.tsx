@@ -11,7 +11,7 @@ const TopicCard = ({ topic, t }: { topic: { icon: any; titleKey: string; subtitl
       <div className={`absolute inset-0 bg-gradient-to-br ${topic.color} opacity-0 group-hover:opacity-100 transition-opacity duration-500`} />
       <div className="relative z-10">
         <div className="w-14 h-14 rounded-2xl bg-accent/10 flex items-center justify-center mb-6 group-hover:bg-accent/20 transition-colors duration-300 mx-auto">
-          <Icon className="w-7 h-7 text-accent" />
+          <topic.icon className="w-7 h-7 text-accent" />
         </div>
         <h3 className="mb-3 min-h-[1.75rem] text-xl font-bold text-card-foreground font-display">{title || "\u00A0"}</h3>
         <p className="min-h-[4.5rem] text-muted-foreground leading-relaxed font-light">{description || "\u00A0"}</p>
