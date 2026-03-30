@@ -1,7 +1,7 @@
 import { Users, Brain, TrendingUp, Shield, Globe } from "lucide-react";
 import { useLanguage } from "@/contexts/LanguageContext";
 
-const TopicCard = ({ topic, t }: { topic: { icon: any; titleKey: string; descKey: string; color: string }; t: (key: string) => string }) => {
+const TopicCard = ({ topic, t }: { topic: { icon: any; titleKey: string; subtitleKey: string; descKey: string; color: string }; t: (key: string) => string }) => {
   const title = t(topic.titleKey);
   const description = t(topic.descKey);
   const Icon = topic.icon;
