@@ -1,6 +1,25 @@
 import { Users, Brain, TrendingUp, Shield, Globe } from "lucide-react";
 import { useLanguage } from "@/contexts/LanguageContext";
 
+const TopicCard = ({ topic, t }: { topic: { icon: any; titleKey: string; descKey: string; color: string }; t: (key: string) => string }) => {
+  const title = t(topic.titleKey);
+  const description = t(topic.descKey);
+  const Icon = topic.icon;
+
+  return (
+    <div className="group relative p-8 rounded-2xl bg-card border border-border hover:border-accent/30 hover:shadow-elevated transition-all duration-500 overflow-hidden">
+      <div className={`absolute inset-0 bg-gradient-to-br ${topic.color} opacity-0 group-hover:opacity-100 transition-opacity duration-500`} />
+      <div className="relative z-10">
+        <div className="w-14 h-14 rounded-2xl bg-accent/10 flex items-center justify-center mb-6 group-hover:bg-accent/20 transition-colors duration-300">
+          <Icon className="w-7 h-7 text-accent" />
+        </div>
+        <h3 className="mb-3 min-h-[1.75rem] text-xl font-bold text-card-foreground font-display">{title || "\u00A0"}</h3>
+        <p className="min-h-[4.5rem] text-muted-foreground leading-relaxed font-light">{description || "\u00A0"}</p>
+      </div>
+    </div>
+  );
+};
+
 const TopicsSection = () => {
   const { t } = useLanguage();
 
@@ -24,26 +43,14 @@ const TopicsSection = () => {
         </div>
 
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6 max-w-6xl mx-auto">
-          {topics.map((topic) => {
-            const title = t(topic.titleKey);
-            const description = t(topic.descKey);
-
-            return (
-              <div
-                key={topic.titleKey}
-                className="group relative p-8 rounded-2xl bg-card border border-border hover:border-accent/30 hover:shadow-elevated transition-all duration-500 overflow-hidden"
-              >
-                <div className={`absolute inset-0 bg-gradient-to-br ${topic.color} opacity-0 group-hover:opacity-100 transition-opacity duration-500`} />
-                <div className="relative z-10">
-                  <div className="w-14 h-14 rounded-2xl bg-accent/10 flex items-center justify-center mb-6 group-hover:bg-accent/20 transition-colors duration-300">
-                    <topic.icon className="w-7 h-7 text-accent" />
-                  </div>
-                  <h3 className="mb-3 min-h-[1.75rem] text-xl font-bold text-card-foreground font-display">{title || "\u00A0"}</h3>
-                  <p className="min-h-[4.5rem] text-muted-foreground leading-relaxed font-light">{description || "\u00A0"}</p>
-                </div>
-              </div>
-            );
-          })}
+          {topics.slice(0, 3).map((topic) => (
+            <TopicCard key={topic.titleKey} topic={topic} t={t} />
+          ))}
+        </div>
+        <div className="grid md:grid-cols-2 gap-6 max-w-4xl mx-auto mt-6">
+          {topics.slice(3).map((topic) => (
+            <TopicCard key={topic.titleKey} topic={topic} t={t} />
+          ))}
         </div>
       </div>
     </section>
