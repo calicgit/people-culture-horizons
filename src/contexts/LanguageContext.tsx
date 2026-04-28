@@ -255,14 +255,6 @@ const translations: Record<Language, Record<string, string>> = {
     "speakers.label": "",
     "speakers.title": "Speakers",
     "speakers.subtitle": "",
-    "speakers.s1.role": "Chief People Officer, Horizon Global",
-    "speakers.s1.topic": "Keynote Speaker",
-    "speakers.s2.role": "VP of Talent, Atlas Corp",
-    "speakers.s2.topic": "Talent Acquisition",
-    "speakers.s3.role": "Founder, WorkWell Institute",
-    "speakers.s3.topic": "Employee Experience",
-    "speakers.s4.role": "CTO, PeopleStack",
-    "speakers.s4.topic": "HR Technology",
 
     // Agenda
     "agenda.label": "Schedule",
