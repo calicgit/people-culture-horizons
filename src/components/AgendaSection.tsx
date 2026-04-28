@@ -132,9 +132,19 @@ const AgendaSection = () => {
             return (
               <div
                 key={itemKey}
-                className={`rounded-xl border border-border bg-card border-l-4 ${style.border} transition-all duration-300 hover:shadow-card ${hasDescription ? "cursor-pointer" : ""}`}
+                className={`relative rounded-xl border bg-card transition-all duration-300 hover:shadow-card ${hasDescription ? "cursor-pointer" : ""} ${
+                  session.type === "keynote"
+                    ? "border-accent/30 border-l-[6px] border-l-accent bg-gradient-to-r from-accent/5 to-transparent shadow-sm"
+                    : `border-border border-l-4 ${style.border}`
+                }`}
                 onClick={() => hasDescription && toggleItem(itemKey)}
               >
+                {session.type === "keynote" && (
+                  <div className="absolute -top-2.5 right-4 flex items-center gap-1 rounded-full bg-accent px-2.5 py-0.5 text-[10px] font-bold uppercase tracking-wider text-accent-foreground shadow-sm">
+                    <Star className="w-3 h-3 fill-current" />
+                    Keynote
+                  </div>
+                )}
                 <div className="flex gap-4 p-5">
                   <div className="flex-shrink-0 pt-0.5">
                     <div className="flex items-center gap-1.5 text-muted-foreground whitespace-nowrap">
