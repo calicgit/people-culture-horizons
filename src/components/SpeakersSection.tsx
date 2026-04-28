@@ -35,6 +35,23 @@ const SpeakersSection = () => {
           <div className="section-divider mb-6" />
         </div>
 
+        {/* Featured: Conference Host */}
+        <div className="max-w-2xl mx-auto mb-10">
+          <div className="relative flex items-center gap-5 rounded-2xl border-2 border-accent/40 bg-gradient-to-r from-accent/10 via-accent/5 to-transparent p-5 shadow-elevated">
+            <div className="absolute -top-2.5 left-5 flex items-center gap-1 rounded-full bg-accent px-2.5 py-0.5 text-[10px] font-bold uppercase tracking-wider text-accent-foreground shadow-sm">
+              <Mic2 className="w-3 h-3" />
+              {t("speakers.host.badge")}
+            </div>
+            <div className="flex-shrink-0 w-16 h-16 rounded-full bg-accent/20 flex items-center justify-center text-accent">
+              <User className="w-8 h-8" />
+            </div>
+            <div className="min-w-0 flex-1">
+              <h3 className="text-lg font-bold text-foreground font-display leading-tight">{t("speakers.host.name")}</h3>
+              <p className="mt-1 text-sm font-semibold text-accent leading-snug">{t("speakers.host.role")}</p>
+            </div>
+          </div>
+        </div>
+
         <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-5 max-w-6xl mx-auto">
           {speakers.map((speaker) => (
             <div
