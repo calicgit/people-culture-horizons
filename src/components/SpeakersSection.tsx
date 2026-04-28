@@ -15,7 +15,7 @@ const speakers: Speaker[] = [
   { name: "Mirela Kotarac", title: "HR Director & Member of the Management Board", company: "Cemex Croatia" },
   { name: "Mirta Pađen Lee", title: "Senior Director of Reward and Operations", company: "Infobip" },
   { name: "Marija Felkel", title: "Group HR Director & Member of the Executive Committee", company: "Perutnina Ptuj Group" },
-  { name: "Marina Regjo", title: "HR Director", company: "FNG Property HR (Fortenova Group)" },
+  { name: "Marina Regjo", title: "Human Resources Director", company: "FNG Property HR (Fortenova Group)" },
   { name: "Iva Rogović Lekić", title: "CEO", company: "GrECo Specialty" },
   { name: "Suzana Plečko", title: "Human Resources Director", company: "Franck" },
   { name: "Martina Skorin", title: "Head of Human Resources", company: "HAKOM" },
