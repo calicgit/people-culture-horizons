@@ -102,7 +102,19 @@ const AgendaSection = () => {
           <div className="section-divider mb-4" />
         </div>
 
-        <p className="mb-1 text-center text-xs md:text-sm italic text-muted-foreground">{t("agenda.disclaimer")}</p>
+        <p className="mb-4 text-center text-xs md:text-sm italic text-muted-foreground">{t("agenda.disclaimer")}</p>
+
+        <div className="mb-6 flex justify-center">
+          <div className="inline-flex items-center gap-3 rounded-full border border-accent/30 bg-accent/5 py-1.5 pl-1.5 pr-4 shadow-sm">
+            <div className="flex-shrink-0 w-9 h-9 rounded-full bg-accent/20 flex items-center justify-center text-accent">
+              <User className="w-4.5 h-4.5" />
+            </div>
+            <div className="text-left leading-tight">
+              <p className="text-[10px] uppercase tracking-wider font-semibold text-accent">{t("speakers.host.role")}</p>
+              <p className="text-sm font-bold text-foreground">{t("speakers.host.name")}</p>
+            </div>
+          </div>
+        </div>
 
         <div className="mb-12 flex justify-center gap-3 md:mb-14">
           {dayLabels.map((label, idx) => (
