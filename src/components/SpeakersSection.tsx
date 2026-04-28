@@ -44,7 +44,7 @@ const SpeakersSection = () => {
                 src={hostAntonija}
                 alt={t("speakers.host.name")}
                 className="w-full h-full object-cover"
-                style={{ objectPosition: "60% 25%", transform: "scale(1.6)" }}
+                style={{ objectPosition: "55% 18%", transform: "scale(1.9)" }}
               />
             </div>
             <div className="text-left leading-tight">
