@@ -4,6 +4,7 @@ import partnerGreco from "@/assets/partner-greco.png";
 import partnerJenz from "@/assets/partner-jenz.png";
 import sponsorAtlantic from "@/assets/sponsor-atlantic.png";
 import patronMrms from "@/assets/patron-mrms.png";
+import patronHpk from "@/assets/patron-hpk.png";
 
 type LogoEntry = { name: string; logo: string; scale?: number };
 
@@ -14,6 +15,7 @@ const platinumPartners: LogoEntry[] = [
 
 const patrons: LogoEntry[] = [
   { name: "Ministarstvo rada, mirovinskoga sustava, obitelji i socijalne politike", logo: patronMrms, scale: 1 },
+  { name: "Hrvatska psihološka komora", logo: patronHpk, scale: 1 },
 ];
 
 const sponsors: LogoEntry[] = [
