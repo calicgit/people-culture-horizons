@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { Clock, MapPin, Mic2, Coffee, Utensils, ChevronDown, Presentation, Users, Wrench } from "lucide-react";
+import { Clock, MapPin, Mic2, Coffee, Utensils, ChevronDown, Presentation, Users, Wrench, Star } from "lucide-react";
 import { useLanguage } from "@/contexts/LanguageContext";
 
 type SessionType = "keynote" | "talk" | "panel" | "workshop" | "break" | "networking";
@@ -13,6 +13,7 @@ interface Session {
   type: SessionType;
   trackKey?: string;
   descKey?: string;
+  keynoteKind?: "talk" | "panel";
 }
 
 const agendaData: Record<string, Session[]> = {
