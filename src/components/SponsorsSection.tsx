@@ -1,10 +1,11 @@
 import { useLanguage } from "@/contexts/LanguageContext";
 import deepProjectLogo from "@/assets/deep-project-logo.png";
+import partnerGreco from "@/assets/partner-greco.png";
+import partnerJenz from "@/assets/partner-jenz.png";
 
-const platinumSponsors = [
-  { name: "TechVantage", initials: "TV" },
-  { name: "NovaCorp", initials: "NC" },
-  { name: "Meridian Group", initials: "MG" },
+const platinumPartners = [
+  { name: "Greco", logo: partnerGreco },
+  { name: "Jenz", logo: partnerJenz },
 ];
 
 const goldSponsors = [
@@ -38,6 +39,15 @@ const SponsorLogo = ({ name, initials, size = "md" }: { name: string; initials: 
   );
 };
 
+const PartnerLogo = ({ name, logo }: { name: string; logo: string }) => (
+  <div
+    className="w-48 h-28 md:w-56 md:h-32 rounded-2xl border border-border bg-card flex items-center justify-center p-4 hover:border-accent/30 hover:shadow-card transition-all duration-300"
+    title={name}
+  >
+    <img src={logo} alt={name} className="max-h-full max-w-full object-contain" />
+  </div>
+);
+
 const SponsorsSection = () => {
   const { t } = useLanguage();
 
@@ -52,7 +62,7 @@ const SponsorsSection = () => {
         <div className="mb-12 md:mb-14">
           <p className="text-center text-xs font-semibold uppercase tracking-[0.25em] text-accent mb-8">{t("sponsors.platinum")}</p>
           <div className="flex flex-wrap items-center justify-center gap-6">
-            {platinumSponsors.map((s) => <SponsorLogo key={s.name} {...s} size="lg" />)}
+            {platinumPartners.map((p) => <PartnerLogo key={p.name} {...p} />)}
           </div>
         </div>
 
