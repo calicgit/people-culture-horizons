@@ -19,7 +19,7 @@ const patrons: LogoEntry[] = [
 ];
 
 const sponsors: LogoEntry[] = [
-  { name: "Atlantic Grupa", logo: sponsorAtlantic, scale: 1.1 },
+  { name: "Atlantic Grupa", logo: sponsorAtlantic, scale: 1.65 },
 ];
 
 const PartnerLogo = ({ name, logo, scale = 1, size = "lg" }: LogoEntry & { size?: "lg" | "md" | "sm" }) => {
