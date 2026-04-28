@@ -83,7 +83,7 @@ const translations: Record<Language, Record<string, string>> = {
     "agenda.day1": "1. dan - 26.11.2026.",
     "agenda.day2": "2. dan - 27.11.2026.",
     "agenda.type.keynote": "Predavanje",
-    "agenda.type.talk": "Govor",
+    "agenda.type.talk": "Predavanje",
     "agenda.type.panel": "Panel",
     "agenda.type.workshop": "Radionica",
     "agenda.type.break": "Pauza",
