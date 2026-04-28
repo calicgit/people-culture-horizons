@@ -96,13 +96,13 @@ const AgendaSection = () => {
   return (
     <section id="agenda" className="bg-background py-20 md:py-24">
       <div className="container mx-auto px-6">
-        <div className="mb-14 text-center md:mb-16">
+        <div className="mb-4 text-center md:mb-6">
           <span className="text-accent font-semibold text-xs uppercase tracking-[0.25em]">{t("agenda.label")}</span>
           <h2 className="text-2xl md:text-3xl lg:text-4xl font-bold text-foreground mt-4 mb-5 font-display">{t("agenda.title")}</h2>
-          <div className="section-divider mb-6" />
+          <div className="section-divider mb-4" />
         </div>
 
-        <p className="mb-2 text-center text-xs md:text-sm italic text-muted-foreground">{t("agenda.disclaimer")}</p>
+        <p className="mb-1 text-center text-xs md:text-sm italic text-muted-foreground">{t("agenda.disclaimer")}</p>
         <p className="mb-6 text-center text-sm md:text-base font-medium text-foreground">{t("agenda.host")}</p>
 
         <div className="mb-12 flex justify-center gap-3 md:mb-14">
