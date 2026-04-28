@@ -1,6 +1,7 @@
 import { useState } from "react";
 import { Clock, MapPin, Mic2, Coffee, Utensils, ChevronDown, Presentation, Users, Wrench, Star, User } from "lucide-react";
 import { useLanguage } from "@/contexts/LanguageContext";
+import hostAntonija from "@/assets/host-antonija-mandic.jpg";
 
 type SessionType = "keynote" | "talk" | "panel" | "workshop" | "break" | "networking";
 
