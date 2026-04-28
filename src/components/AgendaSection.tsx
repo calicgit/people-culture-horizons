@@ -102,8 +102,7 @@ const AgendaSection = () => {
           <div className="section-divider mb-4" />
         </div>
 
-        <p className="mb-1 text-center text-xs md:text-sm italic text-muted-foreground">{t("agenda.disclaimer")}</p>
-        <p className="mb-6 text-center text-sm md:text-base font-medium text-foreground">{t("agenda.host")}</p>
+        <p className="mb-6 text-center text-xs md:text-sm italic text-muted-foreground">{t("agenda.disclaimer")}</p>
 
         <div className="mb-12 flex justify-center gap-3 md:mb-14">
           {dayLabels.map((label, idx) => (
