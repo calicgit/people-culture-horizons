@@ -2,48 +2,33 @@ import { useLanguage } from "@/contexts/LanguageContext";
 import deepProjectLogo from "@/assets/deep-project-logo.png";
 import partnerGreco from "@/assets/partner-greco.png";
 import partnerJenz from "@/assets/partner-jenz.png";
+import sponsorAtlantic from "@/assets/sponsor-atlantic.png";
 
-const platinumPartners = [
+type LogoEntry = { name: string; logo: string; scale?: number };
+
+const platinumPartners: LogoEntry[] = [
   { name: "Greco", logo: partnerGreco, scale: 1 },
   { name: "Jenz", logo: partnerJenz, scale: 1.45 },
 ];
 
-const goldSponsors = [
-  { name: "Apex Solutions", initials: "AS" },
-  { name: "BluePeak", initials: "BP" },
-  { name: "Catalyst HR", initials: "CH" },
-  { name: "DataFlow", initials: "DF" },
+const patrons: LogoEntry[] = [];
+
+const sponsors: LogoEntry[] = [
+  { name: "Atlantic Grupa", logo: sponsorAtlantic, scale: 1.1 },
 ];
 
-const communityPartners = [
-  { name: "HR Innovators", initials: "HI" },
-  { name: "WorkForward", initials: "WF" },
-  { name: "TalentHub", initials: "TH" },
-  { name: "PeopleFirst", initials: "PF" },
-  { name: "FutureWork Lab", initials: "FL" },
-];
-
-const SponsorLogo = ({ name, initials, size = "md" }: { name: string; initials: string; size?: "lg" | "md" | "sm" }) => {
-  const sizeClasses = { lg: "w-44 h-24", md: "w-36 h-20", sm: "w-28 h-16" };
-  const textClasses = { lg: "text-2xl", md: "text-xl", sm: "text-lg" };
-
+const PartnerLogo = ({ name, logo, scale = 1, size = "lg" }: LogoEntry & { size?: "lg" | "md" | "sm" }) => {
+  const sizeClasses = {
+    lg: "h-28 w-48 md:h-32 md:w-56",
+    md: "h-24 w-40 md:h-28 md:w-48",
+    sm: "h-20 w-32 md:h-24 md:w-40",
+  };
   return (
-    <div
-      className={`${sizeClasses[size]} rounded-2xl border border-border bg-card flex items-center justify-center hover:border-accent/30 hover:shadow-card transition-all duration-300 group cursor-pointer`}
-      title={name}
-    >
-      <span className={`${textClasses[size]} font-display font-bold text-muted-foreground/40 group-hover:text-accent transition-colors tracking-wider`}>
-        {initials}
-      </span>
+    <div className={`flex ${sizeClasses[size]} items-center justify-center p-4`} title={name}>
+      <img src={logo} alt={name} className="max-h-full max-w-full object-contain" style={{ transform: `scale(${scale})` }} />
     </div>
   );
 };
-
-const PartnerLogo = ({ name, logo, scale = 1 }: { name: string; logo: string; scale?: number }) => (
-  <div className="flex h-28 w-48 items-center justify-center p-4 md:h-32 md:w-56" title={name}>
-    <img src={logo} alt={name} className="max-h-full max-w-full object-contain" style={{ transform: `scale(${scale})` }} />
-  </div>
-);
 
 const SponsorsSection = () => {
   const { t } = useLanguage();
@@ -61,25 +46,29 @@ const SponsorsSection = () => {
           <div className="flex flex-wrap items-center justify-center">
             {platinumPartners.map((p, i) => (
               <div key={p.name} className={i > 0 ? "-ml-8 md:-ml-10" : ""}>
-                <PartnerLogo {...p} />
+                <PartnerLogo {...p} size="lg" />
               </div>
             ))}
           </div>
         </div>
 
-        <div className="mb-12 md:mb-14">
-          <p className="text-center text-xs font-semibold uppercase tracking-[0.25em] text-muted-foreground mb-8">{t("sponsors.gold")}</p>
-          <div className="flex flex-wrap items-center justify-center gap-5">
-            {goldSponsors.map((s) => <SponsorLogo key={s.name} {...s} size="md" />)}
+        {patrons.length > 0 && (
+          <div className="mb-12 md:mb-14">
+            <p className="text-center text-xs font-semibold uppercase tracking-[0.25em] text-muted-foreground mb-8">{t("sponsors.gold")}</p>
+            <div className="flex flex-wrap items-center justify-center gap-5">
+              {patrons.map((p) => <PartnerLogo key={p.name} {...p} size="md" />)}
+            </div>
           </div>
-        </div>
+        )}
 
-        <div className="mb-12 md:mb-14">
-          <p className="text-center text-xs font-semibold uppercase tracking-[0.25em] text-muted-foreground mb-8">{t("sponsors.community")}</p>
-          <div className="flex flex-wrap items-center justify-center gap-4">
-            {communityPartners.map((s) => <SponsorLogo key={s.name} {...s} size="sm" />)}
+        {sponsors.length > 0 && (
+          <div className="mb-12 md:mb-14">
+            <p className="text-center text-xs font-semibold uppercase tracking-[0.25em] text-muted-foreground mb-8">{t("sponsors.community")}</p>
+            <div className="flex flex-wrap items-center justify-center gap-4">
+              {sponsors.map((s) => <PartnerLogo key={s.name} {...s} size="md" />)}
+            </div>
           </div>
-        </div>
+        )}
 
         <div className="border-t border-border pt-6 md:pt-8">
           <p className="mb-4 text-center text-xs font-semibold uppercase tracking-[0.25em] text-muted-foreground md:text-sm">{t("sponsors.organizer")}</p>
@@ -96,3 +85,4 @@ const SponsorsSection = () => {
 };
 
 export default SponsorsSection;
+
