@@ -1,5 +1,6 @@
-import { User, Mic2 } from "lucide-react";
+import { User } from "lucide-react";
 import { useLanguage } from "@/contexts/LanguageContext";
+import hostAntonija from "@/assets/host-antonija-mandic.jpg";
 
 interface Speaker {
   name: string;
