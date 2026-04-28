@@ -290,6 +290,7 @@ const translations: Record<Language, Record<string, string>> = {
     "agenda.d1.s2.title": "Conference opening, welcome address",
     "agenda.d1.s2.desc": "Today we have more data than ever, more tools than ever and more initiatives than ever.\n\nAnd yet, a growing number of organisations seem to be struggling with the same things: slow decisions, unimplemented changes and results that fail to meet expectations.\n\nThat's why this is not a conference about trends.\n\nThis is a conference about a much more uncomfortable question: what happens between what we know and what we actually do?\n\nOver these two days we won't talk about ideals, but about reality: how organisations make decisions, where those decisions get lost, and what happens when we add people into the mix, with all their limitations.\n\nBecause perhaps the biggest problem today is not a lack of knowledge.\n\nIt's that we are no longer sure what we actually understand.",
     "agenda.d1.s3.title": "How organisations make decisions when the rules of the game change",
+    "agenda.d1.s3.desc": "The key question is no longer how to grow, but how to remain functional?",
     "agenda.d1.s4.title": "When the rules no longer apply – Are organisations still playing the old game? Powered by Greco",
     "agenda.d1.s5.title": "Coffee break",
     "agenda.d1.s6.title": "Growth doesn't kill organisations. Unclear decisions do.",
