@@ -17,17 +17,19 @@ interface Session {
 
 const agendaData: Record<string, Session[]> = {
   day1: [
-    { time: "", endTime: "", type: "break" },
-    { time: "", endTime: "", type: "keynote" },
-    { time: "", endTime: "", type: "break" },
-    { time: "", endTime: "", type: "talk" },
-    { time: "", endTime: "", type: "talk" },
-    { time: "", endTime: "", type: "break" },
-    { time: "", endTime: "", type: "panel" },
-    { time: "", endTime: "", type: "workshop" },
-    { time: "", endTime: "", type: "break" },
-    { time: "", endTime: "", type: "panel" },
-    { time: "", endTime: "", type: "networking" },
+    { time: "08:00", endTime: "09:00", titleKey: "agenda.d1.s1.title", type: "break" },
+    { time: "09:00", endTime: "09:10", titleKey: "agenda.d1.s2.title", type: "talk", descKey: "agenda.d1.s2.desc" },
+    { time: "09:10", endTime: "09:40", titleKey: "agenda.d1.s3.title", type: "keynote" },
+    { time: "09:45", endTime: "10:30", titleKey: "agenda.d1.s4.title", type: "panel" },
+    { time: "10:30", endTime: "10:50", titleKey: "agenda.d1.s5.title", type: "break" },
+    { time: "10:50", endTime: "11:10", titleKey: "agenda.d1.s6.title", type: "talk" },
+    { time: "11:15", endTime: "12:00", titleKey: "agenda.d1.s7.title", type: "panel" },
+    { time: "12:00", endTime: "13:00", titleKey: "agenda.d1.s8.title", type: "networking" },
+    { time: "13:30", endTime: "13:50", titleKey: "agenda.d1.s9.title", type: "talk" },
+    { time: "13:55", endTime: "14:40", titleKey: "agenda.d1.s10.title", type: "panel" },
+    { time: "14:40", endTime: "15:00", titleKey: "agenda.d1.s11.title", type: "break" },
+    { time: "15:00", endTime: "15:20", titleKey: "agenda.d1.s12.title", type: "talk" },
+    { time: "15:25", endTime: "16:10", titleKey: "agenda.d1.s13.title", type: "panel" },
   ],
   day2: [
     { time: "", endTime: "", type: "break" },
@@ -175,9 +177,11 @@ const AgendaSection = () => {
                   </div>
                 </div>
                 {hasDescription && (
-                  <div className={`overflow-hidden transition-all duration-300 ease-in-out ${isExpanded ? "max-h-40 opacity-100" : "max-h-0 opacity-0"}`}>
-                    <div className="px-5 pb-5 pl-[6.5rem]">
-                      <p className="text-sm text-muted-foreground leading-relaxed font-light">{t(session.descKey!)}</p>
+                  <div className={`grid transition-all duration-300 ease-in-out ${isExpanded ? "grid-rows-[1fr] opacity-100" : "grid-rows-[0fr] opacity-0"}`}>
+                    <div className="overflow-hidden">
+                      <div className="px-5 pb-5 pl-[6.5rem]">
+                        <p className="text-sm text-muted-foreground leading-relaxed font-light whitespace-pre-line">{t(session.descKey!)}</p>
+                      </div>
                     </div>
                   </div>
                 )}
