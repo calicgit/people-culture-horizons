@@ -77,7 +77,7 @@ const translations: Record<Language, Record<string, string>> = {
     "agenda.disclaimer": "*program je podložan promjenama",
     "agenda.day1": "1. dan - 26.11.2026.",
     "agenda.day2": "2. dan - 27.11.2026.",
-    "agenda.host": "Voditeljica konferencije: Antonija Mandić",
+    
     "speakers.host.badge": "Voditeljica konferencije",
     "speakers.host.name": "Antonija Mandić",
     "speakers.host.role": "Voditeljica konferencije",
@@ -272,7 +272,7 @@ const translations: Record<Language, Record<string, string>> = {
     "agenda.disclaimer": "*program is subject to change",
     "agenda.day1": "Day 1 - 26.11.2026.",
     "agenda.day2": "Day 2 - 27.11.2026.",
-    "agenda.host": "Conference Host: Antonija Mandić",
+    
     "speakers.host.badge": "Conference Host",
     "speakers.host.name": "Antonija Mandić",
     "speakers.host.role": "Conference Host",
