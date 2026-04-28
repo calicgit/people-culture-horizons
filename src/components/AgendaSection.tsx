@@ -20,8 +20,8 @@ const agendaData: Record<string, Session[]> = {
   day1: [
     { time: "08:00", endTime: "09:00", titleKey: "agenda.d1.s1.title", type: "break" },
     { time: "09:00", endTime: "09:10", titleKey: "agenda.d1.s2.title", type: "talk", descKey: "agenda.d1.s2.desc" },
-    { time: "09:10", endTime: "09:40", titleKey: "agenda.d1.s3.title", type: "keynote" },
-    { time: "09:45", endTime: "10:30", titleKey: "agenda.d1.s4.title", type: "keynote" },
+    { time: "09:10", endTime: "09:40", titleKey: "agenda.d1.s3.title", type: "keynote", keynoteKind: "talk" },
+    { time: "09:45", endTime: "10:30", titleKey: "agenda.d1.s4.title", type: "keynote", keynoteKind: "panel" },
     { time: "10:30", endTime: "10:50", titleKey: "agenda.d1.s5.title", type: "break" },
     { time: "10:50", endTime: "11:10", titleKey: "agenda.d1.s6.title", type: "talk" },
     { time: "11:15", endTime: "12:00", titleKey: "agenda.d1.s7.title", type: "panel" },
