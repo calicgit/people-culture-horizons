@@ -4,8 +4,8 @@ import partnerGreco from "@/assets/partner-greco.png";
 import partnerJenz from "@/assets/partner-jenz.png";
 
 const platinumPartners = [
-  { name: "Greco", logo: partnerGreco },
-  { name: "Jenz", logo: partnerJenz },
+  { name: "Greco", logo: partnerGreco, scale: 1 },
+  { name: "Jenz", logo: partnerJenz, scale: 1.45 },
 ];
 
 const goldSponsors = [
