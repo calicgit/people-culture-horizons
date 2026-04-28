@@ -3,6 +3,7 @@ import deepProjectLogo from "@/assets/deep-project-logo.png";
 import partnerGreco from "@/assets/partner-greco.png";
 import partnerJenz from "@/assets/partner-jenz.png";
 import sponsorAtlantic from "@/assets/sponsor-atlantic.png";
+import patronMrms from "@/assets/patron-mrms.png";
 
 type LogoEntry = { name: string; logo: string; scale?: number };
 
@@ -11,7 +12,9 @@ const platinumPartners: LogoEntry[] = [
   { name: "Jenz", logo: partnerJenz, scale: 1.45 },
 ];
 
-const patrons: LogoEntry[] = [];
+const patrons: LogoEntry[] = [
+  { name: "Ministarstvo rada, mirovinskoga sustava, obitelji i socijalne politike", logo: patronMrms, scale: 1 },
+];
 
 const sponsors: LogoEntry[] = [
   { name: "Atlantic Grupa", logo: sponsorAtlantic, scale: 1.1 },
