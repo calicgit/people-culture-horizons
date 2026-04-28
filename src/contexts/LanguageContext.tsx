@@ -79,6 +79,7 @@ const translations: Record<Language, Record<string, string>> = {
     "speakers.host.badge": "Voditeljica konferencije",
     "speakers.host.name": "Antonija Mandić",
     "speakers.host.role": "Voditeljica konferencije",
+    "hero.host.label": "Vodi konferenciju:",
     "agenda.type.keynote": "Predavanje",
     "agenda.type.talk": "Predavanje",
     "agenda.type.panel": "Panel",
