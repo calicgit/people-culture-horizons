@@ -158,7 +158,10 @@ const AgendaSection = () => {
                     <div className="flex items-start justify-between gap-3">
                       <div>
                         <h3 className={`font-semibold ${isBreak ? "text-muted-foreground" : "text-foreground"}`}>
-                          {title || "\u00A0"}
+                          {title ? (() => {
+                            const m = title.match(/^(.*?)(\s*Powered by .+)$/i);
+                            return m ? (<>{m[1]}<em className="font-normal italic text-muted-foreground">{m[2]}</em></>) : title;
+                          })() : "\u00A0"}
                         </h3>
                         {session.speaker && (
                           <p className="text-muted-foreground text-sm mt-0.5 font-light">{session.speaker}</p>
