@@ -56,8 +56,8 @@ const translations: Record<Language, Record<string, string>> = {
 
     // Keynote
     "keynote.label": "KEYNOTE PREDAVANJE",
-    "keynote.title": "",
-    "keynote.p1": "",
+    "keynote.title": "Kako organizacije donose odluke kada se pravila igre mijenjaju",
+    "keynote.p1": "Ključno pitanje nije više kako rasti nego kako ostati funkcionalan?",
     "keynote.p2": "",
     "keynote.cta": "Rezerviraj svoje mjesto →",
     "keynote.years": "Godina istraživanja",
@@ -252,8 +252,8 @@ const translations: Record<Language, Record<string, string>> = {
 
     // Keynote
     "keynote.label": "KEYNOTE ADDRESS",
-    "keynote.title": "",
-    "keynote.p1": "",
+    "keynote.title": "How organisations make decisions when the rules of the game change",
+    "keynote.p1": "The key question is no longer how to grow, but how to remain functional?",
     "keynote.p2": "",
     "keynote.cta": "Reserve Your Seat →",
     "keynote.years": "Years of Research",
