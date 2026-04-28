@@ -175,12 +175,18 @@ const AgendaSection = () => {
                         </div>
                       </div>
                       <div className="flex items-center gap-2 flex-shrink-0 mt-0.5">
-                        {!isPlaceholder && (
-                          <span className="flex items-center gap-1 text-xs text-muted-foreground/60">
-                            <TypeIcon type={session.type} />
-                            {typeLabels[session.type]}
-                          </span>
-                        )}
+                        {!isPlaceholder && (() => {
+                          const displayType: SessionType =
+                            session.type === "keynote" && session.keynoteKind
+                              ? session.keynoteKind
+                              : session.type;
+                          return (
+                            <span className="flex items-center gap-1 text-xs text-muted-foreground/60">
+                              <TypeIcon type={displayType} />
+                              {typeLabels[displayType]}
+                            </span>
+                          );
+                        })()}
                         {hasDescription && (
                           <ChevronDown
                             className={`w-4 h-4 text-muted-foreground/50 transition-transform duration-200 ${isExpanded ? "rotate-180" : ""}`}
