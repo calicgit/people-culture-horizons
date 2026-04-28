@@ -102,6 +102,7 @@ const AgendaSection = () => {
           <div className="section-divider mb-6" />
         </div>
 
+        <p className="mb-2 text-center text-xs md:text-sm italic text-muted-foreground">{t("agenda.disclaimer")}</p>
         <p className="mb-6 text-center text-sm md:text-base font-medium text-foreground">{t("agenda.host")}</p>
 
         <div className="mb-12 flex justify-center gap-3 md:mb-14">
