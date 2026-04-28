@@ -56,8 +56,8 @@ const translations: Record<Language, Record<string, string>> = {
 
     // Keynote
     "keynote.label": "KEYNOTE PREDAVANJE",
-    "keynote.title": "",
-    "keynote.p1": "",
+    "keynote.title": "Kako organizacije donose odluke kada se pravila igre mijenjaju",
+    "keynote.p1": "Ključno pitanje nije više kako rasti nego kako ostati funkcionalan?",
     "keynote.p2": "",
     "keynote.cta": "Rezerviraj svoje mjesto →",
     "keynote.years": "Godina istraživanja",
