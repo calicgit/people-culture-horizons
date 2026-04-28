@@ -107,8 +107,8 @@ const AgendaSection = () => {
 
         <div className="mb-6 flex justify-center">
           <div className="inline-flex items-center gap-3 rounded-full border border-accent/30 bg-accent/5 py-1.5 pl-1.5 pr-4 shadow-sm">
-            <div className="flex-shrink-0 w-9 h-9 rounded-full bg-accent/20 flex items-center justify-center text-accent">
-              <User className="w-4.5 h-4.5" />
+            <div className="flex-shrink-0 w-10 h-10 rounded-full overflow-hidden ring-2 ring-accent/30">
+              <img src={hostAntonija} alt={t("speakers.host.name")} className="w-full h-full object-cover" />
             </div>
             <div className="text-left leading-tight">
               <p className="text-[10px] uppercase tracking-wider font-semibold text-accent">{t("speakers.host.role")}</p>
