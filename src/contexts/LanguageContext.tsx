@@ -94,6 +94,7 @@ const translations: Record<Language, Record<string, string>> = {
     "agenda.d1.s2.title": "Otvaranje konferencije, pozdravna riječ",
     "agenda.d1.s2.desc": "Danas imamo više podataka nego ikad, više alata nego ikad i više inicijativa nego ikad.\n\nI unatoč tome, sve veći broj organizacija djeluje kao da se bori s istim stvarima: sporim odlukama, neprovedenim promjenama i rezultatima koji ne prate očekivanja.\n\nZato ovo nije konferencija o trendovima.\n\nOvo je konferencija o jednom puno neugodnijem pitanju: što se događa između onoga što znamo i onoga što stvarno radimo?\n\nTijekom ova dva dana nećemo pričati o idealima, nego o stvarnosti: kako organizacije donose odluke, gdje se one gube i što se događa kada u sve to uključimo ljude, sa svim njihovim ograničenjima.\n\nJer možda najveći problem danas nije nedostatak znanja.\n\nNego to što više nismo sigurni što zapravo razumijemo.",
     "agenda.d1.s3.title": "Kako organizacije donose odluke kada se pravila igre mijenjaju",
+    "agenda.d1.s3.desc": "Ključno pitanje nije više kako rasti nego kako ostati funkcionalan?",
     "agenda.d1.s4.title": "Kad pravila više ne vrijede – Igraju li organizacije i dalje staru igru? Powered by Greco",
     "agenda.d1.s5.title": "Pauza za kavu",
     "agenda.d1.s6.title": "Rast ne ubija organizacije. Nejasne odluke, da.",
