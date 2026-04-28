@@ -26,8 +26,8 @@ const KeynoteSection = () => {
             <div className="flex items-center gap-5 mb-10">
               <div className="h-16 w-16 rounded-full border border-primary-foreground/15 bg-primary-foreground/5" />
               <div>
-                <p className="text-primary-foreground font-semibold text-lg min-h-[1.75rem]">{"\u00A0"}</p>
-                <p className="text-primary-foreground/40 text-sm min-h-[1.25rem]">{"\u00A0"}</p>
+                <p className="text-primary-foreground font-semibold text-lg leading-tight">{t("keynote.speakerName")}</p>
+                <p className="text-primary-foreground/60 text-sm mt-0.5 leading-tight">{t("keynote.speakerTitle")}</p>
               </div>
             </div>
             <a href="#pricing">
