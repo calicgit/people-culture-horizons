@@ -261,6 +261,7 @@ const translations: Record<Language, Record<string, string>> = {
     "agenda.label": "Schedule",
     "agenda.title": "Conference Program",
     "agenda.subtitle": "",
+    "agenda.disclaimer": "*program is subject to change",
     "agenda.day1": "Day 1 - 26.11.2026.",
     "agenda.day2": "Day 2 - 27.11.2026.",
     "agenda.host": "Conference Host: Antonija Mandić",
