@@ -39,12 +39,12 @@ const SpeakersSection = () => {
         {/* Featured: Conference Host */}
         <div className="flex justify-center mb-10">
           <div className="inline-flex items-center gap-4 rounded-2xl border-2 border-accent/40 bg-gradient-to-r from-accent/10 via-accent/5 to-transparent px-5 py-3 shadow-elevated">
-            <div className="flex-shrink-0 w-14 h-14 rounded-full overflow-hidden ring-2 ring-accent/40">
+            <div className="flex-shrink-0 w-14 h-14 rounded-full overflow-hidden ring-2 ring-accent/40 bg-muted">
               <img
                 src={hostAntonija}
                 alt={t("speakers.host.name")}
                 className="w-full h-full object-cover"
-                style={{ objectPosition: "55% 18%", transform: "scale(1.9)" }}
+                style={{ objectPosition: "55% 22%", transform: "scale(1.25)" }}
               />
             </div>
             <div className="text-left leading-tight">
