@@ -211,6 +211,8 @@ const AgendaSection = () => {
             );
           })}
         </div>
+
+        <p className="mt-8 text-center text-sm md:text-base font-medium text-foreground">{t("agenda.host")}</p>
       </div>
     </section>
   );
