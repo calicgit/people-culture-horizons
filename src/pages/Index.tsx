@@ -19,6 +19,7 @@ const Index = () => {
       <CookieConsent />
       <Navbar />
       <HeroSection />
+      <HostBar />
       <TopicsSection />
       <KeynoteSection />
       <SpeakersSection />
