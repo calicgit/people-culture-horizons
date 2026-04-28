@@ -40,10 +40,7 @@ const SponsorLogo = ({ name, initials, size = "md" }: { name: string; initials: 
 };
 
 const PartnerLogo = ({ name, logo }: { name: string; logo: string }) => (
-  <div
-    className="w-48 h-28 md:w-56 md:h-32 rounded-2xl border border-border bg-card flex items-center justify-center p-4 hover:border-accent/30 hover:shadow-card transition-all duration-300"
-    title={name}
-  >
+  <div className="flex h-28 w-48 items-center justify-center p-4 md:h-32 md:w-56" title={name}>
     <img src={logo} alt={name} className="max-h-full max-w-full object-contain" />
   </div>
 );
