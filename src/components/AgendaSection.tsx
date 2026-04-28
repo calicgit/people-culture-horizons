@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { Clock, MapPin, Mic2, Coffee, Utensils, ChevronDown } from "lucide-react";
+import { Clock, MapPin, Mic2, Coffee, Utensils, ChevronDown, Presentation, Users, Wrench } from "lucide-react";
 import { useLanguage } from "@/contexts/LanguageContext";
 
 type SessionType = "keynote" | "talk" | "panel" | "workshop" | "break" | "networking";
@@ -57,6 +57,9 @@ const typeStyles: Record<SessionType, { dot: string; border: string }> = {
 const TypeIcon = ({ type }: { type: SessionType }) => {
   switch (type) {
     case "keynote": return <Mic2 className="w-4 h-4" />;
+    case "talk": return <Presentation className="w-4 h-4" />;
+    case "panel": return <Users className="w-4 h-4" />;
+    case "workshop": return <Wrench className="w-4 h-4" />;
     case "break": return <Coffee className="w-4 h-4" />;
     case "networking": return <Utensils className="w-4 h-4" />;
     default: return null;
