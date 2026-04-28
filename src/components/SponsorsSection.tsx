@@ -4,8 +4,8 @@ import partnerGreco from "@/assets/partner-greco.png";
 import partnerJenz from "@/assets/partner-jenz.png";
 
 const platinumPartners = [
-  { name: "Greco", logo: partnerGreco },
-  { name: "Jenz", logo: partnerJenz },
+  { name: "Greco", logo: partnerGreco, scale: 1 },
+  { name: "Jenz", logo: partnerJenz, scale: 1.45 },
 ];
 
 const goldSponsors = [
@@ -39,9 +39,9 @@ const SponsorLogo = ({ name, initials, size = "md" }: { name: string; initials: 
   );
 };
 
-const PartnerLogo = ({ name, logo }: { name: string; logo: string }) => (
+const PartnerLogo = ({ name, logo, scale = 1 }: { name: string; logo: string; scale?: number }) => (
   <div className="flex h-28 w-48 items-center justify-center p-4 md:h-32 md:w-56" title={name}>
-    <img src={logo} alt={name} className="max-h-full max-w-full object-contain" />
+    <img src={logo} alt={name} className="max-h-full max-w-full object-contain" style={{ transform: `scale(${scale})` }} />
   </div>
 );
 
@@ -58,7 +58,7 @@ const SponsorsSection = () => {
 
         <div className="mb-12 md:mb-14">
           <p className="text-center text-xs font-semibold uppercase tracking-[0.25em] text-accent mb-8">{t("sponsors.platinum")}</p>
-          <div className="flex flex-wrap items-center justify-center gap-6">
+          <div className="flex flex-wrap items-center justify-center gap-1 md:gap-2">
             {platinumPartners.map((p) => <PartnerLogo key={p.name} {...p} />)}
           </div>
         </div>
