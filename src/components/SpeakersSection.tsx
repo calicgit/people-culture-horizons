@@ -1,9 +1,28 @@
+import { User } from "lucide-react";
 import { useLanguage } from "@/contexts/LanguageContext";
+
+interface Speaker {
+  name: string;
+  title: string;
+  company: string;
+}
+
+const speakers: Speaker[] = [
+  { name: "Seni Staničić", title: "Head of Human Resources", company: "ENNA Group" },
+  { name: "Stefan Vukajlović", title: "Group HR Director for Compensation and Benefits", company: "Fortenova Group" },
+  { name: "Krešimir Barić", title: "CFO", company: "Erste&Steiermärkische Bank Croatia" },
+  { name: "Mirela Kotarac", title: "HR Director & Member of the Management Board", company: "Cemex Croatia" },
+  { name: "Mirta Pađen Lee", title: "Senior Director of Reward and Operations", company: "Infobip" },
+  { name: "Marija Felkel", title: "Group HR Director & Member of the Executive Committee", company: "Perutnina Ptuj Group" },
+  { name: "Marina Regjo", title: "HR Director", company: "FNG Property HR (Fortenova Group)" },
+  { name: "Iva Rogović Lekić", title: "CEO", company: "GrECo Specialty" },
+  { name: "Suzana Plečko", title: "Human Resources Director", company: "Franck" },
+  { name: "Martina Skorin", title: "Head of Human Resources", company: "HAKOM" },
+  { name: "Branimir Spajić", title: "Director | Strategic Human Resources Management", company: "Hrvatski Telekom" },
+];
 
 const SpeakersSection = () => {
   const { t } = useLanguage();
-
-  const speakers = Array.from({ length: 4 }, (_, idx) => ({ id: idx }));
 
   return (
     <section id="speakers" className="bg-section-alt py-20 md:py-24">
@@ -12,20 +31,23 @@ const SpeakersSection = () => {
           {t("speakers.label") && (
             <span className="text-accent font-semibold text-xs uppercase tracking-[0.25em]">{t("speakers.label")}</span>
           )}
-          <h2 className="text-2xl md:text-3xl lg:text-4xl font-bold text-foreground mt-4 mb-5">{t("speakers.title")}</h2>
+          <h2 className="text-2xl md:text-3xl lg:text-4xl font-bold text-foreground mt-4 mb-5 font-display">{t("speakers.title")}</h2>
           <div className="section-divider mb-6" />
         </div>
 
-        <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-8 max-w-6xl mx-auto">
+        <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-5 max-w-6xl mx-auto">
           {speakers.map((speaker) => (
-            <div key={speaker.id} className="group">
-              <div className="relative mb-6 overflow-hidden rounded-3xl aspect-[3/4] border border-border bg-card shadow-card group-hover:shadow-elevated transition-shadow duration-500">
-                <div className="absolute inset-0 bg-gradient-to-t from-foreground/10 via-transparent to-transparent" />
-                <div className="absolute bottom-5 left-5 right-5">
-                  <span className="mb-2 inline-block min-h-[1.75rem] rounded-full bg-accent/10 px-3 py-1 text-xs font-semibold text-accent">{"\u00A0"}</span>
-                  <h3 className="min-h-[1.75rem] text-lg font-bold text-foreground font-display">{"\u00A0"}</h3>
-                  <p className="mt-0.5 min-h-[1.25rem] text-sm font-light text-muted-foreground">{"\u00A0"}</p>
-                </div>
+            <div
+              key={speaker.name}
+              className="group flex items-start gap-4 rounded-2xl border border-border bg-card p-5 shadow-card transition-all duration-300 hover:shadow-elevated hover:border-accent/40"
+            >
+              <div className="flex-shrink-0 w-14 h-14 rounded-full bg-accent/10 flex items-center justify-center text-accent">
+                <User className="w-7 h-7" />
+              </div>
+              <div className="min-w-0 flex-1">
+                <h3 className="text-base font-bold text-foreground font-display leading-tight">{speaker.name}</h3>
+                <p className="mt-1 text-sm text-muted-foreground font-light leading-snug">{speaker.title}</p>
+                <p className="mt-1 text-sm font-semibold text-accent leading-snug">{speaker.company}</p>
               </div>
             </div>
           ))}
