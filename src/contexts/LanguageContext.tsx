@@ -62,6 +62,8 @@ const translations: Record<Language, Record<string, string>> = {
     "keynote.cta": "Rezerviraj svoje mjesto →",
     "keynote.years": "Godina istraživanja",
     "keynote.speakerAlt": "Glavna govornica",
+    "keynote.speakerName": "Josip Funda",
+    "keynote.speakerTitle": "Senior Economist, World Bank Group",
 
     // Speakers
     "speakers.label": "",
