@@ -1,5 +1,6 @@
 import Navbar from "@/components/Navbar";
 import HeroSection from "@/components/HeroSection";
+import HostBar from "@/components/HostBar";
 import TopicsSection from "@/components/TopicsSection";
 import KeynoteSection from "@/components/KeynoteSection";
 import SpeakersSection from "@/components/SpeakersSection";
