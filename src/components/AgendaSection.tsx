@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { Clock, MapPin, Mic2, Coffee, Utensils, ChevronDown, Presentation, Users, Wrench } from "lucide-react";
+import { Clock, MapPin, Mic2, Coffee, Utensils, ChevronDown, Presentation, Users, Wrench, Star } from "lucide-react";
 import { useLanguage } from "@/contexts/LanguageContext";
 
 type SessionType = "keynote" | "talk" | "panel" | "workshop" | "break" | "networking";
@@ -13,14 +13,15 @@ interface Session {
   type: SessionType;
   trackKey?: string;
   descKey?: string;
+  keynoteKind?: "talk" | "panel";
 }
 
 const agendaData: Record<string, Session[]> = {
   day1: [
     { time: "08:00", endTime: "09:00", titleKey: "agenda.d1.s1.title", type: "break" },
     { time: "09:00", endTime: "09:10", titleKey: "agenda.d1.s2.title", type: "talk", descKey: "agenda.d1.s2.desc" },
-    { time: "09:10", endTime: "09:40", titleKey: "agenda.d1.s3.title", type: "keynote" },
-    { time: "09:45", endTime: "10:30", titleKey: "agenda.d1.s4.title", type: "keynote" },
+    { time: "09:10", endTime: "09:40", titleKey: "agenda.d1.s3.title", type: "keynote", keynoteKind: "talk" },
+    { time: "09:45", endTime: "10:30", titleKey: "agenda.d1.s4.title", type: "keynote", keynoteKind: "panel" },
     { time: "10:30", endTime: "10:50", titleKey: "agenda.d1.s5.title", type: "break" },
     { time: "10:50", endTime: "11:10", titleKey: "agenda.d1.s6.title", type: "talk" },
     { time: "11:15", endTime: "12:00", titleKey: "agenda.d1.s7.title", type: "panel" },
@@ -131,9 +132,19 @@ const AgendaSection = () => {
             return (
               <div
                 key={itemKey}
-                className={`rounded-xl border border-border bg-card border-l-4 ${style.border} transition-all duration-300 hover:shadow-card ${hasDescription ? "cursor-pointer" : ""}`}
+                className={`relative rounded-xl border bg-card transition-all duration-300 hover:shadow-card ${hasDescription ? "cursor-pointer" : ""} ${
+                  session.type === "keynote"
+                    ? "border-accent/30 border-l-[6px] border-l-accent bg-gradient-to-r from-accent/5 to-transparent shadow-sm"
+                    : `border-border border-l-4 ${style.border}`
+                }`}
                 onClick={() => hasDescription && toggleItem(itemKey)}
               >
+                {session.type === "keynote" && (
+                  <div className="absolute -top-2.5 right-4 flex items-center gap-1 rounded-full bg-accent px-2.5 py-0.5 text-[10px] font-bold uppercase tracking-wider text-accent-foreground shadow-sm">
+                    <Star className="w-3 h-3 fill-current" />
+                    Keynote
+                  </div>
+                )}
                 <div className="flex gap-4 p-5">
                   <div className="flex-shrink-0 pt-0.5">
                     <div className="flex items-center gap-1.5 text-muted-foreground whitespace-nowrap">
@@ -164,12 +175,18 @@ const AgendaSection = () => {
                         </div>
                       </div>
                       <div className="flex items-center gap-2 flex-shrink-0 mt-0.5">
-                        {!isPlaceholder && (
-                          <span className="flex items-center gap-1 text-xs text-muted-foreground/60">
-                            <TypeIcon type={session.type} />
-                            {typeLabels[session.type]}
-                          </span>
-                        )}
+                        {!isPlaceholder && (() => {
+                          const displayType: SessionType =
+                            session.type === "keynote" && session.keynoteKind
+                              ? session.keynoteKind
+                              : session.type;
+                          return (
+                            <span className="flex items-center gap-1 text-xs text-muted-foreground/60">
+                              <TypeIcon type={displayType} />
+                              {typeLabels[displayType]}
+                            </span>
+                          );
+                        })()}
                         {hasDescription && (
                           <ChevronDown
                             className={`w-4 h-4 text-muted-foreground/50 transition-transform duration-200 ${isExpanded ? "rotate-180" : ""}`}
