@@ -1,5 +1,6 @@
-import { User, Mic2 } from "lucide-react";
+import { User } from "lucide-react";
 import { useLanguage } from "@/contexts/LanguageContext";
+import hostAntonija from "@/assets/host-antonija-mandic.jpg";
 
 interface Speaker {
   name: string;
@@ -33,6 +34,24 @@ const SpeakersSection = () => {
           )}
           <h2 className="text-2xl md:text-3xl lg:text-4xl font-bold text-foreground mt-4 mb-5 font-display">{t("speakers.title")}</h2>
           <div className="section-divider mb-6" />
+        </div>
+
+        {/* Featured: Conference Host */}
+        <div className="flex justify-center mb-10">
+          <div className="inline-flex items-center gap-4 rounded-2xl border-2 border-accent/40 bg-gradient-to-r from-accent/10 via-accent/5 to-transparent px-5 py-3 shadow-elevated">
+            <div className="flex-shrink-0 w-14 h-14 rounded-full overflow-hidden ring-2 ring-accent/40">
+              <img
+                src={hostAntonija}
+                alt={t("speakers.host.name")}
+                className="w-full h-full object-cover"
+                style={{ objectPosition: "60% 25%", transform: "scale(1.6)" }}
+              />
+            </div>
+            <div className="text-left leading-tight">
+              <h3 className="text-base font-bold text-foreground font-display">{t("speakers.host.name")}</h3>
+              <p className="mt-0.5 text-xs font-semibold text-accent">{t("speakers.host.role")}</p>
+            </div>
+          </div>
         </div>
 
         <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-5 max-w-6xl mx-auto">
