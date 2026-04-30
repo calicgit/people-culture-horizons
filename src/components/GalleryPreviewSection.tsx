@@ -1,3 +1,5 @@
+import { Link } from "react-router-dom";
+
 const galleryPreviewImages = [
   {
     src: "/gallery/P_C-39-2.jpg",
