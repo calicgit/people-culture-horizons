@@ -78,7 +78,7 @@ const GalleryPreviewSection = () => {
             Otvori galeriju →
           </span>
         </div>
-      </a>
+      </Link>
     </section>
   );
 };
