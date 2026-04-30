@@ -163,12 +163,15 @@ const translations: Record<Language, Record<string, string>> = {
     "cta.refund": "",
 
     // Footer
-    "footer.tagline": "Vodeća HR i poslovna konferencija • 26. – 27. studenog 2026.",
-    "footer.privacy": "Privatnost",
-    "footer.terms": "Uvjeti",
+    "footer.followUs": "Pratite nas",
     "footer.contact": "Kontakt",
-    "footer.sponsorship": "Sponzorstvo",
-    "footer.copyright": "© 2026 ElevateHR konferencija. Sva prava pridržana.",
+    "footer.programOrgMedia": "Program, organizacija, mediji i sponzori",
+    "footer.orgTitle": "People & Culture HORIZONS. - DeeP Project",
+    "footer.copyright": "© 2026 People & Culture HORIZONS. Sva prava pridržana.",
+    "footer.privacyPolicy": "Politika privatnosti",
+    "footer.privacyModalTitle": "Politika privatnosti",
+    "footer.privacyModalDesc": "Detalji o privatnosti i korištenju kolačića.",
+    "footer.parking": "u sklopu HOB centra",
 
     // Gallery
     "gallery.title": "",
@@ -361,12 +364,15 @@ const translations: Record<Language, Record<string, string>> = {
     "cta.refund": "",
 
     // Footer
-    "footer.tagline": "Leading HR & business conference • November 04 – 05, 2026",
-    "footer.privacy": "Privacy",
-    "footer.terms": "Terms",
+    "footer.followUs": "Follow us",
     "footer.contact": "Contact",
-    "footer.sponsorship": "Sponsorship",
-    "footer.copyright": "© 2026 ElevateHR Conference. All rights reserved.",
+    "footer.programOrgMedia": "Program, organization, media & sponsors",
+    "footer.orgTitle": "People & Culture HORIZONS. - DeeP Project",
+    "footer.copyright": "© 2026 People & Culture HORIZONS. All rights reserved.",
+    "footer.privacyPolicy": "Privacy Policy",
+    "footer.privacyModalTitle": "Privacy Policy",
+    "footer.privacyModalDesc": "Details about privacy and cookie usage.",
+    "footer.parking": "within the HOB Center complex",
 
     // Gallery
     "gallery.title": "Take a look at moments from last year's People & Culture HORIZONS conference.",
