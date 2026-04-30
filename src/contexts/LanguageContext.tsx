@@ -398,6 +398,7 @@ const translations: Record<Language, Record<string, string>> = {
     "reg.submit": "Submit Registration",
     "reg.toastTitle": "Thank you for your registration!",
     "reg.toastDesc": "You will soon receive a payment offer at your email address.",
+    "reg.ok": "OK",
     "reg.mailSubjectPrefix": "Registration",
     "reg.mailTicket": "Ticket",
     "reg.mailType": "Type",
