@@ -34,9 +34,6 @@ const KeynoteSection = () => {
               <Button variant="hero" size="lg" className="text-base px-10 py-6 rounded-full">{t("keynote.cta")}</Button>
             </a>
           </div>
-          <div className="relative hidden lg:block">
-            <div className="aspect-[4/5] rounded-3xl border border-primary-foreground/15 bg-primary-foreground/5" />
-          </div>
         </div>
       </div>
     </section>
