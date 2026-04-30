@@ -20,6 +20,7 @@ const speakers: Speaker[] = [
   { name: "Suzana Plečko", title: "Human Resources Director", company: "Franck" },
   { name: "Martina Skorin", title: "Head of Human Resources", company: "HAKOM" },
   { name: "Branimir Spajić", title: "Director | Strategic Human Resources Management", company: "Hrvatski Telekom" },
+  { name: "Sanja Škrinjar", title: "Human Resources Consultant", company: "DeeP Project" },
 ];
 
 const SpeakersSection = () => {
