@@ -200,6 +200,7 @@ const translations: Record<Language, Record<string, string>> = {
     "reg.submit": "Pošalji prijavu",
     "reg.toastTitle": "Zahvaljujemo na Vašoj prijavi!",
     "reg.toastDesc": "Uskoro ćete na Vašu e-mail adresu primiti ponudu za plaćanje.",
+    "reg.ok": "U redu",
     "reg.mailSubjectPrefix": "Prijava",
     "reg.mailTicket": "Ulaznica",
     "reg.mailType": "Tip",
