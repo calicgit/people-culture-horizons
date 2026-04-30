@@ -14,6 +14,8 @@ import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
 import { RadioGroup, RadioGroupItem } from "@/components/ui/radio-group";
 import { useLanguage } from "@/contexts/LanguageContext";
+import { supabase } from "@/integrations/supabase/client";
+import { toast } from "@/hooks/use-toast";
 
 interface RegistrationDialogProps {
   open: boolean;
@@ -46,44 +48,88 @@ const RegistrationDialog = ({ open, onOpenChange, tierName, tierPrice }: Registr
     e.preventDefault();
     setIsSubmitting(true);
 
-    const lines = [
-      `${t("reg.mailTicket")}: ${tierName} (${tierPrice})`,
-      `${t("reg.mailType")}: ${personType === "individual" ? t("reg.individual") : t("reg.company")}`,
-      "",
-      `${t("reg.fullName").replace(" *", "")}: ${form.fullName}`,
-      `${t("reg.companyName").replace(" *", "")}: ${form.companyName}`,
+    const escape = (s: string) =>
+      s.replace(/&/g, "&amp;").replace(/</g, "&lt;").replace(/>/g, "&gt;");
+
+    const rows: Array<[string, string]> = [
+      [t("reg.mailTicket"), `${tierName} (${tierPrice})`],
+      [t("reg.mailType"), personType === "individual" ? t("reg.individual") : t("reg.company")],
+      [t("reg.fullName").replace(" *", ""), form.fullName],
+      [t("reg.position").replace(" *", ""), form.position],
+      ["E-mail", form.email],
+      [t("reg.phone").replace(" *", ""), form.phone],
+      [
+        personType === "individual"
+          ? t("reg.companyNameIndividual").replace(" *", "")
+          : t("reg.companyName").replace(" *", ""),
+        form.companyName,
+      ],
     ];
 
     if (personType === "company") {
-      lines.push(`${t("reg.companyAddress").replace(" *", "")}: ${form.companyAddress}`);
-      lines.push(`${t("reg.cityPostal").replace(" *", "")}: ${form.cityPostal}`);
-      lines.push(`${t("reg.companyOIB").replace(" *", "")}: ${form.companyOIB}`);
+      rows.push([t("reg.companyAddress").replace(" *", ""), form.companyAddress]);
+      rows.push([t("reg.cityPostal").replace(" *", ""), form.cityPostal]);
+      rows.push([t("reg.companyOIB").replace(" *", ""), form.companyOIB]);
     }
 
-    lines.push(`${t("reg.position").replace(" *", "")}: ${form.position}`);
-    lines.push(`E-mail: ${form.email}`);
-    lines.push(`${t("reg.phone").replace(" *", "")}: ${form.phone}`);
-    if (form.promoCode) lines.push(`${t("reg.promoCode")}: ${form.promoCode}`);
+    if (form.promoCode) rows.push([t("reg.promoCode"), form.promoCode]);
 
-    const subject = encodeURIComponent(`${t("reg.mailSubjectPrefix")} - ${tierName} - ${form.fullName}`);
-    const body = encodeURIComponent(lines.join("\n"));
+    const tableRows = rows
+      .map(
+        ([label, value]) =>
+          `<tr><td style="padding:8px 12px;border:1px solid #e5e7eb;background:#f9fafb;font-weight:600;white-space:nowrap;">${escape(
+            label,
+          )}</td><td style="padding:8px 12px;border:1px solid #e5e7eb;">${escape(value || "-")}</td></tr>`,
+      )
+      .join("");
 
-    window.open(`mailto:horizons@peopleandculture.hr?subject=${subject}&body=${body}`, "_self");
+    const html = `
+      <div style="font-family:Arial,sans-serif;color:#111;">
+        <h2 style="margin:0 0 16px;">Nova prijava — ${escape(tierName)}</h2>
+        <table style="border-collapse:collapse;width:100%;max-width:640px;font-size:14px;">
+          ${tableRows}
+        </table>
+      </div>`;
 
-    setIsSubmitting(false);
-    onOpenChange(false);
-    setShowSuccessDialog(true);
-    setForm({
-      fullName: "",
-      companyName: "",
-      companyAddress: "",
-      cityPostal: "",
-      companyOIB: "",
-      position: "",
-      email: "",
-      phone: "",
-      promoCode: "",
-    });
+    const subject = `${t("reg.mailSubjectPrefix")} - ${tierName} - ${form.fullName}`;
+
+    try {
+      const { data, error } = await supabase.functions.invoke("send-email", {
+        body: {
+          to: "horizons@peopleandculture.hr",
+          replyTo: form.email,
+          subject,
+          html,
+        },
+      });
+
+      if (error || (data && (data as any).error)) {
+        throw new Error(error?.message || (data as any)?.error || "Send failed");
+      }
+
+      onOpenChange(false);
+      setShowSuccessDialog(true);
+      setForm({
+        fullName: "",
+        companyName: "",
+        companyAddress: "",
+        cityPostal: "",
+        companyOIB: "",
+        position: "",
+        email: "",
+        phone: "",
+        promoCode: "",
+      });
+    } catch (err) {
+      console.error("Registration send error:", err);
+      toast({
+        title: "Greška",
+        description: err instanceof Error ? err.message : "Slanje prijave nije uspjelo. Pokušajte ponovno.",
+        variant: "destructive",
+      });
+    } finally {
+      setIsSubmitting(false);
+    }
   };
 
   return (
