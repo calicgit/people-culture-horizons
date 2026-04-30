@@ -224,7 +224,7 @@ const RegistrationDialog = ({ open, onOpenChange, tierName, tierPrice }: Registr
             <AlertDialogDescription>{t("reg.toastDesc")}</AlertDialogDescription>
           </AlertDialogHeader>
           <AlertDialogFooter>
-            <AlertDialogAction>{t("cookie.accept")}</AlertDialogAction>
+            <AlertDialogAction>{t("reg.ok")}</AlertDialogAction>
           </AlertDialogFooter>
         </AlertDialogContent>
       </AlertDialog>
