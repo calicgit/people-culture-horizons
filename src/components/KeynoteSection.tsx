@@ -15,7 +15,7 @@ const KeynoteSection = () => {
       </div>
 
       <div className="container mx-auto px-6 relative z-10">
-        <div className="grid max-w-6xl items-center gap-12 lg:grid-cols-2 lg:gap-16 mx-auto">
+        <div className="max-w-3xl mx-auto">
           <div>
             <span className="text-accent font-semibold text-xs uppercase tracking-[0.25em]">{t("keynote.label")}</span>
             <h2 className="text-4xl md:text-5xl font-bold text-primary-foreground mt-4 mb-8 leading-tight">
