@@ -54,8 +54,8 @@ const galleryPreviewImages = [
 const GalleryPreviewSection = () => {
   return (
     <section className="bg-background py-12 md:py-16">
-      <a
-        href="/galerija-2025"
+      <Link
+        to="/galerija-2025"
         aria-label="Otvori Galeriju 2025"
         className="group block w-full overflow-hidden border-y border-border bg-card shadow-sm transition-[box-shadow,transform] duration-300 hover:shadow-lg focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2"
       >
