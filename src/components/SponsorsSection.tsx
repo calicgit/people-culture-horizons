@@ -7,21 +7,21 @@ import sponsorAtlantic from "@/assets/sponsor-atlantic.png";
 import patronMrms from "@/assets/patron-mrms.png";
 import patronHpk from "@/assets/patron-hpk.png";
 
-type LogoEntry = { name: string; logo: string; scale?: number };
+type LogoEntry = { name: string; logo: string; scale?: number; url: string };
 
 const platinumPartners: LogoEntry[] = [
-  { name: "Greco", logo: partnerGreco, scale: 1 },
-  { name: "Jenz", logo: partnerJenz, scale: 1.45 },
-  { name: "CogniPulse", logo: partnerCognipulse, scale: 1.8 },
+  { name: "Greco", logo: partnerGreco, scale: 1, url: "https://greco.services/greco-specijalisti-u-osiguranju-i-upravljanju-rizicima/" },
+  { name: "Jenz", logo: partnerJenz, scale: 1.45, url: "https://jenz.app/" },
+  { name: "CogniPulse", logo: partnerCognipulse, scale: 1.8, url: "https://cognipulse.io/" },
 ];
 
 const patrons: LogoEntry[] = [
-  { name: "Ministarstvo rada, mirovinskoga sustava, obitelji i socijalne politike", logo: patronMrms, scale: 1 },
-  { name: "Hrvatska psihološka komora", logo: patronHpk, scale: 1 },
+  { name: "Ministarstvo rada, mirovinskoga sustava, obitelji i socijalne politike", logo: patronMrms, scale: 1, url: "https://mrosp.gov.hr/" },
+  { name: "Hrvatska psihološka komora", logo: patronHpk, scale: 1, url: "https://www.psiholoska-komora.hr/" },
 ];
 
 const sponsors: LogoEntry[] = [
-  { name: "Atlantic Grupa", logo: sponsorAtlantic, scale: 1.65 },
+  { name: "Atlantic Grupa", logo: sponsorAtlantic, scale: 1.65, url: "https://www.atlanticgrupa.com/hr/" },
 ];
 
 const PartnerLogo = ({ name, logo, scale = 1, size = "lg" }: LogoEntry & { size?: "lg" | "md" | "sm" }) => {
