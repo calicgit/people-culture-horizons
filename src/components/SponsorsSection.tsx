@@ -80,7 +80,7 @@ const SponsorsSection = () => {
         <div className="border-t border-border pt-6 md:pt-8">
           <p className="mb-4 text-center text-xs font-semibold uppercase tracking-[0.25em] text-muted-foreground md:text-sm">{t("sponsors.organizer")}</p>
           <div className="flex items-center justify-center">
-            <a href="https://www.deepproject.hr" target="_blank" rel="noopener noreferrer" className="inline-block hover:opacity-80 transition-opacity">
+            <a href="https://deepproject.hr/" target="_blank" rel="noopener noreferrer" className="inline-block hover:opacity-80 transition-opacity">
               <img src={deepProjectLogo} alt="DeeP Project" className="object-contain" style={{ height: "8.25rem" }} />
             </a>
           </div>
