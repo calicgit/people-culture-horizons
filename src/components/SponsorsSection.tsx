@@ -12,7 +12,7 @@ type LogoEntry = { name: string; logo: string; scale?: number };
 const platinumPartners: LogoEntry[] = [
   { name: "Greco", logo: partnerGreco, scale: 1 },
   { name: "Jenz", logo: partnerJenz, scale: 1.45 },
-  { name: "CogniPulse", logo: partnerCognipulse, scale: 1.2 },
+  { name: "CogniPulse", logo: partnerCognipulse, scale: 2.2 },
 ];
 
 const patrons: LogoEntry[] = [
