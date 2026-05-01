@@ -7,33 +7,33 @@ import sponsorAtlantic from "@/assets/sponsor-atlantic.png";
 import patronMrms from "@/assets/patron-mrms.png";
 import patronHpk from "@/assets/patron-hpk.png";
 
-type LogoEntry = { name: string; logo: string; scale?: number };
+type LogoEntry = { name: string; logo: string; scale?: number; url: string };
 
 const platinumPartners: LogoEntry[] = [
-  { name: "Greco", logo: partnerGreco, scale: 1 },
-  { name: "Jenz", logo: partnerJenz, scale: 1.45 },
-  { name: "CogniPulse", logo: partnerCognipulse, scale: 1.8 },
+  { name: "Greco", logo: partnerGreco, scale: 1, url: "https://greco.services/greco-specijalisti-u-osiguranju-i-upravljanju-rizicima/" },
+  { name: "Jenz", logo: partnerJenz, scale: 1.45, url: "https://jenz.app/" },
+  { name: "CogniPulse", logo: partnerCognipulse, scale: 1.8, url: "https://cognipulse.io/" },
 ];
 
 const patrons: LogoEntry[] = [
-  { name: "Ministarstvo rada, mirovinskoga sustava, obitelji i socijalne politike", logo: patronMrms, scale: 1 },
-  { name: "Hrvatska psihološka komora", logo: patronHpk, scale: 1 },
+  { name: "Ministarstvo rada, mirovinskoga sustava, obitelji i socijalne politike", logo: patronMrms, scale: 1, url: "https://mrosp.gov.hr/" },
+  { name: "Hrvatska psihološka komora", logo: patronHpk, scale: 1, url: "https://www.psiholoska-komora.hr/" },
 ];
 
 const sponsors: LogoEntry[] = [
-  { name: "Atlantic Grupa", logo: sponsorAtlantic, scale: 1.65 },
+  { name: "Atlantic Grupa", logo: sponsorAtlantic, scale: 1.65, url: "https://www.atlanticgrupa.com/hr/" },
 ];
 
-const PartnerLogo = ({ name, logo, scale = 1, size = "lg" }: LogoEntry & { size?: "lg" | "md" | "sm" }) => {
+const PartnerLogo = ({ name, logo, scale = 1, url, size = "lg" }: LogoEntry & { size?: "lg" | "md" | "sm" }) => {
   const sizeClasses = {
     lg: "h-28 w-48 md:h-32 md:w-56",
     md: "h-24 w-40 md:h-28 md:w-48",
     sm: "h-20 w-32 md:h-24 md:w-40",
   };
   return (
-    <div className={`flex ${sizeClasses[size]} items-center justify-center p-4`} title={name}>
+    <a href={url} target="_blank" rel="noopener noreferrer" className={`flex ${sizeClasses[size]} items-center justify-center p-4 hover:opacity-80 transition-opacity`} title={name}>
       <img src={logo} alt={name} className="max-h-full max-w-full object-contain" style={{ transform: `scale(${scale})` }} />
-    </div>
+    </a>
   );
 };
 
@@ -80,7 +80,7 @@ const SponsorsSection = () => {
         <div className="border-t border-border pt-6 md:pt-8">
           <p className="mb-4 text-center text-xs font-semibold uppercase tracking-[0.25em] text-muted-foreground md:text-sm">{t("sponsors.organizer")}</p>
           <div className="flex items-center justify-center">
-            <a href="https://www.deepproject.hr" target="_blank" rel="noopener noreferrer" className="inline-block hover:opacity-80 transition-opacity">
+            <a href="https://deepproject.hr/" target="_blank" rel="noopener noreferrer" className="inline-block hover:opacity-80 transition-opacity">
               <img src={deepProjectLogo} alt="DeeP Project" className="object-contain" style={{ height: "8.25rem" }} />
             </a>
           </div>
