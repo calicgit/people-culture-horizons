@@ -2,6 +2,7 @@ import { useLanguage } from "@/contexts/LanguageContext";
 import deepProjectLogo from "@/assets/deep-project-logo.png";
 import partnerGreco from "@/assets/partner-greco.png";
 import partnerJenz from "@/assets/partner-jenz.png";
+import partnerCognipulse from "@/assets/partner-cognipulse.png";
 import sponsorAtlantic from "@/assets/sponsor-atlantic.png";
 import patronMrms from "@/assets/patron-mrms.png";
 import patronHpk from "@/assets/patron-hpk.png";
@@ -11,6 +12,7 @@ type LogoEntry = { name: string; logo: string; scale?: number };
 const platinumPartners: LogoEntry[] = [
   { name: "Greco", logo: partnerGreco, scale: 1 },
   { name: "Jenz", logo: partnerJenz, scale: 1.45 },
+  { name: "CogniPulse", logo: partnerCognipulse, scale: 1.2 },
 ];
 
 const patrons: LogoEntry[] = [
