@@ -4,12 +4,6 @@ import { useLanguage } from "@/contexts/LanguageContext";
 
 type SessionType = "keynote" | "talk" | "panel" | "workshop" | "break" | "networking";
 
-interface ParallelSession {
-  titleKey: string;
-  locationKey: string;
-  speaker?: string;
-}
-
 interface Session {
   time: string;
   endTime: string;
@@ -20,7 +14,6 @@ interface Session {
   trackKey?: string;
   descKey?: string;
   keynoteKind?: "talk" | "panel";
-  parallel?: ParallelSession[];
 }
 
 const agendaData: Record<string, Session[]> = {
