@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { User } from "lucide-react";
 import { Clock, MapPin, Mic2, Coffee, Utensils, ChevronDown, Presentation, Users, Wrench, Star } from "lucide-react";
 import { useLanguage } from "@/contexts/LanguageContext";
 
@@ -29,7 +30,7 @@ const agendaData: Record<string, Session[]> = {
     { time: "13:35", endTime: "13:55", titleKey: "agenda.d1.s9.title", speaker: "Stefan Vukajlović - Group HR Director for Compensation and Benefits, Fortenova Group", type: "talk", locationKey: "agenda.loc.main" },
     { time: "14:00", endTime: "14:45", titleKey: "agenda.d1.s10.title", type: "panel", locationKey: "agenda.loc.main" },
     { time: "14:45", endTime: "15:05", titleKey: "agenda.d1.s11.title", type: "break" },
-    { time: "15:05", endTime: "15:25", titleKey: "agenda.d1.s12.title", speaker: "Suzana Plečko - Human Resources Director", type: "talk", locationKey: "agenda.loc.main" },
+    { time: "15:05", endTime: "15:25", titleKey: "agenda.d1.s12.title", speaker: "Suzana Plečko - Human Resources Director, Franck", type: "talk", locationKey: "agenda.loc.main" },
     { time: "15:30", endTime: "16:15", titleKey: "agenda.d1.s13.title", type: "panel", locationKey: "agenda.loc.main" },
   ],
   day2: [
@@ -148,6 +149,13 @@ const AgendaSection = () => {
                   </div>
                 )}
                 <div className="flex gap-4 p-5">
+                  {session.speaker && (
+                    <div className="flex-shrink-0 self-center">
+                      <div className="w-12 h-12 rounded-full bg-muted border-2 border-border flex items-center justify-center overflow-hidden">
+                        <User className="w-6 h-6 text-muted-foreground/50" />
+                      </div>
+                    </div>
+                  )}
                   <div className="flex-shrink-0 pt-0.5">
                     <div className="flex items-center gap-1.5 text-muted-foreground whitespace-nowrap">
                       <Clock className="w-3.5 h-3.5 flex-shrink-0" />
