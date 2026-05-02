@@ -29,7 +29,7 @@ const agendaData: Record<string, Session[]> = {
     { time: "13:35", endTime: "13:55", titleKey: "agenda.d1.s9.title", speaker: "Stefan Vukajlović - Group HR Director for Compensation and Benefits, Fortenova Group", type: "talk", locationKey: "agenda.loc.main" },
     { time: "14:00", endTime: "14:45", titleKey: "agenda.d1.s10.title", type: "panel", locationKey: "agenda.loc.main" },
     { time: "14:45", endTime: "15:05", titleKey: "agenda.d1.s11.title", type: "break" },
-    { time: "15:05", endTime: "15:25", titleKey: "agenda.d1.s12.title", speaker: "Suzana Plečko - Human Resources Director", type: "talk", locationKey: "agenda.loc.main" },
+    { time: "15:05", endTime: "15:25", titleKey: "agenda.d1.s12.title", speaker: "Suzana Plečko - Human Resources Director, Franck", type: "talk", locationKey: "agenda.loc.main" },
     { time: "15:30", endTime: "16:15", titleKey: "agenda.d1.s13.title", type: "panel", locationKey: "agenda.loc.main" },
   ],
   day2: [
