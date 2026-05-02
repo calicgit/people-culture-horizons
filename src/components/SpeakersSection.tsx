@@ -12,7 +12,6 @@ interface Speaker {
   company: string;
   photo?: string;
   photoPosition?: string;
-  photoScale?: number;
   bioKey?: string;
 }
 
@@ -28,7 +27,7 @@ const speakers: Speaker[] = [
   { name: "Suzana Plečko", title: "Human Resources Director", company: "Franck" },
   { name: "Martina Skorin", title: "Head of Human Resources", company: "HAKOM" },
   { name: "Branimir Spajić", title: "Director | Strategic Human Resources Management", company: "Hrvatski Telekom" },
-  { name: "Sanja Škrinjar", title: "Human Resources Consultant", company: "DeeP Project", photo: speakerSanjaSkrinjar, photoPosition: "center 8%", photoScale: 1.24, bioKey: "speakers.bio.sanja_skrinjar" },
+  { name: "Sanja Škrinjar", title: "Human Resources Consultant", company: "DeeP Project", photo: speakerSanjaSkrinjar, photoPosition: "center 8%", bioKey: "speakers.bio.sanja_skrinjar" },
 ];
 
 const SpeakersSection = () => {
@@ -80,11 +79,7 @@ const SpeakersSection = () => {
                         src={speaker.photo}
                         alt={speaker.name}
                         className="w-full h-full object-cover"
-                        style={{
-                          objectPosition: speaker.photoPosition || "center",
-                          transform: speaker.photoScale ? `scale(${speaker.photoScale})` : undefined,
-                          transformOrigin: speaker.photoPosition || "center",
-                        }}
+                        style={{ objectPosition: speaker.photoPosition || "center" }}
                       />
                     </div>
                   ) : (
@@ -116,11 +111,7 @@ const SpeakersSection = () => {
                       src={selectedSpeaker.photo}
                       alt={selectedSpeaker.name}
                       className="w-full h-full object-cover"
-                      style={{
-                        objectPosition: selectedSpeaker.photoPosition || "center",
-                        transform: selectedSpeaker.photoScale ? `scale(${selectedSpeaker.photoScale})` : undefined,
-                        transformOrigin: selectedSpeaker.photoPosition || "center",
-                      }}
+                      style={{ objectPosition: selectedSpeaker.photoPosition || "center" }}
                     />
                   </div>
                 ) : (
