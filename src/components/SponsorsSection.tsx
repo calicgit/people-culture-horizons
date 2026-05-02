@@ -59,20 +59,20 @@ const SponsorsSection = () => {
           </div>
         </div>
 
-        {patrons.length > 0 && (
-          <div className="mb-12 md:mb-14">
-            <p className="text-center text-xs font-semibold uppercase tracking-[0.25em] text-muted-foreground mb-8">{t("sponsors.gold")}</p>
-            <div className="flex flex-wrap items-center justify-center gap-5">
-              {patrons.map((p) => <PartnerLogo key={p.name} {...p} size="md" />)}
-            </div>
-          </div>
-        )}
-
         {sponsors.length > 0 && (
           <div className="mb-12 md:mb-14">
             <p className="text-center text-xs font-semibold uppercase tracking-[0.25em] text-muted-foreground mb-8">{t("sponsors.community")}</p>
             <div className="flex flex-wrap items-center justify-center gap-4">
               {sponsors.map((s) => <PartnerLogo key={s.name} {...s} size="md" />)}
+            </div>
+          </div>
+        )}
+
+        {patrons.length > 0 && (
+          <div className="mb-12 md:mb-14">
+            <p className="text-center text-xs font-semibold uppercase tracking-[0.25em] text-muted-foreground mb-8">{t("sponsors.gold")}</p>
+            <div className="flex flex-wrap items-center justify-center gap-5">
+              {patrons.map((p) => <PartnerLogo key={p.name} {...p} size="md" />)}
             </div>
           </div>
         )}
