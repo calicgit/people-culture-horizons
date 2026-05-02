@@ -324,6 +324,9 @@ const translations: Record<Language, Record<string, string>> = {
     "agenda.d2.s10.desc": "Over these two days we touched on many topics: decisions, change, salaries, measurement, people development, and finally AI.\n\nAnd it all comes down to the same thing: organizations don't function poorly because they don't know what to do.\n\nThey function poorly because decisions aren't made properly, aren't carried out properly, and there's no understanding of how results actually come about. And when we add AI to that, we don't get a solution.\n\nWe get a catalyst. An acceleration of everything we already do, the good and the bad.\n\nSo perhaps the most important question that remains after this conference is not: what will we do differently?\n\nbut: what will we finally start to understand before we make the next decision.",
     // Locations
     "agenda.loc.main": "Main Hall",
+    "agenda.loc.air": "Hall Zrak",
+    "agenda.loc.earth": "Hall Zemlja",
+    "agenda.loc.fire": "Hall Vatra",
     "agenda.loc.hallA": "Hall A",
     "agenda.loc.hallB": "Hall B",
     "agenda.loc.workshop": "Workshop Room",
