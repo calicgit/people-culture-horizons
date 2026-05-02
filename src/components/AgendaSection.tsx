@@ -179,7 +179,6 @@ const AgendaSection = () => {
                           )}
                         </div>
                       </div>
-                      </div>
                       <div className="flex items-center gap-2 flex-shrink-0 mt-0.5">
                         {!isPlaceholder && (() => {
                           const displayType: SessionType =
