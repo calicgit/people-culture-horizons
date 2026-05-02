@@ -4,12 +4,6 @@ import { useLanguage } from "@/contexts/LanguageContext";
 
 type SessionType = "keynote" | "talk" | "panel" | "workshop" | "break" | "networking";
 
-interface ParallelSession {
-  titleKey: string;
-  locationKey: string;
-  speaker?: string;
-}
-
 interface Session {
   time: string;
   endTime: string;
@@ -20,7 +14,6 @@ interface Session {
   trackKey?: string;
   descKey?: string;
   keynoteKind?: "talk" | "panel";
-  parallel?: ParallelSession[];
 }
 
 const agendaData: Record<string, Session[]> = {
@@ -30,13 +23,8 @@ const agendaData: Record<string, Session[]> = {
     { time: "09:15", endTime: "09:45", titleKey: "agenda.d1.s3.title", type: "keynote", keynoteKind: "talk", locationKey: "agenda.loc.main" },
     { time: "09:50", endTime: "10:35", titleKey: "agenda.d1.s4.title", type: "keynote", keynoteKind: "panel", locationKey: "agenda.loc.main" },
     { time: "10:35", endTime: "10:55", titleKey: "agenda.d1.s5.title", type: "break" },
-    { time: "10:55", endTime: "11:15", titleKey: "agenda.d1.s6.title", type: "talk", locationKey: "agenda.loc.main", parallel: [
-      { titleKey: "Masterclass: Employer Branding", locationKey: "agenda.loc.air", speaker: "Ime Prezime" },
-      { titleKey: "Masterclass: Leadership 4.0", locationKey: "agenda.loc.earth", speaker: "Ime Prezime" },
-    ]},
-    { time: "11:20", endTime: "12:05", titleKey: "agenda.d1.s7.title", type: "panel", locationKey: "agenda.loc.main", parallel: [
-      { titleKey: "Masterclass: Employee Wellbeing", locationKey: "agenda.loc.fire", speaker: "Ime Prezime" },
-    ]},
+    { time: "10:55", endTime: "11:15", titleKey: "agenda.d1.s6.title", type: "talk", locationKey: "agenda.loc.main" },
+    { time: "11:20", endTime: "12:05", titleKey: "agenda.d1.s7.title", type: "panel", locationKey: "agenda.loc.main" },
     { time: "12:05", endTime: "13:35", titleKey: "agenda.d1.s8.title", type: "networking" },
     { time: "13:35", endTime: "13:55", titleKey: "agenda.d1.s9.title", type: "talk", locationKey: "agenda.loc.main" },
     { time: "14:00", endTime: "14:45", titleKey: "agenda.d1.s10.title", type: "panel", locationKey: "agenda.loc.main" },
@@ -190,27 +178,6 @@ const AgendaSection = () => {
                             </span>
                           )}
                         </div>
-                        {session.parallel && session.parallel.length > 0 && (
-                          <div className="mt-2.5 space-y-1.5">
-                            {session.parallel.map((p, pi) => (
-                              <div key={pi} className="flex items-center gap-2 text-xs bg-chart-4/10 text-chart-4 rounded-lg px-3 py-1.5 border border-chart-4/20">
-                                <Wrench className="w-3 h-3 flex-shrink-0" />
-                                <span className="font-medium">{p.titleKey}</span>
-                                <span className="text-chart-4/60">•</span>
-                                <span className="flex items-center gap-1 text-chart-4/70">
-                                  <MapPin className="w-2.5 h-2.5" />
-                                  {t(p.locationKey)}
-                                </span>
-                                {p.speaker && (
-                                  <>
-                                    <span className="text-chart-4/60">•</span>
-                                    <span className="text-chart-4/70">{p.speaker}</span>
-                                  </>
-                                )}
-                              </div>
-                            ))}
-                          </div>
-                         )}
                       </div>
                       <div className="flex items-center gap-2 flex-shrink-0 mt-0.5">
                         {!isPlaceholder && (() => {
