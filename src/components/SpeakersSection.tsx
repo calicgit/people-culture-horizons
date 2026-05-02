@@ -16,6 +16,7 @@ interface Speaker {
 }
 
 const speakers: Speaker[] = [
+  { name: "Ivan Bešlić", title: "Co-founder & CSO", company: "Sofascore" },
   { name: "Seni Staničić", title: "Head of Human Resources", company: "ENNA Group" },
   { name: "Stefan Vukajlović", title: "Group HR Director for Compensation and Benefits", company: "Fortenova Group" },
   { name: "Krešimir Barić", title: "CFO", company: "Erste&Steiermärkische Bank Croatia" },
