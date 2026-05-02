@@ -2,6 +2,7 @@ import { useState } from "react";
 import { User, X } from "lucide-react";
 import { useLanguage } from "@/contexts/LanguageContext";
 import hostAntonija from "@/assets/host-antonija-mandic.jpg";
+import speakerSanjaSkrinjar from "@/assets/speaker-sanja-skrinjar.jpg";
 import speakerMarijaFelkel from "@/assets/speaker-marija-felkel.jpg";
 import { Dialog, DialogContent } from "@/components/ui/dialog";
 
@@ -26,7 +27,7 @@ const speakers: Speaker[] = [
   { name: "Suzana Plečko", title: "Human Resources Director", company: "Franck" },
   { name: "Martina Skorin", title: "Head of Human Resources", company: "HAKOM" },
   { name: "Branimir Spajić", title: "Director | Strategic Human Resources Management", company: "Hrvatski Telekom" },
-  { name: "Sanja Škrinjar", title: "Human Resources Consultant", company: "DeeP Project" },
+  { name: "Sanja Škrinjar", title: "Human Resources Consultant", company: "DeeP Project", photo: speakerSanjaSkrinjar, photoPosition: "center 20%", bioKey: "speakers.bio.sanja_skrinjar" },
 ];
 
 const SpeakersSection = () => {
