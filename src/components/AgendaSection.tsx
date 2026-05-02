@@ -30,8 +30,13 @@ const agendaData: Record<string, Session[]> = {
     { time: "09:15", endTime: "09:45", titleKey: "agenda.d1.s3.title", type: "keynote", keynoteKind: "talk", locationKey: "agenda.loc.main" },
     { time: "09:50", endTime: "10:35", titleKey: "agenda.d1.s4.title", type: "keynote", keynoteKind: "panel", locationKey: "agenda.loc.main" },
     { time: "10:35", endTime: "10:55", titleKey: "agenda.d1.s5.title", type: "break" },
-    { time: "10:55", endTime: "11:15", titleKey: "agenda.d1.s6.title", type: "talk", locationKey: "agenda.loc.main" },
-    { time: "11:20", endTime: "12:05", titleKey: "agenda.d1.s7.title", type: "panel", locationKey: "agenda.loc.main" },
+    { time: "10:55", endTime: "11:15", titleKey: "agenda.d1.s6.title", type: "talk", locationKey: "agenda.loc.main", parallel: [
+      { titleKey: "Masterclass: Employer Branding", locationKey: "agenda.loc.air", speaker: "Ime Prezime" },
+      { titleKey: "Masterclass: Leadership 4.0", locationKey: "agenda.loc.earth", speaker: "Ime Prezime" },
+    ]},
+    { time: "11:20", endTime: "12:05", titleKey: "agenda.d1.s7.title", type: "panel", locationKey: "agenda.loc.main", parallel: [
+      { titleKey: "Masterclass: Employee Wellbeing", locationKey: "agenda.loc.fire", speaker: "Ime Prezime" },
+    ]},
     { time: "12:05", endTime: "13:35", titleKey: "agenda.d1.s8.title", type: "networking" },
     { time: "13:35", endTime: "13:55", titleKey: "agenda.d1.s9.title", type: "talk", locationKey: "agenda.loc.main" },
     { time: "14:00", endTime: "14:45", titleKey: "agenda.d1.s10.title", type: "panel", locationKey: "agenda.loc.main" },
