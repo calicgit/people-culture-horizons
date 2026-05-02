@@ -178,27 +178,7 @@ const AgendaSection = () => {
                             </span>
                           )}
                         </div>
-                        {session.parallel && session.parallel.length > 0 && (
-                          <div className="mt-2.5 space-y-1.5">
-                            {session.parallel.map((p, pi) => (
-                              <div key={pi} className="flex items-center gap-2 text-xs bg-chart-4/10 text-chart-4 rounded-lg px-3 py-1.5 border border-chart-4/20">
-                                <Wrench className="w-3 h-3 flex-shrink-0" />
-                                <span className="font-medium">{p.titleKey}</span>
-                                <span className="text-chart-4/60">•</span>
-                                <span className="flex items-center gap-1 text-chart-4/70">
-                                  <MapPin className="w-2.5 h-2.5" />
-                                  {t(p.locationKey)}
-                                </span>
-                                {p.speaker && (
-                                  <>
-                                    <span className="text-chart-4/60">•</span>
-                                    <span className="text-chart-4/70">{p.speaker}</span>
-                                  </>
-                                )}
-                              </div>
-                            ))}
-                          </div>
-                         )}
+                      </div>
                       </div>
                       <div className="flex items-center gap-2 flex-shrink-0 mt-0.5">
                         {!isPlaceholder && (() => {
