@@ -74,7 +74,7 @@ const SpeakersSection = () => {
               >
                 <div className="flex items-start gap-4 p-6">
                   {speaker.photo ? (
-                    <div className="flex-shrink-0 w-24 h-24 rounded-full overflow-hidden bg-muted">
+                    <div className="flex-shrink-0 w-28 h-28 rounded-full overflow-hidden bg-muted">
                       <img
                         src={speaker.photo}
                         alt={speaker.name}
@@ -83,8 +83,8 @@ const SpeakersSection = () => {
                       />
                     </div>
                   ) : (
-                    <div className="flex-shrink-0 w-24 h-24 rounded-full bg-accent/10 flex items-center justify-center text-accent">
-                      <User className="w-10 h-10" />
+                    <div className="flex-shrink-0 w-28 h-28 rounded-full bg-accent/10 flex items-center justify-center text-accent">
+                      <User className="w-12 h-12" />
                     </div>
                   )}
                   <div className="min-w-0 flex-1">
