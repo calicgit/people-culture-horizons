@@ -120,6 +120,9 @@ const translations: Record<Language, Record<string, string>> = {
     "agenda.d2.s10.desc": "U ova dva dana dotaknuli smo puno tema: odluke, promjene, plaće, mjerenje, razvoj ljudi i na kraju AI.\n\nI sve se na kraju svodi na istu stvar: organizacije ne funkcioniraju loše zato što ne znaju što treba napraviti.\n\nFunkcioniraju loše zato što se odluke ne donose kako treba, ne provode kako treba i ne razumiju kako zapravo nastaju rezultati. A kada na to dodamo AI, ne dobivamo rješenje.\n\nDobivamo katalizator. Ubrzanje svega što već radimo, dobrog i lošeg.\n\nZato možda najvažnije pitanje koje ostaje nakon ove konferencije nije: što ćemo raditi drugačije?\n\nnego: što ćemo napokon početi razumijevati prije nego što donesemo sljedeću odluku.",
     // Agenda locations
     "agenda.loc.main": "Glavna dvorana",
+    "agenda.loc.air": "Dvorana zrak",
+    "agenda.loc.earth": "Dvorana zemlja",
+    "agenda.loc.fire": "Dvorana vatra",
     "agenda.loc.hallA": "Dvorana A",
     "agenda.loc.hallB": "Dvorana B",
     "agenda.loc.workshop": "Dvorana za radionice",
