@@ -1,8 +1,8 @@
 import { useState } from "react";
-import { User, X } from "lucide-react";
+import { User } from "lucide-react";
 import { useLanguage } from "@/contexts/LanguageContext";
 import hostAntonija from "@/assets/host-antonija-mandic.jpg";
-import speakerMarijaFelkel from "@/assets/speaker-marija-felkel.jpg";
+import speakerMarijaFelkel from "@/assets/speaker-marija-felkel-avatar.jpg";
 import { Dialog, DialogContent } from "@/components/ui/dialog";
 
 interface Speaker {
@@ -20,7 +20,7 @@ const speakers: Speaker[] = [
   { name: "Krešimir Barić", title: "CFO", company: "Erste&Steiermärkische Bank Croatia" },
   { name: "Mirela Kotarac", title: "HR Director & Member of the Management Board", company: "Cemex Croatia" },
   { name: "Mirta Pađen Lee", title: "Senior Director of Reward and Operations", company: "Infobip" },
-  { name: "Marija Felkel", title: "Group HR Director & Member of the Executive Committee", company: "Perutnina Ptuj Group", photo: speakerMarijaFelkel, photoPosition: "65% 25%", bioKey: "speakers.bio.marija_felkel" },
+  { name: "Marija Felkel", title: "Group HR Director & Member of the Executive Committee", company: "Perutnina Ptuj Group", photo: speakerMarijaFelkel, photoPosition: "center", bioKey: "speakers.bio.marija_felkel" },
   { name: "Marina Regjo", title: "Human Resources Director", company: "FNG Property HR (Fortenova Group)" },
   { name: "Iva Rogović Lekić", title: "CEO", company: "GrECo Specialty" },
   { name: "Suzana Plečko", title: "Human Resources Director", company: "Franck" },
