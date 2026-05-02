@@ -23,7 +23,7 @@ const agendaData: Record<string, Session[]> = {
     { time: "09:15", endTime: "09:45", titleKey: "agenda.d1.s3.title", speaker: "Josip Funda - Senior Economist, World Bank Group", type: "keynote", keynoteKind: "talk", locationKey: "agenda.loc.main" },
     { time: "09:50", endTime: "10:35", titleKey: "agenda.d1.s4.title", type: "keynote", keynoteKind: "panel", locationKey: "agenda.loc.main" },
     { time: "10:35", endTime: "10:55", titleKey: "agenda.d1.s5.title", type: "break" },
-    { time: "10:55", endTime: "11:15", titleKey: "agenda.d1.s6.title", type: "talk", locationKey: "agenda.loc.main" },
+    { time: "10:55", endTime: "11:15", titleKey: "agenda.d1.s6.title", speaker: "Ivan Bešlić - Co-founder & CSO, Sofascore", type: "talk", locationKey: "agenda.loc.main" },
     { time: "11:20", endTime: "12:05", titleKey: "agenda.d1.s7.title", type: "panel", locationKey: "agenda.loc.main" },
     { time: "12:05", endTime: "13:35", titleKey: "agenda.d1.s8.title", type: "networking" },
     { time: "13:35", endTime: "13:55", titleKey: "agenda.d1.s9.title", speaker: "Stefan Vukajlović - Group HR Director for Compensation and Benefits, Fortenova Group", type: "talk", locationKey: "agenda.loc.main" },
