@@ -66,9 +66,10 @@ const translations: Record<Language, Record<string, string>> = {
     "keynote.speakerTitle": "Senior Economist, World Bank Group",
 
     // Speakers
-    "speakers.label": "",
-    "speakers.title": "Govornici",
-    "speakers.subtitle": "",
+     "speakers.label": "",
+     "speakers.title": "Govornici",
+     "speakers.subtitle": "",
+     "speakers.bio.marija_felkel": "Marija Felkel je HR stručnjakinja s više od 25 godina međunarodnog iskustva u visokotehnološkim inovativnim industrijama. Jedna je od autoriteta na području ljudskih potencijala s izvrsnim poznavanjem globalnih trendova. Posebnu pažnju pridaje identifikaciji i razvoju talenata, stvaranju uspješnog partnerstva između poslovanja i funkcije ljudskih potencijala te upravljanju kulturom i iskustvom zaposlenika. Aktivno promiče STEM područja, ravnopravnost žena u biznisu i jednake zastupljenosti na upravljačkim pozicijama te ističe vrijednosti uključivog i odgovornog vodstva. Od 1. veljače 2026. godine, nakon četiri godine rada u Nomad Foods kompaniji pridružila se Perutnina Ptuj Grupi gdje će njezin fokus biti na omogućavanju poslovne uspještnosti, jačanju organizacijskih struktura, podršci učinkovitosti vodstva te osiguravnju da ljudski potencijali djeluju kao pravi partner poslovanju na svim tržištima na kojima Grupa djeluje.",
 
     // Agenda
     "agenda.label": "Raspored",
@@ -265,9 +266,10 @@ const translations: Record<Language, Record<string, string>> = {
     "keynote.speakerTitle": "Senior Economist, World Bank Group",
 
     // Speakers
-    "speakers.label": "",
-    "speakers.title": "Speakers",
-    "speakers.subtitle": "",
+     "speakers.label": "",
+     "speakers.title": "Speakers",
+     "speakers.subtitle": "",
+     "speakers.bio.marija_felkel": "Marija Felkel is an HR professional with over 25 years of international experience in high-tech innovative industries. She is one of the authorities in the field of human resources with excellent knowledge of global trends. She pays special attention to talent identification and development, creating successful partnerships between business and the HR function, and managing employee culture and experience. She actively promotes STEM fields, gender equality in business, and equal representation in management positions, highlighting the values of inclusive and responsible leadership. As of February 1, 2026, after four years at Nomad Foods, she joined the Perutnina Ptuj Group where her focus will be on enabling business success, strengthening organizational structures, supporting leadership effectiveness, and ensuring that human resources act as a true business partner across all markets where the Group operates.",
 
     // Agenda
     "agenda.label": "Schedule",
