@@ -120,6 +120,9 @@ const translations: Record<Language, Record<string, string>> = {
     "agenda.d2.s10.desc": "U ova dva dana dotaknuli smo puno tema: odluke, promjene, plaće, mjerenje, razvoj ljudi i na kraju AI.\n\nI sve se na kraju svodi na istu stvar: organizacije ne funkcioniraju loše zato što ne znaju što treba napraviti.\n\nFunkcioniraju loše zato što se odluke ne donose kako treba, ne provode kako treba i ne razumiju kako zapravo nastaju rezultati. A kada na to dodamo AI, ne dobivamo rješenje.\n\nDobivamo katalizator. Ubrzanje svega što već radimo, dobrog i lošeg.\n\nZato možda najvažnije pitanje koje ostaje nakon ove konferencije nije: što ćemo raditi drugačije?\n\nnego: što ćemo napokon početi razumijevati prije nego što donesemo sljedeću odluku.",
     // Agenda locations
     "agenda.loc.main": "Glavna dvorana",
+    "agenda.loc.air": "Dvorana zrak",
+    "agenda.loc.earth": "Dvorana zemlja",
+    "agenda.loc.fire": "Dvorana vatra",
     "agenda.loc.hallA": "Dvorana A",
     "agenda.loc.hallB": "Dvorana B",
     "agenda.loc.workshop": "Dvorana za radionice",
@@ -321,6 +324,9 @@ const translations: Record<Language, Record<string, string>> = {
     "agenda.d2.s10.desc": "Over these two days we touched on many topics: decisions, change, salaries, measurement, people development, and finally AI.\n\nAnd it all comes down to the same thing: organizations don't function poorly because they don't know what to do.\n\nThey function poorly because decisions aren't made properly, aren't carried out properly, and there's no understanding of how results actually come about. And when we add AI to that, we don't get a solution.\n\nWe get a catalyst. An acceleration of everything we already do, the good and the bad.\n\nSo perhaps the most important question that remains after this conference is not: what will we do differently?\n\nbut: what will we finally start to understand before we make the next decision.",
     // Locations
     "agenda.loc.main": "Main Hall",
+    "agenda.loc.air": "Hall Zrak",
+    "agenda.loc.earth": "Hall Zemlja",
+    "agenda.loc.fire": "Hall Vatra",
     "agenda.loc.hallA": "Hall A",
     "agenda.loc.hallB": "Hall B",
     "agenda.loc.workshop": "Workshop Room",
