@@ -114,7 +114,7 @@ const SpeakersSection = () => {
                       src={selectedSpeaker.photo}
                       alt={selectedSpeaker.name}
                       className="w-full h-full object-cover"
-                      style={{ objectPosition: selectedSpeaker.photoPosition || "center" }}
+                      style={{ objectPosition: selectedSpeaker.photoPosition || "center", transform: selectedSpeaker.photoScale ? `scale(${selectedSpeaker.photoScale})` : undefined }}
                     />
                   </div>
                 ) : (
