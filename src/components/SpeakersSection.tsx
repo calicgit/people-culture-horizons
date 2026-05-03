@@ -4,6 +4,7 @@ import { useLanguage } from "@/contexts/LanguageContext";
 import hostAntonija from "@/assets/host-antonija-mandic.jpg";
 import speakerSanjaSkrinjar from "@/assets/speaker-sanja-skrinjar.jpg";
 import speakerMarijaFelkel from "@/assets/speaker-marija-felkel.jpg";
+import speakerMirelaKotarac from "@/assets/speaker-mirela-kotarac.jpg";
 import { Dialog, DialogContent } from "@/components/ui/dialog";
 
 interface Speaker {
@@ -20,7 +21,7 @@ const speakers: Speaker[] = [
   { name: "Seni Staničić", title: "Head of Human Resources", company: "ENNA Group" },
   { name: "Stefan Vukajlović", title: "Group HR Director for Compensation and Benefits", company: "Fortenova Group" },
   { name: "Krešimir Barić", title: "CFO", company: "Erste&Steiermärkische Bank Croatia" },
-  { name: "Mirela Kotarac", title: "HR Director & Member of the Management Board", company: "Cemex Croatia" },
+  { name: "Mirela Kotarac", title: "HR Director & Member of the Management Board", company: "Cemex Croatia", photo: speakerMirelaKotarac, photoPosition: "center 20%", bioKey: "speakers.bio.mirela_kotarac" },
   { name: "Mirta Pađen Lee", title: "Senior Director of Reward and Operations", company: "Infobip" },
   { name: "Marija Felkel", title: "Group HR Director & Member of the Executive Committee", company: "Perutnina Ptuj Group", photo: speakerMarijaFelkel, photoPosition: "65% 25%", bioKey: "speakers.bio.marija_felkel" },
   { name: "Marina Regjo", title: "Human Resources Director", company: "FNG Property HR (Fortenova Group)" },
