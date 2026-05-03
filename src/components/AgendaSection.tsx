@@ -37,7 +37,7 @@ const agendaData: Record<string, Session[]> = {
     { time: "09:00", endTime: "09:30", titleKey: "agenda.d2.s2.title", type: "keynote", keynoteKind: "talk", locationKey: "agenda.loc.main" },
     { time: "09:35", endTime: "10:20", titleKey: "agenda.d2.s3.title", type: "keynote", keynoteKind: "panel", locationKey: "agenda.loc.main" },
     { time: "10:20", endTime: "10:40", titleKey: "agenda.d2.s4.title", type: "break" },
-    { time: "10:45", endTime: "11:05", titleKey: "agenda.d2.s5.title", speaker: "Sanja Škrinjar - Human Resources Consultant, DeeP Project", type: "talk", locationKey: "agenda.loc.main" },
+    { time: "10:45", endTime: "11:05", titleKey: "agenda.d2.s5.title", speaker: "Sanja Škrinjar - Team Lead & HR Consultant, DeeP Project", type: "talk", locationKey: "agenda.loc.main" },
     { time: "11:10", endTime: "11:55", titleKey: "agenda.d2.s6.title", type: "panel", locationKey: "agenda.loc.main" },
     { time: "11:55", endTime: "12:15", titleKey: "agenda.d2.s7.title", type: "break" },
     { time: "12:15", endTime: "13:00", titleKey: "agenda.d2.s8.title", type: "panel", locationKey: "agenda.loc.main" },
