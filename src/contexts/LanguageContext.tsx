@@ -172,7 +172,7 @@ const translations: Record<Language, Record<string, string>> = {
     "cta.refund": "",
 
     // Footer
-    "footer.followUs": "Pratite nas",
+    "footer.followUs": "Pratite nas:",
     "footer.contact": "Kontakt",
     "footer.programOrgMedia": "Program, organizacija, mediji i sponzori",
     "footer.orgTitle": "People & Culture HORIZONS. - DeeP Project",
