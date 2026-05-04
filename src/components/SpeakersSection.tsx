@@ -109,7 +109,7 @@ const SpeakersSection = () => {
 
       {/* Bio Dialog */}
       <Dialog open={!!selectedSpeaker} onOpenChange={(open) => !open && setSelectedSpeaker(null)}>
-        <DialogContent className="sm:max-w-lg p-0 overflow-hidden">
+        <DialogContent className="sm:max-w-lg p-0 max-h-[85vh] overflow-y-auto">
           {selectedSpeaker && (
             <div className="p-6 sm:p-8">
               <div className="flex items-center gap-5 mb-6">
