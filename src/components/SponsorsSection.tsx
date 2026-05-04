@@ -50,9 +50,9 @@ const SponsorsSection = () => {
 
         <div className="mb-12 md:mb-14">
           <p className="text-center text-xs font-semibold uppercase tracking-[0.25em] text-muted-foreground mb-8">{t("sponsors.platinum")}</p>
-          <div className="flex flex-wrap items-center justify-center">
-            {platinumPartners.map((p, i) => (
-              <div key={p.name} className={i > 0 ? "-ml-8 md:-ml-10" : ""}>
+          <div className="flex flex-wrap items-center justify-center gap-x-0 md:gap-x-0">
+            {platinumPartners.map((p) => (
+              <div key={p.name}>
                 <PartnerLogo {...p} size="lg" />
               </div>
             ))}
