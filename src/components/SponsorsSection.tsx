@@ -50,9 +50,9 @@ const SponsorsSection = () => {
 
         <div className="mb-12 md:mb-14">
           <p className="text-center text-xs font-semibold uppercase tracking-[0.25em] text-muted-foreground mb-8">{t("sponsors.platinum")}</p>
-          <div className="grid grid-cols-2 md:grid-cols-3 place-items-center">
+          <div className="flex flex-wrap items-center justify-center">
             {platinumPartners.map((p) => (
-              <div key={p.name} className={platinumPartners.length % 2 !== 0 && p === platinumPartners[0] ? "col-span-2 md:col-span-1" : ""}>
+              <div key={p.name} className="w-1/2 flex justify-center md:w-auto">
                 <PartnerLogo {...p} size="lg" />
               </div>
             ))}
