@@ -193,7 +193,7 @@ const AgendaSection = () => {
                             </span>
                           );
                         })()}
-                        {hasDescription && (
+                        {isExpandable && (
                           <ChevronDown
                             className={`w-4 h-4 text-accent transition-transform duration-200 ${isExpanded ? "rotate-180" : ""}`}
                           />
