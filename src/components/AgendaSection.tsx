@@ -127,6 +127,7 @@ const AgendaSection = () => {
             const itemKey = `${dayKeys[activeDayIdx]}-${session.time}-${i}`;
             const isExpanded = expandedItems.has(itemKey);
             const hasDescription = !!session.descKey;
+            const isExpandable = !isBreak;
             const isPlaceholder = !session.titleKey && !session.speaker && !session.locationKey && !session.trackKey && !session.descKey;
             const title = session.titleKey ? t(session.titleKey) : "";
             const timeRange = session.time && session.endTime ? `${session.time} – ${session.endTime}` : "";
