@@ -5,6 +5,7 @@ import hostAntonija from "@/assets/host-antonija-mandic.jpg";
 import speakerSanjaSkrinjar from "@/assets/speaker-sanja-skrinjar.jpg";
 import speakerMarijaFelkel from "@/assets/speaker-marija-felkel.jpg";
 import speakerMirelaKotarac from "@/assets/speaker-mirela-kotarac.jpg";
+import speakerIvanZubak from "@/assets/speaker-ivan-zubak.jpg";
 import { Dialog, DialogContent } from "@/components/ui/dialog";
 
 interface Speaker {
