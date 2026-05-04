@@ -6,6 +6,7 @@ import speakerSanjaSkrinjar from "@/assets/speaker-sanja-skrinjar.jpg";
 import speakerMarijaFelkel from "@/assets/speaker-marija-felkel.jpg";
 import speakerMirelaKotarac from "@/assets/speaker-mirela-kotarac.jpg";
 import speakerIvanZubak from "@/assets/speaker-ivan-zubak.png";
+import speakerIvanBeslic from "@/assets/speaker-ivan-beslic.jpg";
 import { Dialog, DialogContent } from "@/components/ui/dialog";
 
 interface Speaker {
@@ -19,7 +20,7 @@ interface Speaker {
 }
 
 const speakers: Speaker[] = [
-  { name: "Ivan Bešlić", title: "Co-founder & CSO", company: "Sofascore" },
+  { name: "Ivan Bešlić", title: "Co-founder & CSO", company: "Sofascore", photo: speakerIvanBeslic, photoPosition: "center 25%", photoScale: 1.2, bioKey: "speakers.bio.ivan_beslic" },
   { name: "Seni Staničić", title: "Head of Human Resources", company: "ENNA Group" },
   { name: "Stefan Vukajlović", title: "Group HR Director for Compensation and Benefits", company: "Fortenova Group" },
   { name: "Krešimir Barić", title: "CFO", company: "Erste&Steiermärkische Bank Croatia" },
