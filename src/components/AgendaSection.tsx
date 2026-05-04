@@ -194,7 +194,7 @@ const AgendaSection = () => {
                         })()}
                         {hasDescription && (
                           <ChevronDown
-                            className={`w-4 h-4 text-muted-foreground/50 transition-transform duration-200 ${isExpanded ? "rotate-180" : ""}`}
+                            className={`w-4 h-4 text-accent transition-transform duration-200 ${isExpanded ? "rotate-180" : ""}`}
                           />
                         )}
                       </div>
