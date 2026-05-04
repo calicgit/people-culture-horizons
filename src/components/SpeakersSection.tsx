@@ -7,6 +7,7 @@ import speakerMarijaFelkel from "@/assets/speaker-marija-felkel.jpg";
 import speakerMirelaKotarac from "@/assets/speaker-mirela-kotarac.jpg";
 import speakerIvanZubak from "@/assets/speaker-ivan-zubak.png";
 import speakerIvanBeslic from "@/assets/speaker-ivan-beslic.png";
+import speakerIvaRogovicLekic from "@/assets/speaker-iva-rogovic-lekic.jpg";
 import { Dialog, DialogContent } from "@/components/ui/dialog";
 
 interface Speaker {
@@ -28,7 +29,7 @@ const speakers: Speaker[] = [
   { name: "Mirta Pađen Lee", title: "Senior Director of Reward and Operations", company: "Infobip" },
   { name: "Marija Felkel", title: "Group HR Director & Member of the Executive Committee", company: "Perutnina Ptuj Group", photo: speakerMarijaFelkel, photoPosition: "65% 25%", bioKey: "speakers.bio.marija_felkel" },
   { name: "Marina Regjo", title: "Human Resources Director", company: "FNG Property HR (Fortenova Group)" },
-  { name: "Iva Rogović Lekić", title: "CEO", company: "GrECo Specialty" },
+  { name: "Iva Rogović Lekić", title: "CEO", company: "GrECo Specialty", photo: speakerIvaRogovicLekic, photoPosition: "center 20%", photoScale: 1.0, bioKey: "speakers.bio.iva_rogovic_lekic" },
   { name: "Suzana Plečko", title: "Human Resources Director", company: "Franck" },
   { name: "Martina Skorin", title: "Head of Human Resources", company: "HAKOM" },
   { name: "Branimir Spajić", title: "Director | Strategic Human Resources Management", company: "Hrvatski Telekom" },
