@@ -30,6 +30,8 @@ const speakers: Speaker[] = [
   { name: "Suzana Plečko", title: "Human Resources Director", company: "Franck" },
   { name: "Martina Skorin", title: "Head of Human Resources", company: "HAKOM" },
   { name: "Branimir Spajić", title: "Director | Strategic Human Resources Management", company: "Hrvatski Telekom" },
+  { name: "Ivan Zubak", title: "CEO", company: "Zubak Grupa", bioKey: "speakers.bio.ivan_zubak" },
+  { name: "Mladen Pejković", title: "Senior Executive Director, Transformation & ICT", company: "Atlantic Grupa" },
   { name: "Sanja Škrinjar", title: "Team Lead & HR Consultant", company: "DeeP Project", photo: speakerSanjaSkrinjar, photoPosition: "center 8%", bioKey: "speakers.bio.sanja_skrinjar" },
 ];
 
