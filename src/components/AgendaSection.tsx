@@ -135,12 +135,12 @@ const AgendaSection = () => {
             return (
               <div
                 key={itemKey}
-                className={`relative rounded-xl border bg-card transition-all duration-300 hover:shadow-card ${hasDescription ? "cursor-pointer" : ""} ${
+                className={`relative rounded-xl border bg-card transition-all duration-300 hover:shadow-card ${isExpandable ? "cursor-pointer" : ""} ${
                   session.type === "keynote"
                     ? "border-accent/30 border-l-[6px] border-l-accent bg-gradient-to-r from-accent/5 to-transparent shadow-sm"
                     : `border-border border-l-4 ${style.border}`
                 }`}
-                onClick={() => hasDescription && toggleItem(itemKey)}
+                onClick={() => isExpandable && toggleItem(itemKey)}
               >
                 {session.type === "keynote" && (
                   <div className="absolute -top-2.5 right-4 flex items-center gap-1 rounded-full bg-accent px-2.5 py-0.5 text-[10px] font-bold uppercase tracking-wider text-accent-foreground shadow-sm">
