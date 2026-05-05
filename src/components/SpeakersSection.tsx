@@ -7,6 +7,7 @@ import speakerMarijaFelkel from "@/assets/speaker-marija-felkel.jpg";
 import speakerMirelaKotarac from "@/assets/speaker-mirela-kotarac.jpg";
 import speakerIvanZubak from "@/assets/speaker-ivan-zubak.png";
 import speakerIvanBeslic from "@/assets/speaker-ivan-beslic.png";
+import speakerMladenPejkovic from "@/assets/speaker-mladen-pejkovic.png";
 import speakerIvaRogovicLekic from "@/assets/speaker-iva-rogovic-lekic.jpg";
 import { Dialog, DialogContent } from "@/components/ui/dialog";
 
@@ -34,7 +35,7 @@ const speakers: Speaker[] = [
   { name: "Martina Skorin", title: "Head of Human Resources", company: "HAKOM" },
   { name: "Branimir Spajić", title: "Director | Strategic Human Resources Management", company: "Hrvatski Telekom" },
   { name: "Ivan Zubak", title: "CEO", company: "Zubak Grupa", photo: speakerIvanZubak, photoPosition: "38% 24%", photoScale: 1.0, bioKey: "speakers.bio.ivan_zubak" },
-  { name: "Mladen Pejković", title: "Senior Executive Director, Transformation & ICT", company: "Atlantic Grupa" },
+  { name: "Mladen Pejković", title: "Senior Executive Director, Transformation & ICT", company: "Atlantic Grupa", photo: speakerMladenPejkovic, photoPosition: "center 20%", photoScale: 1.15 },
   { name: "Sanja Škrinjar", title: "Team Lead & HR Consultant", company: "DeeP Project", photo: speakerSanjaSkrinjar, photoPosition: "center 8%", bioKey: "speakers.bio.sanja_skrinjar" },
 ];
 
