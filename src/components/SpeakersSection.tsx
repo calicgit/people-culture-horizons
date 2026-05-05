@@ -7,6 +7,7 @@ import speakerMarijaFelkel from "@/assets/speaker-marija-felkel.jpg";
 import speakerMirelaKotarac from "@/assets/speaker-mirela-kotarac.jpg";
 import speakerIvanZubak from "@/assets/speaker-ivan-zubak.png";
 import speakerIvanBeslic from "@/assets/speaker-ivan-beslic.png";
+import speakerMladenPejkovic from "@/assets/speaker-mladen-pejkovic.png";
 import speakerIvaRogovicLekic from "@/assets/speaker-iva-rogovic-lekic.jpg";
 import { Dialog, DialogContent } from "@/components/ui/dialog";
 
