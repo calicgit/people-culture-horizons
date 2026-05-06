@@ -8,7 +8,7 @@ import patronMrms from "@/assets/patron-mrms.png";
 import patronHpk from "@/assets/patron-hpk.png";
 import patronPchub from "@/assets/patron-pchub.svg";
 
-type LogoEntry = { name: string; logo: string; scale?: number; url: string };
+type LogoEntry = { name: string; logo: string; scale?: number; url: string; yOffset?: number };
 
 const platinumPartners: LogoEntry[] = [
   { name: "Greco", logo: partnerGreco, scale: 1, url: "https://greco.services/greco-specijalisti-u-osiguranju-i-upravljanju-rizicima/" },
@@ -19,14 +19,14 @@ const platinumPartners: LogoEntry[] = [
 const patrons: LogoEntry[] = [
   { name: "Ministarstvo rada, mirovinskoga sustava, obitelji i socijalne politike", logo: patronMrms, scale: 1, url: "https://mrosp.gov.hr/" },
   { name: "Hrvatska psihološka komora", logo: patronHpk, scale: 1, url: "https://www.psiholoska-komora.hr/" },
-  { name: "People & Culture HUB", logo: patronPchub, scale: 1.3, url: "https://hub.peopleandculture.hr/" },
+  { name: "People & Culture HUB", logo: patronPchub, scale: 1.3, url: "https://hub.peopleandculture.hr/", yOffset: 6 },
 ];
 
 const sponsors: LogoEntry[] = [
   { name: "Atlantic Grupa", logo: sponsorAtlantic, scale: 1.65, url: "https://www.atlanticgrupa.com/hr/" },
 ];
 
-const PartnerLogo = ({ name, logo, scale = 1, url, size = "lg" }: LogoEntry & { size?: "lg" | "md" | "sm" }) => {
+const PartnerLogo = ({ name, logo, scale = 1, url, size = "lg", yOffset = 0 }: LogoEntry & { size?: "lg" | "md" | "sm" }) => {
   const sizeClasses = {
     lg: "h-28 w-48 md:h-32 md:w-56",
     md: "h-24 w-40 md:h-28 md:w-48",
@@ -34,7 +34,7 @@ const PartnerLogo = ({ name, logo, scale = 1, url, size = "lg" }: LogoEntry & { 
   };
   return (
     <a href={url} target="_blank" rel="noopener noreferrer" className={`flex ${sizeClasses[size]} items-center justify-center p-4 hover:opacity-80 transition-opacity`} title={name}>
-      <img src={logo} alt={name} className="max-h-full max-w-full object-contain" style={{ transform: `scale(${scale})` }} />
+      <img src={logo} alt={name} className="max-h-full max-w-full object-contain" style={{ transform: `scale(${scale}) translateY(${yOffset}px)` }} />
     </a>
   );
 };
