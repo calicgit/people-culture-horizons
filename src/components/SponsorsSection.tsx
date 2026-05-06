@@ -6,6 +6,7 @@ import partnerCognipulse from "@/assets/partner-cognipulse.png";
 import sponsorAtlantic from "@/assets/sponsor-atlantic.png";
 import patronMrms from "@/assets/patron-mrms.png";
 import patronHpk from "@/assets/patron-hpk.png";
+import patronPchub from "@/assets/patron-pchub.svg";
 
 type LogoEntry = { name: string; logo: string; scale?: number; url: string };
 
