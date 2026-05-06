@@ -8,7 +8,7 @@ import patronMrms from "@/assets/patron-mrms.png";
 import patronHpk from "@/assets/patron-hpk.png";
 import patronPchub from "@/assets/patron-pchub.svg";
 
-type LogoEntry = { name: string; logo: string; scale?: number; url: string };
+type LogoEntry = { name: string; logo: string; scale?: number; url: string; yOffset?: number };
 
 const platinumPartners: LogoEntry[] = [
   { name: "Greco", logo: partnerGreco, scale: 1, url: "https://greco.services/greco-specijalisti-u-osiguranju-i-upravljanju-rizicima/" },
