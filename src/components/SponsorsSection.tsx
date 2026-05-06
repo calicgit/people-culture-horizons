@@ -26,7 +26,7 @@ const sponsors: LogoEntry[] = [
   { name: "Atlantic Grupa", logo: sponsorAtlantic, scale: 1.65, url: "https://www.atlanticgrupa.com/hr/" },
 ];
 
-const PartnerLogo = ({ name, logo, scale = 1, url, size = "lg" }: LogoEntry & { size?: "lg" | "md" | "sm" }) => {
+const PartnerLogo = ({ name, logo, scale = 1, url, size = "lg", yOffset = 0 }: LogoEntry & { size?: "lg" | "md" | "sm" }) => {
   const sizeClasses = {
     lg: "h-28 w-48 md:h-32 md:w-56",
     md: "h-24 w-40 md:h-28 md:w-48",
@@ -34,7 +34,7 @@ const PartnerLogo = ({ name, logo, scale = 1, url, size = "lg" }: LogoEntry & { 
   };
   return (
     <a href={url} target="_blank" rel="noopener noreferrer" className={`flex ${sizeClasses[size]} items-center justify-center p-4 hover:opacity-80 transition-opacity`} title={name}>
-      <img src={logo} alt={name} className="max-h-full max-w-full object-contain" style={{ transform: `scale(${scale})` }} />
+      <img src={logo} alt={name} className="max-h-full max-w-full object-contain" style={{ transform: `scale(${scale}) translateY(${yOffset}px)` }} />
     </a>
   );
 };
