@@ -6,6 +6,7 @@ import partnerCognipulse from "@/assets/partner-cognipulse.png";
 import sponsorAtlantic from "@/assets/sponsor-atlantic.png";
 import patronMrms from "@/assets/patron-mrms.png";
 import patronHpk from "@/assets/patron-hpk.png";
+import patronPchub from "@/assets/patron-pchub.svg";
 
 type LogoEntry = { name: string; logo: string; scale?: number; url: string };
 
@@ -18,6 +19,7 @@ const platinumPartners: LogoEntry[] = [
 const patrons: LogoEntry[] = [
   { name: "Ministarstvo rada, mirovinskoga sustava, obitelji i socijalne politike", logo: patronMrms, scale: 1, url: "https://mrosp.gov.hr/" },
   { name: "Hrvatska psihološka komora", logo: patronHpk, scale: 1, url: "https://www.psiholoska-komora.hr/" },
+  { name: "People & Culture HUB", logo: patronPchub, scale: 1.3, url: "https://hub.peopleandculture.hr/" },
 ];
 
 const sponsors: LogoEntry[] = [
