@@ -19,7 +19,7 @@ const platinumPartners: LogoEntry[] = [
 const patrons: LogoEntry[] = [
   { name: "Ministarstvo rada, mirovinskoga sustava, obitelji i socijalne politike", logo: patronMrms, scale: 1, url: "https://mrosp.gov.hr/" },
   { name: "Hrvatska psihološka komora", logo: patronHpk, scale: 1, url: "https://www.psiholoska-komora.hr/" },
-  { name: "People & Culture HUB", logo: patronPchub, scale: 1.3, url: "https://hub.peopleandculture.hr/", yOffset: 6 },
+  { name: "People & Culture HUB", logo: patronPchub, scale: 1.05, url: "https://hub.peopleandculture.hr/", yOffset: 6 },
 ];
 
 const sponsors: LogoEntry[] = [
