@@ -57,8 +57,8 @@ const translations: Record<Language, Record<string, string>> = {
     // Keynote
     "keynote.label": "KEYNOTE PREDAVANJE",
     "keynote.title": "Kako organizacije donose odluke kada se pravila igre mijenjaju",
-    "keynote.p1": "Ključno pitanje nije više kako rasti nego kako ostati funkcionalan?",
-    "keynote.p2": "",
+    "keynote.p1": "Kada se ekonomska, tehnološka i društvena pravila ubrzano mijenjaju, ključno pitanje više nije kako rasti, nego kako ostati funkcionalan.",
+    "keynote.p2": "Predavanje otvara konferenciju iz makroekonomske perspektive i postavlja njezino temeljno pitanje: što se događa između onoga što organizacije znaju i onoga što stvarno rade — kada problem više nije nedostatak informacija, nego kvaliteta prosudbe, jasnoća odluka i sposobnost provedbe.",
     "keynote.cta": "Rezerviraj svoje mjesto →",
     "keynote.years": "Godina istraživanja",
     "keynote.speakerAlt": "Glavna govornica",
