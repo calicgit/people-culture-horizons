@@ -43,6 +43,7 @@ const speakers: Speaker[] = [
   { name: "Ingrid Tena Grgić", title: "Human Resources Consultant", company: "DeeP Project", photo: speakerIngridTenaGrgic, photoPosition: "center 15%", photoScale: 1.0, bioKey: "speakers.bio.ingrid_tena_grgic" },
   { name: "Borna Lončar", title: "HR Consultant & Researcher", company: "DeeP Project", photo: speakerBornaLoncar, photoPosition: "center 15%", photoScale: 1.0, bioKey: "speakers.bio.borna_loncar" },
   { name: "Romina Ivančić", title: "Ravnateljica", company: "Poliklinika za zaštitu djece i mladih Grada Zagreba", photo: speakerRominaIvancic, photoPosition: "center 20%", photoScale: 1.0, bioKey: "speakers.bio.romina_ivancic" },
+  { name: "Snježana M. Lohninger", title: "CFO", company: "Porsche Inter Auto" },
 ];
 
 const SpeakersSection = () => {
