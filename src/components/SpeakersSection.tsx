@@ -10,6 +10,7 @@ import speakerIvanBeslic from "@/assets/speaker-ivan-beslic.png";
 import speakerMladenPejkovic from "@/assets/speaker-mladen-pejkovic.png";
 import speakerIvaRogovicLekic from "@/assets/speaker-iva-rogovic-lekic.jpg";
 import speakerIngridTenaGrgic from "@/assets/speaker-ingrid-tena-grgic.png";
+import speakerRominaIvancic from "@/assets/speaker-romina-ivancic.png";
 import speakerBornaLoncar from "@/assets/speaker-borna-loncar.png";
 import { Dialog, DialogContent } from "@/components/ui/dialog";
 
@@ -41,6 +42,7 @@ const speakers: Speaker[] = [
   { name: "Sanja Škrinjar", title: "Team Lead & HR Consultant", company: "DeeP Project", photo: speakerSanjaSkrinjar, photoPosition: "center 8%", bioKey: "speakers.bio.sanja_skrinjar" },
   { name: "Ingrid Tena Grgić", title: "Human Resources Consultant", company: "DeeP Project", photo: speakerIngridTenaGrgic, photoPosition: "center 15%", photoScale: 1.0, bioKey: "speakers.bio.ingrid_tena_grgic" },
   { name: "Borna Lončar", title: "HR Consultant & Researcher", company: "DeeP Project", photo: speakerBornaLoncar, photoPosition: "center 15%", photoScale: 1.0, bioKey: "speakers.bio.borna_loncar" },
+  { name: "Romina Ivančić", title: "Ravnateljica", company: "Poliklinika za zaštitu djece i mladih Grada Zagreba", photo: speakerRominaIvancic, photoPosition: "center 20%", photoScale: 1.0, bioKey: "speakers.bio.romina_ivancic" },
 ];
 
 const SpeakersSection = () => {
