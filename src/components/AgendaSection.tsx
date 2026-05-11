@@ -41,7 +41,7 @@ const agendaData: Record<string, Session[]> = {
     { time: "11:10", endTime: "11:55", titleKey: "agenda.d2.s6.title", type: "panel", locationKey: "agenda.loc.main", descKey: "agenda.d2.s6.desc" },
     { time: "11:55", endTime: "12:15", titleKey: "agenda.d2.s7.title", type: "break" },
     { time: "12:15", endTime: "13:00", titleKey: "agenda.d2.s8.title", type: "panel", locationKey: "agenda.loc.main", descKey: "agenda.d2.s8.desc" },
-    { time: "13:05", endTime: "13:20", titleKey: "agenda.d2.s9.title", type: "talk", locationKey: "agenda.loc.main" },
+    { time: "13:05", endTime: "13:20", titleKey: "agenda.d2.s9.title", type: "talk", locationKey: "agenda.loc.main", descKey: "agenda.d2.s9.desc" },
     { time: "13:20", endTime: "15:00", titleKey: "agenda.d2.s10.title", type: "networking", descKey: "agenda.d2.s10.desc" },
   ],
 };
