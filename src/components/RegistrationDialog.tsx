@@ -85,7 +85,7 @@ const RegistrationDialog = ({ open, onOpenChange, tierName, tierPrice }: Registr
 
     const html = `
       <div style="font-family:Arial,sans-serif;color:#111;">
-        <h2 style="margin:0 0 16px;">Nova prijava — ${escape(tierName)}</h2>
+        <h2 style="margin:0 0 16px;">Nova prijava - ${escape(tierName)}</h2>
         <table style="border-collapse:collapse;width:100%;max-width:640px;font-size:14px;">
           ${tableRows}
         </table>
@@ -147,7 +147,7 @@ const RegistrationDialog = ({ open, onOpenChange, tierName, tierPrice }: Registr
 
           <div className="mb-2 px-1">
             <span className="text-sm font-semibold text-foreground">
-              {t("reg.ticket")}: <span className="text-accent">{tierName}</span> — {tierPrice}
+              {t("reg.ticket")}: <span className="text-accent">{tierName}</span> - {tierPrice}
             </span>
           </div>
 
