@@ -302,8 +302,8 @@ const translations: Record<Language, Record<string, string>> = {
     // Keynote
     "keynote.label": "KEYNOTE ADDRESS",
     "keynote.title": "How organisations make decisions when the rules of the game change",
-    "keynote.p1": "The key question is no longer how to grow, but how to remain functional?",
-    "keynote.p2": "",
+    "keynote.p1": "When economic, technological and social rules shift rapidly, the key question is no longer how to grow, but how to remain functional.",
+    "keynote.p2": "This keynote opens the conference from a macroeconomic perspective and frames its core question: what happens between what organisations know and what they actually do — when the real challenge is no longer a lack of information, but the quality of judgment, the clarity of decisions and the capacity to execute.",
     "keynote.cta": "Reserve Your Seat →",
     "keynote.years": "Years of Research",
     "keynote.speakerAlt": "Keynote Speaker",
