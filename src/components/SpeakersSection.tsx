@@ -10,6 +10,7 @@ import speakerIvanBeslic from "@/assets/speaker-ivan-beslic.png";
 import speakerMladenPejkovic from "@/assets/speaker-mladen-pejkovic.png";
 import speakerIvaRogovicLekic from "@/assets/speaker-iva-rogovic-lekic.jpg";
 import speakerIngridTenaGrgic from "@/assets/speaker-ingrid-tena-grgic.png";
+import speakerBornaLoncar from "@/assets/speaker-borna-loncar.png";
 import { Dialog, DialogContent } from "@/components/ui/dialog";
 
 interface Speaker {
