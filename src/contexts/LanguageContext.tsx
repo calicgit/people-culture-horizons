@@ -144,6 +144,9 @@ const translations: Record<Language, Record<string, string>> = {
     "agenda.loc.hallB": "Dvorana B",
     "agenda.loc.workshop": "Dvorana za radionice",
     "agenda.track.masterclass": "Masterclass • Paralelno",
+    "agenda.masterclass.label": "Paralelni program",
+    "agenda.masterclass.title": "Masterclass blok",
+    "agenda.masterclass.subtitle": "Tijekom programa u glavnoj dvorani održavaju se 3 paralelna masterclassa u manjim dvoranama. Sudionici biraju jedan.",
 
     // Day 1 — Masterclass blok (paralelno 10:55–12:05)
     "agenda.d1.mc1.title": "Kako to znamo, kako to mjerimo i kako razlikujemo dojam od uzroka? Powered by CogniPulse",
