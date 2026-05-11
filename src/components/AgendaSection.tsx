@@ -48,7 +48,7 @@ const agendaData: Record<string, Session[]> = {
 
 const masterclassData: Record<string, Session[]> = {
   day1: [
-    { time: "10:55", endTime: "12:05", titleKey: "agenda.d1.mc1.title", type: "workshop", locationKey: "agenda.loc.earth", descKey: "agenda.d1.mc1.desc" },
+    { time: "10:55", endTime: "12:05", titleKey: "agenda.d1.mc1.title", speaker: "Borna Lončar - HR Consultant & Researcher, DeeP Project", type: "workshop", locationKey: "agenda.loc.earth", descKey: "agenda.d1.mc1.desc" },
     { time: "10:55", endTime: "12:05", titleKey: "agenda.d1.mc2.title", type: "workshop", locationKey: "agenda.loc.air", descKey: "agenda.d1.mc2.desc" },
     { time: "10:55", endTime: "12:05", titleKey: "agenda.d1.mc3.title", type: "workshop", locationKey: "agenda.loc.fire", descKey: "agenda.d1.mc3.desc" },
   ],
