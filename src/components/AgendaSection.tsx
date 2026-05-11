@@ -126,7 +126,12 @@ const AgendaSection = () => {
             ? "border-accent/30 border-l-[6px] border-l-accent bg-gradient-to-r from-accent/5 to-transparent shadow-sm"
             : `border-border border-l-4 ${style.border}`
         }`}
-        onClick={() => isExpandable && toggleItem(itemKey)}
+        onClick={() => {
+          if (!isExpandable) return;
+          const sel = typeof window !== "undefined" ? window.getSelection() : null;
+          if (sel && sel.toString().length > 0) return;
+          toggleItem(itemKey);
+        }}
       >
         {session.type === "keynote" && (
           <div className="absolute -top-2.5 right-4 flex items-center gap-1 rounded-full bg-accent px-2.5 py-0.5 text-[10px] font-bold uppercase tracking-wider text-accent-foreground shadow-sm">
