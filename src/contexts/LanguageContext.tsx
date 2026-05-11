@@ -144,6 +144,9 @@ const translations: Record<Language, Record<string, string>> = {
     "agenda.loc.hallB": "Dvorana B",
     "agenda.loc.workshop": "Dvorana za radionice",
     "agenda.track.masterclass": "Masterclass • Paralelno",
+    "agenda.masterclass.label": "Paralelni program",
+    "agenda.masterclass.title": "Masterclass blok",
+    "agenda.masterclass.subtitle": "Tijekom programa u glavnoj dvorani održavaju se 3 paralelna masterclassa u manjim dvoranama. Sudionici biraju jedan.",
 
     // Day 1 — Masterclass blok (paralelno 10:55–12:05)
     "agenda.d1.mc1.title": "Kako to znamo, kako to mjerimo i kako razlikujemo dojam od uzroka? Powered by CogniPulse",
@@ -382,6 +385,9 @@ const translations: Record<Language, Record<string, string>> = {
     "agenda.loc.hallB": "Hall B",
     "agenda.loc.workshop": "Workshop Room",
     "agenda.track.masterclass": "Masterclass • Parallel",
+    "agenda.masterclass.label": "Parallel programme",
+    "agenda.masterclass.title": "Masterclass block",
+    "agenda.masterclass.subtitle": "While the main hall programme runs, 3 parallel masterclasses take place in smaller halls. Participants choose one.",
 
     // Day 1 — Masterclass block (parallel 10:55–12:05)
     "agenda.d1.mc1.title": "How do we know it, how do we measure it, and how do we tell impression from cause? Powered by CogniPulse",

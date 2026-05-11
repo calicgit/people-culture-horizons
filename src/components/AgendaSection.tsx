@@ -25,9 +25,6 @@ const agendaData: Record<string, Session[]> = {
     { time: "10:35", endTime: "10:55", titleKey: "agenda.d1.s5.title", type: "break" },
     { time: "10:55", endTime: "11:15", titleKey: "agenda.d1.s6.title", speaker: "Ivan Bešlić - Co-founder & CSO, Sofascore", type: "talk", locationKey: "agenda.loc.main", descKey: "agenda.d1.s6.desc" },
     { time: "11:20", endTime: "12:05", titleKey: "agenda.d1.s7.title", type: "panel", locationKey: "agenda.loc.main", descKey: "agenda.d1.s7.desc" },
-    { time: "10:55", endTime: "12:05", titleKey: "agenda.d1.mc1.title", type: "workshop", locationKey: "agenda.loc.earth", trackKey: "agenda.track.masterclass", descKey: "agenda.d1.mc1.desc" },
-    { time: "10:55", endTime: "12:05", titleKey: "agenda.d1.mc2.title", type: "workshop", locationKey: "agenda.loc.air", trackKey: "agenda.track.masterclass", descKey: "agenda.d1.mc2.desc" },
-    { time: "10:55", endTime: "12:05", titleKey: "agenda.d1.mc3.title", type: "workshop", locationKey: "agenda.loc.fire", trackKey: "agenda.track.masterclass", descKey: "agenda.d1.mc3.desc" },
     { time: "12:05", endTime: "13:35", titleKey: "agenda.d1.s8.title", type: "networking" },
     { time: "13:35", endTime: "13:55", titleKey: "agenda.d1.s9.title", speaker: "Stefan Vukajlović - Group HR Director for Compensation and Benefits, Fortenova Group", type: "talk", locationKey: "agenda.loc.main", descKey: "agenda.d1.s9.desc" },
     { time: "14:00", endTime: "14:45", titleKey: "agenda.d1.s10.title", type: "panel", locationKey: "agenda.loc.main", descKey: "agenda.d1.s10.desc" },
@@ -42,13 +39,23 @@ const agendaData: Record<string, Session[]> = {
     { time: "10:20", endTime: "10:40", titleKey: "agenda.d2.s4.title", type: "break" },
     { time: "10:45", endTime: "11:05", titleKey: "agenda.d2.s5.title", speaker: "Sanja Škrinjar - Team Lead & HR Consultant, DeeP Project", type: "talk", locationKey: "agenda.loc.main", descKey: "agenda.d2.s5.desc" },
     { time: "11:10", endTime: "11:55", titleKey: "agenda.d2.s6.title", type: "panel", locationKey: "agenda.loc.main", descKey: "agenda.d2.s6.desc" },
-    { time: "10:45", endTime: "11:55", titleKey: "agenda.d2.mc1.title", type: "workshop", locationKey: "agenda.loc.earth", trackKey: "agenda.track.masterclass", descKey: "agenda.d2.mc1.desc" },
-    { time: "10:45", endTime: "11:55", titleKey: "agenda.d2.mc2.title", type: "workshop", locationKey: "agenda.loc.air", trackKey: "agenda.track.masterclass", descKey: "agenda.d2.mc2.desc" },
-    { time: "10:45", endTime: "11:55", titleKey: "agenda.d2.mc3.title", type: "workshop", locationKey: "agenda.loc.fire", trackKey: "agenda.track.masterclass", descKey: "agenda.d2.mc3.desc" },
     { time: "11:55", endTime: "12:15", titleKey: "agenda.d2.s7.title", type: "break" },
     { time: "12:15", endTime: "13:00", titleKey: "agenda.d2.s8.title", type: "panel", locationKey: "agenda.loc.main", descKey: "agenda.d2.s8.desc" },
     { time: "13:05", endTime: "13:20", titleKey: "agenda.d2.s9.title", type: "talk", locationKey: "agenda.loc.main", descKey: "agenda.d2.s9.desc" },
     { time: "13:20", endTime: "15:00", titleKey: "agenda.d2.s10.title", type: "networking" },
+  ],
+};
+
+const masterclassData: Record<string, Session[]> = {
+  day1: [
+    { time: "10:55", endTime: "12:05", titleKey: "agenda.d1.mc1.title", type: "workshop", locationKey: "agenda.loc.earth", descKey: "agenda.d1.mc1.desc" },
+    { time: "10:55", endTime: "12:05", titleKey: "agenda.d1.mc2.title", type: "workshop", locationKey: "agenda.loc.air", descKey: "agenda.d1.mc2.desc" },
+    { time: "10:55", endTime: "12:05", titleKey: "agenda.d1.mc3.title", type: "workshop", locationKey: "agenda.loc.fire", descKey: "agenda.d1.mc3.desc" },
+  ],
+  day2: [
+    { time: "10:45", endTime: "11:55", titleKey: "agenda.d2.mc1.title", type: "workshop", locationKey: "agenda.loc.earth", descKey: "agenda.d2.mc1.desc" },
+    { time: "10:45", endTime: "11:55", titleKey: "agenda.d2.mc2.title", type: "workshop", locationKey: "agenda.loc.air", descKey: "agenda.d2.mc2.desc" },
+    { time: "10:45", endTime: "11:55", titleKey: "agenda.d2.mc3.title", type: "workshop", locationKey: "agenda.loc.fire", descKey: "agenda.d2.mc3.desc" },
   ],
 };
 
@@ -98,6 +105,103 @@ const AgendaSection = () => {
   };
 
   const sessions = agendaData[dayKeys[activeDayIdx]];
+  const masterclasses = masterclassData[dayKeys[activeDayIdx]];
+
+  const renderSession = (session: Session, i: number, prefix: string) => {
+    const style = typeStyles[session.type];
+    const isBreak = session.type === "break" || session.type === "networking";
+    const itemKey = `${prefix}-${dayKeys[activeDayIdx]}-${session.time}-${i}`;
+    const isExpanded = expandedItems.has(itemKey);
+    const hasDescription = !!session.descKey;
+    const isExpandable = !isBreak;
+    const isPlaceholder = !session.titleKey && !session.speaker && !session.locationKey && !session.trackKey && !session.descKey;
+    const title = session.titleKey ? t(session.titleKey) : "";
+    const timeRange = session.time && session.endTime ? `${session.time} – ${session.endTime}` : "";
+
+    return (
+      <div
+        key={itemKey}
+        className={`relative rounded-xl border bg-card transition-all duration-300 hover:shadow-card ${isExpandable ? "cursor-pointer" : ""} ${
+          session.type === "keynote"
+            ? "border-accent/30 border-l-[6px] border-l-accent bg-gradient-to-r from-accent/5 to-transparent shadow-sm"
+            : `border-border border-l-4 ${style.border}`
+        }`}
+        onClick={() => isExpandable && toggleItem(itemKey)}
+      >
+        {session.type === "keynote" && (
+          <div className="absolute -top-2.5 right-4 flex items-center gap-1 rounded-full bg-accent px-2.5 py-0.5 text-[10px] font-bold uppercase tracking-wider text-accent-foreground shadow-sm">
+            <Star className="w-3 h-3 fill-current" />
+            Keynote
+          </div>
+        )}
+        <div className="flex gap-4 p-5">
+          <div className="flex-shrink-0 pt-0.5">
+            <div className="flex items-center gap-1.5 text-muted-foreground whitespace-nowrap">
+              <Clock className="w-3.5 h-3.5 flex-shrink-0" />
+              <span className="text-sm font-medium">{timeRange || "\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0"}</span>
+            </div>
+          </div>
+          <div className="flex-1 min-w-0">
+            <div className="flex items-start justify-between gap-3">
+              <div>
+                <h3 className={`font-semibold ${isBreak ? "text-muted-foreground" : "text-foreground"}`}>
+                  {title ? (() => {
+                    const m = title.match(/^(.*?)(\s*Powered by .+)$/i);
+                    return m ? (<>{m[1]}<em className="font-normal italic text-muted-foreground">{m[2]}</em></>) : title;
+                  })() : "\u00A0"}
+                </h3>
+                {session.speaker && (
+                  <p className="text-muted-foreground text-sm mt-0.5 font-light">{session.speaker}</p>
+                )}
+                <div className="flex items-center gap-3 mt-1.5 flex-wrap">
+                  {session.locationKey && (
+                    <span className="flex items-center gap-1 text-xs text-muted-foreground/70">
+                      <MapPin className="w-3 h-3" /> {t(session.locationKey)}
+                    </span>
+                  )}
+                  {session.trackKey && (
+                    <span className="text-xs px-2.5 py-0.5 rounded-full bg-accent/10 text-accent font-medium">
+                      {t(session.trackKey)}
+                    </span>
+                  )}
+                </div>
+              </div>
+              <div className="flex items-center gap-2 flex-shrink-0 mt-0.5">
+                {!isPlaceholder && (() => {
+                  const displayType: SessionType =
+                    session.type === "keynote" && session.keynoteKind
+                      ? session.keynoteKind
+                      : session.type;
+                  return (
+                    <span className="flex items-center gap-1 text-xs text-muted-foreground/60">
+                      <TypeIcon type={displayType} />
+                      {typeLabels[displayType]}
+                    </span>
+                  );
+                })()}
+                {isExpandable && (
+                  <ChevronDown
+                    className={`w-4 h-4 text-accent transition-transform duration-200 ${isExpanded ? "rotate-180" : ""}`}
+                  />
+                )}
+              </div>
+            </div>
+          </div>
+        </div>
+        {isExpandable && (
+          <div className={`grid transition-all duration-300 ease-in-out ${isExpanded ? "grid-rows-[1fr] opacity-100" : "grid-rows-[0fr] opacity-0"}`}>
+            <div className="overflow-hidden">
+              {hasDescription && (
+                <div className="px-5 pb-5 pl-[6.5rem]">
+                  <p className="text-sm text-muted-foreground leading-relaxed font-light whitespace-pre-line">{t(session.descKey!)}</p>
+                </div>
+              )}
+            </div>
+          </div>
+        )}
+      </div>
+    );
+  };
 
   return (
     <section id="agenda" className="bg-background py-20 md:py-24">
@@ -127,102 +231,27 @@ const AgendaSection = () => {
         </div>
 
         <div className="max-w-3xl mx-auto space-y-3">
-          {sessions.map((session, i) => {
-            const style = typeStyles[session.type];
-            const isBreak = session.type === "break" || session.type === "networking";
-            const itemKey = `${dayKeys[activeDayIdx]}-${session.time}-${i}`;
-            const isExpanded = expandedItems.has(itemKey);
-            const hasDescription = !!session.descKey;
-            const isExpandable = !isBreak;
-            const isPlaceholder = !session.titleKey && !session.speaker && !session.locationKey && !session.trackKey && !session.descKey;
-            const title = session.titleKey ? t(session.titleKey) : "";
-            const timeRange = session.time && session.endTime ? `${session.time} – ${session.endTime}` : "";
-
-            return (
-              <div
-                key={itemKey}
-                className={`relative rounded-xl border bg-card transition-all duration-300 hover:shadow-card ${isExpandable ? "cursor-pointer" : ""} ${
-                  session.type === "keynote"
-                    ? "border-accent/30 border-l-[6px] border-l-accent bg-gradient-to-r from-accent/5 to-transparent shadow-sm"
-                    : `border-border border-l-4 ${style.border}`
-                }`}
-                onClick={() => isExpandable && toggleItem(itemKey)}
-              >
-                {session.type === "keynote" && (
-                  <div className="absolute -top-2.5 right-4 flex items-center gap-1 rounded-full bg-accent px-2.5 py-0.5 text-[10px] font-bold uppercase tracking-wider text-accent-foreground shadow-sm">
-                    <Star className="w-3 h-3 fill-current" />
-                    Keynote
-                  </div>
-                )}
-                <div className="flex gap-4 p-5">
-                  <div className="flex-shrink-0 pt-0.5">
-                    <div className="flex items-center gap-1.5 text-muted-foreground whitespace-nowrap">
-                      <Clock className="w-3.5 h-3.5 flex-shrink-0" />
-                      <span className="text-sm font-medium">{timeRange || "\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0"}</span>
-                    </div>
-                  </div>
-                  <div className="flex-1 min-w-0">
-                    <div className="flex items-start justify-between gap-3">
-                      <div>
-                        <h3 className={`font-semibold ${isBreak ? "text-muted-foreground" : "text-foreground"}`}>
-                          {title ? (() => {
-                            const m = title.match(/^(.*?)(\s*Powered by .+)$/i);
-                            return m ? (<>{m[1]}<em className="font-normal italic text-muted-foreground">{m[2]}</em></>) : title;
-                          })() : "\u00A0"}
-                        </h3>
-                        {session.speaker && (
-                          <p className="text-muted-foreground text-sm mt-0.5 font-light">{session.speaker}</p>
-                        )}
-                        <div className="flex items-center gap-3 mt-1.5 flex-wrap">
-                          {session.locationKey && (
-                            <span className="flex items-center gap-1 text-xs text-muted-foreground/70">
-                              <MapPin className="w-3 h-3" /> {t(session.locationKey)}
-                            </span>
-                          )}
-                          {session.trackKey && (
-                            <span className="text-xs px-2.5 py-0.5 rounded-full bg-accent/10 text-accent font-medium">
-                              {t(session.trackKey)}
-                            </span>
-                          )}
-                        </div>
-                      </div>
-                      <div className="flex items-center gap-2 flex-shrink-0 mt-0.5">
-                        {!isPlaceholder && (() => {
-                          const displayType: SessionType =
-                            session.type === "keynote" && session.keynoteKind
-                              ? session.keynoteKind
-                              : session.type;
-                          return (
-                            <span className="flex items-center gap-1 text-xs text-muted-foreground/60">
-                              <TypeIcon type={displayType} />
-                              {typeLabels[displayType]}
-                            </span>
-                          );
-                        })()}
-                        {isExpandable && (
-                          <ChevronDown
-                            className={`w-4 h-4 text-accent transition-transform duration-200 ${isExpanded ? "rotate-180" : ""}`}
-                          />
-                        )}
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                {isExpandable && (
-                  <div className={`grid transition-all duration-300 ease-in-out ${isExpanded ? "grid-rows-[1fr] opacity-100" : "grid-rows-[0fr] opacity-0"}`}>
-                    <div className="overflow-hidden">
-                      {hasDescription && (
-                        <div className="px-5 pb-5 pl-[6.5rem]">
-                          <p className="text-sm text-muted-foreground leading-relaxed font-light whitespace-pre-line">{t(session.descKey!)}</p>
-                        </div>
-                      )}
-                    </div>
-                  </div>
-                )}
-              </div>
-            );
-          })}
+          {sessions.map((session, i) => renderSession(session, i, "main"))}
         </div>
+
+        {masterclasses && masterclasses.length > 0 && (
+          <div className="max-w-3xl mx-auto mt-14">
+            <div className="mb-5 text-center">
+              <span className="text-accent font-semibold text-xs uppercase tracking-[0.25em]">
+                {t("agenda.masterclass.label")}
+              </span>
+              <h3 className="text-xl md:text-2xl font-bold text-foreground mt-3 mb-2 font-display">
+                {t("agenda.masterclass.title")}
+              </h3>
+              <p className="text-xs md:text-sm text-muted-foreground">
+                {t("agenda.masterclass.subtitle")}
+              </p>
+            </div>
+            <div className="space-y-3">
+              {masterclasses.map((session, i) => renderSession(session, i, "mc"))}
+            </div>
+          </div>
+        )}
       </div>
     </section>
   );
