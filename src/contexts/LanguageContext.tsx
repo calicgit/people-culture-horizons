@@ -92,7 +92,7 @@ const translations: Record<Language, Record<string, string>> = {
     "agenda.type.keynote": "Predavanje",
     "agenda.type.talk": "Predavanje",
     "agenda.type.panel": "Panel",
-    "agenda.type.workshop": "Radionica",
+    "agenda.type.workshop": "Masterclass",
     "agenda.type.break": "Pauza",
     "agenda.type.networking": "Networking",
     // Day 1 sessions
@@ -137,16 +137,16 @@ const translations: Record<Language, Record<string, string>> = {
     "agenda.d2.s9.desc": "U ova dva dana dotaknuli smo puno tema: odluke, promjene, plaće, mjerenje, razvoj ljudi i na kraju AI.\n\nI sve se na kraju svodi na istu stvar: organizacije ne funkcioniraju loše zato što ne znaju što treba napraviti.\n\nFunkcioniraju loše zato što se odluke ne donose kako treba, ne provode kako treba i ne razumiju kako zapravo nastaju rezultati. A kada na to dodamo AI, ne dobivamo rješenje.\n\nDobivamo katalizator. Ubrzanje svega što već radimo, dobrog i lošeg.\n\nZato možda najvažnije pitanje koje ostaje nakon ove konferencije nije: što ćemo raditi drugačije?\n\nnego: što ćemo napokon početi razumijevati prije nego što donesemo sljedeću odluku.",
     // Agenda locations
     "agenda.loc.main": "Glavna dvorana",
-    "agenda.loc.air": "Dvorana zrak",
-    "agenda.loc.earth": "Dvorana zemlja",
-    "agenda.loc.fire": "Dvorana vatra",
+    "agenda.loc.air": "Dvorana Zrak",
+    "agenda.loc.earth": "Dvorana Zemlja",
+    "agenda.loc.fire": "Dvorana Vatra",
     "agenda.loc.hallA": "Dvorana A",
     "agenda.loc.hallB": "Dvorana B",
     "agenda.loc.workshop": "Dvorana za radionice",
     "agenda.track.masterclass": "Masterclass • Paralelno",
     "agenda.masterclass.label": "Paralelni program",
     "agenda.masterclass.title": "Masterclass blok",
-    "agenda.masterclass.subtitle": "Tijekom programa u glavnoj dvorani održavaju se 3 paralelna masterclassa u manjim dvoranama. Sudionici biraju jedan.",
+    "agenda.masterclass.subtitle": "Tijekom programa u glavnoj dvorani održavaju se 3 paralelna masterclassa u manjim dvoranama.",
 
     // Day 1 — Masterclass blok (paralelno 10:55–12:05)
     "agenda.d1.mc1.title": "Kako to znamo, kako to mjerimo i kako razlikujemo dojam od uzroka? Powered by CogniPulse",
@@ -387,7 +387,7 @@ const translations: Record<Language, Record<string, string>> = {
     "agenda.track.masterclass": "Masterclass • Parallel",
     "agenda.masterclass.label": "Parallel programme",
     "agenda.masterclass.title": "Masterclass block",
-    "agenda.masterclass.subtitle": "While the main hall programme runs, 3 parallel masterclasses take place in smaller halls. Participants choose one.",
+    "agenda.masterclass.subtitle": "While the main hall programme runs, 3 parallel masterclasses take place in smaller halls.",
 
     // Day 1 — Masterclass block (parallel 10:55–12:05)
     "agenda.d1.mc1.title": "How do we know it, how do we measure it, and how do we tell impression from cause? Powered by CogniPulse",
