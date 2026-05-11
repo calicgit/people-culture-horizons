@@ -9,6 +9,7 @@ import speakerIvanZubak from "@/assets/speaker-ivan-zubak.png";
 import speakerIvanBeslic from "@/assets/speaker-ivan-beslic.png";
 import speakerMladenPejkovic from "@/assets/speaker-mladen-pejkovic.png";
 import speakerIvaRogovicLekic from "@/assets/speaker-iva-rogovic-lekic.jpg";
+import speakerIngridTenaGrgic from "@/assets/speaker-ingrid-tena-grgic.png";
 import { Dialog, DialogContent } from "@/components/ui/dialog";
 
 interface Speaker {
@@ -37,6 +38,7 @@ const speakers: Speaker[] = [
   { name: "Ivan Zubak", title: "CEO", company: "Zubak Grupa", photo: speakerIvanZubak, photoPosition: "38% 24%", photoScale: 1.0, bioKey: "speakers.bio.ivan_zubak" },
   { name: "Mladen Pejković", title: "Senior Executive Director, Transformation & ICT", company: "Atlantic Grupa", photo: speakerMladenPejkovic, photoPosition: "center 15%", photoScale: 1.0, bioKey: "speakers.bio.mladen_pejkovic" },
   { name: "Sanja Škrinjar", title: "Team Lead & HR Consultant", company: "DeeP Project", photo: speakerSanjaSkrinjar, photoPosition: "center 8%", bioKey: "speakers.bio.sanja_skrinjar" },
+  { name: "Ingrid Tena Grgić", title: "Human Resources Consultant", company: "DeeP Project d.o.o.", photo: speakerIngridTenaGrgic, photoPosition: "center 15%", photoScale: 1.0, bioKey: "speakers.bio.ingrid_tena_grgic" },
 ];
 
 const SpeakersSection = () => {
