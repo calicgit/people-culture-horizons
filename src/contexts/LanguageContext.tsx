@@ -92,7 +92,7 @@ const translations: Record<Language, Record<string, string>> = {
     "agenda.type.keynote": "Predavanje",
     "agenda.type.talk": "Predavanje",
     "agenda.type.panel": "Panel",
-    "agenda.type.workshop": "Radionica",
+    "agenda.type.workshop": "Masterclass",
     "agenda.type.break": "Pauza",
     "agenda.type.networking": "Networking",
     // Day 1 sessions
