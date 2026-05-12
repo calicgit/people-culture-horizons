@@ -8,7 +8,7 @@ const KeynoteSection = () => {
   const paragraphTwo = t("keynote.p2");
 
   return (
-    <section className="relative overflow-hidden bg-hero py-20 md:py-24">
+    <section className="relative overflow-hidden bg-[#193d66] py-20 md:py-24">
       <div className="absolute inset-0 opacity-10">
         <div className="absolute top-1/4 -right-32 w-96 h-96 rounded-full border border-primary-foreground/20" />
         <div className="absolute bottom-1/4 -left-16 w-64 h-64 rounded-full border border-primary-foreground/10" />
