@@ -12,7 +12,7 @@ const Navbar = () => {
   const { lang, setLang, t } = useLanguage();
   const location = useLocation();
   const isHome = location.pathname === "/";
-  const useDarkText = !isHome;
+  const useDarkText = scrolled || !isHome;
 
   const handleLogoClick = (event: React.MouseEvent<HTMLAnchorElement>) => {
     setOpen(false);
@@ -47,7 +47,7 @@ const Navbar = () => {
   const toggleLang = () => setLang(lang === "hr" ? "en" : "hr");
 
   return (
-    <nav className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${isHome ? (scrolled ? 'bg-[#193d66]/95 backdrop-blur-md border-b border-primary-foreground/10' : 'bg-transparent border-b border-transparent') : 'bg-background/95 backdrop-blur-md border-b border-border'}`}>
+    <nav className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${useDarkText ? 'bg-background/95 backdrop-blur-md border-b border-border' : 'bg-transparent border-b border-transparent'}`}>
       <div className="container mx-auto px-6 flex items-center justify-between h-20">
         <Link to="/" onClick={handleLogoClick} className="flex items-center" aria-label="People & Culture Horizons naslovnica">
           <img src={useDarkText ? logo : logoWhite} alt="People & Culture Horizons" className="h-20 translate-y-2" />
