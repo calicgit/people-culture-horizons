@@ -1,1 +1,4 @@
 project_id = "fxzgcyulsykofdaapidv"
+
+[functions.daily-test-registration]
+verify_jwt = false
