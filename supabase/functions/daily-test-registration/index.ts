@@ -41,7 +41,7 @@ Deno.serve(async (req) => {
       ["Tip", "Pravna osoba"],
       ["Ime i prezime", "DAILY TEST - Automatska provjera"],
       ["Pozicija", "Test"],
-      ["E-mail", "test@peopleandculture.hr"],
+      ["E-mail", "horizons@peopleandculture.hr"],
       ["Telefon", "+385 00 000 0000"],
       ["Naziv tvrtke", "TEST d.o.o."],
       ["Adresa tvrtke", "Testna ulica 1"],
@@ -73,7 +73,7 @@ Deno.serve(async (req) => {
     const message = {
       subject: `[DAILY TEST] Provjera prijava - ${now.slice(0, 10)}`,
       body: { contentType: "HTML", content: html },
-      toRecipients: [{ emailAddress: { address: "test@peopleandculture.hr" } }],
+      toRecipients: [{ emailAddress: { address: "horizons@peopleandculture.hr" } }],
     };
 
     const graphRes = await fetch(sendUrl, {
