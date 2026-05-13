@@ -59,7 +59,7 @@ const PricingSection = () => {
               key={tier.name}
               className={`relative rounded-3xl p-8 flex flex-col transition-all duration-300 ${
                 tier.featured
-                  ? "bg-gradient-to-br from-[#193d66] to-[#0f2744] text-primary-foreground shadow-elevated scale-[1.03] ring-2 ring-accent"
+                  ? "bg-[#193d66] text-primary-foreground shadow-elevated scale-[1.03] ring-2 ring-accent"
                   : "bg-card shadow-card border border-border"
               }`}
             >
