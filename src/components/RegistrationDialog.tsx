@@ -13,6 +13,7 @@ import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
 import { RadioGroup, RadioGroupItem } from "@/components/ui/radio-group";
+import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@/components/ui/select";
 import { useLanguage } from "@/contexts/LanguageContext";
 import { supabase } from "@/integrations/supabase/client";
 import { toast } from "@/hooks/use-toast";
@@ -24,10 +25,22 @@ interface RegistrationDialogProps {
   tierPrice: string;
 }
 
+interface Attendee {
+  fullName: string;
+  email: string;
+  phone: string;
+  position: string;
+}
+
+const emptyAttendee = (): Attendee => ({ fullName: "", email: "", phone: "", position: "" });
+
+const MAX_QUANTITY = 10;
+
 const RegistrationDialog = ({ open, onOpenChange, tierName, tierPrice }: RegistrationDialogProps) => {
   const [personType, setPersonType] = useState<"individual" | "company">("company");
   const [isSubmitting, setIsSubmitting] = useState(false);
   const [showSuccessDialog, setShowSuccessDialog] = useState(false);
+  const [quantity, setQuantity] = useState(1);
   const { t } = useLanguage();
 
   const [form, setForm] = useState({
@@ -42,7 +55,24 @@ const RegistrationDialog = ({ open, onOpenChange, tierName, tierPrice }: Registr
     promoCode: "",
   });
 
+  const [extraAttendees, setExtraAttendees] = useState<Attendee[]>([]);
+
   const update = (field: string, value: string) => setForm((f) => ({ ...f, [field]: value }));
+
+  const handleQuantityChange = (val: string) => {
+    const n = Math.max(1, Math.min(MAX_QUANTITY, parseInt(val, 10) || 1));
+    setQuantity(n);
+    setExtraAttendees((prev) => {
+      const need = n - 1;
+      if (prev.length === need) return prev;
+      if (prev.length < need) return [...prev, ...Array.from({ length: need - prev.length }, emptyAttendee)];
+      return prev.slice(0, need);
+    });
+  };
+
+  const updateExtra = (idx: number, field: keyof Attendee, value: string) => {
+    setExtraAttendees((prev) => prev.map((a, i) => (i === idx ? { ...a, [field]: value } : a)));
+  };
 
   const handleSubmit = async (e: FormEvent) => {
     e.preventDefault();
@@ -53,6 +83,7 @@ const RegistrationDialog = ({ open, onOpenChange, tierName, tierPrice }: Registr
 
     const rows: Array<[string, string]> = [
       [t("reg.mailTicket"), `${tierName} (${tierPrice})`],
+      [t("reg.mailQuantity"), String(quantity)],
       [t("reg.mailType"), personType === "individual" ? t("reg.individual") : t("reg.company")],
       [t("reg.fullName").replace(" *", ""), form.fullName],
       [t("reg.position").replace(" *", ""), form.position],
@@ -83,15 +114,42 @@ const RegistrationDialog = ({ open, onOpenChange, tierName, tierPrice }: Registr
       )
       .join("");
 
+    let attendeesHtml = "";
+    if (extraAttendees.length > 0) {
+      const attendeeBlocks = extraAttendees
+        .map((a, i) => {
+          const aRows: Array<[string, string]> = [
+            [t("reg.fullName").replace(" *", ""), a.fullName],
+            ["E-mail", a.email],
+            [t("reg.phone").replace(" *", ""), a.phone],
+            [t("reg.position").replace(" *", ""), a.position],
+          ];
+          const inner = aRows
+            .map(
+              ([l, v]) =>
+                `<tr><td style="padding:6px 10px;border:1px solid #e5e7eb;background:#f9fafb;font-weight:600;white-space:nowrap;">${escape(
+                  l,
+                )}</td><td style="padding:6px 10px;border:1px solid #e5e7eb;">${escape(v || "-")}</td></tr>`,
+            )
+            .join("");
+          return `<h3 style="margin:18px 0 6px;font-size:15px;">${escape(t("reg.additionalAttendee"))} ${
+            i + 2
+          }</h3><table style="border-collapse:collapse;width:100%;max-width:640px;font-size:13px;">${inner}</table>`;
+        })
+        .join("");
+      attendeesHtml = `<h2 style="margin:24px 0 8px;font-size:16px;">${escape(t("reg.mailAttendees"))}</h2>${attendeeBlocks}`;
+    }
+
     const html = `
       <div style="font-family:Arial,sans-serif;color:#111;">
-        <h2 style="margin:0 0 16px;">Nova prijava - ${escape(tierName)}</h2>
+        <h2 style="margin:0 0 16px;">Nova prijava - ${escape(tierName)} (${quantity}x)</h2>
         <table style="border-collapse:collapse;width:100%;max-width:640px;font-size:14px;">
           ${tableRows}
         </table>
+        ${attendeesHtml}
       </div>`;
 
-    const subject = `${t("reg.mailSubjectPrefix")} - ${tierName} - ${form.fullName}`;
+    const subject = `${t("reg.mailSubjectPrefix")} - ${tierName} (${quantity}x) - ${form.fullName}`;
 
     try {
       const { data, error } = await supabase.functions.invoke("send-email", {
@@ -120,6 +178,8 @@ const RegistrationDialog = ({ open, onOpenChange, tierName, tierPrice }: Registr
         phone: "",
         promoCode: "",
       });
+      setQuantity(1);
+      setExtraAttendees([]);
     } catch (err) {
       console.error("Registration send error:", err);
       toast({
@@ -170,8 +230,31 @@ const RegistrationDialog = ({ open, onOpenChange, tierName, tierPrice }: Registr
               </RadioGroup>
             </div>
 
+            <div className="space-y-1.5">
+              <Label className="text-sm font-semibold">{t("reg.quantity")}</Label>
+              <Select value={String(quantity)} onValueChange={handleQuantityChange}>
+                <SelectTrigger className="bg-background">
+                  <SelectValue />
+                </SelectTrigger>
+                <SelectContent>
+                  {Array.from({ length: MAX_QUANTITY }, (_, i) => i + 1).map((n) => (
+                    <SelectItem key={n} value={String(n)}>
+                      {n}
+                    </SelectItem>
+                  ))}
+                </SelectContent>
+              </Select>
+            </div>
+
             {personType === "individual" && (
               <>
+                {quantity > 1 && (
+                  <div className="pt-2 border-t border-border">
+                    <Label className="text-sm font-semibold text-muted-foreground uppercase tracking-wide">
+                      {t("reg.mainAttendee")}
+                    </Label>
+                  </div>
+                )}
                 <Field label={t("reg.fullName")} value={form.fullName} onChange={(v) => update("fullName", v)} required />
                 <Field label={t("reg.email")} value={form.email} onChange={(v) => update("email", v)} required type="email" />
                 <Field label={t("reg.phone")} value={form.phone} onChange={(v) => update("phone", v)} required type="tel" />
@@ -185,7 +268,7 @@ const RegistrationDialog = ({ open, onOpenChange, tierName, tierPrice }: Registr
               <>
                 <div className="pt-2 border-t border-border">
                   <Label className="text-sm font-semibold text-muted-foreground uppercase tracking-wide">
-                    {t("reg.personalData")}
+                    {quantity > 1 ? t("reg.mainAttendee") : t("reg.personalData")}
                   </Label>
                 </div>
                 <Field label={t("reg.fullName")} value={form.fullName} onChange={(v) => update("fullName", v)} required />
@@ -205,6 +288,20 @@ const RegistrationDialog = ({ open, onOpenChange, tierName, tierPrice }: Registr
                 <Field label={t("reg.companyOIB")} value={form.companyOIB} onChange={(v) => update("companyOIB", v)} required />
               </>
             )}
+
+            {extraAttendees.map((a, idx) => (
+              <div key={idx} className="space-y-4">
+                <div className="pt-2 border-t border-border">
+                  <Label className="text-sm font-semibold text-muted-foreground uppercase tracking-wide">
+                    {t("reg.additionalAttendee")} {idx + 2}
+                  </Label>
+                </div>
+                <Field label={t("reg.fullName")} value={a.fullName} onChange={(v) => updateExtra(idx, "fullName", v)} required />
+                <Field label={t("reg.email")} value={a.email} onChange={(v) => updateExtra(idx, "email", v)} required type="email" />
+                <Field label={t("reg.phone")} value={a.phone} onChange={(v) => updateExtra(idx, "phone", v)} required type="tel" />
+                <Field label={t("reg.position")} value={a.position} onChange={(v) => updateExtra(idx, "position", v)} required />
+              </div>
+            ))}
 
             <p className="text-xs text-muted-foreground leading-relaxed">
               <span className="font-semibold">{t("reg.note")}</span> {t("reg.disclaimer")}

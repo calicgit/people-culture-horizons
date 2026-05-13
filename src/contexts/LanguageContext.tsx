@@ -253,6 +253,11 @@ const translations: Record<Language, Record<string, string>> = {
     "reg.mailSubjectPrefix": "Prijava",
     "reg.mailTicket": "Kotizacija",
     "reg.mailType": "Tip",
+    "reg.quantity": "Broj kotizacija *",
+    "reg.mainAttendee": "Glavni sudionik (kontakt osoba)",
+    "reg.additionalAttendee": "Sudionik",
+    "reg.mailQuantity": "Broj kotizacija",
+    "reg.mailAttendees": "Sudionici",
   },
   en: {
     // Navbar
@@ -500,6 +505,11 @@ const translations: Record<Language, Record<string, string>> = {
     "reg.mailSubjectPrefix": "Registration",
     "reg.mailTicket": "Registration",
     "reg.mailType": "Type",
+    "reg.quantity": "Number of registrations *",
+    "reg.mainAttendee": "Main attendee (contact person)",
+    "reg.additionalAttendee": "Attendee",
+    "reg.mailQuantity": "Number of registrations",
+    "reg.mailAttendees": "Attendees",
   },
 };
 
