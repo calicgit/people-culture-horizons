@@ -268,6 +268,16 @@ const RegistrationDialog = ({ open, onOpenChange, tierName, tierPrice }: Registr
               <>
                 <div className="pt-2 border-t border-border">
                   <Label className="text-sm font-semibold text-muted-foreground uppercase tracking-wide">
+                    {t("reg.companyData")}
+                  </Label>
+                </div>
+                <Field label={t("reg.companyName")} value={form.companyName} onChange={(v) => update("companyName", v)} required />
+                <Field label={t("reg.companyAddress")} value={form.companyAddress} onChange={(v) => update("companyAddress", v)} required />
+                <Field label={t("reg.cityPostal")} value={form.cityPostal} onChange={(v) => update("cityPostal", v)} required />
+                <Field label={t("reg.companyOIB")} value={form.companyOIB} onChange={(v) => update("companyOIB", v)} required />
+
+                <div className="pt-2 border-t border-border">
+                  <Label className="text-sm font-semibold text-muted-foreground uppercase tracking-wide">
                     {quantity > 1 ? t("reg.mainAttendee") : t("reg.personalData")}
                   </Label>
                 </div>
@@ -276,16 +286,6 @@ const RegistrationDialog = ({ open, onOpenChange, tierName, tierPrice }: Registr
                 <Field label={t("reg.phone")} value={form.phone} onChange={(v) => update("phone", v)} required type="tel" />
                 <Field label={t("reg.position")} value={form.position} onChange={(v) => update("position", v)} required />
                 <Field label={t("reg.promoCode")} value={form.promoCode} onChange={(v) => update("promoCode", v)} />
-
-                <div className="pt-2 border-t border-border">
-                  <Label className="text-sm font-semibold text-muted-foreground uppercase tracking-wide">
-                    {t("reg.companyData")}
-                  </Label>
-                </div>
-                <Field label={t("reg.companyName")} value={form.companyName} onChange={(v) => update("companyName", v)} required />
-                <Field label={t("reg.companyAddress")} value={form.companyAddress} onChange={(v) => update("companyAddress", v)} required />
-                <Field label={t("reg.cityPostal")} value={form.cityPostal} onChange={(v) => update("cityPostal", v)} required />
-                <Field label={t("reg.companyOIB")} value={form.companyOIB} onChange={(v) => update("companyOIB", v)} required />
               </>
             )}
 
