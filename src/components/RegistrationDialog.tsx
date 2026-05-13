@@ -301,6 +301,7 @@ const RegistrationDialog = ({ open, onOpenChange, tierName, tierPrice }: Registr
                 <Field label={t("reg.email")} value={a.email} onChange={(v) => updateExtra(idx, "email", v)} required type="email" />
                 <Field label={t("reg.phone")} value={a.phone} onChange={(v) => updateExtra(idx, "phone", v)} required type="tel" />
                 <Field label={t("reg.position")} value={a.position} onChange={(v) => updateExtra(idx, "position", v)} required />
+                <Field label={t("reg.promoCode")} value={a.promoCode} onChange={(v) => updateExtra(idx, "promoCode", v)} />
               </div>
             ))}
 
