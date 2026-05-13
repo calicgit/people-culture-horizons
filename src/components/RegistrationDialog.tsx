@@ -30,9 +30,10 @@ interface Attendee {
   email: string;
   phone: string;
   position: string;
+  promoCode: string;
 }
 
-const emptyAttendee = (): Attendee => ({ fullName: "", email: "", phone: "", position: "" });
+const emptyAttendee = (): Attendee => ({ fullName: "", email: "", phone: "", position: "", promoCode: "" });
 
 const MAX_QUANTITY = 10;
 
@@ -124,6 +125,7 @@ const RegistrationDialog = ({ open, onOpenChange, tierName, tierPrice }: Registr
             [t("reg.phone").replace(" *", ""), a.phone],
             [t("reg.position").replace(" *", ""), a.position],
           ];
+          if (a.promoCode) aRows.push([t("reg.promoCode"), a.promoCode]);
           const inner = aRows
             .map(
               ([l, v]) =>
@@ -300,6 +302,7 @@ const RegistrationDialog = ({ open, onOpenChange, tierName, tierPrice }: Registr
                 <Field label={t("reg.email")} value={a.email} onChange={(v) => updateExtra(idx, "email", v)} required type="email" />
                 <Field label={t("reg.phone")} value={a.phone} onChange={(v) => updateExtra(idx, "phone", v)} required type="tel" />
                 <Field label={t("reg.position")} value={a.position} onChange={(v) => updateExtra(idx, "position", v)} required />
+                <Field label={t("reg.promoCode")} value={a.promoCode} onChange={(v) => updateExtra(idx, "promoCode", v)} />
               </div>
             ))}
 
