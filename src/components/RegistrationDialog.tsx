@@ -125,6 +125,7 @@ const RegistrationDialog = ({ open, onOpenChange, tierName, tierPrice }: Registr
             [t("reg.phone").replace(" *", ""), a.phone],
             [t("reg.position").replace(" *", ""), a.position],
           ];
+          if (a.promoCode) aRows.push([t("reg.promoCode"), a.promoCode]);
           const inner = aRows
             .map(
               ([l, v]) =>
