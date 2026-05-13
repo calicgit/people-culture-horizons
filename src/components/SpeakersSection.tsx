@@ -13,6 +13,7 @@ import speakerIngridTenaGrgic from "@/assets/speaker-ingrid-tena-grgic.png";
 import speakerRominaIvancic from "@/assets/speaker-romina-ivancic.png";
 import speakerBornaLoncar from "@/assets/speaker-borna-loncar.png";
 import speakerMarinaRegjo from "@/assets/speaker-marina-regjo.jpg";
+import speakerSnjezanaLohninger from "@/assets/speaker-snjezana-lohninger.jpg";
 import { Dialog, DialogContent } from "@/components/ui/dialog";
 
 interface Speaker {
