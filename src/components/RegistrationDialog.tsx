@@ -30,9 +30,10 @@ interface Attendee {
   email: string;
   phone: string;
   position: string;
+  promoCode: string;
 }
 
-const emptyAttendee = (): Attendee => ({ fullName: "", email: "", phone: "", position: "" });
+const emptyAttendee = (): Attendee => ({ fullName: "", email: "", phone: "", position: "", promoCode: "" });
 
 const MAX_QUANTITY = 10;
 
