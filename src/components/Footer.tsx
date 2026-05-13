@@ -96,7 +96,7 @@ const Footer = () => {
   const { t, lang } = useLanguage();
 
   return (
-    <footer className="border-t border-primary-foreground/5 bg-[#193d66] py-7 md:py-8">
+    <footer className="border-t border-primary-foreground/5 bg-conference-blue py-7 md:py-8">
       <div className="container mx-auto px-6">
         <div className="grid gap-6 md:grid-cols-2 xl:grid-cols-4 text-primary-foreground/80 mb-6">
           <div className="space-y-4 text-center md:text-left">
