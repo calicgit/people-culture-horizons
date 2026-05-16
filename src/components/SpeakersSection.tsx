@@ -14,6 +14,8 @@ import speakerRominaIvancic from "@/assets/speaker-romina-ivancic.png";
 import speakerBornaLoncar from "@/assets/speaker-borna-loncar.png";
 import speakerMarinaRegjo from "@/assets/speaker-marina-regjo.jpg";
 import speakerSnjezanaLohninger from "@/assets/speaker-snjezana-lohninger.jpg";
+import speakerTihanaMarusic from "@/assets/speaker-tihana-marusic.png";
+import speakerMajaDarijaSkrljak from "@/assets/speaker-maja-darija-skrljak.jpg";
 import { Dialog, DialogContent } from "@/components/ui/dialog";
 
 interface Speaker {
@@ -47,6 +49,11 @@ const speakers: Speaker[] = [
   { name: "Romina Ivančić", title: "Ravnateljica poliklinike", company: "Poliklinika za zaštitu djece i mladih Grada Zagreba", photo: speakerRominaIvancic, photoPosition: "center 20%", photoScale: 1.0, bioKey: "speakers.bio.romina_ivancic" },
   { name: "Snježana M. Lohninger", title: "CFO", company: "Porsche Inter Auto", photo: speakerSnjezanaLohninger, photoPosition: "center 15%", photoScale: 1.0, bioKey: "speakers.bio.snjezana_lohninger" },
   { name: "Ivan Artuković", title: "CEO", company: "Franck" },
+  { name: "Andrea Tomšić", title: "Head of Human Resources", company: "Aircash" },
+  { name: "Jelena Novačić", title: "Head of People & Culture, Marketing and Internal Communications", company: "Lürssen" },
+  { name: "Tihana Marušić", title: "Talent Management Lead", company: "Atlantic Group", photo: speakerTihanaMarusic, photoPosition: "center 15%", photoScale: 1.0, bioKey: "speakers.bio.tihana_marusic" },
+  { name: "Maja Darija Škrljak", title: "Group Talent Attraction and Acquisition Manager", company: "Vetropack Group", photo: speakerMajaDarijaSkrljak, photoPosition: "center 15%", photoScale: 1.0, bioKey: "speakers.bio.maja_darija_skrljak" },
+  { name: "Anton Barbir", title: "Member of Management Board", company: "ENNA Group" },
 ];
 
 const SpeakersSection = () => {
