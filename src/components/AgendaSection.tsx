@@ -150,7 +150,7 @@ const AgendaSection = () => {
             Keynote
           </div>
         )}
-        <div className="flex gap-4 p-5">
+        <div className="flex flex-col sm:flex-row gap-2 sm:gap-4 p-5">
           <div className="flex-shrink-0 pt-0.5">
             <div className="flex items-center gap-1.5 text-muted-foreground whitespace-nowrap">
               <Clock className="w-3.5 h-3.5 flex-shrink-0" />
