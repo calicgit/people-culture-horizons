@@ -169,6 +169,26 @@ const AgendaSection = () => {
                 {session.speaker && (
                   <p className="text-muted-foreground text-sm mt-0.5 font-light">{session.speaker}</p>
                 )}
+                {(session.panelists?.length || session.moderator) && (
+                  <div className="mt-2 space-y-0.5">
+                    {session.panelists?.length && (
+                      <>
+                        <p className="text-xs font-semibold text-foreground/70 uppercase tracking-wide">{t("agenda.panelists")}</p>
+                        <ul className="text-sm text-muted-foreground font-light space-y-0.5">
+                          {session.panelists.map((p, idx) => (
+                            <li key={idx}>{p}</li>
+                          ))}
+                        </ul>
+                      </>
+                    )}
+                    <p className="text-sm text-muted-foreground font-light pt-1">
+                      <span className="font-semibold text-foreground/70">
+                        {t(session.moderatorLabel === "moderatorica" ? "agenda.moderatorica" : "agenda.moderator")}:
+                      </span>{" "}
+                      {session.moderator || "TBD"}
+                    </p>
+                  </div>
+                )}
                 <div className="flex items-center gap-3 mt-1.5 flex-wrap">
                   {session.locationKey && (
                     <span className="flex items-center gap-1 text-xs text-muted-foreground/70">
