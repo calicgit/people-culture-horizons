@@ -14,6 +14,9 @@ interface Session {
   trackKey?: string;
   descKey?: string;
   keynoteKind?: "talk" | "panel";
+  panelists?: string[];
+  moderator?: string;
+  moderatorLabel?: "moderator" | "moderatorica";
 }
 
 const agendaData: Record<string, Session[]> = {
