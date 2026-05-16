@@ -1,5 +1,6 @@
 import { Button } from "@/components/ui/button";
 import { useLanguage } from "@/contexts/LanguageContext";
+import josipFunda from "@/assets/speaker-josip-funda.png";
 
 const KeynoteSection = () => {
   const { t } = useLanguage();
@@ -24,7 +25,9 @@ const KeynoteSection = () => {
             <p className="text-primary-foreground/60 text-lg leading-relaxed mb-4 font-light min-h-[5.5rem]">{paragraphOne || "\u00A0"}</p>
             <p className="text-primary-foreground/40 text-base mb-10 font-light min-h-[4rem]">{paragraphTwo || "\u00A0"}</p>
             <div className="flex items-center gap-5 mb-10">
-              <div className="h-16 w-16 rounded-full border border-primary-foreground/15 bg-primary-foreground/5" />
+              <div className="h-16 w-16 rounded-full overflow-hidden border border-primary-foreground/15 bg-primary-foreground/5 flex-shrink-0">
+                <img src={josipFunda} alt={t("keynote.speakerName")} className="w-full h-full object-cover" style={{ objectPosition: "center 20%" }} />
+              </div>
               <div>
                 <p className="text-primary-foreground font-semibold text-lg leading-tight">{t("keynote.speakerName")}</p>
                 <p className="text-primary-foreground/60 text-sm mt-0.5 leading-tight">{t("keynote.speakerTitle")}</p>
