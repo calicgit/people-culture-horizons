@@ -228,7 +228,7 @@ const AgendaSection = () => {
           <div className={`grid transition-all duration-300 ease-in-out ${isExpanded ? "grid-rows-[1fr] opacity-100" : "grid-rows-[0fr] opacity-0"}`}>
             <div className="overflow-hidden">
               {hasDescription && (
-                <div className="px-5 pb-5 pl-[6.5rem]">
+                <div className="px-5 pb-5 sm:pl-[6.5rem]">
                   <p className="text-sm text-muted-foreground leading-relaxed font-light whitespace-pre-line">{t(session.descKey!)}</p>
                 </div>
               )}
