@@ -176,7 +176,10 @@ const AgendaSection = () => {
                         <p className="text-xs font-semibold text-foreground/70 uppercase tracking-wide">{t("agenda.panelists")}</p>
                         <ul className="text-sm text-muted-foreground font-light space-y-0.5">
                           {session.panelists.map((p, idx) => (
-                            <li key={idx}>{p}</li>
+                            <li key={idx} className="flex items-start gap-2">
+                              <span className="mt-[0.45rem] w-1.5 h-1.5 flex-shrink-0 bg-accent" />
+                              <span>{p}</span>
+                            </li>
                           ))}
                         </ul>
                       </>
