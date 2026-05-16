@@ -25,32 +25,32 @@ const agendaData: Record<string, Session[]> = {
     { time: "09:00", endTime: "09:10", titleKey: "agenda.d1.s2.title", type: "talk", descKey: "agenda.d1.s2.desc", locationKey: "agenda.loc.main" },
     { time: "09:15", endTime: "09:45", titleKey: "agenda.d1.s3.title", speaker: "Josip Funda - Senior Economist, World Bank Group", type: "keynote", keynoteKind: "talk", locationKey: "agenda.loc.main", descKey: "agenda.d1.s3.desc" },
     { time: "09:50", endTime: "10:35", titleKey: "agenda.d1.s4.title", type: "keynote", keynoteKind: "panel", locationKey: "agenda.loc.main", descKey: "agenda.d1.s4.desc",
-      panelists: ["Iva Rogović Lekić – CEO, GrECo Specialty", "Snježana M. Lohninger – CFO, Porsche Inter Auto", "Marija Felkel – Group HR Director & Member of the Executive Committee, Perutnina Ptuj Group"] },
+      panelists: ["Iva Rogović Lekić - CEO, GrECo Specialty", "Snježana M. Lohninger - CFO, Porsche Inter Auto", "Marija Felkel - Group HR Director & Member of the Executive Committee, Perutnina Ptuj Group"] },
     { time: "10:35", endTime: "10:55", titleKey: "agenda.d1.s5.title", type: "break" },
     { time: "10:55", endTime: "11:15", titleKey: "agenda.d1.s6.title", speaker: "Ivan Bešlić - Co-founder & CSO, Sofascore", type: "talk", locationKey: "agenda.loc.main", descKey: "agenda.d1.s6.desc" },
     { time: "11:20", endTime: "12:05", titleKey: "agenda.d1.s7.title", type: "panel", locationKey: "agenda.loc.main", descKey: "agenda.d1.s7.desc",
-      panelists: ["Seni Staničić – Head of Human Resources, ENNA Group", "Andrea Tomišić – Head of Human Resources, Aircash", "Jelena Novačić – Head of People & Culture, Marketing and Internal Communications, Lürssen"] },
+      panelists: ["Seni Staničić - Head of Human Resources, ENNA Group", "Andrea Tomišić - Head of Human Resources, Aircash", "Jelena Novačić - Head of People & Culture, Marketing and Internal Communications, Lürssen"] },
     { time: "12:05", endTime: "13:35", titleKey: "agenda.d1.s8.title", type: "networking" },
     { time: "13:35", endTime: "13:55", titleKey: "agenda.d1.s9.title", speaker: "Stefan Vukajlović - Group HR Director for Compensation and Benefits, Fortenova Group", type: "talk", locationKey: "agenda.loc.main", descKey: "agenda.d1.s9.desc" },
     { time: "14:00", endTime: "14:45", titleKey: "agenda.d1.s10.title", type: "panel", locationKey: "agenda.loc.main", descKey: "agenda.d1.s10.desc",
-      panelists: ["Krešimir Barić – CFO, Erste&Steiermärkische Bank Croatia", "Mirela Kotarac – HR Director & Member of the Management Board, Cemex Croatia", "Mirta Pađen Lee – Senior Director of Reward and Operations, Infobip"] },
+      panelists: ["Krešimir Barić - CFO, Erste&Steiermärkische Bank Croatia", "Mirela Kotarac - HR Director & Member of the Management Board, Cemex Croatia", "Mirta Pađen Lee - Senior Director of Reward and Operations, Infobip"] },
     { time: "14:45", endTime: "15:05", titleKey: "agenda.d1.s11.title", type: "break" },
     { time: "15:05", endTime: "15:25", titleKey: "agenda.d1.s12.title", speaker: "Suzana Plečko - Human Resources Director, Franck", type: "talk", locationKey: "agenda.loc.main", descKey: "agenda.d1.s12.desc" },
     { time: "15:30", endTime: "16:15", titleKey: "agenda.d1.s13.title", type: "panel", locationKey: "agenda.loc.main", descKey: "agenda.d1.s13.desc",
-      panelists: ["Martina Skorin – Head of Human Resources, HAKOM", "Branimir Spajić – Director of Strategic Human Resources Management, Hrvatski Telekom", "Marina Regjo – Human Resources Director, FNG Property HR (Fortenova Group)"] },
+      panelists: ["Martina Skorin - Head of Human Resources, HAKOM", "Branimir Spajić - Director of Strategic Human Resources Management, Hrvatski Telekom", "Marina Regjo - Human Resources Director, FNG Property HR (Fortenova Group)"] },
   ],
   day2: [
     { time: "08:00", endTime: "09:00", titleKey: "agenda.d2.s1.title", type: "break" },
     { time: "09:00", endTime: "09:30", titleKey: "agenda.d2.s2.title", type: "keynote", keynoteKind: "talk", locationKey: "agenda.loc.main", descKey: "agenda.d2.s2.desc" },
     { time: "09:35", endTime: "10:20", titleKey: "agenda.d2.s3.title", type: "keynote", keynoteKind: "panel", locationKey: "agenda.loc.main", descKey: "agenda.d2.s3.desc",
-      panelists: ["Tihana Marušić – Talent Management Lead, Atlantic Group", "Maja Darija Škrljak – Group Talent Attraction and Acquisition Manager, Vetropack Group"] },
+      panelists: ["Tihana Marušić - Talent Management Lead, Atlantic Group", "Maja Darija Škrljak - Group Talent Attraction and Acquisition Manager, Vetropack Group"] },
     { time: "10:20", endTime: "10:40", titleKey: "agenda.d2.s4.title", type: "break" },
     { time: "10:45", endTime: "11:05", titleKey: "agenda.d2.s5.title", speaker: "Sanja Škrinjar - Team Lead & HR Consultant, DeeP Project", type: "talk", locationKey: "agenda.loc.main", descKey: "agenda.d2.s5.desc" },
     { time: "11:10", endTime: "11:55", titleKey: "agenda.d2.s6.title", type: "panel", locationKey: "agenda.loc.main", descKey: "agenda.d2.s6.desc",
-      panelists: ["Anton Barbir – Member of Management Board, ENNA Group", "Ivan Artuković – CEO, Franck"] },
+      panelists: ["Anton Barbir - Member of Management Board, ENNA Group", "Ivan Artuković - CEO, Franck"] },
     { time: "11:55", endTime: "12:15", titleKey: "agenda.d2.s7.title", type: "break" },
     { time: "12:15", endTime: "13:00", titleKey: "agenda.d2.s8.title", type: "panel", locationKey: "agenda.loc.main", descKey: "agenda.d2.s8.desc",
-      panelists: ["Ivan Zubak – CEO, Zubak Group", "Mladen Pejković – Senior Executive Director, Transformation & ICT, Atlantic Group"],
+      panelists: ["Ivan Zubak - CEO, Zubak Group", "Mladen Pejković - Senior Executive Director, Transformation & ICT, Atlantic Group"],
       moderator: "Antonija Mandić", moderatorLabel: "moderatorica" },
     { time: "13:05", endTime: "13:20", titleKey: "agenda.d2.s9.title", type: "talk", locationKey: "agenda.loc.main", descKey: "agenda.d2.s9.desc" },
     { time: "13:20", endTime: "15:00", titleKey: "agenda.d2.s10.title", type: "networking" },
@@ -127,7 +127,7 @@ const AgendaSection = () => {
     const isExpandable = !isBreak;
     const isPlaceholder = !session.titleKey && !session.speaker && !session.locationKey && !session.trackKey && !session.descKey;
     const title = session.titleKey ? t(session.titleKey) : "";
-    const timeRange = session.time && session.endTime ? `${session.time} – ${session.endTime}` : "";
+    const timeRange = session.time && session.endTime ? `${session.time} - ${session.endTime}` : "";
 
     return (
       <div
