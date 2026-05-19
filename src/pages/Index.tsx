@@ -21,12 +21,15 @@ const eventJsonLd = {
   endDate: "2026-11-27T18:00:00+01:00",
   eventAttendanceMode: "https://schema.org/OfflineEventAttendanceMode",
   eventStatus: "https://schema.org/EventScheduled",
+  image: "https://peopleandculture.hr/og-image.jpg",
   location: {
     "@type": "Place",
-    name: "Zagreb",
+    name: "Mozaik Event Centar",
     address: {
       "@type": "PostalAddress",
+      streetAddress: "Slavonska avenija 6/2",
       addressLocality: "Zagreb",
+      postalCode: "10000",
       addressCountry: "HR",
     },
   },
@@ -38,6 +41,32 @@ const eventJsonLd = {
     name: "DeeP Project",
     url: "https://peopleandculture.hr",
   },
+  offers: [
+    {
+      "@type": "Offer",
+      name: "Blind bird",
+      price: "249.00",
+      priceCurrency: "EUR",
+      availability: "https://schema.org/InStock",
+      url: "https://peopleandculture.hr/#pricing",
+    },
+    {
+      "@type": "Offer",
+      name: "Early bird",
+      price: "349.00",
+      priceCurrency: "EUR",
+      availability: "https://schema.org/InStock",
+      url: "https://peopleandculture.hr/#pricing",
+    },
+    {
+      "@type": "Offer",
+      name: "Regular",
+      price: "499.00",
+      priceCurrency: "EUR",
+      availability: "https://schema.org/InStock",
+      url: "https://peopleandculture.hr/#pricing",
+    },
+  ],
 };
 
 const Index = () => {
@@ -50,7 +79,7 @@ const Index = () => {
           content="HR & Business konferencija u Zagrebu, 26. - 27. studenog 2026. Govornici, agenda, lokacija i karte."
         />
         <link rel="canonical" href="https://peopleandculture.hr/" />
-        <meta property="og:title" content="People & Culture HORIZONS" />
+        <meta property="og:title" content="People & Culture HORIZONS — HR & Business konferencija" />
         <meta
           property="og:description"
           content="HR & Business konferencija u Zagrebu, 26. - 27. studenog 2026."
