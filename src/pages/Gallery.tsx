@@ -1,4 +1,5 @@
 import { useEffect, useState } from "react";
+import { Helmet } from "react-helmet-async";
 import { ChevronLeft, ChevronRight } from "lucide-react";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
@@ -356,6 +357,26 @@ const Gallery = () => {
 
   return (
     <div className="min-h-screen bg-background">
+      <Helmet>
+        <title>Galerija 2025 — People & Culture HORIZONS</title>
+        <meta
+          name="description"
+          content="Fotografije s konferencije People & Culture Horizons 2025: govornici, paneli, networking i atmosfera događaja u Zagrebu."
+        />
+        <link rel="canonical" href="https://peopleandculture.hr/galerija-2025" />
+        <meta property="og:title" content="Galerija 2025 — People & Culture HORIZONS" />
+        <meta
+          property="og:description"
+          content="Fotogalerija s konferencije People & Culture Horizons 2025 u Zagrebu."
+        />
+        <meta property="og:url" content="https://peopleandculture.hr/galerija-2025" />
+        <script type="application/ld+json">{JSON.stringify({
+          "@context": "https://schema.org",
+          "@type": "ImageGallery",
+          name: "Galerija People & Culture Horizons 2025",
+          url: "https://peopleandculture.hr/galerija-2025",
+        })}</script>
+      </Helmet>
       <Navbar />
       <main className="pt-24 pb-16">
         <div className="container mx-auto px-6">
