@@ -11,7 +11,7 @@ const PricingSection = () => {
 
   const tiers = [
     {
-      name: "Blind bird",
+      name: "Early bird",
       periodKey: "pricing.blindBird.period",
       price: "€249,00",
       featureKeys: ["pricing.common.f1", "pricing.common.f2", "pricing.common.f3", "pricing.common.f4"],
@@ -19,7 +19,7 @@ const PricingSection = () => {
       registrationOpen: true,
     },
     {
-      name: "Early bird",
+      name: "Regular",
       periodKey: "pricing.earlyBird.period",
       price: "€349,00",
       featureKeys: ["pricing.common.f1", "pricing.common.f2", "pricing.common.f3", "pricing.common.f4"],
@@ -27,7 +27,7 @@ const PricingSection = () => {
       registrationOpen: false,
     },
     {
-      name: "Regular",
+      name: "Last minute",
       periodKey: "pricing.regular.period",
       price: "€499,00",
       featureKeys: ["pricing.common.f1", "pricing.common.f2", "pricing.common.f3", "pricing.common.f4"],
