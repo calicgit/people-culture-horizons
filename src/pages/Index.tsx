@@ -82,13 +82,13 @@ const Index = () => {
   return (
     <div className="min-h-screen bg-background">
       <Helmet>
-        <title>People & Culture HORIZONS — HR & Business konferencija</title>
+        <title>People & Culture HORIZONS - HR & Business konferencija</title>
         <meta
           name="description"
           content="HR & Business konferencija u Zagrebu, 26. - 27. studenog 2026. Govornici, agenda, lokacija i karte."
         />
         <link rel="canonical" href="https://peopleandculture.hr/" />
-        <meta property="og:title" content="People & Culture HORIZONS — HR & Business konferencija" />
+        <meta property="og:title" content="People & Culture HORIZONS - HR & Business konferencija" />
         <meta
           property="og:description"
           content="HR & Business konferencija u Zagrebu, 26. - 27. studenog 2026."
