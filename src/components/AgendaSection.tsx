@@ -47,7 +47,7 @@ const agendaData: Record<string, Session[]> = {
     { time: "10:20", endTime: "10:40", titleKey: "agenda.d2.s4.title", type: "break" },
     { time: "10:45", endTime: "11:05", titleKey: "agenda.d2.s5.title", speaker: "Sanja Škrinjar - Team Lead & HR Consultant, DeeP Project", type: "talk", locationKey: "agenda.loc.main", descKey: "agenda.d2.s5.desc" },
     { time: "11:10", endTime: "11:55", titleKey: "agenda.d2.s6.title", type: "panel", locationKey: "agenda.loc.main", descKey: "agenda.d2.s6.desc",
-      panelists: ["Anton Barbir - Member of Management Board, ENNA Group", "Ivan Artuković - CEO, Franck"] },
+      panelists: ["Anton Barbir - Member of Management Board, ENNA Group", "Ivan Artuković - CEO, Franck", "Željko Tandarić - Member of the Management Board, Abysalto"] },
     { time: "11:55", endTime: "12:15", titleKey: "agenda.d2.s7.title", type: "break" },
     { time: "12:15", endTime: "13:00", titleKey: "agenda.d2.s8.title", type: "panel", locationKey: "agenda.loc.main", descKey: "agenda.d2.s8.desc",
       panelists: ["Ivan Zubak - CEO, Zubak Group", "Mladen Pejković - Senior Executive Director, Transformation & ICT, Atlantic Group"],
