@@ -18,6 +18,8 @@ import speakerTihanaMarusic from "@/assets/speaker-tihana-marusic.png";
 import speakerMajaDarijaSkrljak from "@/assets/speaker-maja-darija-skrljak.jpg";
 import speakerMartinaSkorin from "@/assets/speaker-martina-skorin.jpg";
 import speakerAndreaTomsic from "@/assets/speaker-andrea-tomsic.jpg";
+import speakerSeniStanicic from "@/assets/speaker-seni-stanicic.jpg";
+import speakerAntonBarbir from "@/assets/speaker-anton-barbir.jpg";
 import { Dialog, DialogContent } from "@/components/ui/dialog";
 
 interface Speaker {
@@ -32,7 +34,7 @@ interface Speaker {
 
 const speakers: Speaker[] = [
   { name: "Ivan Bešlić", title: "Co-founder & CSO", company: "Sofascore", photo: speakerIvanBeslic, photoPosition: "center center", photoScale: 1.0, bioKey: "speakers.bio.ivan_beslic" },
-  { name: "Seni Staničić", title: "Head of Human Resources", company: "ENNA Group" },
+  { name: "Seni Staničić", title: "Head of Human Resources", company: "ENNA Group", photo: speakerSeniStanicic, photoPosition: "center 15%", photoScale: 1.0, bioKey: "speakers.bio.seni_stanicic" },
   { name: "Stefan Vukajlović", title: "Group HR Director for Compensation and Benefits", company: "Fortenova Group" },
   { name: "Krešimir Barić", title: "CFO", company: "Erste&Steiermärkische Bank Croatia" },
   { name: "Mirela Kotarac", title: "HR Director & Member of the Management Board", company: "Cemex Croatia", photo: speakerMirelaKotarac, photoPosition: "center 30%", photoScale: 1.35, bioKey: "speakers.bio.mirela_kotarac" },
@@ -56,7 +58,7 @@ const speakers: Speaker[] = [
   { name: "Željko Tandarić", title: "Member of the Management Board", company: "Abysalto" },
   { name: "Tihana Marušić", title: "Talent Management Lead", company: "Atlantic Group", photo: speakerTihanaMarusic, photoPosition: "center 15%", photoScale: 1.0, bioKey: "speakers.bio.tihana_marusic" },
   { name: "Maja Darija Škrljak", title: "Group Talent Attraction and Acquisition Manager", company: "Vetropack Group", photo: speakerMajaDarijaSkrljak, photoPosition: "center 15%", photoScale: 1.0, bioKey: "speakers.bio.maja_darija_skrljak" },
-  { name: "Anton Barbir", title: "Member of Management Board", company: "ENNA Group" },
+  { name: "Anton Barbir", title: "Member of Management Board", company: "ENNA Group", photo: speakerAntonBarbir, photoPosition: "center 20%", photoScale: 1.0, bioKey: "speakers.bio.anton_barbir" },
 ];
 
 const SpeakersSection = () => {
