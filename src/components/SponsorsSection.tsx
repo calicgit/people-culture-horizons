@@ -4,6 +4,7 @@ import partnerGreco from "@/assets/partner-greco.png";
 import partnerJenz from "@/assets/partner-jenz.png";
 import partnerCognipulse from "@/assets/partner-cognipulse.png";
 import sponsorAtlantic from "@/assets/sponsor-atlantic.png";
+import sponsorPerutnina from "@/assets/sponsor-perutnina.png";
 import patronMrms from "@/assets/patron-mrms.png";
 import patronHpk from "@/assets/patron-hpk.png";
 import patronPchub from "@/assets/patron-pchub.svg";
@@ -24,6 +25,7 @@ const patrons: LogoEntry[] = [
 
 const sponsors: LogoEntry[] = [
   { name: "Atlantic Grupa", logo: sponsorAtlantic, scale: 1.65, url: "https://www.atlanticgrupa.com/hr/" },
+  { name: "Perutnina Ptuj", logo: sponsorPerutnina, scale: 1.3, url: "https://www.perutnina.com/hr/hr/home/" },
 ];
 
 const PartnerLogo = ({ name, logo, scale = 1, url, size = "lg", yOffset = 0 }: LogoEntry & { size?: "lg" | "md" | "sm" }) => {
