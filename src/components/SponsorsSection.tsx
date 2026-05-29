@@ -14,21 +14,23 @@ type LogoEntry = { name: string; logo: string; scale?: number; url: string; yOff
 
 const platinumPartners: LogoEntry[] = [
   { name: "Greco", logo: partnerGreco, scale: 1, url: "https://greco.services/greco-specijalisti-u-osiguranju-i-upravljanju-rizicima/" },
-  { name: "Jenz", logo: partnerJenz, scale: 1.45, url: "https://jenz.app/" },
-  { name: "CogniPulse", logo: partnerCognipulse, scale: 1.8, url: "https://cognipulse.io/" },
+const platinumPartners: LogoEntry[] = [
+  { name: "Greco", logo: partnerGreco, scale: 0.85, url: "https://greco.services/greco-specijalisti-u-osiguranju-i-upravljanju-rizicima/" },
+  { name: "Jenz", logo: partnerJenz, scale: 1.3, url: "https://jenz.app/" },
+  { name: "CogniPulse", logo: partnerCognipulse, scale: 1.65, url: "https://cognipulse.io/" },
 ];
 
 const patrons: LogoEntry[] = [
-  { name: "Ministarstvo rada, mirovinskoga sustava, obitelji i socijalne politike", logo: patronMrms, scale: 1, url: "https://mrosp.gov.hr/" },
-  { name: "Hrvatska psihološka komora", logo: patronHpk, scale: 1, url: "https://www.psiholoska-komora.hr/" },
-  { name: "People & Culture HUB", logo: patronPchub, scale: 1.05, url: "https://hub.peopleandculture.hr/", yOffset: 6 },
-  { name: "Jutarnji list", logo: patronJutarnji, scale: 1, url: "https://www.jutarnji.hr" },
+  { name: "Ministarstvo rada, mirovinskoga sustava, obitelji i socijalne politike", logo: patronMrms, scale: 0.85, url: "https://mrosp.gov.hr/" },
+  { name: "Hrvatska psihološka komora", logo: patronHpk, scale: 0.85, url: "https://www.psiholoska-komora.hr/" },
+  { name: "People & Culture HUB", logo: patronPchub, scale: 0.9, url: "https://hub.peopleandculture.hr/", yOffset: 6 },
+  { name: "Jutarnji list", logo: patronJutarnji, scale: 0.85, url: "https://www.jutarnji.hr" },
 ];
 
 const sponsors: LogoEntry[] = [
-  { name: "Atlantic Grupa", logo: sponsorAtlantic, scale: 1.65, url: "https://www.atlanticgrupa.com/hr/" },
-  { name: "Perutnina Ptuj", logo: sponsorPerutnina, scale: 0.85, url: "https://www.perutnina.com/hr/hr/home/" },
-  { name: "Franck", logo: sponsorFranck, scale: 0.7, url: "https://www.franck.eu/hr/" },
+  { name: "Atlantic Grupa", logo: sponsorAtlantic, scale: 1.5, url: "https://www.atlanticgrupa.com/hr/" },
+  { name: "Perutnina Ptuj", logo: sponsorPerutnina, scale: 0.7, url: "https://www.perutnina.com/hr/hr/home/" },
+  { name: "Franck", logo: sponsorFranck, scale: 0.55, url: "https://www.franck.eu/hr/" },
 ];
 
 const PartnerLogo = ({ name, logo, scale = 1, url, size = "lg", yOffset = 0 }: LogoEntry & { size?: "lg" | "md" | "sm" }) => {
