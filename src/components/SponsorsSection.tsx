@@ -56,7 +56,7 @@ const SponsorsSection = () => {
         </div>
 
         <div className="mb-12 md:mb-14">
-          <p className="text-center text-xs font-semibold uppercase tracking-[0.25em] text-muted-foreground mb-8">{t("sponsors.platinum")}</p>
+          <p className="text-center text-xs font-semibold uppercase tracking-[0.25em] text-primary mb-8">{t("sponsors.platinum")}</p>
           <div className="flex flex-wrap items-center justify-center">
             {platinumPartners.map((p) => (
               <div key={p.name} className="w-1/2 flex justify-center md:w-auto">
@@ -68,7 +68,7 @@ const SponsorsSection = () => {
 
         {sponsors.length > 0 && (
           <div className="mb-12 md:mb-14">
-            <p className="text-center text-xs font-semibold uppercase tracking-[0.25em] text-muted-foreground mb-8">{t("sponsors.community")}</p>
+            <p className="text-center text-xs font-semibold uppercase tracking-[0.25em] text-primary mb-8">{t("sponsors.community")}</p>
             <div className="flex flex-wrap items-center justify-center">
               {sponsors.map((s) => <div key={s.name} className="w-1/2 flex justify-center md:w-auto"><PartnerLogo {...s} size="md" /></div>)}
             </div>
@@ -77,7 +77,7 @@ const SponsorsSection = () => {
 
         {patrons.length > 0 && (
           <div className="mb-12 md:mb-14">
-            <p className="text-center text-xs font-semibold uppercase tracking-[0.25em] text-muted-foreground mb-8">{t("sponsors.gold")}</p>
+            <p className="text-center text-xs font-semibold uppercase tracking-[0.25em] text-primary mb-8">{t("sponsors.gold")}</p>
             <div className="flex flex-wrap items-center justify-center">
               {patrons.map((p) => <div key={p.name} className="w-1/2 flex justify-center md:w-auto"><PartnerLogo {...p} size="md" /></div>)}
             </div>
@@ -85,7 +85,7 @@ const SponsorsSection = () => {
         )}
 
         <div className="border-t border-border pt-6 md:pt-8">
-          <p className="mb-4 text-center text-xs font-semibold uppercase tracking-[0.25em] text-muted-foreground md:text-sm">{t("sponsors.organizer")}</p>
+          <p className="mb-4 text-center text-xs font-semibold uppercase tracking-[0.25em] text-primary md:text-sm">{t("sponsors.organizer")}</p>
           <div className="flex items-center justify-center">
             <a href="https://deepproject.hr/" target="_blank" rel="noopener noreferrer" className="inline-block hover:opacity-80 transition-opacity">
               <img src={deepProjectLogo} alt="DeeP Project" className="object-contain" style={{ height: "8.25rem" }} />
