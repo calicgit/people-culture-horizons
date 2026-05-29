@@ -13,8 +13,6 @@ import patronJutarnji from "@/assets/patron-jutarnji.png";
 type LogoEntry = { name: string; logo: string; scale?: number; url: string; yOffset?: number };
 
 const platinumPartners: LogoEntry[] = [
-  { name: "Greco", logo: partnerGreco, scale: 1, url: "https://greco.services/greco-specijalisti-u-osiguranju-i-upravljanju-rizicima/" },
-const platinumPartners: LogoEntry[] = [
   { name: "Greco", logo: partnerGreco, scale: 0.85, url: "https://greco.services/greco-specijalisti-u-osiguranju-i-upravljanju-rizicima/" },
   { name: "Jenz", logo: partnerJenz, scale: 1.3, url: "https://jenz.app/" },
   { name: "CogniPulse", logo: partnerCognipulse, scale: 1.65, url: "https://cognipulse.io/" },
