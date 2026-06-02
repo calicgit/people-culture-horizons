@@ -41,7 +41,7 @@ const eventJsonLd = {
     name: "DeeP Project",
     url: "https://peopleandculture.hr",
     email: "horizons@peopleandculture.hr",
-    telephone: ["+385 1 4103 734", "+385 98 1628 349"],
+    telephone: ["+385 1 7077 436", "+385 98 1628 349"],
     address: {
       "@type": "PostalAddress",
       streetAddress: "Kamenarka 37",
