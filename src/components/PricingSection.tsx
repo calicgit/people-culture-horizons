@@ -102,9 +102,11 @@ const PricingSection = () => {
           ))}
         </div>
         <div className="mt-10 max-w-3xl mx-auto text-center">
-          <p className="text-base md:text-lg text-foreground font-medium bg-card border border-border rounded-2xl px-6 py-5 shadow-card">
-            {t("pricing.teamOffer")}
-          </p>
+          <p
+            className="text-base md:text-lg text-foreground font-medium bg-card border border-border rounded-2xl px-6 py-5 shadow-card"
+            dangerouslySetInnerHTML={{ __html: t("pricing.teamOffer") }}
+          />
+
         </div>
       </div>
 
