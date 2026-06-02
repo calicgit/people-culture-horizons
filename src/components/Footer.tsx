@@ -122,9 +122,9 @@ const Footer = () => {
                 <Mail className="h-4 w-4 shrink-0" />
                 <span>horizons@peopleandculture.hr</span>
               </a>
-              <a href="tel:+38514103734" className="flex items-center justify-center gap-3 hover:text-primary transition-colors md:justify-start">
+              <a href="tel:+38517077436" className="flex items-center justify-center gap-3 hover:text-primary transition-colors md:justify-start">
                 <Phone className="h-4 w-4 shrink-0" />
-                <span>+385 1 4103 734</span>
+                <span>+385 1 7077 436</span>
               </a>
             </div>
           </div>
