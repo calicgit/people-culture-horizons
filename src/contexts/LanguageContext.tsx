@@ -452,6 +452,7 @@ const translations: Record<Language, Record<string, string>> = {
     "pricing.common.f2": "Access to all stages",
     "pricing.common.f3": "Full catering for both conference days (coffee, beverages, lunch, finger food…)",
     "pricing.common.f4": "Hotel and taxi discounts",
+    "pricing.teamOffer": "Special team offer: register 4 participants from the same organization and pay for only 3 – the fourth one is free.",
 
     // Venue
     "venue.label": "Venue",
