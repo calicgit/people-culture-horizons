@@ -5,7 +5,7 @@ import partnerJenz from "@/assets/partner-jenz.png";
 import partnerCognipulse from "@/assets/partner-cognipulse.png";
 import sponsorAtlantic from "@/assets/sponsor-atlantic.png";
 import sponsorPerutnina from "@/assets/sponsor-perutnina.png";
-import sponsorFranck from "@/assets/sponsor-franck.png";
+
 import patronMrms from "@/assets/patron-mrms.png";
 import patronHpk from "@/assets/patron-hpk.png";
 import patronPchub from "@/assets/patron-pchub.svg";
