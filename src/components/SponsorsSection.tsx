@@ -28,7 +28,6 @@ const patrons: LogoEntry[] = [
 const sponsors: LogoEntry[] = [
   { name: "Atlantic Grupa", logo: sponsorAtlantic, scale: 1.5, url: "https://www.atlanticgrupa.com/hr/" },
   { name: "Perutnina Ptuj", logo: sponsorPerutnina, scale: 0.7, url: "https://www.perutnina.com/hr/hr/home/" },
-  { name: "Franck", logo: sponsorFranck, scale: 0.55, url: "https://www.franck.eu/hr/" },
 ];
 
 const PartnerLogo = ({ name, logo, scale = 1, url, size = "lg", yOffset = 0 }: LogoEntry & { size?: "lg" | "md" | "sm" }) => {
