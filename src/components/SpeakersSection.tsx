@@ -20,6 +20,7 @@ import speakerMartinaSkorin from "@/assets/speaker-martina-skorin.jpg";
 import speakerAndreaTomsic from "@/assets/speaker-andrea-tomsic.jpg";
 import speakerSeniStanicic from "@/assets/speaker-seni-stanicic.jpg";
 import speakerAntonBarbir from "@/assets/speaker-anton-barbir.jpg";
+import speakerVjekoslavGolubovicAsset from "@/assets/speaker-vjekoslav-golubovic.png.asset.json";
 import { Dialog, DialogContent } from "@/components/ui/dialog";
 
 interface Speaker {
@@ -50,6 +51,7 @@ const speakers: Speaker[] = [
   { name: "Sanja Škrinjar", title: "Team Lead & HR Consultant", company: "DeeP Project", photo: speakerSanjaSkrinjar, photoPosition: "center 8%", bioKey: "speakers.bio.sanja_skrinjar" },
   { name: "Ingrid Tena Grgić", title: "Human Resources Consultant", company: "DeeP Project", photo: speakerIngridTenaGrgic, photoPosition: "center 15%", photoScale: 1.0, bioKey: "speakers.bio.ingrid_tena_grgic" },
   { name: "Borna Lončar", title: "HR Consultant & Researcher", company: "DeeP Project", photo: speakerBornaLoncar, photoPosition: "center 15%", photoScale: 1.0, bioKey: "speakers.bio.borna_loncar" },
+  { name: "Vjekoslav Golubović", title: "Principal HR Consultant", company: "DeeP Project", photo: speakerVjekoslavGolubovicAsset.url, photoPosition: "center 15%", photoScale: 1.0, bioKey: "speakers.bio.vjekoslav_golubovic" },
   
   { name: "Snježana M. Lohninger", title: "CFO", company: "Porsche Inter Auto", photo: speakerSnjezanaLohninger, photoPosition: "center 15%", photoScale: 1.0, bioKey: "speakers.bio.snjezana_lohninger" },
   { name: "Ivan Artuković", title: "CEO", company: "Franck" },
