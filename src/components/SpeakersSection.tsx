@@ -65,7 +65,7 @@ const speakers: Speaker[] = [
   { name: "Maja Darija Škrljak", title: "Group Talent Attraction and Acquisition Manager", company: "Vetropack Group", photo: speakerMajaDarijaSkrljak, photoPosition: "center 15%", photoScale: 1.0, bioKey: "speakers.bio.maja_darija_skrljak" },
   { name: "Borna Lončar", title: "HR Consultant & Researcher", company: "DeeP Project", photo: speakerBornaLoncar, photoPosition: "center 15%", photoScale: 1.0, bioKey: "speakers.bio.borna_loncar" },
   { name: "Anton Barbir", title: "Member of Management Board", company: "ENNA Group", photo: speakerAntonBarbir, photoPosition: "center 20%", photoScale: 1.0, bioKey: "speakers.bio.anton_barbir" },
-  { name: "Jelica Radović", title: "Managing Partner & HR Consultant", company: "HR Fabrika", photo: speakerJelicaRadovicAsset.url, photoPosition: "center 20%", photoScale: 1.0, bioKey: "speakers.bio.jelica_radovic" },
+  { name: "Jelica Radović", title: "Managing Partner & HR Consultant", company: "HR Fabrika", photo: speakerJelicaRadovicAsset.url, photoPosition: "center top", photoScale: 0.85, bioKey: "speakers.bio.jelica_radovic" },
   { name: "Tina Balenović", title: "Human Resources Director", company: "SPAN" },
 ];
 
