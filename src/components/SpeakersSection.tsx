@@ -21,6 +21,9 @@ import speakerAndreaTomsic from "@/assets/speaker-andrea-tomsic.jpg";
 import speakerSeniStanicic from "@/assets/speaker-seni-stanicic.jpg";
 import speakerAntonBarbir from "@/assets/speaker-anton-barbir.jpg";
 import speakerVjekoslavGolubovicAsset from "@/assets/speaker-vjekoslav-golubovic.png.asset.json";
+import speakerPetarCalicAsset from "@/assets/speaker-petar-calic.jpg.asset.json";
+import speakerNikolaMilosavljevicAsset from "@/assets/speaker-nikola-milosavljevic.jpg.asset.json";
+import speakerJelicaRadovicAsset from "@/assets/speaker-jelica-radovic.jpg.asset.json";
 import { Dialog, DialogContent } from "@/components/ui/dialog";
 
 interface Speaker {
