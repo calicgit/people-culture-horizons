@@ -63,7 +63,7 @@ const agendaData: Record<string, Session[]> = {
 const masterclassData: Record<string, Session[]> = {
   day1: [
     { time: "10:55", endTime: "12:05", titleKey: "agenda.d1.mc1.title", speaker: "Borna Lončar - HR Consultant & Researcher, DeeP Project", type: "workshop", locationKey: "agenda.loc.earth", descKey: "agenda.d1.mc1.desc" },
-    { time: "10:55", endTime: "12:05", titleKey: "agenda.d1.mc2.title", speaker: "Nikola Milosavljević - Managing Partner & Senior HR Consultant, HR Fabrika\nJelica Radović - Managing Partner & HR Consultant, HR Fabrika", type: "workshop", locationKey: "agenda.loc.air", descKey: "agenda.d1.mc2.desc" },
+    { time: "10:55", endTime: "12:05", titleKey: "agenda.d1.mc2.title", speaker: "Nikola Milosavljević - Managing Partner & Senior HR Consultant, HR Fabrika & Jelica Radović - Managing Partner & HR Consultant, HR Fabrika", type: "workshop", locationKey: "agenda.loc.air", descKey: "agenda.d1.mc2.desc" },
     { time: "10:55", endTime: "12:05", titleKey: "agenda.d1.mc3.title", type: "workshop", locationKey: "agenda.loc.fire", descKey: "agenda.d1.mc3.desc" },
   ],
   day2: [
@@ -170,7 +170,7 @@ const AgendaSection = () => {
                   })() : "\u00A0"}
                 </h3>
                 {session.speaker && (
-                  <p className="text-muted-foreground text-sm mt-0.5 font-light whitespace-pre-line">{session.speaker}</p>
+                  <p className="text-muted-foreground text-sm mt-0.5 font-light">{session.speaker}</p>
                 )}
                 {(session.panelists?.length || session.moderator) && (
                   <div className="mt-2 space-y-0.5">
