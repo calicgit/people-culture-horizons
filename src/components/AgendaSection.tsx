@@ -170,7 +170,7 @@ const AgendaSection = () => {
                   })() : "\u00A0"}
                 </h3>
                 {session.speaker && (
-                  <p className="text-muted-foreground text-sm mt-0.5 font-light">{session.speaker}</p>
+                  <p className="text-muted-foreground text-sm mt-0.5 font-light whitespace-pre-line">{session.speaker}</p>
                 )}
                 {(session.panelists?.length || session.moderator) && (
                   <div className="mt-2 space-y-0.5">
