@@ -61,7 +61,7 @@ const speakers: Speaker[] = [
   { name: "Željko Tandarić", title: "Member of the Management Board", company: "Abysalto" },
   { name: "Ingrid Tena Grgić", title: "Human Resources Consultant", company: "DeeP Project", photo: speakerIngridTenaGrgic, photoPosition: "center 15%", photoScale: 1.0, bioKey: "speakers.bio.ingrid_tena_grgic" },
   { name: "Tihana Marušić", title: "Talent Management Lead", company: "Atlantic Group", photo: speakerTihanaMarusic, photoPosition: "center 15%", photoScale: 1.0, bioKey: "speakers.bio.tihana_marusic" },
-  { name: "Nikola Milosavljević", title: "Managing Partner & Senior HR Consultant", company: "HR Fabrika", photo: speakerNikolaMilosavljevicAsset.url, photoPosition: "center 20%", photoScale: 1.0, bioKey: "speakers.bio.nikola_milosavljevic" },
+  { name: "Nikola Milosavljević", title: "Managing Partner & Senior HR Consultant", company: "HR Fabrika", photo: speakerNikolaMilosavljevicAsset.url, photoPosition: "center top", photoScale: 0.85, bioKey: "speakers.bio.nikola_milosavljevic" },
   { name: "Maja Darija Škrljak", title: "Group Talent Attraction and Acquisition Manager", company: "Vetropack Group", photo: speakerMajaDarijaSkrljak, photoPosition: "center 15%", photoScale: 1.0, bioKey: "speakers.bio.maja_darija_skrljak" },
   { name: "Borna Lončar", title: "HR Consultant & Researcher", company: "DeeP Project", photo: speakerBornaLoncar, photoPosition: "center 15%", photoScale: 1.0, bioKey: "speakers.bio.borna_loncar" },
   { name: "Anton Barbir", title: "Member of Management Board", company: "ENNA Group", photo: speakerAntonBarbir, photoPosition: "center 20%", photoScale: 1.0, bioKey: "speakers.bio.anton_barbir" },
