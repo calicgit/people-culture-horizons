@@ -57,7 +57,7 @@ const speakers: Speaker[] = [
   { name: "Vjekoslav Golubović", title: "Principal HR Consultant", company: "DeeP Project", photo: speakerVjekoslavGolubovicAsset.url, photoPosition: "center 15%", photoScale: 1.0, bioKey: "speakers.bio.vjekoslav_golubovic" },
   { name: "Andrea Tomšić", title: "Head of Human Resources", company: "Aircash", photo: speakerAndreaTomsic, photoPosition: "center 40%", photoScale: 1.1, bioKey: "speakers.bio.andrea_tomsic" },
   { name: "Jelena Novačić", title: "Head of People & Culture, Marketing and Internal Communications", company: "Lürssen" },
-  { name: "Petar Čalić", title: "CEO", company: "DeeP Project", photo: speakerPetarCalicAsset.url, photoPosition: "center 20%", photoScale: 1.3, bioKey: "speakers.bio.petar_calic" },
+  { name: "Petar Čalić", title: "CEO", company: "DeeP Project", photo: speakerPetarCalicAsset.url, photoPosition: "72% 38%", photoScale: 1.6, bioKey: "speakers.bio.petar_calic" },
   { name: "Željko Tandarić", title: "Member of the Management Board", company: "Abysalto" },
   { name: "Ingrid Tena Grgić", title: "Human Resources Consultant", company: "DeeP Project", photo: speakerIngridTenaGrgic, photoPosition: "center 15%", photoScale: 1.0, bioKey: "speakers.bio.ingrid_tena_grgic" },
   { name: "Tihana Marušić", title: "Talent Management Lead", company: "Atlantic Group", photo: speakerTihanaMarusic, photoPosition: "center 15%", photoScale: 1.0, bioKey: "speakers.bio.tihana_marusic" },
