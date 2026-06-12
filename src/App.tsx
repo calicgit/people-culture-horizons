@@ -7,6 +7,7 @@ import { LanguageProvider } from "@/contexts/LanguageContext";
 import Index from "./pages/Index";
 import NotFound from "./pages/NotFound";
 import Gallery from "./pages/Gallery";
+import Awards from "./pages/Awards";
 
 const queryClient = new QueryClient();
 
@@ -20,6 +21,7 @@ const App = () => (
           <Routes>
             <Route path="/" element={<Index />} />
             <Route path="/galerija-2025" element={<Gallery />} />
+            <Route path="/nagrade" element={<Awards />} />
             <Route path="*" element={<NotFound />} />
           </Routes>
         </BrowserRouter>
