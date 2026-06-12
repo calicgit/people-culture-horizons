@@ -283,6 +283,7 @@ const translations: Record<Language, Record<string, string>> = {
     "nav.pricing": "Registration",
     "nav.gallery": "Gallery 2025.",
     "nav.venue": "Venue",
+    "nav.awards": "Awards",
     "nav.sponsors": "Partners & Sponsors",
     "nav.buyTicket": "Reserve Registration",
 
