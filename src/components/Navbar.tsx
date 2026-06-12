@@ -40,8 +40,8 @@ const Navbar = () => {
     { label: t("nav.agenda"), href: "#agenda" },
     { label: t("nav.venue"), href: "#venue" },
     { label: t("nav.pricing"), href: "#pricing" },
-    { label: t("nav.sponsors"), href: "#sponsors" },
   ];
+
 
 
   const toggleLang = () => setLang(lang === "hr" ? "en" : "hr");
