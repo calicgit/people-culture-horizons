@@ -57,15 +57,15 @@ const speakers: Speaker[] = [
   { name: "Vjekoslav Golubović", title: "Principal HR Consultant", company: "DeeP Project", photo: speakerVjekoslavGolubovicAsset.url, photoPosition: "center 15%", photoScale: 1.0, bioKey: "speakers.bio.vjekoslav_golubovic" },
   { name: "Andrea Tomšić", title: "Head of Human Resources", company: "Aircash", photo: speakerAndreaTomsic, photoPosition: "center 40%", photoScale: 1.1, bioKey: "speakers.bio.andrea_tomsic" },
   { name: "Jelena Novačić", title: "Head of People & Culture, Marketing and Internal Communications", company: "Lürssen" },
-  { name: "Petar Čalić", title: "CEO", company: "DeeP Project", photo: speakerPetarCalicAsset.url, photoPosition: "center 5%", photoScale: 1.0, bioKey: "speakers.bio.petar_calic" },
+  { name: "Petar Čalić", title: "CEO", company: "DeeP Project", photo: speakerPetarCalicAsset.url, photoPosition: "center 40%", photoScale: 1.0, bioKey: "speakers.bio.petar_calic" },
   { name: "Željko Tandarić", title: "Member of the Management Board", company: "Abysalto" },
   { name: "Ingrid Tena Grgić", title: "Human Resources Consultant", company: "DeeP Project", photo: speakerIngridTenaGrgic, photoPosition: "center 15%", photoScale: 1.0, bioKey: "speakers.bio.ingrid_tena_grgic" },
   { name: "Tihana Marušić", title: "Talent Management Lead", company: "Atlantic Group", photo: speakerTihanaMarusic, photoPosition: "center 15%", photoScale: 1.0, bioKey: "speakers.bio.tihana_marusic" },
-  { name: "Nikola Milosavljević", title: "Managing Partner & Senior HR Consultant", company: "HR Fabrika", photo: speakerNikolaMilosavljevicAsset.url, photoPosition: "center 5%", photoScale: 1.0, bioKey: "speakers.bio.nikola_milosavljevic" },
+  { name: "Nikola Milosavljević", title: "Managing Partner & Senior HR Consultant", company: "HR Fabrika", photo: speakerNikolaMilosavljevicAsset.url, photoPosition: "center 35%", photoScale: 1.0, bioKey: "speakers.bio.nikola_milosavljevic" },
   { name: "Maja Darija Škrljak", title: "Group Talent Attraction and Acquisition Manager", company: "Vetropack Group", photo: speakerMajaDarijaSkrljak, photoPosition: "center 15%", photoScale: 1.0, bioKey: "speakers.bio.maja_darija_skrljak" },
   { name: "Borna Lončar", title: "HR Consultant & Researcher", company: "DeeP Project", photo: speakerBornaLoncar, photoPosition: "center 15%", photoScale: 1.0, bioKey: "speakers.bio.borna_loncar" },
   { name: "Anton Barbir", title: "Member of Management Board", company: "ENNA Group", photo: speakerAntonBarbir, photoPosition: "center 20%", photoScale: 1.0, bioKey: "speakers.bio.anton_barbir" },
-  { name: "Jelica Radović", title: "Managing Partner & HR Consultant", company: "HR Fabrika", photo: speakerJelicaRadovicAsset.url, photoPosition: "center 35%", photoScale: 1.0, bioKey: "speakers.bio.jelica_radovic" },
+  { name: "Jelica Radović", title: "Managing Partner & HR Consultant", company: "HR Fabrika", photo: speakerJelicaRadovicAsset.url, photoPosition: "center 5%", photoScale: 1.0, bioKey: "speakers.bio.jelica_radovic" },
   { name: "Tina Balenović", title: "Human Resources Director", company: "SPAN" },
 ];
 
