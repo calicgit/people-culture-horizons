@@ -147,19 +147,25 @@ const Awards = () => {
               {content.categoriesTitle}
             </h2>
             <div className="grid gap-5 md:grid-cols-2">
-              {content.categories.map((c) => (
-                <div
-                  key={c.name}
-                  className="rounded-2xl border border-border bg-card p-6 shadow-sm"
-                >
-                  <h3 className="mb-3 text-lg font-semibold text-foreground">
-                    {c.name}
-                  </h3>
-                  <p className="text-sm leading-relaxed text-foreground/75">
-                    {c.desc}
-                  </p>
-                </div>
-              ))}
+              {content.categories.map((c, idx) => {
+                const Icon = idx === 0 ? Trophy : Award;
+                return (
+                  <div
+                    key={c.name}
+                    className="group relative overflow-hidden rounded-2xl border border-border bg-card p-6 shadow-sm transition-all hover:border-accent/40 hover:shadow-elevated"
+                  >
+                    <div className="mb-4 inline-flex h-14 w-14 items-center justify-center rounded-full bg-accent/10 text-accent ring-1 ring-accent/30">
+                      <Icon className="h-7 w-7" strokeWidth={1.75} />
+                    </div>
+                    <h3 className="mb-3 text-lg font-semibold text-foreground">
+                      {c.name}
+                    </h3>
+                    <p className="text-sm leading-relaxed text-foreground/75">
+                      {c.desc}
+                    </p>
+                  </div>
+                );
+              })}
             </div>
           </section>
 
