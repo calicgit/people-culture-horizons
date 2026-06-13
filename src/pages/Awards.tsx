@@ -3,6 +3,7 @@ import { Trophy, Award } from "lucide-react";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import { useLanguage } from "@/contexts/LanguageContext";
+import onaNetworkImage from "@/assets/awards-ona-network.jpg";
 
 
 const Awards = () => {
