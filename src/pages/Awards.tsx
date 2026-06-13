@@ -185,10 +185,10 @@ const Awards = () => {
             <h2 className="mb-4 text-2xl font-bold text-foreground md:text-3xl">
               {content.methodologyTitle}
             </h2>
-            <div className="mb-8 overflow-hidden rounded-2xl border border-border bg-[#0a1a3a] shadow-elevated">
+            <div className="mx-auto mb-8 max-w-sm overflow-hidden rounded-2xl border border-border bg-[#0a1a3a] shadow-elevated">
               <img
                 src={onaNetworkImage}
-                alt={lang === "hr" ? "Organizacijska analiza mreža (ONA) — vizualizacija" : "Organizational Network Analysis (ONA) visualization"}
+                alt={lang === "hr" ? "Organizacijska analiza mreža (ONA) - vizualizacija" : "Organizational Network Analysis (ONA) visualization"}
                 className="w-full h-auto"
                 width={1280}
                 height={1024}
