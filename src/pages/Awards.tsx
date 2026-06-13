@@ -32,7 +32,7 @@ const Awards = () => {
         nominationsTitle: "Kako funkcioniraju nominacije?",
         nominations: [
           "Za razliku od klasičnih nagrada koje se temelje na prijavama i prezentacijama kandidata, HUB People & Culture Awards u potpunosti se oslanjaju na mišljenje profesionalne zajednice.",
-          "Kandidate nominiraju kolege, suradnici, klijenti, partneri i polaznici edukacija – ljudi koji su izravno upoznati s njihovim radom i utjecajem.",
+          "Kandidate nominiraju kolege, suradnici, klijenti, partneri i polaznici edukacija - ljudi koji su izravno upoznati s njihovim radom i utjecajem.",
         ],
         methodologyTitle: "Metodologija temeljena na stvarnom utjecaju",
         methodology: [
