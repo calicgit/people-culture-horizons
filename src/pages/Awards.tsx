@@ -66,9 +66,9 @@ const Awards = () => {
         eyebrow: "HUB People & Culture Awards",
         title: "Recognition based on real impact",
         intro: [
-          "The HUB People & Culture Awards were launched with a clear goal – to recognise individuals whose work creates real and distinctive impact in the People & Culture community.",
+          "The HUB People & Culture Awards were launched with a clear goal - to recognise individuals whose work creates real and distinctive impact in the People & Culture community.",
           "Through a transparent, methodology-driven process we highlight professionals whose contribution is confirmed every day by the people and organisations they work with.",
-          "The awards will be presented at the People & Culture Horizons conference.",
+          "The awards will be presented at the People & Culture HORIZONS conference.",
         ],
         categoriesTitle: "Categories",
         categories: [
