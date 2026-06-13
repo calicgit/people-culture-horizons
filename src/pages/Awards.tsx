@@ -3,7 +3,7 @@ import { Trophy, Award } from "lucide-react";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import { useLanguage } from "@/contexts/LanguageContext";
-import hubAwardsOnaAsset from "@/assets/hub-awards-ona.png.asset.json";
+
 
 const Awards = () => {
   const { lang } = useLanguage();
@@ -184,14 +184,6 @@ const Awards = () => {
             <h2 className="mb-4 text-2xl font-bold text-foreground md:text-3xl">
               {content.methodologyTitle}
             </h2>
-            <div className="mb-8 overflow-hidden rounded-2xl border border-border bg-[#0a1a3a] shadow-elevated">
-              <img
-                src={hubAwardsOnaAsset.url}
-                alt={lang === "hr" ? "HUB People & Culture Awards — ONA metodologija" : "HUB People & Culture Awards — ONA methodology"}
-                className="w-full h-auto"
-                loading="lazy"
-              />
-            </div>
             <div className="space-y-4 text-base leading-relaxed text-foreground/85 md:text-lg">
               {content.methodology.map((p, i) => (
                 <p key={i}>{p}</p>
