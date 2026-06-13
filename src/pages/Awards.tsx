@@ -14,9 +14,9 @@ const Awards = () => {
         eyebrow: "HUB People & Culture Awards",
         title: "Priznanja utemeljena na stvarnom utjecaju",
         intro: [
-          "HUB People & Culture Awards pokrenute su s jasnim ciljem – prepoznati pojedince koji svojim radom ostvaruju stvaran i prepoznatljiv utjecaj u People & Culture zajednici.",
+          "HUB People & Culture Awards pokrenute su s jasnim ciljem - prepoznati pojedince koji svojim radom ostvaruju stvaran i prepoznatljiv utjecaj u People & Culture zajednici.",
           "Kroz transparentan i metodološki utemeljen proces želimo istaknuti stručnjake čiji doprinos svakodnevno potvrđuju ljudi i organizacije s kojima surađuju.",
-          "Nagrade će biti dodijeljene na konferenciji People & Culture Horizons.",
+          "Nagrade će biti dodijeljene na konferenciji People & Culture HORIZONS.",
         ],
         categoriesTitle: "Kategorije",
         categories: [
@@ -32,11 +32,11 @@ const Awards = () => {
         nominationsTitle: "Kako funkcioniraju nominacije?",
         nominations: [
           "Za razliku od klasičnih nagrada koje se temelje na prijavama i prezentacijama kandidata, HUB People & Culture Awards u potpunosti se oslanjaju na mišljenje profesionalne zajednice.",
-          "Kandidate nominiraju kolege, suradnici, klijenti, partneri i polaznici edukacija – ljudi koji su izravno upoznati s njihovim radom i utjecajem.",
+          "Kandidate nominiraju kolege, suradnici, klijenti, partneri i polaznici edukacija - ljudi koji su izravno upoznati s njihovim radom i utjecajem.",
         ],
         methodologyTitle: "Metodologija temeljena na stvarnom utjecaju",
         methodology: [
-          "Proces odabira inspiriran je principima Organizacijske analize mreža (ONA – Organizational Network Analysis).",
+          "Proces odabira inspiriran je principima Organizacijske analize mreža (ONA - Organizational Network Analysis).",
           "ONA polazi od ideje da se stvarni profesionalni utjecaj ne mjeri samo titulom ili pozicijom, već odnosima koje pojedinac gradi kroz suradnju, dijeljenje znanja i podršku drugima.",
         ],
         valuesIntro: "Naš model vrednuje:",
@@ -66,9 +66,9 @@ const Awards = () => {
         eyebrow: "HUB People & Culture Awards",
         title: "Recognition based on real impact",
         intro: [
-          "The HUB People & Culture Awards were launched with a clear goal – to recognise individuals whose work creates real and distinctive impact in the People & Culture community.",
+          "The HUB People & Culture Awards were launched with a clear goal - to recognise individuals whose work creates real and distinctive impact in the People & Culture community.",
           "Through a transparent, methodology-driven process we highlight professionals whose contribution is confirmed every day by the people and organisations they work with.",
-          "The awards will be presented at the People & Culture Horizons conference.",
+          "The awards will be presented at the People & Culture HORIZONS conference.",
         ],
         categoriesTitle: "Categories",
         categories: [
@@ -84,7 +84,7 @@ const Awards = () => {
         nominationsTitle: "How do nominations work?",
         nominations: [
           "Unlike traditional awards based on applications and candidate presentations, the HUB People & Culture Awards rely entirely on the opinion of the professional community.",
-          "Candidates are nominated by colleagues, collaborators, clients, partners and training participants – people directly familiar with their work and impact.",
+          "Candidates are nominated by colleagues, collaborators, clients, partners and training participants - people directly familiar with their work and impact.",
         ],
         methodologyTitle: "A methodology grounded in real impact",
         methodology: [
@@ -185,10 +185,10 @@ const Awards = () => {
             <h2 className="mb-4 text-2xl font-bold text-foreground md:text-3xl">
               {content.methodologyTitle}
             </h2>
-            <div className="mb-8 overflow-hidden rounded-2xl border border-border bg-[#0a1a3a] shadow-elevated">
+            <div className="mx-auto mb-8 max-w-sm overflow-hidden rounded-2xl border border-border bg-[#0a1a3a] shadow-elevated">
               <img
                 src={onaNetworkImage}
-                alt={lang === "hr" ? "Organizacijska analiza mreža (ONA) — vizualizacija" : "Organizational Network Analysis (ONA) visualization"}
+                alt={lang === "hr" ? "Organizacijska analiza mreža (ONA) - vizualizacija" : "Organizational Network Analysis (ONA) visualization"}
                 className="w-full h-auto"
                 width={1280}
                 height={1024}
