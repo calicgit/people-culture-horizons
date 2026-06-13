@@ -84,7 +84,7 @@ const Awards = () => {
         nominationsTitle: "How do nominations work?",
         nominations: [
           "Unlike traditional awards based on applications and candidate presentations, the HUB People & Culture Awards rely entirely on the opinion of the professional community.",
-          "Candidates are nominated by colleagues, collaborators, clients, partners and training participants – people directly familiar with their work and impact.",
+          "Candidates are nominated by colleagues, collaborators, clients, partners and training participants - people directly familiar with their work and impact.",
         ],
         methodologyTitle: "A methodology grounded in real impact",
         methodology: [
