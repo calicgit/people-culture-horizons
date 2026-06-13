@@ -36,7 +36,7 @@ const Awards = () => {
         ],
         methodologyTitle: "Metodologija temeljena na stvarnom utjecaju",
         methodology: [
-          "Proces odabira inspiriran je principima Organizacijske analize mreža (ONA – Organizational Network Analysis).",
+          "Proces odabira inspiriran je principima Organizacijske analize mreža (ONA - Organizational Network Analysis).",
           "ONA polazi od ideje da se stvarni profesionalni utjecaj ne mjeri samo titulom ili pozicijom, već odnosima koje pojedinac gradi kroz suradnju, dijeljenje znanja i podršku drugima.",
         ],
         valuesIntro: "Naš model vrednuje:",
