@@ -185,6 +185,16 @@ const Awards = () => {
             <h2 className="mb-4 text-2xl font-bold text-foreground md:text-3xl">
               {content.methodologyTitle}
             </h2>
+            <div className="mb-8 overflow-hidden rounded-2xl border border-border bg-[#0a1a3a] shadow-elevated">
+              <img
+                src={onaNetworkImage}
+                alt={lang === "hr" ? "Organizacijska analiza mreža (ONA) — vizualizacija" : "Organizational Network Analysis (ONA) visualization"}
+                className="w-full h-auto"
+                width={1280}
+                height={1024}
+                loading="lazy"
+              />
+            </div>
             <div className="space-y-4 text-base leading-relaxed text-foreground/85 md:text-lg">
               {content.methodology.map((p, i) => (
                 <p key={i}>{p}</p>
