@@ -14,9 +14,9 @@ const Awards = () => {
         eyebrow: "HUB People & Culture Awards",
         title: "Priznanja utemeljena na stvarnom utjecaju",
         intro: [
-          "HUB People & Culture Awards pokrenute su s jasnim ciljem – prepoznati pojedince koji svojim radom ostvaruju stvaran i prepoznatljiv utjecaj u People & Culture zajednici.",
+          "HUB People & Culture Awards pokrenute su s jasnim ciljem - prepoznati pojedince koji svojim radom ostvaruju stvaran i prepoznatljiv utjecaj u People & Culture zajednici.",
           "Kroz transparentan i metodološki utemeljen proces želimo istaknuti stručnjake čiji doprinos svakodnevno potvrđuju ljudi i organizacije s kojima surađuju.",
-          "Nagrade će biti dodijeljene na konferenciji People & Culture Horizons.",
+          "Nagrade će biti dodijeljene na konferenciji People & Culture HORIZONS.",
         ],
         categoriesTitle: "Kategorije",
         categories: [
