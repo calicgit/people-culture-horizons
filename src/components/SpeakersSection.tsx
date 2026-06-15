@@ -69,7 +69,6 @@ const speakers: Speaker[] = [
   { name: "Anton Barbir", title: "Member of Management Board", company: "ENNA Group", photo: speakerAntonBarbir, photoPosition: "center 20%", photoScale: 1.0, bioKey: "speakers.bio.anton_barbir" },
   { name: "Jelica Radović", title: "Managing Partner & HR Consultant", company: "HR Fabrika", photo: speakerJelicaRadovicAsset.url, photoPosition: "center 5%", photoScale: 1.0, bioKey: "speakers.bio.jelica_radovic" },
   { name: "Tina Balenović", title: "Human Resources Director", company: "SPAN" },
-  { name: "Siniša Krajnović", title: "President of the Management Board", company: "Ericsson Nikola Tesla" },
 ];
 
 const SpeakersSection = () => {
