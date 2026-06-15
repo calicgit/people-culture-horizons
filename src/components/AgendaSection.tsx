@@ -53,7 +53,7 @@ const agendaData: Record<string, Session[]> = {
       moderator: "Petar Čalić - CEO, DeeP Project", moderatorLabel: "moderator" },
     { time: "11:55", endTime: "12:15", titleKey: "agenda.d2.s7.title", type: "break" },
     { time: "12:15", endTime: "13:00", titleKey: "agenda.d2.s8.title", type: "panel", locationKey: "agenda.loc.main", descKey: "agenda.d2.s8.desc",
-      panelists: ["Ivan Zubak - CEO, Zubak Group", "Mladen Pejković - Senior Executive Director, Transformation & ICT, Atlantic Group", "Siniša Krajnović - President of the Management Board, Ericsson Nikola Tesla"],
+      panelists: ["Damir Habijan - Ministar pravosuđa Republike Hrvatske, Ministarstvo pravosuđa, uprave i digitalne transformacije", "Ivan Zubak - CEO, Zubak Group", "Mladen Pejković - Senior Executive Director, Transformation & ICT, Atlantic Group", "Siniša Krajnović - President of the Management Board, Ericsson Nikola Tesla"],
       moderator: "Antonija Mandić", moderatorLabel: "moderatorica" },
     { time: "13:05", endTime: "13:20", titleKey: "agenda.d2.s9.title", type: "talk", locationKey: "agenda.loc.main", descKey: "agenda.d2.s9.desc" },
     { time: "13:20", endTime: "15:00", titleKey: "agenda.d2.s10.title", type: "networking" },
