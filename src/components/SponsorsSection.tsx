@@ -22,6 +22,9 @@ const patrons: LogoEntry[] = [
   { name: "Ministarstvo rada, mirovinskoga sustava, obitelji i socijalne politike", logo: patronMrms, scale: 0.85, url: "https://mrosp.gov.hr/" },
   { name: "Hrvatska psihološka komora", logo: patronHpk, scale: 0.85, url: "https://www.psiholoska-komora.hr/" },
   { name: "People & Culture HUB", logo: patronPchub, scale: 0.9, url: "https://hub.peopleandculture.hr/", yOffset: 6 },
+];
+
+const mediaPatrons: LogoEntry[] = [
   { name: "Jutarnji list", logo: patronJutarnji, scale: 0.85, url: "https://www.jutarnji.hr" },
 ];
 
@@ -79,6 +82,15 @@ const SponsorsSection = () => {
             <p className="text-center text-xs font-semibold uppercase tracking-[0.25em] text-muted-foreground mb-8">{t("sponsors.gold")}</p>
             <div className="flex flex-wrap items-center justify-center">
               {patrons.map((p) => <div key={p.name} className="w-1/2 flex justify-center md:w-auto"><PartnerLogo {...p} size="md" /></div>)}
+            </div>
+          </div>
+        )}
+
+        {mediaPatrons.length > 0 && (
+          <div className="mb-12 md:mb-14">
+            <p className="text-center text-xs font-semibold uppercase tracking-[0.25em] text-muted-foreground mb-8">{t("sponsors.media")}</p>
+            <div className="flex flex-wrap items-center justify-center">
+              {mediaPatrons.map((p) => <div key={p.name} className="w-1/2 flex justify-center md:w-auto"><PartnerLogo {...p} size="md" /></div>)}
             </div>
           </div>
         )}
