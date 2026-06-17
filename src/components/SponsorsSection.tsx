@@ -22,6 +22,9 @@ const patrons: LogoEntry[] = [
   { name: "Ministarstvo rada, mirovinskoga sustava, obitelji i socijalne politike", logo: patronMrms, scale: 0.85, url: "https://mrosp.gov.hr/" },
   { name: "Hrvatska psihološka komora", logo: patronHpk, scale: 0.85, url: "https://www.psiholoska-komora.hr/" },
   { name: "People & Culture HUB", logo: patronPchub, scale: 0.9, url: "https://hub.peopleandculture.hr/", yOffset: 6 },
+];
+
+const mediaPatrons: LogoEntry[] = [
   { name: "Jutarnji list", logo: patronJutarnji, scale: 0.85, url: "https://www.jutarnji.hr" },
 ];
 
