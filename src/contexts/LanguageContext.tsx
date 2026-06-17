@@ -482,6 +482,7 @@ const translations: Record<Language, Record<string, string>> = {
     "sponsors.platinum": "PARTNERS",
     "sponsors.gold": "PATRONS",
     "sponsors.community": "SPONSORS",
+    "sponsors.media": "MEDIA PATRONS",
     "sponsors.organizer": "Conference Organizer",
     "sponsors.interested": "Interested in sponsorship?",
     "sponsors.packages": "View sponsorship packages →",
