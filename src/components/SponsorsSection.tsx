@@ -86,6 +86,15 @@ const SponsorsSection = () => {
           </div>
         )}
 
+        {mediaPatrons.length > 0 && (
+          <div className="mb-12 md:mb-14">
+            <p className="text-center text-xs font-semibold uppercase tracking-[0.25em] text-muted-foreground mb-8">{t("sponsors.media")}</p>
+            <div className="flex flex-wrap items-center justify-center">
+              {mediaPatrons.map((p) => <div key={p.name} className="w-1/2 flex justify-center md:w-auto"><PartnerLogo {...p} size="md" /></div>)}
+            </div>
+          </div>
+        )}
+
         <div className="border-t border-border pt-6 md:pt-8">
           <p className="mb-4 text-center text-xs font-semibold uppercase tracking-[0.25em] text-muted-foreground md:text-sm">{t("sponsors.organizer")}</p>
           <div className="flex items-center justify-center">
