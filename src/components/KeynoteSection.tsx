@@ -1,7 +1,6 @@
 import { Button } from "@/components/ui/button";
 import { useLanguage } from "@/contexts/LanguageContext";
-import josipFundaAsset from "@/assets/speaker-josip-funda.png.asset.json";
-const josipFunda = josipFundaAsset.url;
+import josipFunda from "@/assets/speaker-josip-funda.jpg";
 
 const KeynoteSection = () => {
   const { t } = useLanguage();
