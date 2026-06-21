@@ -220,7 +220,7 @@ const translations: Record<Language, Record<string, string>> = {
 
     // CTA
     "cta.title": "Ne propustite događaj godine",
-    "cta.subtitle": "Blind bird ponuda vrijedi do 30. lipnja 2026. Pridružite se 500+ lidera koji transformiraju budućnost rada.",
+    "cta.subtitle": "Early bird ponuda vrijedi do 31. srpnja 2026. Pridružite se 500+ lidera koji transformiraju budućnost rada.",
     "cta.buyNow": "Rezerviraj kotizaciju",
     "cta.groupPricing": "",
     "cta.refund": "",
