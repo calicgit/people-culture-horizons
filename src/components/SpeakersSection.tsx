@@ -23,6 +23,7 @@ import speakerVjekoslavGolubovic from "@/assets/speaker-vjekoslav-golubovic.jpg"
 import speakerPetarCalic from "@/assets/speaker-petar-calic.jpg";
 import speakerNikolaMilosavljevic from "@/assets/speaker-nikola-milosavljevic.jpg";
 import speakerJelicaRadovic from "@/assets/speaker-jelica-radovic.jpg";
+import speakerJelenaNovacic from "@/assets/speaker-jelena-novacic.jpg.asset.json";
 import { Dialog, DialogContent } from "@/components/ui/dialog";
 
 interface Speaker {
@@ -57,7 +58,7 @@ const speakers: Speaker[] = [
   { name: "Ivan Artuković", title: "CEO", company: "Franck" },
   { name: "Vjekoslav Golubović", title: "Principal HR Consultant", company: "DeeP Project", photo: speakerVjekoslavGolubovic, photoPosition: "center 15%", photoScale: 1.0, bioKey: "speakers.bio.vjekoslav_golubovic" },
   { name: "Andrea Tomšić", title: "Head of Human Resources", company: "Aircash", photo: speakerAndreaTomsic, photoPosition: "center 40%", photoScale: 1.1, bioKey: "speakers.bio.andrea_tomsic" },
-  { name: "Jelena Novačić", title: "Head of People & Culture, Marketing and Internal Communications", company: "Lürssen" },
+  { name: "Jelena Novačić", title: "Head of People & Culture, Marketing and Internal Communications", company: "Lürssen", photo: speakerJelenaNovacic.url, bioKey: "speakers.bio.jelena_novacic" },
   { name: "Petar Čalić", title: "CEO", company: "DeeP Project", photo: speakerPetarCalic, photoPosition: "center 40%", photoScale: 1.0, bioKey: "speakers.bio.petar_calic" },
   { name: "Željko Tandarić", title: "Member of the Management Board", company: "Abysalto" },
   { name: "Ingrid Tena Grgić", title: "Human Resources Consultant", company: "DeeP Project", photo: speakerIngridTenaGrgic, photoPosition: "center 15%", photoScale: 1.0, bioKey: "speakers.bio.ingrid_tena_grgic" },
