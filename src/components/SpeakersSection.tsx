@@ -24,6 +24,7 @@ import speakerPetarCalic from "@/assets/speaker-petar-calic.jpg";
 import speakerNikolaMilosavljevic from "@/assets/speaker-nikola-milosavljevic.jpg";
 import speakerJelicaRadovic from "@/assets/speaker-jelica-radovic.jpg";
 import speakerJelenaNovacic from "@/assets/speaker-jelena-novacic.jpg.asset.json";
+import speakerSinisaKrajnovic from "@/assets/speaker-sinisa-krajnovic.png.asset.json";
 import speakerMajaBusljeta from "@/assets/speaker-maja-busljeta.jpg";
 import { Dialog, DialogContent } from "@/components/ui/dialog";
 
