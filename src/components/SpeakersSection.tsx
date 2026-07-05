@@ -43,7 +43,8 @@ const speakers: Speaker[] = [
   { name: "Siniša Krajnović", title: "President of the Management Board", company: "Ericsson Nikola Tesla", photo: speakerSinisaKrajnovic.url, photoPosition: "center 20%", photoScale: 1.0, bioKey: "speakers.bio.sinisa_krajnovic" },
   { name: "Ivan Bešlić", title: "Co-founder & CSO", company: "Sofascore", photo: speakerIvanBeslic, photoPosition: "center center", photoScale: 1.0, bioKey: "speakers.bio.ivan_beslic" },
   { name: "Krešimir Barić", title: "CFO", company: "Erste&Steiermärkische Bank Croatia" },
-  
+  { name: "Natalya Golovkina", title: "Corporate People & Culture Director", company: "JGL" },
+  { name: "Ivan Zubak", title: "CEO", company: "Zubak Group", photo: speakerIvanZubak, photoPosition: "38% 24%", photoScale: 1.0, bioKey: "speakers.bio.ivan_zubak" },
   { name: "Seni Staničić", title: "Head of Human Resources", company: "ENNA Group", photo: speakerSeniStanicic, photoPosition: "center top", photoScale: 1.0, bioKey: "speakers.bio.seni_stanicic" },
   { name: "Stefan Vukajlović", title: "Group HR Director for Compensation and Benefits", company: "Fortenova Group" },
   { name: "Mirela Kotarac", title: "HR Director & Member of the Management Board", company: "Cemex Croatia", photo: speakerMirelaKotarac, photoPosition: "center 30%", photoScale: 1.35, bioKey: "speakers.bio.mirela_kotarac" },
@@ -54,7 +55,6 @@ const speakers: Speaker[] = [
   { name: "Suzana Plečko", title: "Human Resources Director", company: "Franck" },
   { name: "Martina Skorin", title: "Head of Human Resources", company: "HAKOM", photo: speakerMartinaSkorin, photoPosition: "center 20%", photoScale: 1.0, bioKey: "speakers.bio.martina_skorin" },
   { name: "Branimir Spajić", title: "Director of Strategic Human Resources Management", company: "Hrvatski Telekom" },
-  { name: "Ivan Zubak", title: "CEO", company: "Zubak Group", photo: speakerIvanZubak, photoPosition: "38% 24%", photoScale: 1.0, bioKey: "speakers.bio.ivan_zubak" },
   { name: "Mladen Pejković", title: "Senior Executive Director, Transformation & ICT", company: "Atlantic Group", photo: speakerMladenPejkovic, photoPosition: "center 15%", photoScale: 1.0, bioKey: "speakers.bio.mladen_pejkovic" },
   { name: "Sanja Škrinjar", title: "Team Lead & HR Consultant", company: "DeeP Project", photo: speakerSanjaSkrinjar, photoPosition: "center 8%", bioKey: "speakers.bio.sanja_skrinjar" },
   { name: "Snježana M. Lohninger", title: "CFO", company: "Porsche Inter Auto", photo: speakerSnjezanaLohninger, photoPosition: "center 15%", photoScale: 1.0, bioKey: "speakers.bio.snjezana_lohninger" },
@@ -73,7 +73,6 @@ const speakers: Speaker[] = [
   { name: "Jelica Radović", title: "Managing Partner & HR Consultant", company: "HR Fabrika", photo: speakerJelicaRadovic, photoPosition: "center 5%", photoScale: 1.0, bioKey: "speakers.bio.jelica_radovic" },
   { name: "Tina Balenović", title: "Human Resources Director", company: "SPAN" },
   { name: "Maja Bušljeta", title: "Internal Communications & Corporate Culture Manager", company: "Erste&Steiermärkische Bank Croatia", photo: speakerMajaBusljeta, photoPosition: "center 25%", photoScale: 1.0, bioKey: "speakers.bio.maja_busljeta" },
-  { name: "Natalya Golovkina", title: "Corporate People & Culture Director", company: "JGL" },
 ];
 
 const SpeakersSection = () => {
