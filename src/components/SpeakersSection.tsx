@@ -73,6 +73,7 @@ const speakers: Speaker[] = [
   { name: "Jelica Radović", title: "Managing Partner & HR Consultant", company: "HR Fabrika", photo: speakerJelicaRadovic, photoPosition: "center 5%", photoScale: 1.0, bioKey: "speakers.bio.jelica_radovic" },
   { name: "Tina Balenović", title: "Human Resources Director", company: "SPAN" },
   { name: "Maja Bušljeta", title: "Internal Communications & Corporate Culture Manager", company: "Erste&Steiermärkische Bank Croatia", photo: speakerMajaBusljeta, photoPosition: "center 25%", photoScale: 1.0, bioKey: "speakers.bio.maja_busljeta" },
+  { name: "Natalya Golovkina", title: "Corporate People & Culture Director", company: "JGL" },
 ];
 
 const SpeakersSection = () => {
