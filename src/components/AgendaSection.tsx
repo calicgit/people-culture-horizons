@@ -93,6 +93,7 @@ const TypeIcon = ({ type }: { type: SessionType }) => {
     case "workshop": return <Wrench className="w-4 h-4" />;
     case "break": return <Coffee className="w-4 h-4" />;
     case "networking": return <Utensils className="w-4 h-4" />;
+    case "fireside": return <Flame className="w-4 h-4" />;
     default: return null;
   }
 };
