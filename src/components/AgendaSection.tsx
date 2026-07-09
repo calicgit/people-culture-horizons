@@ -2,7 +2,7 @@ import { useState } from "react";
 import { Clock, MapPin, Mic2, Coffee, Utensils, ChevronDown, Presentation, Users, Wrench, Star, Flame } from "lucide-react";
 import { useLanguage } from "@/contexts/LanguageContext";
 
-type SessionType = "keynote" | "talk" | "panel" | "workshop" | "break" | "networking";
+type SessionType = "keynote" | "talk" | "panel" | "workshop" | "break" | "networking" | "fireside";
 
 interface Session {
   time: string;
