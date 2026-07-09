@@ -1,8 +1,8 @@
 import { useState } from "react";
-import { Clock, MapPin, Mic2, Coffee, Utensils, ChevronDown, Presentation, Users, Wrench, Star } from "lucide-react";
+import { Clock, MapPin, Mic2, Coffee, Utensils, ChevronDown, Presentation, Users, Wrench, Star, Flame } from "lucide-react";
 import { useLanguage } from "@/contexts/LanguageContext";
 
-type SessionType = "keynote" | "talk" | "panel" | "workshop" | "break" | "networking";
+type SessionType = "keynote" | "talk" | "panel" | "workshop" | "break" | "networking" | "fireside";
 
 interface Session {
   time: string;
@@ -44,7 +44,9 @@ const agendaData: Record<string, Session[]> = {
   ],
   day2: [
     { time: "08:00", endTime: "09:00", titleKey: "agenda.d2.s1.title", type: "break" },
-    { time: "09:00", endTime: "09:30", titleKey: "agenda.d2.s2.title", type: "keynote", keynoteKind: "talk", locationKey: "agenda.loc.main", descKey: "agenda.d2.s2.desc" },
+    { time: "09:00", endTime: "09:30", titleKey: "agenda.d2.s2.title", type: "fireside", locationKey: "agenda.loc.main", descKey: "agenda.d2.s2.desc",
+      speaker: "Ewelina Jaworska-Bień - Head of People Solutions, GrECo Specialty GmbH SEE/CEE",
+      moderator: "Svjetlana Momčilović - Marketing Director, GrECo Specialty GmbH", moderatorLabel: "moderatorica" },
     { time: "09:35", endTime: "10:20", titleKey: "agenda.d2.s3.title", type: "keynote", keynoteKind: "panel", locationKey: "agenda.loc.main", descKey: "agenda.d2.s3.desc",
       panelists: ["Tihana Marušić - Talent Management Lead, Atlantic Group", "Maja Darija Škrljak - Group Talent Attraction and Acquisition Manager, Vetropack Group", "Tina Balenović - Human Resources Director, SPAN", "Natalya Golovkina - Group People & Culture Director, JGL"] },
 
@@ -82,6 +84,7 @@ const typeStyles: Record<SessionType, { dot: string; border: string }> = {
   workshop: { dot: "bg-chart-4", border: "border-l-chart-4" },
   break: { dot: "bg-muted-foreground/30", border: "border-l-muted-foreground/20" },
   networking: { dot: "bg-chart-2", border: "border-l-chart-2" },
+  fireside: { dot: "bg-chart-3", border: "border-l-chart-3" },
 };
 
 const TypeIcon = ({ type }: { type: SessionType }) => {
@@ -92,6 +95,7 @@ const TypeIcon = ({ type }: { type: SessionType }) => {
     case "workshop": return <Wrench className="w-4 h-4" />;
     case "break": return <Coffee className="w-4 h-4" />;
     case "networking": return <Utensils className="w-4 h-4" />;
+    case "fireside": return <Flame className="w-4 h-4" />;
     default: return null;
   }
 };
@@ -110,6 +114,7 @@ const AgendaSection = () => {
     workshop: t("agenda.type.workshop"),
     break: t("agenda.type.break"),
     networking: t("agenda.type.networking"),
+    fireside: t("agenda.type.fireside"),
   };
 
   const toggleItem = (key: string) => {
