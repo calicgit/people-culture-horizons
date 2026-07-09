@@ -112,6 +112,7 @@ const AgendaSection = () => {
     workshop: t("agenda.type.workshop"),
     break: t("agenda.type.break"),
     networking: t("agenda.type.networking"),
+    fireside: t("agenda.type.fireside"),
   };
 
   const toggleItem = (key: string) => {
