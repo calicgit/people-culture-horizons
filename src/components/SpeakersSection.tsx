@@ -26,6 +26,8 @@ import speakerJelicaRadovic from "@/assets/speaker-jelica-radovic.jpg";
 import speakerJelenaNovacic from "@/assets/speaker-jelena-novacic.jpg.asset.json";
 import speakerSinisaKrajnovic from "@/assets/speaker-sinisa-krajnovic.png.asset.json";
 import speakerMajaBusljeta from "@/assets/speaker-maja-busljeta.jpg";
+import speakerSvjetlanaMomcilovic from "@/assets/speaker-svjetlana-momcilovic.jpg.asset.json";
+import speakerEwelinaJaworskaBien from "@/assets/speaker-ewelina-jaworska-bien.png.asset.json";
 import { Dialog, DialogContent } from "@/components/ui/dialog";
 
 interface Speaker {
@@ -73,6 +75,8 @@ const speakers: Speaker[] = [
   { name: "Jelica Radović", title: "Managing Partner & HR Consultant", company: "HR Fabrika", photo: speakerJelicaRadovic, photoPosition: "center 5%", photoScale: 1.0, bioKey: "speakers.bio.jelica_radovic" },
   { name: "Tina Balenović", title: "Human Resources Director", company: "SPAN" },
   { name: "Maja Bušljeta", title: "Internal Communications & Corporate Culture Manager", company: "Erste&Steiermärkische Bank Croatia", photo: speakerMajaBusljeta, photoPosition: "center 25%", photoScale: 1.0, bioKey: "speakers.bio.maja_busljeta" },
+  { name: "Svjetlana Momčilović", title: "Marketing Director", company: "GrECo Specialty GmbH", photo: speakerSvjetlanaMomcilovic.url, photoPosition: "center 20%", photoScale: 1.0, bioKey: "speakers.bio.svjetlana_momcilovic" },
+  { name: "Ewelina Jaworska-Bień", title: "Head of People Solutions", company: "GrECo Specialty GmbH SEE/CEE", photo: speakerEwelinaJaworskaBien.url, photoPosition: "center 20%", photoScale: 1.0, bioKey: "speakers.bio.ewelina_jaworska_bien" },
 ];
 
 const SpeakersSection = () => {
