@@ -82,6 +82,7 @@ const typeStyles: Record<SessionType, { dot: string; border: string }> = {
   workshop: { dot: "bg-chart-4", border: "border-l-chart-4" },
   break: { dot: "bg-muted-foreground/30", border: "border-l-muted-foreground/20" },
   networking: { dot: "bg-chart-2", border: "border-l-chart-2" },
+  fireside: { dot: "bg-chart-3", border: "border-l-chart-3" },
 };
 
 const TypeIcon = ({ type }: { type: SessionType }) => {
