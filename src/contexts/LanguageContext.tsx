@@ -119,6 +119,7 @@ const translations: Record<Language, Record<string, string>> = {
     "agenda.type.workshop": "Masterclass",
     "agenda.type.break": "Pauza",
     "agenda.type.networking": "Networking",
+    "agenda.type.fireside": "Fire-side chat",
     // Day 1 sessions
     "agenda.d1.s1.title": "Registracija / kava / doručak",
     "agenda.d1.s2.title": "Otvaranje konferencije, pozdravna riječ",
@@ -391,6 +392,7 @@ const translations: Record<Language, Record<string, string>> = {
     "agenda.type.workshop": "Workshop",
     "agenda.type.break": "Break",
     "agenda.type.networking": "Networking",
+    "agenda.type.fireside": "Fire-side chat",
     // Day 1
     "agenda.d1.s1.title": "Registration / coffee / breakfast",
     "agenda.d1.s2.title": "Conference opening, welcome address",
