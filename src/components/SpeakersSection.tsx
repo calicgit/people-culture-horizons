@@ -28,6 +28,8 @@ import speakerSinisaKrajnovic from "@/assets/speaker-sinisa-krajnovic.png.asset.
 import speakerMajaBusljeta from "@/assets/speaker-maja-busljeta.jpg";
 import speakerSvjetlanaMomcilovic from "@/assets/speaker-svjetlana-momcilovic.jpg.asset.json";
 import speakerEwelinaJaworskaBien from "@/assets/speaker-ewelina-jaworska-bien.png.asset.json";
+import speakerIvanArtukovic from "@/assets/speaker-ivan-artukovic.jpg.asset.json";
+import speakerSuzanaPlecko from "@/assets/speaker-suzana-plecko.jpg.asset.json";
 import { Dialog, DialogContent } from "@/components/ui/dialog";
 
 interface Speaker {
@@ -47,7 +49,7 @@ const speakers: Speaker[] = [
   { name: "Krešimir Barić", title: "CFO", company: "Erste&Steiermärkische Bank Croatia" },
   { name: "Alenka Jajac-Knez", title: "CEO", company: "JGL" },
   { name: "Ivan Zubak", title: "CEO", company: "Zubak Group", photo: speakerIvanZubak, photoPosition: "38% 24%", photoScale: 1.0, bioKey: "speakers.bio.ivan_zubak" },
-  { name: "Ivan Artuković", title: "CEO", company: "Franck" },
+  { name: "Ivan Artuković", title: "CEO", company: "Franck", photo: speakerIvanArtukovic.url, photoPosition: "center 20%", photoScale: 1.0, bioKey: "speakers.bio.ivan_artukovic" },
   { name: "Tina Balenović", title: "Human Resources Director", company: "SPAN" },
   { name: "Iva Rogović Lekić", title: "CEO", company: "GrECo Specialty", photo: speakerIvaRogovicLekic, photoPosition: "center 20%", photoScale: 1.0, bioKey: "speakers.bio.iva_rogovic_lekic" },
   { name: "Seni Staničić", title: "Head of Human Resources", company: "ENNA Group", photo: speakerSeniStanicic, photoPosition: "center top", photoScale: 1.0, bioKey: "speakers.bio.seni_stanicic" },
@@ -58,7 +60,7 @@ const speakers: Speaker[] = [
   { name: "Mirta Pađen Lee", title: "Senior Director of Reward and Operations", company: "Infobip" },
   { name: "Marija Felkel", title: "Group HR Director & Member of the Executive Committee", company: "Perutnina Ptuj Group", photo: speakerMarijaFelkel, photoPosition: "65% 25%", bioKey: "speakers.bio.marija_felkel" },
   { name: "Marina Regjo", title: "Human Resources Director", company: "FNG Property HR (Fortenova Group)", photo: speakerMarinaRegjo, photoPosition: "center 20%", photoScale: 1.0, bioKey: "speakers.bio.marina_regjo" },
-  { name: "Suzana Plečko", title: "Human Resources Director", company: "Franck" },
+  { name: "Suzana Plečko", title: "Human Resources Director", company: "Franck", photo: speakerSuzanaPlecko.url, photoPosition: "center 20%", photoScale: 1.0, bioKey: "speakers.bio.suzana_plecko" },
   { name: "Martina Skorin", title: "Head of Human Resources", company: "HAKOM", photo: speakerMartinaSkorin, photoPosition: "center 20%", photoScale: 1.0, bioKey: "speakers.bio.martina_skorin" },
   { name: "Branimir Spajić", title: "Director of Strategic Human Resources Management", company: "Hrvatski Telekom" },
   { name: "Mladen Pejković", title: "Senior Executive Director, Transformation & ICT", company: "Atlantic Group", photo: speakerMladenPejkovic, photoPosition: "center 15%", photoScale: 1.0, bioKey: "speakers.bio.mladen_pejkovic" },
