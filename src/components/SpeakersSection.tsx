@@ -28,6 +28,8 @@ import speakerSinisaKrajnovic from "@/assets/speaker-sinisa-krajnovic.png.asset.
 import speakerMajaBusljeta from "@/assets/speaker-maja-busljeta.jpg";
 import speakerSvjetlanaMomcilovic from "@/assets/speaker-svjetlana-momcilovic.jpg.asset.json";
 import speakerEwelinaJaworskaBien from "@/assets/speaker-ewelina-jaworska-bien.png.asset.json";
+import speakerIvanArtukovic from "@/assets/speaker-ivan-artukovic.jpg.asset.json";
+import speakerSuzanaPlecko from "@/assets/speaker-suzana-plecko.jpg.asset.json";
 import { Dialog, DialogContent } from "@/components/ui/dialog";
 
 interface Speaker {
