@@ -34,7 +34,7 @@ const sponsors: LogoEntry[] = [
   { name: "Atlantic Grupa", logo: sponsorAtlantic, scale: 1.5, url: "https://www.atlanticgrupa.com/hr/" },
   { name: "Perutnina Ptuj", logo: sponsorPerutnina, scale: 0.7, url: "https://www.perutnina.com/hr/hr/home/" },
   { name: "JGL", logo: sponsorJgl.url, scale: 0.7, url: "https://www.jgl.hr" },
-  { name: "Selectio", logo: sponsorSelectio, scale: 1.3, url: "https://selectio.hr" },
+  { name: "Selectio", logo: sponsorSelectio, scale: 1.1, url: "https://selectio.hr" },
 ];
 
 const PartnerLogo = ({ name, logo, scale = 1, url, size = "lg", yOffset = 0 }: LogoEntry & { size?: "lg" | "md" | "sm" }) => {
