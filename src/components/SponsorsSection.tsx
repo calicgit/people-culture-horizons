@@ -7,6 +7,7 @@ import sponsorAtlantic from "@/assets/sponsor-atlantic.png";
 import sponsorPerutnina from "@/assets/sponsor-perutnina.png";
 import sponsorJgl from "@/assets/sponsor-jgl.png.asset.json";
 import sponsorSelectio from "@/assets/sponsor-selectio.svg";
+import sponsorFranck from "@/assets/sponsor-franck.png.asset.json";
 
 import patronMrms from "@/assets/patron-mrms.png";
 import patronHpk from "@/assets/patron-hpk.png";
