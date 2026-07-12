@@ -51,7 +51,7 @@ const speakers: Speaker[] = [
   { name: "Ivan Zubak", title: "CEO", company: "Zubak Group", photo: speakerIvanZubak, photoPosition: "38% 24%", photoScale: 1.0, bioKey: "speakers.bio.ivan_zubak" },
   { name: "Ivan Artuković", title: "CEO", company: "Franck", photo: speakerIvanArtukovic.url, photoPosition: "center 20%", photoScale: 1.0, bioKey: "speakers.bio.ivan_artukovic" },
   { name: "Tina Balenović", title: "Human Resources Director", company: "SPAN" },
-  { name: "Iva Rogović Lekić", title: "CEO", company: "GrECo Specialty", photo: speakerIvaRogovicLekic, photoPosition: "center 20%", photoScale: 1.0, bioKey: "speakers.bio.iva_rogovic_lekic" },
+  { name: "Iva Rogović Lekić", title: "CEO", company: "GrECo Specialty GmbH", photo: speakerIvaRogovicLekic, photoPosition: "center 20%", photoScale: 1.0, bioKey: "speakers.bio.iva_rogovic_lekic" },
   { name: "Seni Staničić", title: "Head of Human Resources", company: "ENNA Group", photo: speakerSeniStanicic, photoPosition: "center top", photoScale: 1.0, bioKey: "speakers.bio.seni_stanicic" },
   { name: "Natalya Golovkina", title: "Corporate People & Culture Director", company: "JGL" },
   { name: "Anton Barbir", title: "Member of Management Board", company: "ENNA Group", photo: speakerAntonBarbir, photoPosition: "center 20%", photoScale: 1.0, bioKey: "speakers.bio.anton_barbir" },
