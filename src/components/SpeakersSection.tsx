@@ -44,12 +44,12 @@ interface Speaker {
 
 const speakers: Speaker[] = [
   { name: "Damir Habijan", title: "Ministar pravosuđa Republike Hrvatske", company: "Ministarstvo pravosuđa, uprave i digitalne transformacije" },
-  { name: "Siniša Krajnović", title: "President of the Management Board", company: "Ericsson Nikola Tesla", photo: speakerSinisaKrajnovic.url, photoPosition: "center 20%", photoScale: 1.0, bioKey: "speakers.bio.sinisa_krajnovic" },
+  { name: "Siniša Krajnović", title: "President of the Management Board", company: "Ericsson Nikola Tesla", photo: speakerSinisaKrajnovic, photoPosition: "center 20%", photoScale: 1.0, bioKey: "speakers.bio.sinisa_krajnovic" },
   { name: "Ivan Bešlić", title: "Co-founder & CSO", company: "Sofascore", photo: speakerIvanBeslic, photoPosition: "center center", photoScale: 1.0, bioKey: "speakers.bio.ivan_beslic" },
   { name: "Krešimir Barić", title: "CFO", company: "Erste&Steiermärkische Bank Croatia" },
   { name: "Alenka Jajac-Knez", title: "CEO", company: "JGL" },
   { name: "Ivan Zubak", title: "CEO", company: "Zubak Group", photo: speakerIvanZubak, photoPosition: "38% 24%", photoScale: 1.0, bioKey: "speakers.bio.ivan_zubak" },
-  { name: "Ivan Artuković", title: "CEO", company: "Franck", photo: speakerIvanArtukovic.url, photoPosition: "center 20%", photoScale: 1.0, bioKey: "speakers.bio.ivan_artukovic" },
+  { name: "Ivan Artuković", title: "CEO", company: "Franck", photo: speakerIvanArtukovic, photoPosition: "center 20%", photoScale: 1.0, bioKey: "speakers.bio.ivan_artukovic" },
   { name: "Tina Balenović", title: "Human Resources Director", company: "SPAN" },
   { name: "Iva Rogović Lekić", title: "CEO", company: "GrECo Specialty GmbH", photo: speakerIvaRogovicLekic, photoPosition: "center 20%", photoScale: 1.0, bioKey: "speakers.bio.iva_rogovic_lekic" },
   { name: "Seni Staničić", title: "Head of Human Resources", company: "ENNA Group", photo: speakerSeniStanicic, photoPosition: "center top", photoScale: 1.0, bioKey: "speakers.bio.seni_stanicic" },
@@ -60,7 +60,7 @@ const speakers: Speaker[] = [
   { name: "Mirta Pađen Lee", title: "Senior Director of Reward and Operations", company: "Infobip" },
   { name: "Marija Felkel", title: "Group HR Director & Member of the Executive Committee", company: "Perutnina Ptuj Group", photo: speakerMarijaFelkel, photoPosition: "65% 25%", bioKey: "speakers.bio.marija_felkel" },
   { name: "Marina Regjo", title: "Human Resources Director", company: "FNG Property HR (Fortenova Group)", photo: speakerMarinaRegjo, photoPosition: "center 20%", photoScale: 1.0, bioKey: "speakers.bio.marina_regjo" },
-  { name: "Suzana Plečko", title: "Human Resources Director", company: "Franck", photo: speakerSuzanaPlecko.url, photoPosition: "center 20%", photoScale: 1.0, bioKey: "speakers.bio.suzana_plecko" },
+  { name: "Suzana Plečko", title: "Human Resources Director", company: "Franck", photo: speakerSuzanaPlecko, photoPosition: "center 20%", photoScale: 1.0, bioKey: "speakers.bio.suzana_plecko" },
   { name: "Martina Skorin", title: "Head of Human Resources", company: "HAKOM", photo: speakerMartinaSkorin, photoPosition: "center 20%", photoScale: 1.0, bioKey: "speakers.bio.martina_skorin" },
   { name: "Branimir Spajić", title: "Director of Strategic Human Resources Management", company: "Hrvatski Telekom" },
   { name: "Mladen Pejković", title: "Senior Executive Director, Transformation & ICT", company: "Atlantic Group", photo: speakerMladenPejkovic, photoPosition: "center 15%", photoScale: 1.0, bioKey: "speakers.bio.mladen_pejkovic" },
@@ -68,7 +68,7 @@ const speakers: Speaker[] = [
   { name: "Snježana M. Lohninger", title: "CFO", company: "Porsche Inter Auto", photo: speakerSnjezanaLohninger, photoPosition: "center 15%", photoScale: 1.0, bioKey: "speakers.bio.snjezana_lohninger" },
   { name: "Vjekoslav Golubović", title: "Principal HR Consultant", company: "DeeP Project", photo: speakerVjekoslavGolubovic, photoPosition: "center 15%", photoScale: 1.0, bioKey: "speakers.bio.vjekoslav_golubovic" },
   { name: "Andrea Tomšić", title: "Head of Human Resources", company: "Aircash", photo: speakerAndreaTomsic, photoPosition: "center 40%", photoScale: 1.1, bioKey: "speakers.bio.andrea_tomsic" },
-  { name: "Jelena Novačić", title: "Head of People & Culture, Marketing and Internal Communications", company: "Lürssen", photo: speakerJelenaNovacic.url, bioKey: "speakers.bio.jelena_novacic" },
+  { name: "Jelena Novačić", title: "Head of People & Culture, Marketing and Internal Communications", company: "Lürssen", photo: speakerJelenaNovacic, bioKey: "speakers.bio.jelena_novacic" },
   { name: "Petar Čalić", title: "CEO", company: "DeeP Project", photo: speakerPetarCalic, photoPosition: "center 40%", photoScale: 1.0, bioKey: "speakers.bio.petar_calic" },
   { name: "Željko Tandarić", title: "Member of the Management Board", company: "Abysalto" },
   { name: "Ingrid Tena Grgić", title: "Human Resources Consultant", company: "DeeP Project", photo: speakerIngridTenaGrgic, photoPosition: "center 15%", photoScale: 1.0, bioKey: "speakers.bio.ingrid_tena_grgic" },
@@ -78,8 +78,8 @@ const speakers: Speaker[] = [
   { name: "Borna Lončar", title: "HR Consultant & Researcher", company: "DeeP Project", photo: speakerBornaLoncar, photoPosition: "center 15%", photoScale: 1.0, bioKey: "speakers.bio.borna_loncar" },
   { name: "Jelica Radović", title: "Managing Partner & HR Consultant", company: "HR Fabrika", photo: speakerJelicaRadovic, photoPosition: "center 5%", photoScale: 1.0, bioKey: "speakers.bio.jelica_radovic" },
   { name: "Maja Bušljeta", title: "Internal Communications & Corporate Culture Manager", company: "Erste&Steiermärkische Bank Croatia", photo: speakerMajaBusljeta, photoPosition: "center 25%", photoScale: 1.0, bioKey: "speakers.bio.maja_busljeta" },
-  { name: "Svjetlana Momčilović", title: "Marketing Director", company: "GrECo Specialty GmbH", photo: speakerSvjetlanaMomcilovic.url, photoPosition: "center 20%", photoScale: 1.0, bioKey: "speakers.bio.svjetlana_momcilovic" },
-  { name: "Ewelina Jaworska-Bień", title: "Head of People Solutions", company: "GrECo Specialty GmbH SEE/CEE", photo: speakerEwelinaJaworskaBien.url, photoPosition: "center 20%", photoScale: 1.0, bioKey: "speakers.bio.ewelina_jaworska_bien" },
+  { name: "Svjetlana Momčilović", title: "Marketing Director", company: "GrECo Specialty GmbH", photo: speakerSvjetlanaMomcilovic, photoPosition: "center 20%", photoScale: 1.0, bioKey: "speakers.bio.svjetlana_momcilovic" },
+  { name: "Ewelina Jaworska-Bień", title: "Head of People Solutions", company: "GrECo Specialty GmbH SEE/CEE", photo: speakerEwelinaJaworskaBien, photoPosition: "center 20%", photoScale: 1.0, bioKey: "speakers.bio.ewelina_jaworska_bien" },
 ];
 
 const SpeakersSection = () => {
