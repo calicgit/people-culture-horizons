@@ -40,7 +40,7 @@ const agendaData: Record<string, Session[]> = {
     { time: "14:45", endTime: "15:05", titleKey: "agenda.d1.s11.title", type: "break" },
     { time: "15:05", endTime: "15:25", titleKey: "agenda.d1.s12.title", speaker: "Suzana Plečko - Human Resources Director, Franck", type: "talk", locationKey: "agenda.loc.main", descKey: "agenda.d1.s12.desc" },
     { time: "15:30", endTime: "16:15", titleKey: "agenda.d1.s13.title", type: "panel", locationKey: "agenda.loc.main", descKey: "agenda.d1.s13.desc",
-      panelists: ["Martina Skorin - Head of Human Resources, HAKOM", "Branimir Spajić - Director of Strategic Human Resources Management, Hrvatski Telekom", "Marina Regjo - Human Resources Director, FNG Property HR (Fortenova Group)"] },
+      panelists: ["Martina Skorin - Head of Human Resources, HAKOM", "Branimir Spajić - Director of Strategic Human Resources Management, Hrvatski Telekom", "Marina Regjo - Human Resources Director, FNG Property HR (Fortenova Group)", "Erna Tomiša - Organizational Development and Consulting Team Lead, Selectio"] },
   ],
   day2: [
     { time: "08:00", endTime: "09:00", titleKey: "agenda.d2.s1.title", type: "break" },
