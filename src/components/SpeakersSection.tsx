@@ -30,6 +30,7 @@ import speakerSvjetlanaMomcilovic from "@/assets/speaker-svjetlana-momcilovic.jp
 import speakerEwelinaJaworskaBien from "@/assets/speaker-ewelina-jaworska-bien.png";
 import speakerIvanArtukovic from "@/assets/speaker-ivan-artukovic.jpg";
 import speakerSuzanaPlecko from "@/assets/speaker-suzana-plecko.jpg";
+import speakerErnaTomisa from "@/assets/speaker-erna-tomisa.jpg";
 import { Dialog, DialogContent } from "@/components/ui/dialog";
 
 interface Speaker {
