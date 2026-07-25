@@ -31,6 +31,7 @@ import speakerEwelinaJaworskaBien from "@/assets/speaker-ewelina-jaworska-bien.p
 import speakerIvanArtukovic from "@/assets/speaker-ivan-artukovic.jpg";
 import speakerSuzanaPlecko from "@/assets/speaker-suzana-plecko.jpg";
 import speakerErnaTomisa from "@/assets/speaker-erna-tomisa.jpg";
+import speakerJasminaLukacevic from "@/assets/speaker-jasmina-lukacevic.jpg";
 import { Dialog, DialogContent } from "@/components/ui/dialog";
 
 interface Speaker {
@@ -82,6 +83,7 @@ const speakers: Speaker[] = [
   { name: "Svjetlana Momčilović", title: "Head of Marketing", company: "GrECo Specialty GmbH", photo: speakerSvjetlanaMomcilovic, photoPosition: "center 20%", photoScale: 1.0, bioKey: "speakers.bio.svjetlana_momcilovic" },
   { name: "Ewelina Jaworska-Bień", title: "Head of People Solutions", company: "GrECo Specialty GmbH", photo: speakerEwelinaJaworskaBien, photoPosition: "center 20%", photoScale: 1.0, bioKey: "speakers.bio.ewelina_jaworska_bien" },
   { name: "Erna Tomiša", title: "Organizational Development and Consulting Team Lead", company: "SELECTIO", photo: speakerErnaTomisa, photoPosition: "center 20%", photoScale: 1.0, bioKey: "speakers.bio.erna_tomisa" },
+  { name: "Jasmina Lukačević", title: "Member of the Board", company: "SD Worx Adriatic", photo: speakerJasminaLukacevic, photoPosition: "center 20%", photoScale: 1.0, bioKey: "speakers.bio.jasmina_lukacevic" },
 ];
 
 const SpeakersSection = () => {
