@@ -25,7 +25,7 @@ const agendaData: Record<string, Session[]> = {
     { time: "09:00", endTime: "09:10", titleKey: "agenda.d1.s2.title", type: "talk", descKey: "agenda.d1.s2.desc", locationKey: "agenda.loc.main" },
     { time: "09:15", endTime: "09:45", titleKey: "agenda.d1.s3.title", speaker: "Josip Funda - Senior Economist, World Bank Group", type: "keynote", keynoteKind: "talk", locationKey: "agenda.loc.main", descKey: "agenda.d1.s3.desc" },
     { time: "09:50", endTime: "10:35", titleKey: "agenda.d1.s4.title", type: "keynote", keynoteKind: "panel", locationKey: "agenda.loc.main", descKey: "agenda.d1.s4.desc",
-      panelists: ["Iva Rogović Lekić - CEO, GrECo Specialty", "Snježana M. Lohninger - CFO, Porsche Inter Auto", "Marija Felkel - Group HR Director & Member of the Executive Committee, Perutnina Ptuj Group"],
+      panelists: ["Iva Rogović Lekić - CEO, GrECo Specialty GmbH", "Snježana M. Lohninger - CFO, Porsche Inter Auto", "Marija Felkel - Group HR Director & Member of the Executive Committee, Perutnina Ptuj Group"],
       moderator: "Vjekoslav Golubović - Principal HR Consultant, DeeP Project", moderatorLabel: "moderator" },
     { time: "10:35", endTime: "10:55", titleKey: "agenda.d1.s5.title", type: "break" },
     { time: "10:55", endTime: "11:15", titleKey: "agenda.d1.s6.title", speaker: "Ivan Bešlić - Co-founder & CSO, Sofascore", type: "talk", locationKey: "agenda.loc.main", descKey: "agenda.d1.s6.desc" },
