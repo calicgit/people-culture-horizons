@@ -51,7 +51,7 @@ const speakers: Speaker[] = [
   { name: "Krešimir Barić", title: "CFO", company: "Erste&Steiermärkische Bank Croatia" },
   { name: "Alenka Jajac-Knez", title: "CEO", company: "JGL" },
   { name: "Ivan Zubak", title: "CEO", company: "Zubak Group", photo: speakerIvanZubak, photoPosition: "38% 24%", photoScale: 1.0, bioKey: "speakers.bio.ivan_zubak" },
-  { name: "Ivan Artuković", title: "CEO", company: "Franck", photo: speakerIvanArtukovic, photoPosition: "center 20%", photoScale: 1.0, bioKey: "speakers.bio.ivan_artukovic" },
+  { name: "Ivan Artuković", title: "President of the Management Board", company: "Franck", photo: speakerIvanArtukovic, photoPosition: "center 20%", photoScale: 1.0, bioKey: "speakers.bio.ivan_artukovic" },
   { name: "Tina Balenović", title: "Human Resources Director", company: "SPAN" },
   { name: "Iva Rogović Lekić", title: "CEO", company: "GrECo Specialty GmbH", photo: speakerIvaRogovicLekic, photoPosition: "center 20%", photoScale: 1.0, bioKey: "speakers.bio.iva_rogovic_lekic" },
   { name: "Seni Staničić", title: "Head of Human Resources", company: "ENNA Group", photo: speakerSeniStanicic, photoPosition: "center top", photoScale: 1.0, bioKey: "speakers.bio.seni_stanicic" },
