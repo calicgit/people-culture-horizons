@@ -60,7 +60,9 @@ const PricingSection = () => {
               className={`relative rounded-3xl p-8 flex flex-col transition-all duration-300 ${
                 tier.featured
                   ? "bg-conference-blue text-primary-foreground shadow-elevated scale-[1.03] ring-2 ring-accent"
-                  : "bg-card shadow-card border border-border"
+                  : tier.registrationOpen
+                    ? "bg-card shadow-card border border-border"
+                    : "bg-muted/40 shadow-card border border-border opacity-90"
               }`}
             >
               <h3 className={`text-2xl font-bold font-display mb-2 ${tier.featured ? "text-accent" : "text-foreground"}`}>
