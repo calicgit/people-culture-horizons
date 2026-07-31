@@ -17,6 +17,7 @@ const PricingSection = () => {
       featureKeys: ["pricing.common.f1", "pricing.common.f2", "pricing.common.f3", "pricing.common.f4"],
       featured: false,
       registrationOpen: false,
+      expired: true,
     },
     {
       name: "Regular",
