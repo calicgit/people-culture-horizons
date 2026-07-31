@@ -231,7 +231,7 @@ const translations: Record<Language, Record<string, string>> = {
 
     // CTA
     "cta.title": "Ne propustite događaj godine",
-    "cta.subtitle": "Early bird ponuda vrijedi do 31. srpnja 2026. Pridružite se 500+ lidera koji transformiraju budućnost rada.",
+    "cta.subtitle": "Regular ponuda vrijedi do 19. studenoga 2026. Pridružite se 500+ lidera koji transformiraju budućnost rada.",
     "cta.buyNow": "Rezerviraj kotizaciju",
     "cta.groupPricing": "",
     "cta.refund": "",
@@ -511,7 +511,7 @@ const translations: Record<Language, Record<string, string>> = {
 
     // CTA
     "cta.title": "Don't Miss the Event of the Year",
-    "cta.subtitle": "Early bird offer valid until July 31, 2026. Join 500+ leaders transforming the future of work.",
+    "cta.subtitle": "Regular offer valid until November 19, 2026. Join 500+ leaders transforming the future of work.",
     "cta.buyNow": "Reserve Registration",
     "cta.groupPricing": "",
     "cta.refund": "",

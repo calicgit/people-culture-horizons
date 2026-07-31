@@ -16,7 +16,7 @@ const PricingSection = () => {
       price: "€249,00",
       featureKeys: ["pricing.common.f1", "pricing.common.f2", "pricing.common.f3", "pricing.common.f4"],
       featured: true,
-      registrationOpen: true,
+      registrationOpen: false,
     },
     {
       name: "Regular",
@@ -24,7 +24,7 @@ const PricingSection = () => {
       price: "€349,00",
       featureKeys: ["pricing.common.f1", "pricing.common.f2", "pricing.common.f3", "pricing.common.f4"],
       featured: false,
-      registrationOpen: false,
+      registrationOpen: true,
     },
     {
       name: "Last minute",
