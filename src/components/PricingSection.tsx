@@ -86,9 +86,9 @@ const PricingSection = () => {
                 ))}
               </ul>
               <Button
-                variant={tier.featured ? "hero" : "outline"}
+                variant={tier.featured ? "hero" : tier.expired ? "secondary" : "outline"}
                 size="lg"
-                className="w-full text-base py-6 rounded-full"
+                className={`w-full text-base py-6 rounded-full ${tier.expired ? "bg-muted-foreground/30 text-foreground/60" : ""}`}
                 onClick={() => openRegistration(tier.name, tier.price)}
                 disabled={!tier.registrationOpen}
               >
