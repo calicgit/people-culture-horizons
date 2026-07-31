@@ -62,7 +62,7 @@ const PricingSection = () => {
                 tier.featured
                   ? "bg-conference-blue text-primary-foreground shadow-elevated scale-[1.03] ring-2 ring-accent"
                   : tier.expired
-                    ? "bg-muted shadow-card border border-border opacity-90"
+                    ? "bg-muted-foreground/20 shadow-card border border-border opacity-90"
                     : "bg-card shadow-card border border-border"
               }`}
             >
