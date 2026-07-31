@@ -15,7 +15,7 @@ const PricingSection = () => {
       periodKey: "pricing.blindBird.period",
       price: "€249,00",
       featureKeys: ["pricing.common.f1", "pricing.common.f2", "pricing.common.f3", "pricing.common.f4"],
-      featured: true,
+      featured: false,
       registrationOpen: false,
     },
     {
@@ -23,7 +23,7 @@ const PricingSection = () => {
       periodKey: "pricing.earlyBird.period",
       price: "€349,00",
       featureKeys: ["pricing.common.f1", "pricing.common.f2", "pricing.common.f3", "pricing.common.f4"],
-      featured: false,
+      featured: true,
       registrationOpen: true,
     },
     {
