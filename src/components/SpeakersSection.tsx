@@ -32,6 +32,7 @@ import speakerIvanArtukovic from "@/assets/speaker-ivan-artukovic.jpg";
 import speakerSuzanaPlecko from "@/assets/speaker-suzana-plecko.jpg";
 import speakerErnaTomisa from "@/assets/speaker-erna-tomisa.jpg";
 import speakerJasminaLukacevic from "@/assets/speaker-jasmina-lukacevic.jpg";
+import speakerNinaBegicevicRedep from "@/assets/speaker-nina-begicevic-redep.jpg";
 import { Dialog, DialogContent } from "@/components/ui/dialog";
 
 interface Speaker {
@@ -56,6 +57,7 @@ const speakers: Speaker[] = [
   { name: "Iva Rogović Lekić", title: "CEO", company: "GrECo Specialty GmbH", photo: speakerIvaRogovicLekic, photoPosition: "center 20%", photoScale: 1.0, bioKey: "speakers.bio.iva_rogovic_lekic" },
   { name: "Seni Staničić", title: "Head of Human Resources", company: "ENNA Group", photo: speakerSeniStanicic, photoPosition: "center top", photoScale: 1.0, bioKey: "speakers.bio.seni_stanicic" },
   { name: "Natalya Golovkina", title: "Corporate People & Culture Director", company: "JGL" },
+  { name: "Prof. dr. sc. Nina Begičević Ređep", title: "Redovita profesorica", company: "FOI", photo: speakerNinaBegicevicRedep, photoPosition: "center 20%", photoScale: 1.0, bioKey: "speakers.bio.nina_begicevic_redep" },
   { name: "Anton Barbir", title: "Member of Management Board", company: "ENNA Group", photo: speakerAntonBarbir, photoPosition: "center 20%", photoScale: 1.0, bioKey: "speakers.bio.anton_barbir" },
   { name: "Stefan Vukajlović", title: "Group HR Director for Compensation and Benefits", company: "Fortenova Group" },
   { name: "Mirela Kotarac", title: "HR Director & Member of the Management Board", company: "Cemex Croatia", photo: speakerMirelaKotarac, photoPosition: "center 30%", photoScale: 1.35, bioKey: "speakers.bio.mirela_kotarac" },
