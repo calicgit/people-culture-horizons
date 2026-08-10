@@ -1,4 +1,5 @@
 import { Helmet } from "react-helmet-async";
+import { useEffect } from "react";
 import Navbar from "@/components/Navbar";
 import HeroSection from "@/components/HeroSection";
 import TopicsSection from "@/components/TopicsSection";
@@ -12,6 +13,7 @@ import GalleryPreviewSection from "@/components/GalleryPreviewSection";
 import CTASection from "@/components/CTASection";
 import Footer from "@/components/Footer";
 import CookieConsent from "@/components/CookieConsent";
+
 
 const eventJsonLd = {
   "@context": "https://schema.org",
