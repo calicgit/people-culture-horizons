@@ -81,7 +81,23 @@ const eventJsonLd = {
 };
 
 const Index = () => {
+  useEffect(() => {
+    const hash = window.location.hash;
+    if (hash) {
+      const id = hash.replace("#", "");
+      const element = document.getElementById(id);
+      if (element) {
+        setTimeout(() => {
+          const navHeight = 80;
+          const top = element.getBoundingClientRect().top + window.scrollY - navHeight;
+          window.scrollTo({ top, behavior: "smooth" });
+        }, 100);
+      }
+    }
+  }, []);
+
   return (
+
     <div className="min-h-screen bg-background">
       <Helmet>
         <title>People & Culture HORIZONS - HR & Business konferencija</title>
