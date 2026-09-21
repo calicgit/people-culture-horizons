@@ -33,6 +33,8 @@ import speakerSuzanaPlecko from "@/assets/speaker-suzana-plecko.jpg";
 import speakerErnaTomisa from "@/assets/speaker-erna-tomisa.jpg";
 import speakerJasminaLukacevic from "@/assets/speaker-jasmina-lukacevic.jpg";
 import speakerNinaBegicevicRedep from "@/assets/speaker-nina-begicevic-redep.jpg";
+import speakerNatalyaGolovkina from "@/assets/speaker-natalya-golovkina.jpg";
+import speakerAlenkaJajacKnez from "@/assets/speaker-alenka-jajac-knez.png";
 import { Dialog, DialogContent } from "@/components/ui/dialog";
 
 interface Speaker {
@@ -50,13 +52,13 @@ const speakers: Speaker[] = [
   { name: "Dr. sc. Siniša Krajnović", title: "President of the Management Board", company: "Ericsson Nikola Tesla", photo: speakerSinisaKrajnovic, photoPosition: "center 20%", photoScale: 1.0, bioKey: "speakers.bio.sinisa_krajnovic" },
   { name: "Ivan Bešlić", title: "Co-founder & CSO", company: "Sofascore", photo: speakerIvanBeslic, photoPosition: "center center", photoScale: 1.0, bioKey: "speakers.bio.ivan_beslic" },
   { name: "Krešimir Barić", title: "CFO", company: "Erste&Steiermärkische Bank Croatia" },
-  { name: "Alenka Jajac-Knez", title: "CEO", company: "JGL" },
+  { name: "Alenka Jajac-Knez", title: "CEO", company: "JGL", photo: speakerAlenkaJajacKnez, photoPosition: "center 30%", bioKey: "speakers.bio.alenka_jajac_knez" },
   { name: "Ivan Zubak", title: "CEO", company: "Zubak Group", photo: speakerIvanZubak, photoPosition: "38% 24%", photoScale: 1.0, bioKey: "speakers.bio.ivan_zubak" },
   { name: "Ivan Artuković", title: "President of the Management Board", company: "Franck", photo: speakerIvanArtukovic, photoPosition: "center 20%", photoScale: 1.0, bioKey: "speakers.bio.ivan_artukovic" },
   { name: "Tina Balenović", title: "Human Resources Director", company: "SPAN" },
   { name: "Iva Rogović Lekić", title: "CEO", company: "GrECo Specialty GmbH", photo: speakerIvaRogovicLekic, photoPosition: "center 20%", photoScale: 1.0, bioKey: "speakers.bio.iva_rogovic_lekic" },
   { name: "Seni Staničić", title: "Head of Human Resources", company: "ENNA Group", photo: speakerSeniStanicic, photoPosition: "center top", photoScale: 1.0, bioKey: "speakers.bio.seni_stanicic" },
-  { name: "Natalya Golovkina", title: "Corporate People & Culture Director", company: "JGL" },
+  { name: "Natalya Golovkina", title: "Corporate People & Culture Director", company: "JGL", photo: speakerNatalyaGolovkina, photoPosition: "center 20%", bioKey: "speakers.bio.natalya_golovkina" },
   { name: "Prof. dr. sc. Nina Begičević Ređep", title: "Redovita profesorica", company: "FOI", photo: speakerNinaBegicevicRedep, photoPosition: "center 20%", photoScale: 1.0, bioKey: "speakers.bio.nina_begicevic_redep" },
   { name: "Anton Barbir", title: "Member of Management Board", company: "ENNA Group", photo: speakerAntonBarbir, photoPosition: "center 20%", photoScale: 1.0, bioKey: "speakers.bio.anton_barbir" },
   { name: "Stefan Vukajlović", title: "Group HR Director for Compensation and Benefits", company: "Fortenova Group" },
