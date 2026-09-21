@@ -17,7 +17,6 @@ const translations: Record<Language, Record<string, string>> = {
     "nav.pricing": "Kotizacije",
     "nav.gallery": "Galerija 2025.",
     "nav.venue": "Lokacija",
-    "nav.awards": "Nagrade",
     "nav.sponsors": "Partneri & sponzori",
     "nav.buyTicket": "Rezerviraj kotizaciju",
 
