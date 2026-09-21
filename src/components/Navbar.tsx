@@ -64,12 +64,6 @@ const Navbar = () => {
               {link.label}
             </a>
           ))}
-          <Link
-            to="/nagrade"
-            className={`text-sm font-medium transition-colors ${useDarkText ? 'text-foreground/70 hover:text-foreground' : 'text-primary-foreground/80 hover:text-primary-foreground'}`}
-          >
-            {t("nav.awards")}
-          </Link>
           <a
             href={isHome ? "#sponsors" : "/#sponsors"}
             className={`text-sm font-medium transition-colors ${useDarkText ? 'text-foreground/70 hover:text-foreground' : 'text-primary-foreground/80 hover:text-primary-foreground'}`}
@@ -120,14 +114,8 @@ const Navbar = () => {
               {link.label}
             </a>
           ))}
-          <Link
-            to="/nagrade"
-            className="block text-foreground/70 hover:text-foreground text-sm font-medium py-2"
-            onClick={() => setOpen(false)}
-          >
-            {t("nav.awards")}
-          </Link>
           <a
+
             href={isHome ? "#sponsors" : "/#sponsors"}
             className="block text-foreground/70 hover:text-foreground text-sm font-medium py-2"
             onClick={() => setOpen(false)}
