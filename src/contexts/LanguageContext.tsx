@@ -61,7 +61,7 @@ const translations: Record<Language, Record<string, string>> = {
     "keynote.p2": "Predavanje otvara konferenciju iz makroekonomske perspektive i postavlja njezino temeljno pitanje: što se događa između onoga što organizacije znaju i onoga što stvarno rade - kada problem više nije nedostatak informacija, nego kvaliteta prosudbe, jasnoća odluka i sposobnost provedbe.",
     "keynote.cta": "Rezerviraj svoje mjesto →",
     "keynote.years": "Godina istraživanja",
-    "keynote.speakerAlt": "Glavna govornica",
+    "keynote.speakerAlt": "Josip Funda, World Bank Group - keynote predavač na HR konferenciji People & Culture Horizons 2026 u Zagrebu",
     "keynote.speakerName": "Josip Funda",
     "keynote.speakerTitle": "Senior Economist, World Bank Group",
 
