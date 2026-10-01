@@ -119,6 +119,7 @@ const translations: Record<Language, Record<string, string>> = {
     "speakers.host.badge": "Voditeljica konferencije",
     "speakers.host.name": "Antonija Mandić",
     "speakers.host.role": "Voditeljica konferencije",
+    "speakers.altSuffix": "govornik na HR konferenciji People & Culture Horizons 2026 u Zagrebu",
     "hero.host.label": "Vodi konferenciju:",
     "agenda.type.keynote": "Predavanje",
     "agenda.type.talk": "Predavanje",
