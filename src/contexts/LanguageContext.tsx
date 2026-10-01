@@ -348,7 +348,7 @@ const translations: Record<Language, Record<string, string>> = {
     "keynote.p2": "This keynote opens the conference from a macroeconomic perspective and frames its core question: what happens between what organisations know and what they actually do - when the real challenge is no longer a lack of information, but the quality of judgment, the clarity of decisions and the capacity to execute.",
     "keynote.cta": "Reserve Your Seat →",
     "keynote.years": "Years of Research",
-    "keynote.speakerAlt": "Keynote Speaker",
+    "keynote.speakerAlt": "Josip Funda, World Bank Group - keynote speaker at the People & Culture Horizons 2026 HR conference in Zagreb",
     "keynote.speakerName": "Josip Funda",
     "keynote.speakerTitle": "Senior Economist, World Bank Group",
 
