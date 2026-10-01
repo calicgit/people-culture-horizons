@@ -518,6 +518,11 @@ const translations: Record<Language, Record<string, string>> = {
     "sponsors.community": "SPONSORS",
     "sponsors.media": "MEDIA PATRONS",
     "sponsors.organizer": "Conference Organizer",
+    "sponsors.altPartner": "partner of the People & Culture Horizons 2026 HR conference in Zagreb",
+    "sponsors.altSponsor": "sponsor of the People & Culture Horizons 2026 HR conference in Zagreb",
+    "sponsors.altPatron": "patron of the People & Culture Horizons 2026 HR conference in Zagreb",
+    "sponsors.altMedia": "media patron of the People & Culture Horizons 2026 HR conference in Zagreb",
+    "sponsors.altOrganizer": "DeeP Project - organizer of the People & Culture Horizons 2026 HR conference in Zagreb",
     "sponsors.interested": "Interested in sponsorship?",
     "sponsors.packages": "View sponsorship packages →",
 
