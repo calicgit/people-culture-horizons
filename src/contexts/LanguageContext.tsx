@@ -406,6 +406,7 @@ const translations: Record<Language, Record<string, string>> = {
     "speakers.host.badge": "Conference Host",
     "speakers.host.name": "Antonija Mandić",
     "speakers.host.role": "Conference Host",
+    "speakers.altSuffix": "speaker at the People & Culture Horizons 2026 HR conference in Zagreb",
     "hero.host.label": "Hosted by:",
     "agenda.type.keynote": "Keynote",
     "agenda.type.talk": "Lecture",
