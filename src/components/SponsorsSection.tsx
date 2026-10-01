@@ -49,7 +49,7 @@ const PartnerLogo = ({ name, logo, scale = 1, url, size = "lg", yOffset = 0 }: L
   };
   return (
     <a href={url} target="_blank" rel="noopener noreferrer" className={`flex ${sizeClasses[size]} items-center justify-center p-4 hover:opacity-80 transition-opacity`} title={name}>
-      <img src={logo} alt={name} className="max-h-full max-w-full object-contain" style={{ transform: `scale(${scale}) translateY(${yOffset}px)` }} />
+      <img src={logo} alt={name} className="max-h-full max-w-full object-contain" loading="lazy" decoding="async" style={{ transform: `scale(${scale}) translateY(${yOffset}px)` }} />
     </a>
   );
 };
@@ -107,7 +107,7 @@ const SponsorsSection = () => {
           <p className="mb-4 text-center text-xs font-semibold uppercase tracking-[0.25em] text-muted-foreground md:text-sm">{t("sponsors.organizer")}</p>
           <div className="flex items-center justify-center">
             <a href="https://deepproject.hr/" target="_blank" rel="noopener noreferrer" className="inline-block hover:opacity-80 transition-opacity">
-              <img src={deepProjectLogo} alt="DeeP Project" className="object-contain" style={{ height: "8.25rem" }} />
+              <img src={deepProjectLogo} alt="DeeP Project" className="object-contain" loading="lazy" decoding="async" style={{ height: "8.25rem" }} />
             </a>
           </div>
         </div>
