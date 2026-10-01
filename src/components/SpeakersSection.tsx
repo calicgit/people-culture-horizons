@@ -112,7 +112,7 @@ const SpeakersSection = () => {
             <div className="flex-shrink-0 w-14 h-14 rounded-full overflow-hidden ring-2 ring-accent/40 bg-muted">
               <img
                 src={hostAntonija}
-                alt={t("speakers.host.name")}
+                alt={`${t("speakers.host.name")}, ${t("speakers.host.role")} People & Culture Horizons 2026, Zagreb`}
                 className="w-full h-full object-cover"
                 loading="lazy"
                 decoding="async"
@@ -140,7 +140,7 @@ const SpeakersSection = () => {
                     <div className="flex-shrink-0 w-28 h-28 rounded-full overflow-hidden bg-muted">
                       <img
                         src={speaker.photo}
-                        alt={speaker.name}
+                        alt={`${speaker.name}, ${speaker.title}, ${speaker.company} - ${t("speakers.altSuffix")}`}
                         className="w-full h-full object-cover"
                         loading="lazy"
                         decoding="async"
@@ -174,7 +174,7 @@ const SpeakersSection = () => {
                   <div className="flex-shrink-0 w-20 h-20 rounded-full overflow-hidden bg-muted ring-2 ring-accent/30">
                     <img
                       src={selectedSpeaker.photo}
-                      alt={selectedSpeaker.name}
+                      alt={`${selectedSpeaker.name}, ${selectedSpeaker.title}, ${selectedSpeaker.company} - ${t("speakers.altSuffix")}`}
                       className="w-full h-full object-cover"
                       style={{ objectPosition: selectedSpeaker.photoPosition || "center", transform: selectedSpeaker.photoScale ? `scale(${selectedSpeaker.photoScale})` : undefined }}
                     />
