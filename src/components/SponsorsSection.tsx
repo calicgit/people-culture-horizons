@@ -14,7 +14,7 @@ import patronMrms from "@/assets/patron-mrms.png";
 import patronHpk from "@/assets/patron-hpk.png";
 import patronPchub from "@/assets/patron-pchub.svg";
 import patronJutarnji from "@/assets/patron-jutarnji.png";
-type LogoEntry = { name: string; logo: string; scale?: number; url: string; yOffset?: number };
+type LogoEntry = { name: string; logo: string; scale?: number; url: string; yOffset?: number; altKey: string };
 
 const platinumPartners: LogoEntry[] = [
   { name: "Greco", logo: partnerGreco, scale: 0.85, url: "https://greco.services/greco-specijalisti-u-osiguranju-i-upravljanju-rizicima/" },
