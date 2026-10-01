@@ -229,6 +229,11 @@ const translations: Record<Language, Record<string, string>> = {
     "sponsors.community": "SPONZORI",
     "sponsors.media": "MEDIJSKI POKROVITELJI",
     "sponsors.organizer": "Organizator konferencije",
+    "sponsors.altPartner": "partner HR konferencije People & Culture Horizons 2026 u Zagrebu",
+    "sponsors.altSponsor": "sponzor HR konferencije People & Culture Horizons 2026 u Zagrebu",
+    "sponsors.altPatron": "pokrovitelj HR konferencije People & Culture Horizons 2026 u Zagrebu",
+    "sponsors.altMedia": "medijski pokrovitelj HR konferencije People & Culture Horizons 2026 u Zagrebu",
+    "sponsors.altOrganizer": "DeeP Project - organizator HR konferencije People & Culture Horizons 2026 u Zagrebu",
     "sponsors.interested": "Zainteresirani za sponzorstvo?",
     "sponsors.packages": "Pogledajte sponzorske pakete →",
 
