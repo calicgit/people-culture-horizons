@@ -41,7 +41,8 @@ const sponsors: LogoEntry[] = [
   { name: "SD Worx", logo: sponsorSdworx, scale: 0.8, url: "https://www.sdworx.hr", altKey: "sponsors.altSponsor" },
 ];
 
-const PartnerLogo = ({ name, logo, scale = 1, url, size = "lg", yOffset = 0 }: LogoEntry & { size?: "lg" | "md" | "sm" }) => {
+const PartnerLogo = ({ name, logo, scale = 1, url, size = "lg", yOffset = 0, altKey }: LogoEntry & { size?: "lg" | "md" | "sm" }) => {
+  const { t } = useLanguage();
   const sizeClasses = {
     lg: "h-28 w-48 md:h-32 md:w-56",
     md: "h-24 w-40 md:h-28 md:w-48",
