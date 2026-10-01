@@ -20,7 +20,7 @@ const VenueSection = () => {
 
         <div className="max-w-4xl mx-auto">
           <div className="rounded-3xl overflow-hidden shadow-elevated mb-6 max-w-3xl mx-auto">
-            <img src={venueImage} alt="Mozaik Event Centar, Zagreb" className="w-full h-full object-cover aspect-[4/3]" />
+            <img src={venueImage} alt="Mozaik Event Centar, Zagreb" className="w-full h-full object-cover aspect-[4/3]" loading="lazy" decoding="async" />
           </div>
           <div className="grid gap-4 max-w-md mx-auto">
             {details.map(({ icon: Icon, label, value }) => (
