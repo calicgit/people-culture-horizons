@@ -174,7 +174,7 @@ const SpeakersSection = () => {
                   <div className="flex-shrink-0 w-20 h-20 rounded-full overflow-hidden bg-muted ring-2 ring-accent/30">
                     <img
                       src={selectedSpeaker.photo}
-                      alt={selectedSpeaker.name}
+                      alt={`${selectedSpeaker.name}, ${selectedSpeaker.title}, ${selectedSpeaker.company} - ${t("speakers.altSuffix")}`}
                       className="w-full h-full object-cover"
                       style={{ objectPosition: selectedSpeaker.photoPosition || "center", transform: selectedSpeaker.photoScale ? `scale(${selectedSpeaker.photoScale})` : undefined }}
                     />
