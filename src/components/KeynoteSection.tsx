@@ -26,7 +26,7 @@ const KeynoteSection = () => {
             <p className="text-primary-foreground/40 text-base mb-10 font-light min-h-[4rem]">{paragraphTwo || "\u00A0"}</p>
             <div className="flex items-center gap-5 mb-10">
               <div className="h-16 w-16 rounded-full overflow-hidden border border-primary-foreground/15 bg-primary-foreground/5 flex-shrink-0">
-                <img src={josipFunda} alt={t("keynote.speakerName")} className="w-full h-full object-cover" style={{ objectPosition: "center 20%" }} />
+                <img src={josipFunda} alt={t("keynote.speakerName")} className="w-full h-full object-cover" style={{ objectPosition: "center 20%" }} loading="lazy" decoding="async" />
               </div>
               <div>
                 <p className="text-primary-foreground font-semibold text-lg leading-tight">{t("keynote.speakerName")}</p>

@@ -114,6 +114,8 @@ const SpeakersSection = () => {
                 src={hostAntonija}
                 alt={t("speakers.host.name")}
                 className="w-full h-full object-cover"
+                loading="lazy"
+                decoding="async"
               />
             </div>
             <div className="text-left leading-tight">
@@ -140,6 +142,8 @@ const SpeakersSection = () => {
                         src={speaker.photo}
                         alt={speaker.name}
                         className="w-full h-full object-cover"
+                        loading="lazy"
+                        decoding="async"
                         style={{ objectPosition: speaker.photoPosition || "center", transform: speaker.photoScale ? `scale(${speaker.photoScale})` : undefined }}
                       />
                     </div>
