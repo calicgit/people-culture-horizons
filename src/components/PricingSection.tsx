@@ -38,6 +38,16 @@ const PricingSection = () => {
   ];
 
   const openRegistration = (name: string, price: string) => {
+    const w = window as unknown as { gtag?: (...args: unknown[]) => void };
+    if (typeof window !== "undefined" && typeof w.gtag === "function") {
+      const value = parseFloat(price.replace(/[^\d,]/g, "").replace(",", "."));
+      w.gtag("event", "generate_lead", {
+        event_category: "Engagement",
+        event_label: `Rezervacija kotizacije - Horizons 2026 (${name})`,
+        value,
+        currency: "EUR",
+      });
+    }
     setSelectedTier({ name, price });
     setDialogOpen(true);
   };
