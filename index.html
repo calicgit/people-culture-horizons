@@ -10,13 +10,15 @@
     })(window,document,'script','dataLayer','GTM-KGH2FW24');</script>
     <!-- End Google Tag Manager -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <!-- Google Analytics -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-E4LBSZB5ZG"></script>
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=%VITE_LOVABLE_CONNECTOR_GOOGLE_ANALYTICS_API_KEY%"></script>
     <script>
       window.dataLayer = window.dataLayer || [];
       function gtag(){dataLayer.push(arguments);}
       gtag('js', new Date());
-      gtag('config', 'G-E4LBSZB5ZG', { 'debug_mode': true });
+
+      // Measurement ID dolazi iz spojenog Google Analytics connectiona (.env)
+      gtag('config', '%VITE_LOVABLE_CONNECTOR_GOOGLE_ANALYTICS_API_KEY%', { 'debug_mode': true });
     </script>
     <title>People & Culture HORIZONS - HR & Business konferencija</title>
     <meta name="description" content="Vodeća HR & Business konferencija u Zagrebu, 26. - 27. studenog 2026." />
