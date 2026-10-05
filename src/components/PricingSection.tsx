@@ -47,6 +47,7 @@ const PricingSection = () => {
         value,
         currency: "EUR",
       });
+      w.gtag("event", "qualify_lead");
     }
     setSelectedTier({ name, price });
     setDialogOpen(true);
