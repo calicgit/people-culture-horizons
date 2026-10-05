@@ -47,8 +47,12 @@ const PricingSection = () => {
           w.gtag(...args);
         } else {
           w.dataLayer = w.dataLayer || [];
-          // eslint-disable-next-line prefer-rest-params
-          (function () { w.dataLayer.push(arguments); })(...args);
+          // gtag.js expects an Arguments object, not a plain array
+          const pushArgs = function (..._a: unknown[]) {
+            // eslint-disable-next-line prefer-rest-params
+            w.dataLayer.push(arguments);
+          };
+          pushArgs(...args);
         }
       };
       const value = parseFloat(price.replace(/[^\d,]/g, "").replace(",", "."));
