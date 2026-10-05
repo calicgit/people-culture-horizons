@@ -38,16 +38,32 @@ const PricingSection = () => {
   ];
 
   const openRegistration = (name: string, price: string) => {
-    const w = window as unknown as { gtag?: (...args: unknown[]) => void };
-    if (typeof window !== "undefined" && typeof w.gtag === "function") {
+    if (typeof window !== "undefined") {
+      // eslint-disable-next-line @typescript-eslint/no-explicit-any
+      const w = window as any;
+      // Fallback: if gtag isn't available yet, queue events directly in dataLayer
+      const track = (...args: unknown[]) => {
+        if (w.gtag) {
+          w.gtag(...args);
+        } else {
+          w.dataLayer = w.dataLayer || [];
+          // gtag.js expects an Arguments object, not a plain array
+          const pushArgs = function (..._a: unknown[]) {
+            // eslint-disable-next-line prefer-rest-params
+            w.dataLayer.push(arguments);
+          };
+          pushArgs(...args);
+        }
+      };
       const value = parseFloat(price.replace(/[^\d,]/g, "").replace(",", "."));
-      w.gtag("event", "generate_lead", {
+      track("event", "generate_lead", {
         event_category: "Engagement",
         event_label: `Rezervacija kotizacije - Horizons 2026 (${name})`,
         value,
         currency: "EUR",
+        debug_mode: true,
       });
-      w.gtag("event", "qualify_lead");
+      track("event", "qualify_lead", { debug_mode: true });
     }
     setSelectedTier({ name, price });
     setDialogOpen(true);
