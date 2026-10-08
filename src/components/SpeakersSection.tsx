@@ -35,6 +35,7 @@ import speakerJasminaLukacevic from "@/assets/speaker-jasmina-lukacevic.jpg";
 import speakerNinaBegicevicRedep from "@/assets/speaker-nina-begicevic-redep.jpg";
 import speakerNatalyaGolovkina from "@/assets/speaker-natalya-golovkina.jpg";
 import speakerAlenkaJajacKnez from "@/assets/speaker-alenka-jajac-knez.png";
+import speakerBranimirSpajic from "@/assets/speaker-branimir-spajic.jpg";
 import { Dialog, DialogContent } from "@/components/ui/dialog";
 
 interface Speaker {
