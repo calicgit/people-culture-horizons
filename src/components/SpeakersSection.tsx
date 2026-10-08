@@ -35,6 +35,7 @@ import speakerJasminaLukacevic from "@/assets/speaker-jasmina-lukacevic.jpg";
 import speakerNinaBegicevicRedep from "@/assets/speaker-nina-begicevic-redep.jpg";
 import speakerNatalyaGolovkina from "@/assets/speaker-natalya-golovkina.jpg";
 import speakerAlenkaJajacKnez from "@/assets/speaker-alenka-jajac-knez.png";
+import speakerBranimirSpajic from "@/assets/speaker-branimir-spajic.jpg";
 import { Dialog, DialogContent } from "@/components/ui/dialog";
 
 interface Speaker {
@@ -68,7 +69,7 @@ const speakers: Speaker[] = [
   { name: "Marina Regjo", title: "Human Resources Director", company: "FNG Property HR (Fortenova Group)", photo: speakerMarinaRegjo, photoPosition: "center 20%", photoScale: 1.0, bioKey: "speakers.bio.marina_regjo" },
   { name: "Suzana Plečko", title: "Human Resources Director", company: "Franck", photo: speakerSuzanaPlecko, photoPosition: "center 20%", photoScale: 1.0, bioKey: "speakers.bio.suzana_plecko" },
   { name: "Martina Skorin", title: "Head of Human Resources", company: "HAKOM", photo: speakerMartinaSkorin, photoPosition: "center 20%", photoScale: 1.0, bioKey: "speakers.bio.martina_skorin" },
-  { name: "Branimir Spajić", title: "Director of Strategic Human Resources Management", company: "Hrvatski Telekom" },
+  { name: "Branimir Spajić", title: "Director of Strategic Human Resources Management", company: "Hrvatski Telekom", photo: speakerBranimirSpajic, photoPosition: "center 20%", bioKey: "speakers.bio.branimir_spajic" },
   { name: "Mladen Pejković", title: "Senior Executive Director, Transformation & ICT", company: "Atlantic Group", photo: speakerMladenPejkovic, photoPosition: "center 15%", photoScale: 1.0, bioKey: "speakers.bio.mladen_pejkovic" },
   { name: "Sanja Škrinjar", title: "Team Lead & HR Consultant", company: "DeeP Project", photo: speakerSanjaSkrinjar, photoPosition: "center 8%", bioKey: "speakers.bio.sanja_skrinjar" },
   { name: "Snježana M. Lohninger", title: "CFO", company: "Porsche Inter Auto", photo: speakerSnjezanaLohninger, photoPosition: "center 15%", photoScale: 1.0, bioKey: "speakers.bio.snjezana_lohninger" },
