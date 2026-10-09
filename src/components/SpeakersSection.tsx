@@ -155,8 +155,12 @@ const SpeakersSection = () => {
                   )}
                   <div className="min-w-0 flex-1">
                     <h3 className="text-base font-bold text-foreground font-display leading-tight">{speaker.name}</h3>
-                    <p className="mt-1.5 text-sm text-muted-foreground font-light leading-snug">{speaker.title}</p>
-                    <p className="mt-1.5 text-sm font-semibold text-accent leading-snug">{speaker.company}</p>
+                    {speaker.title && (
+                      <p className="mt-1.5 text-sm text-muted-foreground font-light leading-snug">{speaker.title}</p>
+                    )}
+                    {speaker.company && (
+                      <p className="mt-1.5 text-sm font-semibold text-accent leading-snug">{speaker.company}</p>
+                    )}
                   </div>
                 </div>
               </div>
@@ -187,8 +191,12 @@ const SpeakersSection = () => {
                 )}
                 <div>
                   <h3 className="text-xl font-bold text-foreground font-display">{selectedSpeaker.name}</h3>
-                  <p className="mt-1 text-sm text-muted-foreground font-light">{selectedSpeaker.title}</p>
-                  <p className="mt-0.5 text-sm font-semibold text-accent">{selectedSpeaker.company}</p>
+                  {selectedSpeaker.title && (
+                    <p className="mt-1 text-sm text-muted-foreground font-light">{selectedSpeaker.title}</p>
+                  )}
+                  {selectedSpeaker.company && (
+                    <p className="mt-0.5 text-sm font-semibold text-accent">{selectedSpeaker.company}</p>
+                  )}
                 </div>
               </div>
               {selectedSpeaker.bioKey && (
