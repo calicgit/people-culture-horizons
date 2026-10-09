@@ -40,8 +40,8 @@ import { Dialog, DialogContent } from "@/components/ui/dialog";
 
 interface Speaker {
   name: string;
-  title: string;
-  company: string;
+  title?: string;
+  company?: string;
   photo?: string;
   photoPosition?: string;
   photoScale?: number;
@@ -56,7 +56,7 @@ const speakers: Speaker[] = [
   { name: "Alenka Jajac-Knez", title: "CEO", company: "JGL", photo: speakerAlenkaJajacKnez, photoPosition: "center 30%", bioKey: "speakers.bio.alenka_jajac_knez" },
   { name: "Ivan Zubak", title: "CEO", company: "Zubak Group", photo: speakerIvanZubak, photoPosition: "38% 24%", photoScale: 1.0, bioKey: "speakers.bio.ivan_zubak" },
   { name: "Ivan Artuković", title: "President of the Management Board", company: "Franck", photo: speakerIvanArtukovic, photoPosition: "center 20%", photoScale: 1.0, bioKey: "speakers.bio.ivan_artukovic" },
-  { name: "Tina Balenović", title: "Human Resources Director", company: "SPAN" },
+  { name: "Tina Balenović" },
   { name: "Iva Rogović Lekić", title: "CEO", company: "GrECo Specialty GmbH", photo: speakerIvaRogovicLekic, photoPosition: "center 20%", photoScale: 1.0, bioKey: "speakers.bio.iva_rogovic_lekic" },
   { name: "Seni Staničić", title: "Head of Human Resources", company: "ENNA Group", photo: speakerSeniStanicic, photoPosition: "center top", photoScale: 1.0, bioKey: "speakers.bio.seni_stanicic" },
   { name: "Natalya Golovkina", title: "Corporate People & Culture Director", company: "JGL", photo: speakerNatalyaGolovkina, photoPosition: "center 20%", bioKey: "speakers.bio.natalya_golovkina" },
@@ -141,7 +141,7 @@ const SpeakersSection = () => {
                     <div className="flex-shrink-0 w-28 h-28 rounded-full overflow-hidden bg-muted">
                       <img
                         src={speaker.photo}
-                        alt={`${speaker.name}, ${speaker.title}, ${speaker.company} - ${t("speakers.altSuffix")}`}
+                        alt={`${[speaker.name, speaker.title, speaker.company].filter(Boolean).join(", ")} - ${t("speakers.altSuffix")}`}
                         className="w-full h-full object-cover"
                         loading="lazy"
                         decoding="async"
@@ -155,8 +155,12 @@ const SpeakersSection = () => {
                   )}
                   <div className="min-w-0 flex-1">
                     <h3 className="text-base font-bold text-foreground font-display leading-tight">{speaker.name}</h3>
-                    <p className="mt-1.5 text-sm text-muted-foreground font-light leading-snug">{speaker.title}</p>
-                    <p className="mt-1.5 text-sm font-semibold text-accent leading-snug">{speaker.company}</p>
+                    {speaker.title && (
+                      <p className="mt-1.5 text-sm text-muted-foreground font-light leading-snug">{speaker.title}</p>
+                    )}
+                    {speaker.company && (
+                      <p className="mt-1.5 text-sm font-semibold text-accent leading-snug">{speaker.company}</p>
+                    )}
                   </div>
                 </div>
               </div>
@@ -175,7 +179,7 @@ const SpeakersSection = () => {
                   <div className="flex-shrink-0 w-20 h-20 rounded-full overflow-hidden bg-muted ring-2 ring-accent/30">
                     <img
                       src={selectedSpeaker.photo}
-                      alt={`${selectedSpeaker.name}, ${selectedSpeaker.title}, ${selectedSpeaker.company} - ${t("speakers.altSuffix")}`}
+                      alt={`${[selectedSpeaker.name, selectedSpeaker.title, selectedSpeaker.company].filter(Boolean).join(", ")} - ${t("speakers.altSuffix")}`}
                       className="w-full h-full object-cover"
                       style={{ objectPosition: selectedSpeaker.photoPosition || "center", transform: selectedSpeaker.photoScale ? `scale(${selectedSpeaker.photoScale})` : undefined }}
                     />
@@ -187,8 +191,12 @@ const SpeakersSection = () => {
                 )}
                 <div>
                   <h3 className="text-xl font-bold text-foreground font-display">{selectedSpeaker.name}</h3>
-                  <p className="mt-1 text-sm text-muted-foreground font-light">{selectedSpeaker.title}</p>
-                  <p className="mt-0.5 text-sm font-semibold text-accent">{selectedSpeaker.company}</p>
+                  {selectedSpeaker.title && (
+                    <p className="mt-1 text-sm text-muted-foreground font-light">{selectedSpeaker.title}</p>
+                  )}
+                  {selectedSpeaker.company && (
+                    <p className="mt-0.5 text-sm font-semibold text-accent">{selectedSpeaker.company}</p>
+                  )}
                 </div>
               </div>
               {selectedSpeaker.bioKey && (
