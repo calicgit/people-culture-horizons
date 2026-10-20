@@ -210,7 +210,6 @@ const translations: Record<Language, Record<string, string>> = {
     "pricing.common.f1": "Poklon dobrodošlice",
     "pricing.common.f2": "Pristup na sve pozornice",
     "pricing.common.f3": "Puni catering za oba dana konferencije (kava, napitci, ručak, finger food…)",
-    "pricing.common.f4": "Popusti na hotelski smještaj i taksi",
     "pricing.teamOffer": "Posebna pogodnost za timove: prijavite 4 sudionika iz iste organizacije i platite samo 3 kotizacije - <strong>četvrta je gratis.</strong>",
 
     // Venue
@@ -498,7 +497,6 @@ const translations: Record<Language, Record<string, string>> = {
     "pricing.common.f1": "Welcome gift",
     "pricing.common.f2": "Access to all stages",
     "pricing.common.f3": "Full catering for both conference days (coffee, beverages, lunch, finger food…)",
-    "pricing.common.f4": "Hotel and taxi discounts",
     "pricing.teamOffer": "Special team offer: register 4 participants from the same organization and pay for only 3 - <strong>the fourth one is free.</strong>",
 
     // Venue
