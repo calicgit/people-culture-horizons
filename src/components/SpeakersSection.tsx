@@ -9,7 +9,6 @@ import speakerIvanZubak from "@/assets/speaker-ivan-zubak.jpg";
 import speakerIvanBeslic from "@/assets/speaker-ivan-beslic.jpg";
 import speakerMladenPejkovic from "@/assets/speaker-mladen-pejkovic.jpg";
 import speakerIvaRogovicLekic from "@/assets/speaker-iva-rogovic-lekic.jpg";
-import speakerIngridTenaGrgic from "@/assets/speaker-ingrid-tena-grgic.jpg";
 import speakerBornaLoncar from "@/assets/speaker-borna-loncar.jpg";
 import speakerMarinaRegjo from "@/assets/speaker-marina-regjo.jpg";
 import speakerSnjezanaLohninger from "@/assets/speaker-snjezana-lohninger.jpg";
@@ -78,7 +77,6 @@ const speakers: Speaker[] = [
   { name: "Jelena Novačić", title: "Head of People & Culture, Marketing and Internal Communications", company: "Lürssen", photo: speakerJelenaNovacic, bioKey: "speakers.bio.jelena_novacic" },
   { name: "Petar Čalić", title: "CEO", company: "DeeP Project", photo: speakerPetarCalic, photoPosition: "center 40%", photoScale: 1.0, bioKey: "speakers.bio.petar_calic" },
   { name: "Željko Tandarić", title: "Member of the Management Board", company: "Abysalto" },
-  { name: "Ingrid Tena Grgić", title: "Human Resources Consultant", company: "DeeP Project", photo: speakerIngridTenaGrgic, photoPosition: "center 15%", photoScale: 1.0, bioKey: "speakers.bio.ingrid_tena_grgic" },
   { name: "Tihana Marušić", title: "Talent Management Lead", company: "Atlantic Group", photo: speakerTihanaMarusic, photoPosition: "center 15%", photoScale: 1.0, bioKey: "speakers.bio.tihana_marusic" },
   { name: "Nikola Milosavljević", title: "Managing Partner & Senior HR Consultant", company: "HR Fabrika", photo: speakerNikolaMilosavljevic, photoPosition: "center top", photoScale: 1.0, bioKey: "speakers.bio.nikola_milosavljevic" },
   { name: "Maja Darija Škrljak", title: "Group Talent Attraction and Acquisition Manager", company: "Vetropack Group", photo: speakerMajaDarijaSkrljak, photoPosition: "center 15%", photoScale: 1.0, bioKey: "speakers.bio.maja_darija_skrljak" },

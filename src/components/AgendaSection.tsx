@@ -72,7 +72,7 @@ const masterclassData: Record<string, Session[]> = {
     { time: "10:55", endTime: "12:05", titleKey: "agenda.d1.mc3.title", type: "workshop", locationKey: "agenda.loc.fire", descKey: "agenda.d1.mc3.desc" },
   ],
   day2: [
-    { time: "10:45", endTime: "11:55", titleKey: "agenda.d2.mc1.title", speaker: "Ingrid Tena Grgić - Human Resources Consultant, DeeP Project", type: "workshop", locationKey: "agenda.loc.earth", descKey: "agenda.d2.mc1.desc" },
+    { time: "10:45", endTime: "11:55", titleKey: "agenda.d2.mc1.title", type: "workshop", locationKey: "agenda.loc.earth" },
     { time: "10:45", endTime: "11:55", titleKey: "agenda.d2.mc2.title", type: "workshop", locationKey: "agenda.loc.air", descKey: "agenda.d2.mc2.desc" },
     { time: "10:45", endTime: "11:55", titleKey: "agenda.d2.mc3.title", type: "workshop", locationKey: "agenda.loc.fire", descKey: "agenda.d2.mc3.desc" },
   ],
@@ -135,7 +135,7 @@ const AgendaSection = () => {
     const itemKey = `${prefix}-${dayKeys[activeDayIdx]}-${session.time}-${i}`;
     const isExpanded = expandedItems.has(itemKey);
     const hasDescription = !!session.descKey;
-    const isExpandable = !isBreak;
+    const isExpandable = !isBreak && hasDescription;
     const isPlaceholder = !session.titleKey && !session.speaker && !session.locationKey && !session.trackKey && !session.descKey;
     const title = session.titleKey ? t(session.titleKey) : "";
     const timeRange = session.time && session.endTime ? `${session.time} - ${session.endTime}` : "";
