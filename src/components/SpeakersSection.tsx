@@ -35,6 +35,7 @@ import speakerNinaBegicevicRedep from "@/assets/speaker-nina-begicevic-redep.jpg
 import speakerNatalyaGolovkina from "@/assets/speaker-natalya-golovkina.jpg";
 import speakerAlenkaJajacKnez from "@/assets/speaker-alenka-jajac-knez.png";
 import speakerBranimirSpajic from "@/assets/speaker-branimir-spajic.jpg";
+import speakerZeljkoTandaric from "@/assets/speaker-zeljko-tandaric.jpg";
 import { Dialog, DialogContent } from "@/components/ui/dialog";
 
 interface Speaker {
@@ -76,7 +77,7 @@ const speakers: Speaker[] = [
   { name: "Andrea Tomšić", title: "Head of Human Resources", company: "Aircash", photo: speakerAndreaTomsic, photoPosition: "center 40%", photoScale: 1.1, bioKey: "speakers.bio.andrea_tomsic" },
   { name: "Jelena Novačić", title: "Head of People & Culture, Marketing and Internal Communications", company: "Lürssen", photo: speakerJelenaNovacic, bioKey: "speakers.bio.jelena_novacic" },
   { name: "Petar Čalić", title: "CEO", company: "DeeP Project", photo: speakerPetarCalic, photoPosition: "center 40%", photoScale: 1.0, bioKey: "speakers.bio.petar_calic" },
-  { name: "Željko Tandarić", title: "Member of the Management Board", company: "Abysalto" },
+  { name: "Željko Tandarić", title: "Member of the Management Board", company: "Abysalto", photo: speakerZeljkoTandaric, photoPosition: "center 20%", photoScale: 1.0, bioKey: "speakers.bio.zeljko_tandaric" },
   { name: "Tihana Marušić", title: "Talent Management Lead", company: "Atlantic Group", photo: speakerTihanaMarusic, photoPosition: "center 15%", photoScale: 1.0, bioKey: "speakers.bio.tihana_marusic" },
   { name: "Nikola Milosavljević", title: "Managing Partner & Senior HR Consultant", company: "HR Fabrika", photo: speakerNikolaMilosavljevic, photoPosition: "center top", photoScale: 1.0, bioKey: "speakers.bio.nikola_milosavljevic" },
   { name: "Maja Darija Škrljak", title: "Group Talent Attraction and Acquisition Manager", company: "Vetropack Group", photo: speakerMajaDarijaSkrljak, photoPosition: "center 15%", photoScale: 1.0, bioKey: "speakers.bio.maja_darija_skrljak" },
