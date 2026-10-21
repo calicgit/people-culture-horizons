@@ -23,7 +23,7 @@ import speakerPetarCalic from "@/assets/speaker-petar-calic.jpg";
 import speakerNikolaMilosavljevic from "@/assets/speaker-nikola-milosavljevic.jpg";
 import speakerJelicaRadovic from "@/assets/speaker-jelica-radovic.jpg";
 import speakerJelenaNovacic from "@/assets/speaker-jelena-novacic.jpg";
-import speakerSinisaKrajnovic from "@/assets/speaker-sinisa-krajnovic.png";
+import speakerNikolaDujmovic from "@/assets/speaker-nikola-dujmovic.jpg";
 import speakerMajaBusljeta from "@/assets/speaker-maja-busljeta.jpg";
 import speakerSvjetlanaMomcilovic from "@/assets/speaker-svjetlana-momcilovic.jpg";
 import speakerEwelinaJaworskaBien from "@/assets/speaker-ewelina-jaworska-bien.png";
@@ -50,7 +50,7 @@ interface Speaker {
 
 const speakers: Speaker[] = [
   { name: "Damir Habijan", title: "Ministar pravosuđa Republike Hrvatske", company: "Ministarstvo pravosuđa, uprave i digitalne transformacije" },
-  { name: "Dr. sc. Siniša Krajnović", title: "President of the Management Board", company: "Ericsson Nikola Tesla", photo: speakerSinisaKrajnovic, photoPosition: "center 20%", photoScale: 1.0, bioKey: "speakers.bio.sinisa_krajnovic" },
+  { name: "Nikola Dujmović", title: "CEO", company: "Span", photo: speakerNikolaDujmovic, photoPosition: "55% 28%", photoScale: 1.0, bioKey: "speakers.bio.nikola_dujmovic" },
   { name: "Ivan Bešlić", title: "Co-founder & CSO", company: "Sofascore", photo: speakerIvanBeslic, photoPosition: "center center", photoScale: 1.0, bioKey: "speakers.bio.ivan_beslic" },
   { name: "Krešimir Barić", title: "CFO", company: "Erste&Steiermärkische Bank Croatia" },
   { name: "Alenka Jajac-Knez", title: "CEO", company: "JGL", photo: speakerAlenkaJajacKnez, photoPosition: "center 30%", bioKey: "speakers.bio.alenka_jajac_knez" },
