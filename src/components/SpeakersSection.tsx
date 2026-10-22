@@ -35,6 +35,7 @@ import speakerNatalyaGolovkina from "@/assets/speaker-natalya-golovkina.jpg";
 import speakerAlenkaJajacKnez from "@/assets/speaker-alenka-jajac-knez.png";
 import speakerBranimirSpajic from "@/assets/speaker-branimir-spajic.jpg";
 import speakerZeljkoTandaric from "@/assets/speaker-zeljko-tandaric.jpg";
+import speakerTinaBalenovic from "@/assets/speaker-tina-balenovic.jpg";
 import { Dialog, DialogContent } from "@/components/ui/dialog";
 
 interface Speaker {
@@ -55,7 +56,7 @@ const speakers: Speaker[] = [
   { name: "Alenka Jajac-Knez", title: "CEO", company: "JGL", photo: speakerAlenkaJajacKnez, photoPosition: "center 30%", bioKey: "speakers.bio.alenka_jajac_knez" },
   { name: "Ivan Zubak", title: "CEO", company: "Zubak Group", photo: speakerIvanZubak, photoPosition: "38% 24%", photoScale: 1.0, bioKey: "speakers.bio.ivan_zubak" },
   { name: "Ivan Artuković", title: "President of the Management Board", company: "Franck", photo: speakerIvanArtukovic, photoPosition: "center 20%", photoScale: 1.0, bioKey: "speakers.bio.ivan_artukovic" },
-  { name: "Tina Balenović" },
+  { name: "Tina Balenović", title: "Senior People & Culture Leader", photo: speakerTinaBalenovic, photoPosition: "center 20%", photoScale: 1.05, bioKey: "speakers.bio.tina_balenovic" },
   { name: "Iva Rogović Lekić", title: "CEO", company: "GrECo Specialty GmbH", photo: speakerIvaRogovicLekic, photoPosition: "center 20%", photoScale: 1.0, bioKey: "speakers.bio.iva_rogovic_lekic" },
   { name: "Seni Staničić", title: "Head of Human Resources", company: "ENNA Group", photo: speakerSeniStanicic, photoPosition: "center top", photoScale: 1.0, bioKey: "speakers.bio.seni_stanicic" },
   { name: "Natalya Golovkina", title: "Corporate People & Culture Director", company: "JGL", photo: speakerNatalyaGolovkina, photoPosition: "center 20%", bioKey: "speakers.bio.natalya_golovkina" },
