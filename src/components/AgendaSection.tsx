@@ -19,7 +19,7 @@ interface Session {
   moderatorLabel?: "moderator" | "moderatorica";
 }
 
-const agendaData: Record<string, Session[]> = {
+export const agendaData: Record<string, Session[]> = {
   day1: [
     { time: "08:00", endTime: "09:00", titleKey: "agenda.d1.s1.title", type: "break" },
     { time: "09:00", endTime: "09:10", titleKey: "agenda.d1.s2.title", type: "talk", descKey: "agenda.d1.s2.desc", locationKey: "agenda.loc.main" },
@@ -51,30 +51,31 @@ const agendaData: Record<string, Session[]> = {
       speaker: "Ewelina Jaworska-Bień - Head of People Solutions SEE/CEE, GrECo Specialty GmbH",
       moderator: "Svjetlana Momčilović - Head of Marketing SEE/CEE, GrECo Specialty GmbH", moderatorLabel: "moderatorica" },
 
-    { time: "10:20", endTime: "10:40", titleKey: "agenda.d2.s4.title", type: "break" },
-    { time: "10:45", endTime: "11:05", titleKey: "agenda.d2.s5.title", speaker: "Sanja Škrinjar - Team Lead & HR Consultant, DeeP Project", type: "talk", locationKey: "agenda.loc.main", descKey: "agenda.d2.s5.desc" },
-    { time: "11:10", endTime: "11:55", titleKey: "agenda.d2.s6.title", type: "panel", locationKey: "agenda.loc.main", descKey: "agenda.d2.s6.desc",
+    { time: "10:25", endTime: "10:45", titleKey: "agenda.d2.tbd.title", type: "talk", locationKey: "agenda.loc.main" },
+    { time: "10:45", endTime: "11:05", titleKey: "agenda.d2.s4.title", type: "break" },
+    { time: "11:05", endTime: "11:25", titleKey: "agenda.d2.s5.title", speaker: "Sanja Škrinjar - Team Lead & HR Consultant, DeeP Project", type: "talk", locationKey: "agenda.loc.main", descKey: "agenda.d2.s5.desc" },
+    { time: "11:30", endTime: "12:15", titleKey: "agenda.d2.s6.title", type: "panel", locationKey: "agenda.loc.main", descKey: "agenda.d2.s6.desc",
       panelists: ["Anton Barbir - Member of Management Board, ENNA Group", "Ivan Artuković - President of the Management Board, Franck", "Željko Tandarić - Member of the Management Board, Abysalto", "Alenka Jajac-Knez - CEO, JGL"],
       moderator: "Petar Čalić - CEO, DeeP Project", moderatorLabel: "moderator" },
-    { time: "11:55", endTime: "12:15", titleKey: "agenda.d2.s7.title", type: "break" },
-    { time: "12:15", endTime: "13:00", titleKey: "agenda.d2.s8.title", type: "panel", locationKey: "agenda.loc.main", descKey: "agenda.d2.s8.desc",
+    { time: "12:15", endTime: "12:35", titleKey: "agenda.d2.s7.title", type: "break" },
+    { time: "12:35", endTime: "13:20", titleKey: "agenda.d2.s8.title", type: "panel", locationKey: "agenda.loc.main", descKey: "agenda.d2.s8.desc",
       panelists: ["Damir Habijan - Ministar pravosuđa Republike Hrvatske, Ministarstvo pravosuđa, uprave i digitalne transformacije", "Ivan Zubak - CEO, Zubak Group", "Nikola Dujmović - CEO, Span"],
       moderator: "Antonija Mandić", moderatorLabel: "moderatorica" },
-    { time: "13:05", endTime: "13:20", titleKey: "agenda.d2.s9.title", type: "talk", locationKey: "agenda.loc.main", descKey: "agenda.d2.s9.desc" },
-    { time: "13:20", endTime: "15:00", titleKey: "agenda.d2.s10.title", type: "networking" },
+    { time: "13:25", endTime: "13:40", titleKey: "agenda.d2.s9.title", type: "talk", locationKey: "agenda.loc.main", descKey: "agenda.d2.s9.desc" },
+    { time: "13:40", endTime: "15:00", titleKey: "agenda.d2.s10.title", type: "networking" },
   ],
 };
 
-const masterclassData: Record<string, Session[]> = {
+export const masterclassData: Record<string, Session[]> = {
   day1: [
     { time: "10:55", endTime: "12:05", titleKey: "agenda.d1.mc1.title", speaker: "Borna Lončar - HR Consultant & Researcher, DeeP Project", type: "workshop", locationKey: "agenda.loc.earth", descKey: "agenda.d1.mc1.desc" },
     { time: "10:55", endTime: "12:05", titleKey: "agenda.d1.mc2.title", speaker: "Nikola Milosavljević - Managing Partner & Senior HR Consultant, HR Fabrika\nJelica Radović - Managing Partner & HR Consultant, HR Fabrika", type: "workshop", locationKey: "agenda.loc.air", descKey: "agenda.d1.mc2.desc" },
     { time: "10:55", endTime: "12:05", titleKey: "agenda.d1.mc3.title", type: "workshop", locationKey: "agenda.loc.fire", descKey: "agenda.d1.mc3.desc" },
   ],
   day2: [
-    { time: "10:45", endTime: "11:55", titleKey: "agenda.d2.mc1.title", type: "workshop", locationKey: "agenda.loc.earth" },
-    { time: "10:45", endTime: "11:55", titleKey: "agenda.d2.mc2.title", type: "workshop", locationKey: "agenda.loc.air", descKey: "agenda.d2.mc2.desc" },
-    { time: "10:45", endTime: "11:55", titleKey: "agenda.d2.mc3.title", type: "workshop", locationKey: "agenda.loc.fire", descKey: "agenda.d2.mc3.desc" },
+    { time: "11:05", endTime: "12:15", titleKey: "agenda.d2.mc1.title", type: "workshop", locationKey: "agenda.loc.earth" },
+    { time: "11:05", endTime: "12:15", titleKey: "agenda.d2.mc2.title", type: "workshop", locationKey: "agenda.loc.air", descKey: "agenda.d2.mc2.desc" },
+    { time: "11:05", endTime: "12:15", titleKey: "agenda.d2.mc3.title", type: "workshop", locationKey: "agenda.loc.fire", descKey: "agenda.d2.mc3.desc" },
   ],
 };
 
