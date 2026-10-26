@@ -1,0 +1,4 @@
+- [x] Add Leo Lokas with the supplied photo and bilingual biography.
+- [x] Replace day-two TBD at 10:25 - 10:45 with the AKD talk and description.
+- [x] Add supplied AKD patron logo at the existing patron size.
+- [ ] Verify biography, agenda and logo in the preview and run schedule tests.

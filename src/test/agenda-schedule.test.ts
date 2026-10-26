@@ -51,7 +51,7 @@ describe("November 27, 2026 schedule", () => {
     ["s1", "08:00", "09:00"],
     ["s3", "09:00", "09:45"],
     ["s2", "09:50", "10:20"],
-    ["tbd", "10:25", "10:45"],
+    ["akd", "10:25", "10:45"],
     ["s4", "10:45", "11:05"],
     ["s5", "11:05", "11:25"],
     ["s6", "11:30", "12:15"],
@@ -64,10 +64,10 @@ describe("November 27, 2026 schedule", () => {
       .toMatchObject({ time, endTime });
   });
 
-  it("keeps TBD a standard talk without a speaker", () => {
-    const session = agendaData.day2.find(s => s.titleKey === "agenda.d2.tbd.title");
+  it("assigns the 10:25 talk to Leo Lokas from AKD", () => {
+    const session = agendaData.day2.find(s => s.titleKey === "agenda.d2.akd.title");
     expect(session?.type).toBe("talk");
-    expect(session?.speaker).toBeUndefined();
+    expect(session?.speaker).toBe("Leo Lokas - Business Development Direktor, AKD");
     expect(session?.panelists).toBeUndefined();
     expect(session?.moderator).toBeUndefined();
   });
