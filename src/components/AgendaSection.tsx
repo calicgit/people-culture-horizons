@@ -71,11 +71,11 @@ export const agendaData: Record<string, Session[]> = {
 export const masterclassData: Record<string, Session[]> = {
   day1: [
     { time: "11:20", endTime: "12:30", titleKey: "agenda.d1.mc1.title", speaker: "Borna Lončar - HR Consultant & Researcher, DeeP Project", type: "workshop", locationKey: "agenda.loc.earth", descKey: "agenda.d1.mc1.desc" },
-    { time: "11:20", endTime: "12:30", titleKey: "agenda.d1.mc2.title", speaker: "Nikola Milosavljević - Managing Partner & Senior HR Consultant, HR Fabrika\nJelica Radović - Managing Partner & HR Consultant, HR Fabrika", type: "workshop", locationKey: "agenda.loc.air", descKey: "agenda.d1.mc2.desc" },
+    { time: "11:20", endTime: "12:30", titleKey: "agenda.d1.mc2.title", type: "workshop", locationKey: "agenda.loc.air" },
     { time: "11:20", endTime: "12:30", titleKey: "agenda.d1.mc3.title", type: "workshop", locationKey: "agenda.loc.fire", descKey: "agenda.d1.mc3.desc" },
   ],
   day2: [
-    { time: "11:05", endTime: "12:15", titleKey: "agenda.d2.mc1.title", type: "workshop", locationKey: "agenda.loc.earth" },
+    { time: "11:05", endTime: "12:15", titleKey: "agenda.d2.mc1.title", speaker: "Nikola Milosavljević - Managing Partner & Senior HR Consultant, HR Fabrika\nJelica Radović - Managing Partner & HR Consultant, HR Fabrika", type: "workshop", locationKey: "agenda.loc.earth", descKey: "agenda.d2.mc1.desc" },
     { time: "11:05", endTime: "12:15", titleKey: "agenda.d2.mc2.title", type: "workshop", locationKey: "agenda.loc.air", descKey: "agenda.d2.mc2.desc" },
     { time: "11:05", endTime: "12:15", titleKey: "agenda.d2.mc3.title", type: "workshop", locationKey: "agenda.loc.fire", descKey: "agenda.d2.mc3.desc" },
   ],
