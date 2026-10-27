@@ -47,7 +47,7 @@ export const agendaData: Record<string, Session[]> = {
   day2: [
     { time: "08:00", endTime: "09:00", titleKey: "agenda.d2.s1.title", type: "break" },
     { time: "09:00", endTime: "09:45", titleKey: "agenda.d2.s3.title", type: "keynote", keynoteKind: "panel", locationKey: "agenda.loc.main", descKey: "agenda.d2.s3.desc",
-      panelists: ["Tihana Marušić - Talent Management Lead, Atlantic Group", "Maja Darija Škrljak - Group Talent Attraction and Acquisition Manager, Vetropack Group", "Tina Balenović - Human Resources Director, SPAN", "Natalya Golovkina - Group People & Culture Director, JGL"],
+      panelists: ["Tihana Marušić - Talent Management Lead, Atlantic Group", "Maja Darija Škrljak - Group Talent Attraction and Acquisition Manager, Vetropack Group", "Tina Balenović - Human Resources Director", "Natalya Golovkina - Group People & Culture Director, JGL"],
       moderator: "Izv. prof. dr. sc. Maša Tonković Grabovac - Izvanredna profesorica, Fakultet Hrvatskih studija", moderatorLabel: "moderatorica" },
     { time: "09:50", endTime: "10:20", titleKey: "agenda.d2.s2.title", type: "fireside", locationKey: "agenda.loc.main", descKey: "agenda.d2.s2.desc",
       speaker: "Ewelina Jaworska-Bień - Head of People Solutions SEE/CEE, GrECo Specialty GmbH",
