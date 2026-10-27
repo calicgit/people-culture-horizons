@@ -31,6 +31,13 @@ describe("November 26, 2026 schedule", () => {
     expect(session?.keynoteKind).toBeUndefined();
   });
 
+  it("assigns Iva Repač as moderator of the d1.s13 panel", () => {
+    const session = agendaData.day1.find(s => s.titleKey === "agenda.d1.s13.title");
+    expect(session?.moderator).toBe("Iva Repač - Brand & Communications Director, SPAN");
+    expect(session?.moderatorLabel).toBe("moderatorica");
+    expect(session?.panelists).toContain("Erna Tomiša - Organizational Development and Consulting Team Lead, SELECTIO");
+  });
+
   it("keeps the main sessions in chronological order without overlaps", () => {
     agendaData.day1.forEach((session, i, sessions) => {
       expect(session.time < session.endTime).toBe(true);
