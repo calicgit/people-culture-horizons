@@ -67,7 +67,7 @@ describe("November 27, 2026 schedule", () => {
   it("assigns the 10:25 talk to Leo Lokas from AKD", () => {
     const session = agendaData.day2.find(s => s.titleKey === "agenda.d2.akd.title");
     expect(session?.type).toBe("talk");
-    expect(session?.speaker).toBe("Leo Lokas - Business Development Direktor, AKD");
+    expect(session?.speaker).toBe("Leo Lokas - Business Development Director, AKD");
     expect(session?.panelists).toBeUndefined();
     expect(session?.moderator).toBeUndefined();
   });
