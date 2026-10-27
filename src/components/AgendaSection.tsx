@@ -61,7 +61,7 @@ export const agendaData: Record<string, Session[]> = {
       moderator: "Petar Čalić - CEO, DeeP Project", moderatorLabel: "moderator" },
     { time: "12:15", endTime: "12:35", titleKey: "agenda.d2.s7.title", type: "break" },
     { time: "12:35", endTime: "13:20", titleKey: "agenda.d2.s8.title", type: "panel", locationKey: "agenda.loc.main", descKey: "agenda.d2.s8.desc",
-      panelists: ["Damir Habijan - Ministar pravosuđa Republike Hrvatske, Ministarstvo pravosuđa, uprave i digitalne transformacije", "Ivan Zubak - CEO, Zubak Group", "Prof. dr. sc. Nina Begičević Ređep - Redovita profesorica, FOI", "Nikola Dujmović - CEO, Span"],
+      panelists: ["Damir Habijan - Ministar pravosuđa Republike Hrvatske, Ministarstvo pravosuđa, uprave i digitalne transformacije", "Ivan Zubak - CEO, Zubak Group", "Prof. dr. sc. Nina Begičević Ređep - Redovita profesorica, FOI", "Nikola Dujmović - CEO, SPAN"],
       moderator: "Antonija Mandić", moderatorLabel: "moderatorica" },
     { time: "13:25", endTime: "13:40", titleKey: "agenda.d2.s9.title", type: "talk", locationKey: "agenda.loc.main", descKey: "agenda.d2.s9.desc" },
     { time: "13:40", endTime: "15:00", titleKey: "agenda.d2.s10.title", type: "networking" },
