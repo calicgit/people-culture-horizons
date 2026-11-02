@@ -1,3 +1,4 @@
+import speakerMirtaPadenLee from "@/assets/speaker-mirta-paden-lee.jpg";
 import { useState } from "react";
 import { User, X } from "lucide-react";
 import { useLanguage } from "@/contexts/LanguageContext";
@@ -66,7 +67,7 @@ const speakers: Speaker[] = [
   { name: "Anton Barbir", title: "Member of Management Board", company: "ENNA Group", photo: speakerAntonBarbir, photoPosition: "center 20%", photoScale: 1.0, bioKey: "speakers.bio.anton_barbir" },
   { name: "Stefan Vukajlović", title: "Group HR Director for Compensation and Benefits", company: "Fortenova Group" },
   { name: "Mirela Kotarac", title: "HR Director & Member of the Management Board", company: "Cemex Croatia", photo: speakerMirelaKotarac, photoPosition: "center 30%", photoScale: 1.35, bioKey: "speakers.bio.mirela_kotarac" },
-  { name: "Mirta Pađen Lee", title: "Senior Director of Reward and Operations", company: "Infobip" },
+  { name: "Mirta Pađen Lee", title: "Vice President of People", company: "INFOBIP", photo: speakerMirtaPadenLee, photoPosition: "center 20%", bioKey: "speakers.bio.mirta_paden_lee" },
   { name: "Marija Felkel", title: "Group HR Director & Member of the Executive Committee", company: "Perutnina Ptuj Group", photo: speakerMarijaFelkel, photoPosition: "65% 25%", bioKey: "speakers.bio.marija_felkel" },
   { name: "Marina Regjo", title: "Human Resources Director", company: "FNG Property HR (Fortenova Group)", photo: speakerMarinaRegjo, photoPosition: "center 20%", photoScale: 1.0, bioKey: "speakers.bio.marina_regjo" },
   { name: "Suzana Plečko", title: "Human Resources Director", company: "Franck", photo: speakerSuzanaPlecko, photoPosition: "center 20%", photoScale: 1.0, bioKey: "speakers.bio.suzana_plecko" },
