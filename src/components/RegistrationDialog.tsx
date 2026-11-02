@@ -89,7 +89,6 @@ const RegistrationDialog = ({ open, onOpenChange, tierName, tierPrice }: Registr
       [t("reg.fullName").replace(" *", ""), form.fullName],
       [t("reg.position").replace(" *", ""), form.position],
       ["E-mail", form.email],
-      [t("reg.phone").replace(" *", ""), form.phone],
       [
         personType === "individual"
           ? t("reg.companyNameIndividual").replace(" *", "")
@@ -99,8 +98,6 @@ const RegistrationDialog = ({ open, onOpenChange, tierName, tierPrice }: Registr
     ];
 
     if (personType === "company") {
-      rows.push([t("reg.companyAddress").replace(" *", ""), form.companyAddress]);
-      rows.push([t("reg.cityPostal").replace(" *", ""), form.cityPostal]);
       rows.push([t("reg.companyOIB").replace(" *", ""), form.companyOIB]);
     }
 
@@ -122,7 +119,6 @@ const RegistrationDialog = ({ open, onOpenChange, tierName, tierPrice }: Registr
           const aRows: Array<[string, string]> = [
             [t("reg.fullName").replace(" *", ""), a.fullName],
             ["E-mail", a.email],
-            [t("reg.phone").replace(" *", ""), a.phone],
             [t("reg.position").replace(" *", ""), a.position],
           ];
           if (a.promoCode) aRows.push([t("reg.promoCode"), a.promoCode]);
@@ -259,7 +255,6 @@ const RegistrationDialog = ({ open, onOpenChange, tierName, tierPrice }: Registr
                 )}
                 <Field label={t("reg.fullName")} value={form.fullName} onChange={(v) => update("fullName", v)} required />
                 <Field label={t("reg.email")} value={form.email} onChange={(v) => update("email", v)} required type="email" />
-                <Field label={t("reg.phone")} value={form.phone} onChange={(v) => update("phone", v)} required type="tel" />
                 <Field label={t("reg.companyNameIndividual")} value={form.companyName} onChange={(v) => update("companyName", v)} required />
                 <Field label={t("reg.position")} value={form.position} onChange={(v) => update("position", v)} required />
                 <Field label={t("reg.promoCode")} value={form.promoCode} onChange={(v) => update("promoCode", v)} />
@@ -274,8 +269,6 @@ const RegistrationDialog = ({ open, onOpenChange, tierName, tierPrice }: Registr
                   </Label>
                 </div>
                 <Field label={t("reg.companyName")} value={form.companyName} onChange={(v) => update("companyName", v)} required />
-                <Field label={t("reg.companyAddress")} value={form.companyAddress} onChange={(v) => update("companyAddress", v)} required />
-                <Field label={t("reg.cityPostal")} value={form.cityPostal} onChange={(v) => update("cityPostal", v)} required />
                 <Field label={t("reg.companyOIB")} value={form.companyOIB} onChange={(v) => update("companyOIB", v)} required />
 
                 <div className="pt-2 border-t border-border">
@@ -285,7 +278,6 @@ const RegistrationDialog = ({ open, onOpenChange, tierName, tierPrice }: Registr
                 </div>
                 <Field label={t("reg.fullName")} value={form.fullName} onChange={(v) => update("fullName", v)} required />
                 <Field label={t("reg.email")} value={form.email} onChange={(v) => update("email", v)} required type="email" />
-                <Field label={t("reg.phone")} value={form.phone} onChange={(v) => update("phone", v)} required type="tel" />
                 <Field label={t("reg.position")} value={form.position} onChange={(v) => update("position", v)} required />
                 <Field label={t("reg.promoCode")} value={form.promoCode} onChange={(v) => update("promoCode", v)} />
               </>
@@ -300,7 +292,6 @@ const RegistrationDialog = ({ open, onOpenChange, tierName, tierPrice }: Registr
                 </div>
                 <Field label={t("reg.fullName")} value={a.fullName} onChange={(v) => updateExtra(idx, "fullName", v)} required />
                 <Field label={t("reg.email")} value={a.email} onChange={(v) => updateExtra(idx, "email", v)} required type="email" />
-                <Field label={t("reg.phone")} value={a.phone} onChange={(v) => updateExtra(idx, "phone", v)} required type="tel" />
                 <Field label={t("reg.position")} value={a.position} onChange={(v) => updateExtra(idx, "position", v)} required />
                 <Field label={t("reg.promoCode")} value={a.promoCode} onChange={(v) => updateExtra(idx, "promoCode", v)} />
               </div>
