@@ -1,3 +1,4 @@
+import speakerIvaRepac from "@/assets/speaker-iva-repac.jpg";
 import speakerMirtaPadenLee from "@/assets/speaker-mirta-paden-lee.jpg";
 import { useState } from "react";
 import { User, X } from "lucide-react";
@@ -92,7 +93,7 @@ const speakers: Speaker[] = [
   { name: "Jasmina Lukačević", title: "Member of the Board", company: "SD Worx Adriatic", photo: speakerJasminaLukacevic, photoPosition: "center 20%", photoScale: 1.0, bioKey: "speakers.bio.jasmina_lukacevic" },
   { name: "Izv. prof. dr. sc. Maša Tonković Grabovac", title: "Izvanredna profesorica", company: "Fakultet Hrvatskih studija", photo: speakerMasaTonkovic, photoPosition: "center 20%", bioKey: "speakers.bio.masa_tonkovic_grabovac" },
   { name: "Leo Lokas", title: "Business Development Director", company: "AKD", photo: speakerLeoLokas, photoPosition: "center 20%", bioKey: "speakers.bio.leo_lokas" },
-  { name: "Iva Repač", title: "Brand & Communications Director", company: "SPAN" },
+  { name: "Iva Repač", title: "Brand & Communications Director", company: "SPAN", photo: speakerIvaRepac, photoPosition: "center 20%", bioKey: "speakers.bio.iva_repac" },
 ];
 
 const SpeakersSection = () => {
