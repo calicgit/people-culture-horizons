@@ -36,7 +36,7 @@ export const agendaData: Record<string, Session[]> = {
     { time: "12:30", endTime: "14:00", titleKey: "agenda.d1.s8.title", type: "networking" },
     { time: "14:00", endTime: "14:20", titleKey: "agenda.d1.s9.title", speaker: "Stefan Vukajlović - Group HR Director for Compensation and Benefits, Fortenova Group", type: "talk", locationKey: "agenda.loc.main", descKey: "agenda.d1.s9.desc" },
     { time: "14:25", endTime: "15:10", titleKey: "agenda.d1.s10.title", type: "panel", locationKey: "agenda.loc.main", descKey: "agenda.d1.s10.desc",
-      panelists: ["Krešimir Barić - CFO, Erste&Steiermärkische Bank Croatia", "Mirela Kotarac - HR Director & Member of the Management Board, Cemex Croatia", "Mirta Pađen Lee - Vice President of People, INFOBIP", "Jasmina Lukačević - Member of the Board, SD Worx Adriatic"],
+      panelists: ["Mirela Kotarac - HR Director & Member of the Management Board, Cemex Croatia", "Mirta Pađen Lee - Vice President of People, INFOBIP", "Jasmina Lukačević - Member of the Board, SD Worx Adriatic"],
       moderator: "Nikola Milosavljević - Managing Partner & Senior HR Consultant, HR Fabrika", moderatorLabel: "moderator" },
     { time: "15:10", endTime: "15:30", titleKey: "agenda.d1.s11.title", type: "break" },
     { time: "15:30", endTime: "15:50", titleKey: "agenda.d1.s12.title", speaker: "Suzana Plečko - Human Resources Director, Franck", type: "talk", locationKey: "agenda.loc.main", descKey: "agenda.d1.s12.desc" },
