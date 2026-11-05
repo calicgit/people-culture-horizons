@@ -82,13 +82,13 @@ const PricingSection = () => {
           </div>
         </div>
 
-        <div className="grid md:grid-cols-[1fr_1.3fr_1fr] gap-6 max-w-5xl mx-auto items-stretch">
+        <div className="grid md:grid-cols-[1fr_1.15fr_1fr] gap-6 max-w-5xl mx-auto items-center">
           {tiers.map((tier) => (
             <div
               key={tier.name}
               className={`relative rounded-3xl p-8 flex flex-col transition-all duration-300 ${
                 tier.featured
-                  ? "bg-conference-blue text-primary-foreground shadow-elevated scale-[1.03] ring-2 ring-accent"
+                  ? "bg-conference-blue text-primary-foreground shadow-elevated scale-[1.03] ring-2 ring-accent md:py-16"
                   : tier.expired
                     ? "bg-muted-foreground/20 shadow-card border border-border opacity-90"
                     : "bg-card shadow-card border border-border"
