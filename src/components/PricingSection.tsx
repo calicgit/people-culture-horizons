@@ -88,27 +88,27 @@ const PricingSection = () => {
               key={tier.name}
               className={`relative rounded-3xl p-8 flex flex-col transition-all duration-300 ${
                 tier.featured
-                  ? "bg-conference-blue text-primary-foreground shadow-elevated scale-[1.03] ring-2 ring-accent md:py-16"
+                  ? "bg-conference-blue text-primary-foreground shadow-elevated scale-[1.03] ring-2 ring-accent md:py-12"
                   : tier.expired
                     ? "bg-muted-foreground/20 shadow-card border border-border opacity-90"
                     : "bg-card shadow-card border border-border"
               }`}
             >
-              <h3 className={`text-2xl font-bold font-display mb-2 ${tier.featured ? "text-accent" : "text-foreground"}`}>
+              <h3 className={`text-2xl font-bold font-display mb-2 ${tier.featured ? "md:text-3xl md:mb-3 text-accent" : "text-foreground"}`}>
                 {tier.name}
               </h3>
-              <p className={`text-sm mb-6 font-medium ${tier.featured ? "text-primary-foreground/70" : "text-muted-foreground"}`}>
+              <p className={`text-sm mb-6 font-medium ${tier.featured ? "md:text-base md:mb-7 text-primary-foreground/70" : "text-muted-foreground"}`}>
                 {t(tier.periodKey)}
               </p>
               <div className="mb-8">
-                <span className={`text-4xl font-bold font-display ${tier.featured ? "text-primary-foreground" : "text-foreground"}`}>
+                <span className={`text-4xl font-bold font-display ${tier.featured ? "md:text-5xl text-primary-foreground" : "text-foreground"}`}>
                   {tier.price}
                 </span>
               </div>
-              <ul className="space-y-3 mb-8 flex-1">
+              <ul className={`space-y-3 mb-8 flex-1 ${tier.featured ? "md:space-y-4 md:mb-10" : ""}`}>
                 {tier.featureKeys.map((fk) => (
-                  <li key={`${tier.name}-${fk}`} className={`flex items-start gap-2.5 text-sm font-light ${tier.featured ? "text-primary-foreground/80" : "text-muted-foreground"}`}>
-                    <Check className="w-4 h-4 mt-0.5 flex-shrink-0 text-accent" />
+                  <li key={`${tier.name}-${fk}`} className={`flex items-start gap-2.5 text-sm font-light ${tier.featured ? "md:text-base md:gap-3 text-primary-foreground/80" : "text-muted-foreground"}`}>
+                    <Check className={`w-4 h-4 mt-0.5 flex-shrink-0 text-accent ${tier.featured ? "md:w-5 md:h-5" : ""}`} />
                     {t(fk)}
                   </li>
                 ))}
@@ -116,7 +116,7 @@ const PricingSection = () => {
               <Button
                 variant={tier.featured ? "hero" : tier.expired ? "secondary" : "outline"}
                 size="lg"
-                className={`w-full text-base py-6 rounded-full ${tier.expired ? "bg-muted-foreground/30 text-foreground/60" : ""}`}
+                className={`w-full text-base py-6 rounded-full ${tier.featured ? "md:text-lg md:py-7" : ""} ${tier.expired ? "bg-muted-foreground/30 text-foreground/60" : ""}`}
                 onClick={() => openRegistration(tier.name, tier.price)}
                 disabled={!tier.registrationOpen}
               >
