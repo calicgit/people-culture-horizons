@@ -34,6 +34,7 @@ const PricingSection = () => {
       featureKeys: ["pricing.common.f1", "pricing.common.f2", "pricing.common.f3"],
       featured: false,
       registrationOpen: false,
+      expired: true,
     },
   ];
 
@@ -81,7 +82,7 @@ const PricingSection = () => {
           </div>
         </div>
 
-        <div className="grid md:grid-cols-3 gap-6 max-w-5xl mx-auto items-stretch">
+        <div className="grid md:grid-cols-[1fr_1.3fr_1fr] gap-6 max-w-5xl mx-auto items-stretch">
           {tiers.map((tier) => (
             <div
               key={tier.name}
