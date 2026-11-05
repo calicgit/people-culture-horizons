@@ -1,3 +1,4 @@
+import { useEffect } from "react";
 import { Helmet } from "react-helmet-async";
 import Navbar from "@/components/Navbar";
 import HeroSection from "@/components/HeroSection";
@@ -78,7 +79,67 @@ const eventJsonLd = {
   ],
 };
 
+const NAV_OFFSET = 80;
+
+const scrollToHashTarget = (behavior: ScrollBehavior) => {
+  const hash = window.location.hash;
+  if (!hash || hash.length < 2) return false;
+  let id = hash.slice(1);
+  try {
+    id = decodeURIComponent(id);
+  } catch {
+    // keep the raw hash if it is not valid percent-encoding
+  }
+  const el = document.getElementById(id);
+  if (!el) return false;
+  const top = el.getBoundingClientRect().top + window.scrollY - NAV_OFFSET;
+  window.scrollTo({ top: Math.max(top, 0), behavior });
+  return true;
+};
+
+// Direct links such as https://peopleandculture.hr/#agenda (e.g. from a QR code)
+// must land on that section even though the page renders after the first paint.
+const useHashScrollOnLoad = () => {
+  useEffect(() => {
+    const hash = window.location.hash;
+    if (!hash || hash.length < 2) return;
+
+    let userScrolled = false;
+    const markUserScrolled = () => {
+      userScrolled = true;
+    };
+    window.addEventListener("wheel", markUserScrolled, { passive: true });
+    window.addEventListener("touchstart", markUserScrolled, { passive: true });
+    window.addEventListener("keydown", markUserScrolled);
+
+    const started = Date.now();
+    const timer = window.setInterval(() => {
+      if (scrollToHashTarget("auto")) {
+        window.clearInterval(timer);
+      } else if (Date.now() - started > 5000) {
+        window.clearInterval(timer);
+      }
+    }, 80);
+
+    // Re-check once every image has loaded, since that can shift section positions.
+    const onWindowLoad = () => {
+      if (!userScrolled) scrollToHashTarget("auto");
+    };
+    window.addEventListener("load", onWindowLoad);
+
+    return () => {
+      window.clearInterval(timer);
+      window.removeEventListener("load", onWindowLoad);
+      window.removeEventListener("wheel", markUserScrolled);
+      window.removeEventListener("touchstart", markUserScrolled);
+      window.removeEventListener("keydown", markUserScrolled);
+    };
+  }, []);
+};
+
 const Index = () => {
+  useHashScrollOnLoad();
+
   return (
     <div className="min-h-screen bg-background">
       <Helmet>
