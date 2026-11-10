@@ -25,7 +25,7 @@ export const agendaData: Record<string, Session[]> = {
     { time: "09:00", endTime: "09:10", titleKey: "agenda.d1.s2.title", type: "talk", descKey: "agenda.d1.s2.desc", locationKey: "agenda.loc.main" },
     { time: "09:15", endTime: "09:45", titleKey: "agenda.d1.s3.title", speaker: "Josip Funda - Senior Economist, World Bank Group", type: "keynote", keynoteKind: "talk", locationKey: "agenda.loc.main", descKey: "agenda.d1.s3.desc" },
     { time: "09:50", endTime: "10:35", titleKey: "agenda.d1.s4.title", type: "keynote", keynoteKind: "panel", locationKey: "agenda.loc.main", descKey: "agenda.d1.s4.desc",
-      panelists: ["Iva Rogović Lekić - CEO, GrECo Specialty GmbH", "Snježana M. Lohninger - CFO, Porsche Inter Auto", "Marija Felkel - Group HR Director & Member of the Executive Committee, Perutnina Ptuj Group"],
+      panelists: ["Andrej Krvavica - General Manager, GrECo Croatia", "Snježana M. Lohninger - CFO, Porsche Inter Auto", "Marija Felkel - Group HR Director & Member of the Executive Committee, Perutnina Ptuj Group"],
       moderator: "Vjekoslav Golubović - Principal HR Consultant, DeeP Project", moderatorLabel: "moderator" },
     { time: "10:40", endTime: "11:00", titleKey: "agenda.d1.tbd.title", type: "talk", locationKey: "agenda.loc.main" },
     { time: "11:00", endTime: "11:20", titleKey: "agenda.d1.s5.title", type: "break" },
