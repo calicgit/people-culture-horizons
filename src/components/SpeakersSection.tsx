@@ -9,7 +9,7 @@ import speakerMarijaFelkel from "@/assets/speaker-marija-felkel.jpg";
 import speakerMirelaKotarac from "@/assets/speaker-mirela-kotarac.jpg";
 import speakerIvanZubak from "@/assets/speaker-ivan-zubak.jpg";
 import speakerIvanBeslic from "@/assets/speaker-ivan-beslic.jpg";
-import speakerIvaRogovicLekic from "@/assets/speaker-iva-rogovic-lekic.jpg";
+import speakerAndrejKrvavica from "@/assets/speaker-andrej-krvavica.jpg";
 import speakerBornaLoncar from "@/assets/speaker-borna-loncar.jpg";
 import speakerMarinaRegjo from "@/assets/speaker-marina-regjo.jpg";
 import speakerSnjezanaLohninger from "@/assets/speaker-snjezana-lohninger.jpg";
@@ -60,7 +60,7 @@ const speakers: Speaker[] = [
   { name: "Ivan Zubak", title: "CEO", company: "Zubak Group", photo: speakerIvanZubak, photoPosition: "38% 24%", photoScale: 1.0, bioKey: "speakers.bio.ivan_zubak" },
   { name: "Ivan Artuković", title: "President of the Management Board", company: "Franck", photo: speakerIvanArtukovic, photoPosition: "center 20%", photoScale: 1.0, bioKey: "speakers.bio.ivan_artukovic" },
   { name: "Tina Balenović", title: "Senior People & Culture Leader", photo: speakerTinaBalenovic, photoPosition: "center 20%", photoScale: 1.05, bioKey: "speakers.bio.tina_balenovic" },
-  { name: "Iva Rogović Lekić", title: "CEO", company: "GrECo Specialty GmbH", photo: speakerIvaRogovicLekic, photoPosition: "center 20%", photoScale: 1.0, bioKey: "speakers.bio.iva_rogovic_lekic" },
+  { name: "Andrej Krvavica", title: "General Manager", company: "GrECo Croatia", photo: speakerAndrejKrvavica, photoPosition: "center 15%", photoScale: 1.0, bioKey: "speakers.bio.andrej_krvavica" },
   { name: "Seni Staničić", title: "Head of Human Resources", company: "ENNA Group", photo: speakerSeniStanicic, photoPosition: "center top", photoScale: 1.0, bioKey: "speakers.bio.seni_stanicic" },
   { name: "Natalya Golovkina", title: "Corporate People & Culture Director", company: "JGL", photo: speakerNatalyaGolovkina, photoPosition: "center 20%", bioKey: "speakers.bio.natalya_golovkina" },
   { name: "Prof. dr. sc. Nina Begičević Ređep", title: "Redovita profesorica", company: "FOI", photo: speakerNinaBegicevicRedep, photoPosition: "center 20%", photoScale: 1.0, bioKey: "speakers.bio.nina_begicevic_redep" },
