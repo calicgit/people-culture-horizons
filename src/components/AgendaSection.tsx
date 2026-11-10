@@ -48,9 +48,7 @@ export const agendaData: Record<string, Session[]> = {
     { time: "09:00", endTime: "09:45", titleKey: "agenda.d2.s3.title", type: "keynote", keynoteKind: "panel", locationKey: "agenda.loc.main", descKey: "agenda.d2.s3.desc",
       panelists: ["Tihana Marušić - Head of Talent Management, Atlantic Group", "Maja Darija Škrljak - Group Talent Attraction and Acquisition Manager, Vetropack Group", "Tina Balenović - Senior People & Culture Leader", "Natalya Golovkina - Group People & Culture Director, JGL"],
       moderator: "Izv. prof. dr. sc. Maša Tonković Grabovac - Izvanredna profesorica, Fakultet Hrvatskih studija", moderatorLabel: "moderatorica" },
-    { time: "09:50", endTime: "10:20", titleKey: "agenda.d2.s2.title", type: "fireside", locationKey: "agenda.loc.main", descKey: "agenda.d2.s2.desc",
-      speaker: "Ewelina Jaworska-Bień - Head of People Solutions SEE/CEE, GrECo Specialty GmbH",
-      moderator: "Svjetlana Momčilović - Head of Marketing SEE/CEE, GrECo Specialty GmbH", moderatorLabel: "moderatorica" },
+    { time: "09:50", endTime: "10:20", titleKey: "agenda.d2.s2.title", type: "fireside", locationKey: "agenda.loc.main", descKey: "agenda.d2.s2.desc" },
 
     { time: "10:25", endTime: "10:45", titleKey: "agenda.d2.akd.title", speaker: "Leo Lokas - Business Development Director, Certilia", type: "talk", locationKey: "agenda.loc.main", descKey: "agenda.d2.akd.desc" },
     { time: "10:45", endTime: "11:05", titleKey: "agenda.d2.s4.title", type: "break" },
