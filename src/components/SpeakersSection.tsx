@@ -26,8 +26,6 @@ import speakerJelicaRadovic from "@/assets/speaker-jelica-radovic.jpg";
 import speakerJelenaNovacic from "@/assets/speaker-jelena-novacic.jpg";
 import speakerNikolaDujmovic from "@/assets/speaker-nikola-dujmovic.jpg";
 import speakerMajaBusljeta from "@/assets/speaker-maja-busljeta.jpg";
-import speakerSvjetlanaMomcilovic from "@/assets/speaker-svjetlana-momcilovic.jpg";
-import speakerEwelinaJaworskaBien from "@/assets/speaker-ewelina-jaworska-bien.png";
 import speakerIvanArtukovic from "@/assets/speaker-ivan-artukovic.jpg";
 import speakerSuzanaPlecko from "@/assets/speaker-suzana-plecko.jpg";
 import speakerErnaTomisa from "@/assets/speaker-erna-tomisa.jpg";
@@ -85,8 +83,6 @@ const speakers: Speaker[] = [
   { name: "Borna Lončar", title: "HR Consultant & Researcher", company: "DeeP Project", photo: speakerBornaLoncar, photoPosition: "center 15%", photoScale: 1.0, bioKey: "speakers.bio.borna_loncar" },
   { name: "Jelica Radović", title: "Managing Partner & HR Consultant", company: "HR Fabrika", photo: speakerJelicaRadovic, photoPosition: "center 5%", photoScale: 1.0, bioKey: "speakers.bio.jelica_radovic" },
   { name: "Maja Bušljeta", title: "Internal Communications & Corporate Culture Manager", company: "Erste&Steiermärkische Bank Croatia", photo: speakerMajaBusljeta, photoPosition: "center 25%", photoScale: 1.0, bioKey: "speakers.bio.maja_busljeta" },
-  { name: "Svjetlana Momčilović", title: "Head of Marketing", company: "GrECo Specialty GmbH", photo: speakerSvjetlanaMomcilovic, photoPosition: "center 20%", photoScale: 1.0, bioKey: "speakers.bio.svjetlana_momcilovic" },
-  { name: "Ewelina Jaworska-Bień", title: "Head of People Solutions", company: "GrECo Specialty GmbH", photo: speakerEwelinaJaworskaBien, photoPosition: "center 20%", photoScale: 1.0, bioKey: "speakers.bio.ewelina_jaworska_bien" },
   { name: "Erna Tomiša", title: "Organizational Development and Consulting Team Lead", company: "SELECTIO", photo: speakerErnaTomisa, photoPosition: "center 20%", photoScale: 1.0, bioKey: "speakers.bio.erna_tomisa" },
   { name: "Jasmina Lukačević", title: "Member of the Board", company: "SD Worx Adriatic", photo: speakerJasminaLukacevic, photoPosition: "center 20%", photoScale: 1.0, bioKey: "speakers.bio.jasmina_lukacevic" },
   { name: "Izv. prof. dr. sc. Maša Tonković Grabovac", title: "Izvanredna profesorica", company: "Fakultet Hrvatskih studija", photo: speakerMasaTonkovic, photoPosition: "center 20%", bioKey: "speakers.bio.masa_tonkovic_grabovac" },
