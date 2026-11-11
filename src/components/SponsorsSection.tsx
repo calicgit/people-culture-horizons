@@ -10,7 +10,6 @@ import sponsorSelectio from "@/assets/sponsor-selectio.svg";
 import sponsorFranck from "@/assets/sponsor-franck.png";
 import sponsorSdworx from "@/assets/sponsor-sdworx.png";
 
-import patronMrms from "@/assets/patron-mrms.png";
 import patronHpk from "@/assets/patron-hpk.png";
 import patronPchub from "@/assets/patron-pchub.svg";
 import patronJutarnji from "@/assets/patron-jutarnji.png";
@@ -24,7 +23,6 @@ const platinumPartners: LogoEntry[] = [
 ];
 
 const patrons: LogoEntry[] = [
-  { name: "Ministarstvo rada, mirovinskoga sustava, obitelji i socijalne politike", logo: patronMrms, scale: 0.85, url: "https://mrosp.gov.hr/", altKey: "sponsors.altPatron" },
   { name: "Hrvatska psihološka komora", logo: patronHpk, scale: 0.85, url: "https://www.psiholoska-komora.hr/", altKey: "sponsors.altPatron" },
   { name: "People & Culture HUB", logo: patronPchub, scale: 0.9, url: "https://hub.peopleandculture.hr/", yOffset: 6, altKey: "sponsors.altPatron" },
   { name: "Certilia", logo: patronAkd, scale: 0.85, url: "https://www.certilia.com", altKey: "sponsors.altPatron" },
