@@ -9,6 +9,7 @@ interface Session {
   endTime: string;
   titleKey?: string;
   speaker?: string;
+  speakerKey?: string;
   locationKey?: string;
   type: SessionType;
   trackKey?: string;
@@ -73,7 +74,7 @@ export const masterclassData: Record<string, Session[]> = {
   ],
   day2: [
     { time: "11:05", endTime: "12:15", titleKey: "agenda.d2.mc1.title", speaker: "Nikola Milosavljević - Managing Partner & Senior HR Consultant, HR Fabrika\nJelica Radović - Managing Partner & HR Consultant, HR Fabrika", type: "workshop", locationKey: "agenda.loc.earth", descKey: "agenda.d2.mc1.desc" },
-    { time: "11:05", endTime: "12:15", titleKey: "agenda.d2.mc2.title", type: "workshop", locationKey: "agenda.loc.air", descKey: "agenda.d2.mc2.desc" },
+    { time: "11:05", endTime: "12:15", titleKey: "agenda.d2.mc2.title", speakerKey: "agenda.d2.mc2.speaker", type: "workshop", locationKey: "agenda.loc.air", descKey: "agenda.d2.mc2.desc" },
     { time: "11:05", endTime: "12:15", titleKey: "agenda.d2.mc3.title", type: "workshop", locationKey: "agenda.loc.fire", descKey: "agenda.d2.mc3.desc" },
   ],
 };
@@ -177,8 +178,8 @@ const AgendaSection = () => {
                     return m ? (<>{m[1]}<em className="font-normal italic text-muted-foreground">{m[2]}</em></>) : title;
                   })() : "\u00A0"}
                 </h3>
-                {session.speaker && (
-                  <p className="text-muted-foreground text-sm mt-0.5 font-light whitespace-pre-line">{session.speaker}</p>
+                {(session.speakerKey || session.speaker) && (
+                  <p className="text-muted-foreground text-sm mt-0.5 font-light whitespace-pre-line">{session.speakerKey ? t(session.speakerKey) : session.speaker}</p>
                 )}
                 {(session.panelists?.length || session.moderator) && (
                   <div className="mt-2 space-y-0.5">

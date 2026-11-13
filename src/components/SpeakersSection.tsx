@@ -1,4 +1,5 @@
 import speakerIvaRepac from "@/assets/speaker-iva-repac.jpg";
+import speakerMladenMeter from "@/assets/speaker-mladen-meter.jpg.asset.json";
 import speakerMirtaPadenLee from "@/assets/speaker-mirta-paden-lee.jpg";
 import { useState } from "react";
 import { User, X } from "lucide-react";
@@ -43,6 +44,7 @@ import { Dialog, DialogContent } from "@/components/ui/dialog";
 interface Speaker {
   name: string;
   title?: string;
+  titleKey?: string;
   company?: string;
   photo?: string;
   photoPosition?: string;
@@ -91,6 +93,7 @@ const speakers: Speaker[] = [
   { name: "Valentina Mihovec Ramljak", title: "Product Manager", company: "SPAN" },
   { name: "Ivana Baćac", title: "Senior Developer", company: "SPAN" },
   { name: "Marija Žilić", title: "QA Engineer", company: "SPAN" },
+  { name: "dr. sc. Mladen Meter", titleKey: "speakers.mladen_meter.title", company: "Poslovna učinkovitost", photo: speakerMladenMeter.url, photoPosition: "center 15%", bioKey: "speakers.bio.mladen_meter" },
 ];
 
 const SpeakersSection = () => {
@@ -156,8 +159,8 @@ const SpeakersSection = () => {
                   )}
                   <div className="min-w-0 flex-1">
                     <h3 className="text-base font-bold text-foreground font-display leading-tight">{speaker.name}</h3>
-                    {speaker.title && (
-                      <p className="mt-1.5 text-sm text-muted-foreground font-light leading-snug">{speaker.title}</p>
+                    {(speaker.titleKey || speaker.title) && (
+                      <p className="mt-1.5 text-sm text-muted-foreground font-light leading-snug">{speaker.titleKey ? t(speaker.titleKey) : speaker.title}</p>
                     )}
                     {speaker.company && (
                       <p className="mt-1.5 text-sm font-semibold text-accent leading-snug">{speaker.company}</p>
@@ -192,8 +195,8 @@ const SpeakersSection = () => {
                 )}
                 <div>
                   <h3 className="text-xl font-bold text-foreground font-display">{selectedSpeaker.name}</h3>
-                  {selectedSpeaker.title && (
-                    <p className="mt-1 text-sm text-muted-foreground font-light">{selectedSpeaker.title}</p>
+                  {(selectedSpeaker.titleKey || selectedSpeaker.title) && (
+                    <p className="mt-1 text-sm text-muted-foreground font-light">{selectedSpeaker.titleKey ? t(selectedSpeaker.titleKey) : selectedSpeaker.title}</p>
                   )}
                   {selectedSpeaker.company && (
                     <p className="mt-0.5 text-sm font-semibold text-accent">{selectedSpeaker.company}</p>
