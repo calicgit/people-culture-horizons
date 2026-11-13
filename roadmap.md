@@ -5,6 +5,6 @@
 - [x] Add Mladen Meter with supplied portrait and bilingual biography.
 - [x] Replace the day-two people-development masterclass with Mladen Meter's HR reporting masterclass, retaining its time and room.
 - [x] Verify the new speaker biography and masterclass in both languages on desktop and mobile.
-- [ ] Remove the day-two AI mirror masterclass without changing other sessions.
-- [ ] Add Poslovna učinkovitost to sponsors and Netokracija to media patrons with supplied logos and URLs.
-- [ ] Verify both logos and links on desktop/mobile and run schedule tests.
+- [x] Remove the day-two AI mirror masterclass without changing other sessions.
+- [x] Add Poslovna učinkovitost to sponsors and Netokracija to media patrons with supplied logos and URLs.
+- [x] Verify both logos and links on desktop/mobile and run schedule tests.
