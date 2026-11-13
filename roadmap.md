@@ -1,4 +1,7 @@
 - [x] Add Leo Lokas with the supplied photo and bilingual biography.
 - [x] Replace day-two TBD at 10:25 - 10:45 with the AKD talk and description.
 - [x] Add supplied AKD patron logo at the existing patron size.
-- [ ] Verify biography, agenda and logo in the preview and run schedule tests.
+- [x] Verify biography, agenda and logo in the preview and run schedule tests.
+- [x] Add Mladen Meter with supplied portrait and bilingual biography.
+- [x] Replace the day-two people-development masterclass with Mladen Meter's HR reporting masterclass, retaining its time and room.
+- [x] Verify the new speaker biography and masterclass in both languages on desktop and mobile.
