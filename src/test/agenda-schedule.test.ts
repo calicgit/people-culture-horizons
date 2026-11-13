@@ -78,7 +78,12 @@ describe("November 27, 2026 schedule", () => {
     expect(session?.moderator).toBeUndefined();
   });
 
-  it.each(["earth", "air", "fire"])("runs the %s masterclass immediately after coffee", room => {
+  it("removes the day-two AI mirror masterclass while retaining the other two rooms", () => {
+    expect(masterclassData.day2.some(s => s.titleKey === "agenda.d2.mc3.title")).toBe(false);
+    expect(masterclassData.day2.map(s => s.locationKey)).toEqual(["agenda.loc.earth", "agenda.loc.air"]);
+  });
+
+  it.each(["earth", "air"])("runs the %s masterclass immediately after coffee", room => {
     const session = masterclassData.day2.find(s => s.locationKey === `agenda.loc.${room}`);
     expect(session).toMatchObject({ time: "11:05", endTime: "12:15" });
     expect(agendaData.day2.find(s => s.titleKey === "agenda.d2.s4.title")?.endTime).toBe(session?.time);

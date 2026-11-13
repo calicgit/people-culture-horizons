@@ -9,6 +9,8 @@ import sponsorJgl from "@/assets/sponsor-jgl.png";
 import sponsorSelectio from "@/assets/sponsor-selectio.svg";
 import sponsorFranck from "@/assets/sponsor-franck.png";
 import sponsorSdworx from "@/assets/sponsor-sdworx.png";
+import poslovnaUcinkovitost from "@/assets/poslovna-ucinkovitost.png.asset.json";
+import netokracija from "@/assets/netokracija.webp.asset.json";
 
 import patronMrms from "@/assets/patron-mrms.png";
 import patronHpk from "@/assets/patron-hpk.png";
@@ -32,6 +34,7 @@ const patrons: LogoEntry[] = [
 
 const mediaPatrons: LogoEntry[] = [
   { name: "Jutarnji list", logo: patronJutarnji, scale: 0.85, url: "https://www.jutarnji.hr", altKey: "sponsors.altMedia" },
+  { name: "Netokracija", logo: netokracija.url, url: "https://www.netokracija.com", altKey: "sponsors.altMedia" },
 ];
 
 const sponsors: LogoEntry[] = [
@@ -41,6 +44,7 @@ const sponsors: LogoEntry[] = [
   { name: "Selectio", logo: sponsorSelectio, scale: 0.9, url: "https://selectio.hr", altKey: "sponsors.altSponsor" },
   { name: "Franck", logo: sponsorFranck, scale: 0.7, url: "https://www.franck.eu/hr/", altKey: "sponsors.altSponsor" },
   { name: "SD Worx", logo: sponsorSdworx, scale: 0.8, url: "https://www.sdworx.hr", altKey: "sponsors.altSponsor" },
+  { name: "Poslovna učinkovitost", logo: poslovnaUcinkovitost.url, url: "https://www.poslovnaucinkovitost.hr", altKey: "sponsors.altSponsor" },
 ];
 
 const PartnerLogo = ({ name, logo, scale = 1, url, size = "lg", yOffset = 0, altKey }: LogoEntry & { size?: "lg" | "md" | "sm" }) => {
