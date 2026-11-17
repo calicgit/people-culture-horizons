@@ -1,5 +1,6 @@
 import speakerIvaRepac from "@/assets/speaker-iva-repac.jpg";
 import speakerMladenMeter from "@/assets/speaker-mladen-meter.jpg.asset.json";
+import speakerDamirHabijan from "@/assets/speaker-damir-habijan.jpg.asset.json";
 import speakerMirtaPadenLee from "@/assets/speaker-mirta-paden-lee.jpg";
 import { useState } from "react";
 import { User, X } from "lucide-react";
@@ -55,7 +56,7 @@ interface Speaker {
 }
 
 const speakers: Speaker[] = [
-  { name: "Damir Habijan", title: "Ministar pravosuđa Republike Hrvatske", company: "Ministarstvo pravosuđa, uprave i digitalne transformacije" },
+  { name: "Damir Habijan", title: "Ministar pravosuđa Republike Hrvatske", company: "Ministarstvo pravosuđa, uprave i digitalne transformacije", photo: speakerDamirHabijan.url, photoPosition: "center 22%", bioKey: "speakers.bio.damir_habijan" },
   { name: "Nikola Dujmović", title: "CEO", company: "SPAN", photo: speakerNikolaDujmovic, photoPosition: "55% 28%", photoScale: 1.0, bioKey: "speakers.bio.nikola_dujmovic" },
   { name: "Ivan Bešlić", title: "Co-founder & CSO", company: "Sofascore", photo: speakerIvanBeslic, photoPosition: "center center", photoScale: 1.0, bioKey: "speakers.bio.ivan_beslic" },
   { name: "Alenka Jajac-Knez", title: "CEO", company: "JGL", photo: speakerAlenkaJajacKnez, photoPosition: "center 30%", bioKey: "speakers.bio.alenka_jajac_knez" },
