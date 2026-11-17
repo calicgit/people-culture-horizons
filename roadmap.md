@@ -9,3 +9,7 @@
 - [x] Add Poslovna učinkovitost to sponsors and Netokracija to media patrons with supplied logos and URLs.
 - [x] Verify both logos and links on desktop/mobile and run schedule tests.
 - [x] Remove the day-one behavioural debt masterclass and Poslovna učinkovitost sponsor logo, then verify the remaining programme and sponsors.
+- [x] Add Drago Cmuk with supplied photo, bilingual biography and panel credit.
+- [x] Add Emira Duratbegović with supplied photo and replace Maja Bušljeta as panel moderator.
+- [x] Remove Maja Bušljeta's speaker card and biography, then verify speakers and panel in both languages.
+- [x] Audit every requested speaker and panel outcome on desktop and mobile in both languages, including photos and Drago's biography dialog.
