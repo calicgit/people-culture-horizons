@@ -26,8 +26,8 @@ const platinumPartners: LogoEntry[] = [
 ];
 
 const patrons: LogoEntry[] = [
-  { name: "Ministarstvo rada, mirovinskoga sustava, obitelji i socijalne politike", logo: patronMrms.url, scale: 0.85, url: "https://mrosp.gov.hr/", altKey: "sponsors.altPatron" },
-  { name: "Ministarstvo pravosuđa, uprave i digitalne transformacije", logo: patronMpudt.url, scale: 0.85, url: "https://mpudt.gov.hr", altKey: "sponsors.altPatron" },
+  { name: "Ministarstvo rada, mirovinskoga sustava, obitelji i socijalne politike", logo: patronMrms.url, scale: 1.24, url: "https://mrosp.gov.hr/", altKey: "sponsors.altPatron" },
+  { name: "Ministarstvo pravosuđa, uprave i digitalne transformacije", logo: patronMpudt.url, scale: 0.95, url: "https://mpudt.gov.hr", altKey: "sponsors.altPatron" },
   { name: "Hrvatska psihološka komora", logo: patronHpk, scale: 0.85, url: "https://www.psiholoska-komora.hr/", altKey: "sponsors.altPatron" },
   { name: "People & Culture HUB", logo: patronPchub, scale: 0.9, url: "https://hub.peopleandculture.hr/", yOffset: 6, altKey: "sponsors.altPatron" },
   { name: "Certilia", logo: patronAkd, scale: 0.85, url: "https://www.certilia.com", altKey: "sponsors.altPatron" },
