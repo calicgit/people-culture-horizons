@@ -12,3 +12,4 @@
 - [x] Add Drago Cmuk with supplied photo, bilingual biography and panel credit.
 - [x] Add Emira Duratbegović with supplied photo and replace Maja Bušljeta as panel moderator.
 - [x] Remove Maja Bušljeta's speaker card and biography, then verify speakers and panel in both languages.
+- [ ] Audit every requested speaker and panel outcome on desktop and mobile in both languages, including photos and Drago's biography dialog.
