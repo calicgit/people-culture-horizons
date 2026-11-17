@@ -37,6 +37,18 @@ describe("November 26, 2026 schedule", () => {
     expect(session?.panelists).toContain("Erna Tomiša - Organizational Development and Consulting Team Lead, SELECTIO");
   });
 
+  it("adds Drago Cmuk to the d1.s7 panel", () => {
+    const session = agendaData.day1.find(s => s.titleKey === "agenda.d1.s7.title");
+    expect(session?.panelists).toContain("Drago Cmuk - Founder & Partner, Forvis Mazars");
+  });
+
+  it("replaces Maja Bušljeta with Emira Duratbegović as the d1.s7 moderator", () => {
+    const session = agendaData.day1.find(s => s.titleKey === "agenda.d1.s7.title");
+    expect(session?.moderator).toBe("Emira Duratbegović");
+    expect(session?.moderatorLabel).toBe("moderatorica");
+    expect(session?.moderator).not.toContain("Maja Bušljeta");
+  });
+
   it("keeps the main sessions in chronological order without overlaps", () => {
     agendaData.day1.forEach((session, i, sessions) => {
       expect(session.time < session.endTime).toBe(true);
