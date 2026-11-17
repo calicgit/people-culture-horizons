@@ -28,6 +28,7 @@ import speakerJelenaNovacic from "@/assets/speaker-jelena-novacic.jpg";
 import speakerNikolaDujmovic from "@/assets/speaker-nikola-dujmovic.jpg";
 import speakerDragoCmuk from "@/assets/speaker-drago-cmuk.jpg.asset.json";
 import speakerEmiraDuratbegovic from "@/assets/speaker-emira-duratbegovic.png.asset.json";
+import speakerDarioCar from "@/assets/speaker-dario-car.jpg.asset.json";
 import speakerIvanArtukovic from "@/assets/speaker-ivan-artukovic.jpg";
 import speakerSuzanaPlecko from "@/assets/speaker-suzana-plecko.jpg";
 import speakerErnaTomisa from "@/assets/speaker-erna-tomisa.jpg";
@@ -87,6 +88,7 @@ const speakers: Speaker[] = [
   { name: "Jelica Radović", title: "Managing Partner & HR Consultant", company: "HR Fabrika", photo: speakerJelicaRadovic, photoPosition: "center 5%", photoScale: 1.0, bioKey: "speakers.bio.jelica_radovic" },
   { name: "Drago Cmuk", title: "Founder & Partner", company: "Forvis Mazars", photo: speakerDragoCmuk.url, photoPosition: "center 25%", bioKey: "speakers.bio.drago_cmuk" },
   { name: "Emira Duratbegović", photo: speakerEmiraDuratbegovic.url, photoPosition: "center 35%" },
+  { name: "Dario Car", title: "Co-founder & Organizational Development Expert", company: "DeeP Project", photo: speakerDarioCar.url, photoPosition: "center 20%", bioKey: "speakers.bio.dario_car" },
   { name: "Erna Tomiša", title: "Organizational Development and Consulting Team Lead", company: "SELECTIO", photo: speakerErnaTomisa, photoPosition: "center 20%", photoScale: 1.0, bioKey: "speakers.bio.erna_tomisa" },
   { name: "Jasmina Lukačević", title: "Member of the Board", company: "SD Worx Adriatic", photo: speakerJasminaLukacevic, photoPosition: "center 20%", photoScale: 1.0, bioKey: "speakers.bio.jasmina_lukacevic" },
   { name: "Izv. prof. dr. sc. Maša Tonković Grabovac", title: "Izvanredna profesorica", company: "Fakultet Hrvatskih studija", photo: speakerMasaTonkovic, photoPosition: "center 20%", bioKey: "speakers.bio.masa_tonkovic_grabovac" },
