@@ -28,7 +28,7 @@ export const agendaData: Record<string, Session[]> = {
     { time: "09:50", endTime: "10:35", titleKey: "agenda.d1.s4.title", type: "keynote", keynoteKind: "panel", locationKey: "agenda.loc.main", descKey: "agenda.d1.s4.desc",
       panelists: ["Andrej Krvavica - General Manager, GrECo Croatia", "Snježana M. Lohninger - CFO, Porsche Inter Auto", "Marija Felkel - Group HR Director & Member of the Executive Committee, Perutnina Ptuj Group"],
       moderator: "Vjekoslav Golubović - Principal HR Consultant, DeeP Project", moderatorLabel: "moderator" },
-    { time: "10:40", endTime: "11:00", titleKey: "agenda.d1.tbd.title", type: "talk", locationKey: "agenda.loc.main" },
+    { time: "10:40", endTime: "11:00", titleKey: "agenda.d1.tbd.title", speaker: "Dario Car - Co-founder & Organizational Development Expert, DeeP Project", type: "talk", locationKey: "agenda.loc.main", descKey: "agenda.d1.tbd.desc" },
     { time: "11:00", endTime: "11:20", titleKey: "agenda.d1.s5.title", type: "break" },
     { time: "11:20", endTime: "11:40", titleKey: "agenda.d1.s6.title", speaker: "Ivan Bešlić - Co-founder & CSO, Sofascore", type: "talk", locationKey: "agenda.loc.main", descKey: "agenda.d1.s6.desc" },
     { time: "11:45", endTime: "12:30", titleKey: "agenda.d1.s7.title", type: "panel", locationKey: "agenda.loc.main", descKey: "agenda.d1.s7.desc",

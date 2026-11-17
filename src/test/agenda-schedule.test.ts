@@ -21,10 +21,11 @@ describe("November 26, 2026 schedule", () => {
       .toMatchObject({ time, endTime });
   });
 
-  it("keeps TBD a standard talk without a speaker or keynote label", () => {
+  it("gives the 10:40 talk its title, speaker and description", () => {
     const session = agendaData.day1.find(s => s.titleKey === "agenda.d1.tbd.title");
     expect(session?.type).toBe("talk");
-    expect(session?.speaker).toBeUndefined();
+    expect(session?.speaker).toBe("Dario Car - Co-founder & Organizational Development Expert, DeeP Project");
+    expect(session?.descKey).toBe("agenda.d1.tbd.desc");
     expect(session?.panelists).toBeUndefined();
     expect(session?.moderator).toBeUndefined();
     expect(session?.keynoteKind).toBeUndefined();
