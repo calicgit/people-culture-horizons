@@ -26,8 +26,8 @@ const platinumPartners: LogoEntry[] = [
 ];
 
 const patrons: LogoEntry[] = [
-  { name: "Ministarstvo rada, mirovinskoga sustava, obitelji i socijalne politike", logo: patronMrms.url, scale: 0.85, url: "https://mrosp.gov.hr/", altKey: "sponsors.altPatron" },
-  { name: "Ministarstvo pravosuđa, uprave i digitalne transformacije", logo: patronMpudt.url, scale: 0.85, url: "https://mpudt.gov.hr", altKey: "sponsors.altPatron" },
+  { name: "Ministarstvo rada, mirovinskoga sustava, obitelji i socijalne politike", logo: patronMrms.url, scale: 1.06, url: "https://mrosp.gov.hr/", altKey: "sponsors.altPatron" },
+  { name: "Ministarstvo pravosuđa, uprave i digitalne transformacije", logo: patronMpudt.url, scale: 0.81, url: "https://mpudt.gov.hr", altKey: "sponsors.altPatron" },
   { name: "Hrvatska psihološka komora", logo: patronHpk, scale: 0.85, url: "https://www.psiholoska-komora.hr/", altKey: "sponsors.altPatron" },
   { name: "People & Culture HUB", logo: patronPchub, scale: 0.9, url: "https://hub.peopleandculture.hr/", yOffset: 6, altKey: "sponsors.altPatron" },
   { name: "Certilia", logo: patronAkd, scale: 0.85, url: "https://www.certilia.com", altKey: "sponsors.altPatron" },
@@ -47,12 +47,13 @@ const sponsors: LogoEntry[] = [
   { name: "SD Worx", logo: sponsorSdworx, scale: 0.8, url: "https://www.sdworx.hr", altKey: "sponsors.altSponsor" },
 ];
 
-const PartnerLogo = ({ name, logo, scale = 1, url, size = "lg", yOffset = 0, altKey }: LogoEntry & { size?: "lg" | "md" | "sm" }) => {
+const PartnerLogo = ({ name, logo, scale = 1, url, size = "lg", yOffset = 0, altKey }: LogoEntry & { size?: "lg" | "md" | "sm" | "wide" }) => {
   const { t } = useLanguage();
   const sizeClasses = {
     lg: "h-28 w-48 md:h-32 md:w-56",
     md: "h-24 w-40 md:h-28 md:w-48",
     sm: "h-20 w-32 md:h-24 md:w-40",
+    wide: "h-24 w-40 md:h-28 md:w-56",
   };
   return (
     <a href={url} target="_blank" rel="noopener noreferrer" className={`flex ${sizeClasses[size]} items-center justify-center p-4 hover:opacity-80 transition-opacity`} title={name}>
@@ -96,7 +97,7 @@ const SponsorsSection = () => {
           <div className="mb-12 md:mb-14">
             <p className="text-center text-xs font-semibold uppercase tracking-[0.25em] text-muted-foreground mb-8">{t("sponsors.gold")}</p>
             <div className="flex flex-wrap items-center justify-center">
-              {patrons.map((p) => <div key={p.name} className="w-1/2 flex justify-center md:w-auto"><PartnerLogo {...p} size="md" /></div>)}
+              {patrons.map((p) => <div key={p.name} className="w-1/2 flex justify-center md:w-auto"><PartnerLogo {...p} size="wide" /></div>)}
             </div>
           </div>
         )}
