@@ -9,10 +9,10 @@ import sponsorJgl from "@/assets/sponsor-jgl.png";
 import sponsorSelectio from "@/assets/sponsor-selectio.svg";
 import sponsorFranck from "@/assets/sponsor-franck.png";
 import sponsorSdworx from "@/assets/sponsor-sdworx.png";
-import netokracija from "@/assets/netokracija.webp.asset.json";
-import patronMpudt from "@/assets/patron-mpudt.png.asset.json";
+import netokracija from "@/assets/netokracija.webp";
+import patronMpudt from "@/assets/patron-mpudt.png";
 
-import patronMrms from "@/assets/patron-mrms.png.asset.json";
+import patronMrms from "@/assets/patron-mrms.png";
 import patronHpk from "@/assets/patron-hpk.png";
 import patronPchub from "@/assets/patron-pchub.svg";
 import patronJutarnji from "@/assets/patron-jutarnji.png";
@@ -26,8 +26,8 @@ const platinumPartners: LogoEntry[] = [
 ];
 
 const patrons: LogoEntry[] = [
-  { name: "Ministarstvo rada, mirovinskoga sustava, obitelji i socijalne politike", logo: patronMrms.url, scale: 1.06, url: "https://mrosp.gov.hr/", altKey: "sponsors.altPatron" },
-  { name: "Ministarstvo pravosuđa, uprave i digitalne transformacije", logo: patronMpudt.url, scale: 0.81, url: "https://mpudt.gov.hr", altKey: "sponsors.altPatron" },
+  { name: "Ministarstvo rada, mirovinskoga sustava, obitelji i socijalne politike", logo: patronMrms, scale: 1.06, url: "https://mrosp.gov.hr/", altKey: "sponsors.altPatron" },
+  { name: "Ministarstvo pravosuđa, uprave i digitalne transformacije", logo: patronMpudt, scale: 0.81, url: "https://mpudt.gov.hr", altKey: "sponsors.altPatron" },
   { name: "Hrvatska psihološka komora", logo: patronHpk, scale: 0.85, url: "https://www.psiholoska-komora.hr/", altKey: "sponsors.altPatron" },
   { name: "People & Culture HUB", logo: patronPchub, scale: 0.9, url: "https://hub.peopleandculture.hr/", yOffset: 6, altKey: "sponsors.altPatron" },
   { name: "Certilia", logo: patronAkd, scale: 0.85, url: "https://www.certilia.com", altKey: "sponsors.altPatron" },
@@ -35,7 +35,7 @@ const patrons: LogoEntry[] = [
 
 const mediaPatrons: LogoEntry[] = [
   { name: "Jutarnji list", logo: patronJutarnji, scale: 0.85, url: "https://www.jutarnji.hr", altKey: "sponsors.altMedia" },
-  { name: "Netokracija", logo: netokracija.url, url: "https://www.netokracija.com", altKey: "sponsors.altMedia" },
+  { name: "Netokracija", logo: netokracija, url: "https://www.netokracija.com", altKey: "sponsors.altMedia" },
 ];
 
 const sponsors: LogoEntry[] = [

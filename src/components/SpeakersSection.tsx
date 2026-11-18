@@ -1,6 +1,6 @@
 import speakerIvaRepac from "@/assets/speaker-iva-repac.jpg";
-import speakerMladenMeter from "@/assets/speaker-mladen-meter.jpg.asset.json";
-import speakerDamirHabijan from "@/assets/speaker-damir-habijan.jpg.asset.json";
+import speakerMladenMeter from "@/assets/speaker-mladen-meter.jpg";
+import speakerDamirHabijan from "@/assets/speaker-damir-habijan.jpg";
 import speakerMirtaPadenLee from "@/assets/speaker-mirta-paden-lee.jpg";
 import { useState } from "react";
 import { User, X } from "lucide-react";
@@ -27,9 +27,9 @@ import speakerNikolaMilosavljevic from "@/assets/speaker-nikola-milosavljevic.jp
 import speakerJelicaRadovic from "@/assets/speaker-jelica-radovic.jpg";
 import speakerJelenaNovacic from "@/assets/speaker-jelena-novacic.jpg";
 import speakerNikolaDujmovic from "@/assets/speaker-nikola-dujmovic.jpg";
-import speakerDragoCmuk from "@/assets/speaker-drago-cmuk.jpg.asset.json";
-import speakerEmiraDuratbegovic from "@/assets/speaker-emira-duratbegovic.png.asset.json";
-import speakerDarioCar from "@/assets/speaker-dario-car.jpg.asset.json";
+import speakerDragoCmuk from "@/assets/speaker-drago-cmuk.jpg";
+import speakerEmiraDuratbegovic from "@/assets/speaker-emira-duratbegovic.webp";
+import speakerDarioCar from "@/assets/speaker-dario-car.jpg";
 import speakerIvanArtukovic from "@/assets/speaker-ivan-artukovic.jpg";
 import speakerSuzanaPlecko from "@/assets/speaker-suzana-plecko.jpg";
 import speakerErnaTomisa from "@/assets/speaker-erna-tomisa.jpg";
@@ -56,7 +56,7 @@ interface Speaker {
 }
 
 const speakers: Speaker[] = [
-  { name: "Damir Habijan", title: "Ministar pravosuđa Republike Hrvatske", company: "Ministarstvo pravosuđa, uprave i digitalne transformacije", photo: speakerDamirHabijan.url, photoPosition: "center 22%", bioKey: "speakers.bio.damir_habijan" },
+  { name: "Damir Habijan", title: "Ministar pravosuđa Republike Hrvatske", company: "Ministarstvo pravosuđa, uprave i digitalne transformacije", photo: speakerDamirHabijan, photoPosition: "center 22%", bioKey: "speakers.bio.damir_habijan" },
   { name: "Nikola Dujmović", title: "CEO", company: "SPAN", photo: speakerNikolaDujmovic, photoPosition: "55% 28%", photoScale: 1.0, bioKey: "speakers.bio.nikola_dujmovic" },
   { name: "Ivan Bešlić", title: "Co-founder & CSO", company: "Sofascore", photo: speakerIvanBeslic, photoPosition: "center center", photoScale: 1.0, bioKey: "speakers.bio.ivan_beslic" },
   { name: "Alenka Jajac-Knez", title: "CEO", company: "JGL", photo: speakerAlenkaJajacKnez, photoPosition: "center 30%", bioKey: "speakers.bio.alenka_jajac_knez" },
@@ -87,9 +87,9 @@ const speakers: Speaker[] = [
   { name: "Maja Darija Škrljak", title: "Group Talent Attraction and Acquisition Manager", company: "Vetropack Group", photo: speakerMajaDarijaSkrljak, photoPosition: "center 15%", photoScale: 1.0, bioKey: "speakers.bio.maja_darija_skrljak" },
   { name: "Borna Lončar", title: "HR Consultant & Researcher", company: "DeeP Project", photo: speakerBornaLoncar, photoPosition: "center 15%", photoScale: 1.0, bioKey: "speakers.bio.borna_loncar" },
   { name: "Jelica Radović", title: "Managing Partner & HR Consultant", company: "HR Fabrika", photo: speakerJelicaRadovic, photoPosition: "center 5%", photoScale: 1.0, bioKey: "speakers.bio.jelica_radovic" },
-  { name: "Drago Cmuk", title: "Founder & Partner", company: "Forvis Mazars", photo: speakerDragoCmuk.url, photoPosition: "center 25%", bioKey: "speakers.bio.drago_cmuk" },
-  { name: "Emira Duratbegović", photo: speakerEmiraDuratbegovic.url, photoPosition: "center 35%" },
-  { name: "Dario Car", title: "Co-founder & Organizational Development Expert", company: "DeeP Project", photo: speakerDarioCar.url, photoPosition: "center 20%", bioKey: "speakers.bio.dario_car" },
+  { name: "Drago Cmuk", title: "Founder & Partner", company: "Forvis Mazars", photo: speakerDragoCmuk, photoPosition: "center 25%", bioKey: "speakers.bio.drago_cmuk" },
+  { name: "Emira Duratbegović", photo: speakerEmiraDuratbegovic, photoPosition: "center 35%" },
+  { name: "Dario Car", title: "Co-founder & Organizational Development Expert", company: "DeeP Project", photo: speakerDarioCar, photoPosition: "center 20%", bioKey: "speakers.bio.dario_car" },
   { name: "Erna Tomiša", title: "Organizational Development and Consulting Team Lead", company: "SELECTIO", photo: speakerErnaTomisa, photoPosition: "center 20%", photoScale: 1.0, bioKey: "speakers.bio.erna_tomisa" },
   { name: "Jasmina Lukačević", title: "Member of the Board", company: "SD Worx Adriatic", photo: speakerJasminaLukacevic, photoPosition: "center 20%", photoScale: 1.0, bioKey: "speakers.bio.jasmina_lukacevic" },
   { name: "Izv. prof. dr. sc. Maša Tonković Grabovac", title: "Izvanredna profesorica", company: "Fakultet Hrvatskih studija", photo: speakerMasaTonkovic, photoPosition: "center 20%", bioKey: "speakers.bio.masa_tonkovic_grabovac" },
@@ -98,7 +98,7 @@ const speakers: Speaker[] = [
   { name: "Valentina Mihovec Ramljak", title: "Product Manager", company: "SPAN" },
   { name: "Ivana Baćac", title: "Senior Developer", company: "SPAN" },
   { name: "Marija Žilić", title: "QA Engineer", company: "SPAN" },
-  { name: "dr. sc. Mladen Meter", titleKey: "speakers.mladen_meter.title", company: "Poslovna učinkovitost", photo: speakerMladenMeter.url, photoPosition: "center 15%", bioKey: "speakers.bio.mladen_meter" },
+  { name: "dr. sc. Mladen Meter", titleKey: "speakers.mladen_meter.title", company: "Poslovna učinkovitost", photo: speakerMladenMeter, photoPosition: "center 15%", bioKey: "speakers.bio.mladen_meter" },
 ];
 
 const SpeakersSection = () => {
