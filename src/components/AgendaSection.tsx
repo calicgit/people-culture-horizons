@@ -33,7 +33,7 @@ export const agendaData: Record<string, Session[]> = {
     { time: "11:20", endTime: "11:40", titleKey: "agenda.d1.s6.title", speaker: "Ivan Bešlić - Co-founder & CSO, Sofascore", type: "talk", locationKey: "agenda.loc.main", descKey: "agenda.d1.s6.desc" },
     { time: "11:45", endTime: "12:30", titleKey: "agenda.d1.s7.title", type: "panel", locationKey: "agenda.loc.main", descKey: "agenda.d1.s7.desc",
       panelists: ["Seni Staničić - Head of Human Resources, ENNA Group", "Andrea Tomšić - Head of Human Resources, Aircash", "Jelena Novačić - Head of People & Culture, Marketing and Internal Communications, Lürssen", "Drago Cmuk - Founder & Partner, Forvis Mazars"],
-      moderator: "Emira Duratbegović", moderatorLabel: "moderatorica" },
+      moderator: "Emira Duratbegović - Strategic Leadership & Organizational Effectiveness Advisor", moderatorLabel: "moderatorica" },
     { time: "12:30", endTime: "14:00", titleKey: "agenda.d1.s8.title", type: "networking" },
     { time: "14:00", endTime: "14:45", titleKey: "agenda.d1.s10.title", type: "panel", locationKey: "agenda.loc.main", descKey: "agenda.d1.s10.desc",
       panelists: ["Mirela Kotarac - HR Director & Member of the Management Board, Cemex Croatia", "Mirta Pađen Lee - Vice President of People, INFOBIP", "Jasmina Lukačević - Member of the Board, SD Worx Adriatic"],

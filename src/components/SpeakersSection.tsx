@@ -88,7 +88,7 @@ const speakers: Speaker[] = [
   { name: "Borna Lončar", title: "HR Consultant & Researcher", company: "DeeP Project", photo: speakerBornaLoncar, photoPosition: "center 15%", photoScale: 1.0, bioKey: "speakers.bio.borna_loncar" },
   { name: "Jelica Radović", title: "Managing Partner & HR Consultant", company: "HR Fabrika", photo: speakerJelicaRadovic, photoPosition: "center 5%", photoScale: 1.0, bioKey: "speakers.bio.jelica_radovic" },
   { name: "Drago Cmuk", title: "Founder & Partner", company: "Forvis Mazars", photo: speakerDragoCmuk, photoPosition: "center 25%", bioKey: "speakers.bio.drago_cmuk" },
-  { name: "Emira Duratbegović", photo: speakerEmiraDuratbegovic, photoPosition: "center 35%" },
+  { name: "Emira Duratbegović", title: "Strategic Leadership & Organizational Effectiveness Advisor", photo: speakerEmiraDuratbegovic, photoPosition: "center 35%" },
   { name: "Dario Car", title: "Co-founder & Organizational Development Expert", company: "DeeP Project", photo: speakerDarioCar, photoPosition: "center 20%", bioKey: "speakers.bio.dario_car" },
   { name: "Erna Tomiša", title: "Organizational Development and Consulting Team Lead", company: "SELECTIO", photo: speakerErnaTomisa, photoPosition: "center 20%", photoScale: 1.0, bioKey: "speakers.bio.erna_tomisa" },
   { name: "Jasmina Lukačević", title: "Member of the Board", company: "SD Worx Adriatic", photo: speakerJasminaLukacevic, photoPosition: "center 20%", photoScale: 1.0, bioKey: "speakers.bio.jasmina_lukacevic" },
