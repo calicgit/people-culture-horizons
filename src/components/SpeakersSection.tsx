@@ -42,6 +42,7 @@ import speakerZeljkoTandaric from "@/assets/speaker-zeljko-tandaric.jpg";
 import speakerTinaBalenovic from "@/assets/speaker-tina-balenovic.jpg";
 import speakerLeoLokas from "@/assets/speaker-leo-lokas.jpg";
 import speakerMasaTonkovic from "@/assets/speaker-masa-tonkovic-grabovac.jpg";
+import speakerGordanaKuterovac from "@/assets/speaker-gordana-kuterovac-jagodic.jpg";
 import { Dialog, DialogContent } from "@/components/ui/dialog";
 
 interface Speaker {
@@ -99,6 +100,7 @@ const speakers: Speaker[] = [
   { name: "Ivana Baćac", title: "Senior Developer", company: "SPAN" },
   { name: "Marija Žilić", title: "QA Engineer", company: "SPAN" },
   { name: "dr. sc. Mladen Meter", titleKey: "speakers.mladen_meter.title", company: "Poslovna učinkovitost", photo: speakerMladenMeter, photoPosition: "center 15%", bioKey: "speakers.bio.mladen_meter" },
+  { name: "prof. dr. sc. Gordana Kuterovac Jagodić", titleKey: "speakers.gordana_kuterovac.title", company: "FFZG (odsjek za psihologiju)", photo: speakerGordanaKuterovac, photoPosition: "center 20%", bioKey: "speakers.bio.gordana_kuterovac" },
 ];
 
 const SpeakersSection = () => {
