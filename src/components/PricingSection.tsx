@@ -83,7 +83,7 @@ const PricingSection = () => {
           </div>
         </div>
 
-        <div className="grid md:grid-cols-[1fr_1.15fr_1fr] gap-6 max-w-5xl mx-auto items-center">
+        <div className="grid md:grid-cols-3 gap-6 max-w-5xl mx-auto items-center">
           {pricingTiers.map((tier) => (
             <div
               key={tier.name}
