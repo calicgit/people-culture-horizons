@@ -88,6 +88,19 @@ describe("November 27, 2026 schedule", () => {
       .toMatchObject({ time, endTime });
   });
 
+  it("replaces the GrECo fireside chat with a talk by Gordana Kuterovac Jagodić", () => {
+    const session = agendaData.day2.find(s => s.titleKey === "agenda.d2.s2.title");
+    expect(session).toMatchObject({
+      time: "09:50",
+      endTime: "10:20",
+      type: "talk",
+      speakerKey: "agenda.d2.s2.speaker",
+    });
+    expect(session?.panelists).toBeUndefined();
+    expect(session?.moderator).toBeUndefined();
+    expect(agendaData.day2.some(s => s.type === "fireside")).toBe(false);
+  });
+
   it("assigns the 10:25 talk to Leo Lokas from Certilia", () => {
     const session = agendaData.day2.find(s => s.titleKey === "agenda.d2.akd.title");
     expect(session?.type).toBe("talk");
