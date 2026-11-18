@@ -4,39 +4,40 @@ import { Check, Lock } from "lucide-react";
 import RegistrationDialog from "@/components/RegistrationDialog";
 import { useLanguage } from "@/contexts/LanguageContext";
 
+export const pricingTiers = [
+  {
+    name: "Early bird",
+    periodKey: "pricing.blindBird.period",
+    price: "€249,00",
+    featureKeys: ["pricing.common.f1", "pricing.common.f2", "pricing.common.f3"],
+    featured: false,
+    registrationOpen: false,
+    expired: true,
+  },
+  {
+    name: "Regular",
+    periodKey: "pricing.earlyBird.period",
+    price: "€349,00",
+    featureKeys: ["pricing.common.f1", "pricing.common.f2", "pricing.common.f3"],
+    featured: false,
+    registrationOpen: false,
+    expired: true,
+  },
+  {
+    name: "Last minute",
+    periodKey: "pricing.regular.period",
+    price: "€499,00",
+    featureKeys: ["pricing.common.f1", "pricing.common.f2", "pricing.common.f3"],
+    featured: true,
+    registrationOpen: true,
+    expired: false,
+  },
+];
+
 const PricingSection = () => {
   const [dialogOpen, setDialogOpen] = useState(false);
   const [selectedTier, setSelectedTier] = useState<{ name: string; price: string } | null>(null);
   const { t } = useLanguage();
-
-  const tiers = [
-    {
-      name: "Early bird",
-      periodKey: "pricing.blindBird.period",
-      price: "€249,00",
-      featureKeys: ["pricing.common.f1", "pricing.common.f2", "pricing.common.f3"],
-      featured: false,
-      registrationOpen: false,
-      expired: true,
-    },
-    {
-      name: "Regular",
-      periodKey: "pricing.earlyBird.period",
-      price: "€349,00",
-      featureKeys: ["pricing.common.f1", "pricing.common.f2", "pricing.common.f3"],
-      featured: true,
-      registrationOpen: true,
-    },
-    {
-      name: "Last minute",
-      periodKey: "pricing.regular.period",
-      price: "€499,00",
-      featureKeys: ["pricing.common.f1", "pricing.common.f2", "pricing.common.f3"],
-      featured: false,
-      registrationOpen: false,
-      expired: true,
-    },
-  ];
 
   const openRegistration = (name: string, price: string) => {
     if (typeof window !== "undefined") {
@@ -83,7 +84,7 @@ const PricingSection = () => {
         </div>
 
         <div className="grid md:grid-cols-[1fr_1.15fr_1fr] gap-6 max-w-5xl mx-auto items-center">
-          {tiers.map((tier) => (
+          {pricingTiers.map((tier) => (
             <div
               key={tier.name}
               className={`relative rounded-3xl p-8 flex flex-col transition-all duration-300 ${
