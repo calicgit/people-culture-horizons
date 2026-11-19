@@ -55,7 +55,7 @@ export const agendaData: Record<string, Session[]> = {
     { time: "10:45", endTime: "11:05", titleKey: "agenda.d2.s4.title", type: "break" },
     { time: "11:05", endTime: "11:25", titleKey: "agenda.d2.s5.title", speaker: "Sanja Škrinjar - Team Lead & HR Consultant, DeeP Project", type: "talk", locationKey: "agenda.loc.main", descKey: "agenda.d2.s5.desc" },
     { time: "11:30", endTime: "12:15", titleKey: "agenda.d2.s6.title", type: "panel", locationKey: "agenda.loc.main", descKey: "agenda.d2.s6.desc",
-      panelists: ["Anton Barbir - Member of Management Board, ENNA Group", "Ivan Artuković - President of the Management Board, Franck", "Željko Tandarić - Member of the Management Board, Abysalto", "Alenka Jajac-Knez - CEO, JGL"],
+      panelists: ["Ivan Artuković - President of the Management Board, Franck", "Željko Tandarić - Member of the Management Board, Abysalto", "Alenka Jajac-Knez - CEO, JGL"],
       moderator: "Petar Čalić - CEO, DeeP Project", moderatorLabel: "moderator" },
     { time: "12:15", endTime: "12:35", titleKey: "agenda.d2.s7.title", type: "break" },
     { time: "12:35", endTime: "13:20", titleKey: "agenda.d2.s8.title", type: "panel", locationKey: "agenda.loc.main", descKey: "agenda.d2.s8.desc",

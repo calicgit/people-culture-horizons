@@ -20,7 +20,6 @@ import speakerMajaDarijaSkrljak from "@/assets/speaker-maja-darija-skrljak.jpg";
 import speakerMartinaSkorin from "@/assets/speaker-martina-skorin.jpg";
 import speakerAndreaTomsic from "@/assets/speaker-andrea-tomsic.jpg";
 import speakerSeniStanicic from "@/assets/speaker-seni-stanicic.jpg";
-import speakerAntonBarbir from "@/assets/speaker-anton-barbir.jpg";
 import speakerVjekoslavGolubovic from "@/assets/speaker-vjekoslav-golubovic.jpg";
 import speakerPetarCalic from "@/assets/speaker-petar-calic.jpg";
 import speakerNikolaMilosavljevic from "@/assets/speaker-nikola-milosavljevic.jpg";
@@ -68,7 +67,6 @@ const speakers: Speaker[] = [
   { name: "Seni Staničić", title: "Head of Human Resources", company: "ENNA Group", photo: speakerSeniStanicic, photoPosition: "center top", photoScale: 1.0, bioKey: "speakers.bio.seni_stanicic" },
   { name: "Natalya Golovkina", title: "Corporate People & Culture Director", company: "JGL", photo: speakerNatalyaGolovkina, photoPosition: "center 20%", bioKey: "speakers.bio.natalya_golovkina" },
   { name: "Prof. dr. sc. Nina Begičević Ređep", title: "Redovita profesorica", company: "FOI", photo: speakerNinaBegicevicRedep, photoPosition: "center 20%", photoScale: 1.0, bioKey: "speakers.bio.nina_begicevic_redep" },
-  { name: "Anton Barbir", title: "Member of Management Board", company: "ENNA Group", photo: speakerAntonBarbir, photoPosition: "center 20%", photoScale: 1.0, bioKey: "speakers.bio.anton_barbir" },
   { name: "Mirela Kotarac", title: "HR Director & Member of the Management Board", company: "Cemex Croatia", photo: speakerMirelaKotarac, photoPosition: "center 30%", photoScale: 1.35, bioKey: "speakers.bio.mirela_kotarac" },
   { name: "Mirta Pađen Lee", title: "Vice President of People", company: "INFOBIP", photo: speakerMirtaPadenLee, photoPosition: "center 20%", bioKey: "speakers.bio.mirta_paden_lee" },
   { name: "Marija Felkel", title: "Group HR Director & Member of the Executive Committee", company: "Perutnina Ptuj Group", photo: speakerMarijaFelkel, photoPosition: "65% 25%", bioKey: "speakers.bio.marija_felkel" },
