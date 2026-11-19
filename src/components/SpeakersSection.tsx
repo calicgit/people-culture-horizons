@@ -94,7 +94,7 @@ const speakers: Speaker[] = [
   { name: "Erna Tomiša", title: "Organizational Development and Consulting Team Lead", company: "SELECTIO", photo: speakerErnaTomisa, photoPosition: "center 20%", photoScale: 1.0, bioKey: "speakers.bio.erna_tomisa" },
   { name: "Jasmina Lukačević", title: "Member of the Board", company: "SD Worx Adriatic", photo: speakerJasminaLukacevic, photoPosition: "center 20%", photoScale: 1.0, bioKey: "speakers.bio.jasmina_lukacevic" },
   { name: "Izv. prof. dr. sc. Maša Tonković Grabovac", title: "Izvanredna profesorica", company: "Fakultet Hrvatskih studija", photo: speakerMasaTonkovic, photoPosition: "center 20%", bioKey: "speakers.bio.masa_tonkovic_grabovac" },
-  { name: "Leo Lokas", title: "Business Development Director", company: "AKD", photo: speakerLeoLokas, photoPosition: "center 20%", bioKey: "speakers.bio.leo_lokas" },
+  { name: "Leo Lokas", title: "Business Development Director", company: "Certilia", photo: speakerLeoLokas, photoPosition: "center 20%", bioKey: "speakers.bio.leo_lokas" },
   { name: "Iva Repač", title: "Brand & Communications Director", company: "SPAN", photo: speakerIvaRepac, photoPosition: "center 20%", bioKey: "speakers.bio.iva_repac" },
   { name: "Valentina Mihovec Ramljak", title: "Product Manager", company: "SPAN" },
   { name: "Ivana Baćac", title: "Senior Developer", company: "SPAN" },
