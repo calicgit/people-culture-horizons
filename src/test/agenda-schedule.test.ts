@@ -112,7 +112,7 @@ describe("November 27, 2026 schedule", () => {
       type: "fireside",
       descKey: "agenda.d2.s2.desc",
     });
-    expect(session?.speaker).toBeUndefined();
+    expect(session?.speaker).toBe("Ewelina Jaworska-Bień - Head of People Solutions, GrECo Specialty GmbH SEE/CEE");
     expect(session?.speakerKey).toBeUndefined();
     expect(session?.panelists).toBeUndefined();
     expect(session?.moderator).toBeUndefined();
