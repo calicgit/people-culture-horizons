@@ -5,23 +5,23 @@ describe("November 26, 2026 schedule", () => {
   it.each([
     ["s1", "08:00", "09:00"],
     ["s2", "09:00", "09:10"],
-    ["s3", "09:15", "09:45"],
-    ["s4", "09:50", "10:35"],
-    ["tbd", "10:40", "11:00"],
-    ["s5", "11:00", "11:20"],
-    ["s6", "11:20", "11:40"],
-    ["s7", "11:45", "12:30"],
-    ["s8", "12:30", "14:00"],
-    ["s10", "14:00", "14:45"],
-    ["s11", "14:45", "15:05"],
-    ["s12", "15:05", "15:25"],
-    ["s13", "15:30", "16:15"],
+    ["s3", "09:10", "09:40"],
+    ["s4", "09:40", "10:25"],
+    ["tbd", "10:25", "10:45"],
+    ["s5", "10:45", "11:05"],
+    ["s6", "11:05", "11:25"],
+    ["s7", "11:25", "12:10"],
+    ["s8", "12:10", "13:40"],
+    ["s10", "13:40", "14:25"],
+    ["s11", "14:25", "14:45"],
+    ["s12", "14:45", "15:05"],
+    ["s13", "15:05", "15:50"],
   ])("runs %s from %s to %s", (id, time, endTime) => {
     expect(agendaData.day1.find(s => s.titleKey === `agenda.d1.${id}.title`))
       .toMatchObject({ time, endTime });
   });
 
-  it("gives the 10:40 talk its title, speaker and description", () => {
+  it("gives the 10:25 talk its title, speaker and description", () => {
     const session = agendaData.day1.find(s => s.titleKey === "agenda.d1.tbd.title");
     expect(session?.type).toBe("talk");
     expect(session?.speaker).toBe("Dario Car - Co-founder & Organizational Development Expert, DeeP Project");
@@ -50,11 +50,11 @@ describe("November 26, 2026 schedule", () => {
     expect(session?.moderator).not.toContain("Maja Bušljeta");
   });
 
-  it("keeps the main sessions in chronological order without overlaps", () => {
+  it("keeps the main sessions in chronological order without gaps or overlaps", () => {
     agendaData.day1.forEach((session, i, sessions) => {
       expect(session.time < session.endTime).toBe(true);
       const previous = sessions[i - 1];
-      if (previous) expect(previous.endTime <= session.time).toBe(true);
+      if (previous) expect(session.time).toBe(previous.endTime);
     });
   });
 
@@ -65,7 +65,7 @@ describe("November 26, 2026 schedule", () => {
 
   it.each(["earth", "air"])("runs the %s masterclass immediately after coffee", room => {
     const session = masterclassData.day1.find(s => s.locationKey === `agenda.loc.${room}`);
-    expect(session).toMatchObject({ time: "11:20", endTime: "12:30" });
+    expect(session).toMatchObject({ time: "11:05", endTime: "12:15" });
     expect(agendaData.day1.find(s => s.titleKey === "agenda.d1.s5.title")?.endTime).toBe(session?.time);
   });
 });
