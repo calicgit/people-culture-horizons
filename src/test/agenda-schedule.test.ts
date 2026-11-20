@@ -4,24 +4,35 @@ import { agendaData, masterclassData } from "@/components/AgendaSection";
 describe("November 26, 2026 schedule", () => {
   it.each([
     ["s1", "08:00", "09:00"],
-    ["s2", "09:00", "09:10"],
-    ["s3", "09:10", "09:40"],
-    ["s4", "09:40", "10:25"],
-    ["tbd", "10:25", "10:45"],
-    ["s5", "10:45", "11:05"],
-    ["s6", "11:05", "11:25"],
-    ["s7", "11:25", "12:10"],
-    ["s8", "12:10", "13:40"],
-    ["s10", "13:40", "14:25"],
-    ["s11", "14:25", "14:45"],
-    ["s12", "14:45", "15:05"],
-    ["s13", "15:05", "15:50"],
+    ["s2", "09:00", "09:20"],
+    ["s3", "09:20", "09:50"],
+    ["s4", "09:50", "10:35"],
+    ["tbd", "10:35", "10:55"],
+    ["s5", "10:55", "11:15"],
+    ["s6", "11:15", "11:35"],
+    ["s7", "11:35", "12:20"],
+    ["s8", "12:20", "13:50"],
+    ["s10", "13:50", "14:35"],
+    ["s11", "14:35", "14:55"],
+    ["s12", "14:55", "15:15"],
+    ["s13", "15:15", "16:00"],
   ])("runs %s from %s to %s", (id, time, endTime) => {
     expect(agendaData.day1.find(s => s.titleKey === `agenda.d1.${id}.title`))
       .toMatchObject({ time, endTime });
   });
 
-  it("gives the 10:25 talk its title, speaker and description", () => {
+  it("places Gordana Kuterovac Jagodić's talk in the 09:00 day-one slot", () => {
+    const session = agendaData.day1.find(s => s.titleKey === "agenda.d1.s2.title");
+    expect(session).toMatchObject({
+      time: "09:00",
+      endTime: "09:20",
+      type: "talk",
+      speakerKey: "agenda.d1.s2.speaker",
+      descKey: "agenda.d1.s2.desc",
+    });
+  });
+
+  it("gives the 10:35 talk its title, speaker and description", () => {
     const session = agendaData.day1.find(s => s.titleKey === "agenda.d1.tbd.title");
     expect(session?.type).toBe("talk");
     expect(session?.speaker).toBe("Dario Car - Co-founder & Organizational Development Expert, DeeP Project");
@@ -65,7 +76,7 @@ describe("November 26, 2026 schedule", () => {
 
   it.each(["earth", "air"])("runs the %s masterclass immediately after coffee", room => {
     const session = masterclassData.day1.find(s => s.locationKey === `agenda.loc.${room}`);
-    expect(session).toMatchObject({ time: "11:05", endTime: "12:15" });
+    expect(session).toMatchObject({ time: "11:15", endTime: "12:25" });
     expect(agendaData.day1.find(s => s.titleKey === "agenda.d1.s5.title")?.endTime).toBe(session?.time);
   });
 });
@@ -88,17 +99,18 @@ describe("November 27, 2026 schedule", () => {
       .toMatchObject({ time, endTime });
   });
 
-  it("replaces the GrECo fireside chat with a talk by Gordana Kuterovac Jagodić", () => {
+  it("restores the GrECo fireside chat in the 09:50 day-two slot", () => {
     const session = agendaData.day2.find(s => s.titleKey === "agenda.d2.s2.title");
     expect(session).toMatchObject({
       time: "09:50",
       endTime: "10:20",
-      type: "talk",
-      speakerKey: "agenda.d2.s2.speaker",
+      type: "fireside",
+      descKey: "agenda.d2.s2.desc",
     });
+    expect(session?.speaker).toBeUndefined();
+    expect(session?.speakerKey).toBeUndefined();
     expect(session?.panelists).toBeUndefined();
     expect(session?.moderator).toBeUndefined();
-    expect(agendaData.day2.some(s => s.type === "fireside")).toBe(false);
   });
 
   it("assigns the 10:25 talk to Leo Lokas from Certilia", () => {
