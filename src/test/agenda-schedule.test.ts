@@ -4,9 +4,9 @@ import { agendaData, masterclassData } from "@/components/AgendaSection";
 describe("November 26, 2026 schedule", () => {
   it.each([
     ["s1", "08:00", "09:00"],
-    ["s2", "09:00", "09:20"],
-    ["s3", "09:20", "09:50"],
-    ["s4", "09:50", "10:30"],
+    ["s3", "09:00", "09:30"],
+    ["s4", "09:30", "10:10"],
+    ["s2", "10:10", "10:30"],
     ["tbd", "10:30", "10:50"],
     ["s5", "10:50", "11:10"],
     ["s6", "11:10", "11:30"],
@@ -21,15 +21,19 @@ describe("November 26, 2026 schedule", () => {
       .toMatchObject({ time, endTime });
   });
 
-  it("places Gordana Kuterovac Jagodić's talk in the 09:00 day-one slot", () => {
+  it("places Gordana Kuterovac Jagodić's talk immediately before the Dario Car talk", () => {
     const session = agendaData.day1.find(s => s.titleKey === "agenda.d1.s2.title");
     expect(session).toMatchObject({
-      time: "09:00",
-      endTime: "09:20",
+      time: "10:10",
+      endTime: "10:30",
       type: "talk",
       speakerKey: "agenda.d1.s2.speaker",
       descKey: "agenda.d1.s2.desc",
     });
+    const gordanaIdx = agendaData.day1.findIndex(s => s.titleKey === "agenda.d1.s2.title");
+    const darioIdx = agendaData.day1.findIndex(s => s.titleKey === "agenda.d1.tbd.title");
+    expect(gordanaIdx).toBe(darioIdx - 1);
+    expect(session?.endTime).toBe(agendaData.day1[darioIdx]?.time);
   });
 
   it("gives the 10:30 talk its title, speaker and description", () => {
@@ -44,7 +48,7 @@ describe("November 26, 2026 schedule", () => {
 
   it("shortens the GrECo panel to 40 minutes", () => {
     const session = agendaData.day1.find(s => s.titleKey === "agenda.d1.s4.title");
-    expect(session).toMatchObject({ time: "09:50", endTime: "10:30" });
+    expect(session).toMatchObject({ time: "09:30", endTime: "10:10" });
   });
 
   it("assigns Iva Repač as moderator of the d1.s13 panel", () => {

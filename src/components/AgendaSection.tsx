@@ -23,11 +23,11 @@ interface Session {
 export const agendaData: Record<string, Session[]> = {
   day1: [
     { time: "08:00", endTime: "09:00", titleKey: "agenda.d1.s1.title", type: "break" },
-    { time: "09:00", endTime: "09:20", titleKey: "agenda.d1.s2.title", speakerKey: "agenda.d1.s2.speaker", type: "talk", locationKey: "agenda.loc.main", descKey: "agenda.d1.s2.desc" },
-    { time: "09:20", endTime: "09:50", titleKey: "agenda.d1.s3.title", speaker: "Josip Funda - Senior Economist, World Bank Group", type: "keynote", keynoteKind: "talk", locationKey: "agenda.loc.main", descKey: "agenda.d1.s3.desc" },
-    { time: "09:50", endTime: "10:30", titleKey: "agenda.d1.s4.title", type: "keynote", keynoteKind: "panel", locationKey: "agenda.loc.main", descKey: "agenda.d1.s4.desc",
+    { time: "09:00", endTime: "09:30", titleKey: "agenda.d1.s3.title", speaker: "Josip Funda - Senior Economist, World Bank Group", type: "keynote", keynoteKind: "talk", locationKey: "agenda.loc.main", descKey: "agenda.d1.s3.desc" },
+    { time: "09:30", endTime: "10:10", titleKey: "agenda.d1.s4.title", type: "keynote", keynoteKind: "panel", locationKey: "agenda.loc.main", descKey: "agenda.d1.s4.desc",
       panelists: ["Andrej Krvavica - General Manager, GrECo Croatia", "Snježana M. Lohninger - CFO, Porsche Inter Auto", "Marija Felkel - Group HR Director & Member of the Executive Committee, Perutnina Ptuj Group"],
       moderator: "Vjekoslav Golubović - Principal HR Consultant, DeeP Project", moderatorLabel: "moderator" },
+    { time: "10:10", endTime: "10:30", titleKey: "agenda.d1.s2.title", speakerKey: "agenda.d1.s2.speaker", type: "talk", locationKey: "agenda.loc.main", descKey: "agenda.d1.s2.desc" },
     { time: "10:30", endTime: "10:50", titleKey: "agenda.d1.tbd.title", speaker: "Dario Car - Co-founder & Organizational Development Expert, DeeP Project", type: "talk", locationKey: "agenda.loc.main", descKey: "agenda.d1.tbd.desc" },
     { time: "10:50", endTime: "11:10", titleKey: "agenda.d1.s5.title", type: "break" },
     { time: "11:10", endTime: "11:30", titleKey: "agenda.d1.s6.title", speaker: "Ivan Bešlić - Co-founder & CSO, Sofascore", type: "talk", locationKey: "agenda.loc.main", descKey: "agenda.d1.s6.desc" },
