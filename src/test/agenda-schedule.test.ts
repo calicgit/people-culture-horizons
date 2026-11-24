@@ -6,8 +6,8 @@ describe("November 26, 2026 schedule", () => {
     ["s1", "08:00", "09:00"],
     ["s3", "09:00", "09:30"],
     ["s4", "09:30", "10:10"],
-    ["s2", "10:10", "10:30"],
-    ["tbd", "10:30", "10:50"],
+    ["tbd", "10:10", "10:30"],
+    ["s2", "10:30", "10:50"],
     ["s5", "10:50", "11:10"],
     ["s6", "11:10", "11:30"],
     ["s7", "11:30", "12:15"],
@@ -21,22 +21,22 @@ describe("November 26, 2026 schedule", () => {
       .toMatchObject({ time, endTime });
   });
 
-  it("places Gordana Kuterovac Jagodić's talk immediately before the Dario Car talk", () => {
+  it("places Gordana Kuterovac Jagodić's talk after the Dario Car talk and before coffee", () => {
     const session = agendaData.day1.find(s => s.titleKey === "agenda.d1.s2.title");
     expect(session).toMatchObject({
-      time: "10:10",
-      endTime: "10:30",
+      time: "10:30",
+      endTime: "10:50",
       type: "talk",
       speakerKey: "agenda.d1.s2.speaker",
       descKey: "agenda.d1.s2.desc",
     });
     const gordanaIdx = agendaData.day1.findIndex(s => s.titleKey === "agenda.d1.s2.title");
     const darioIdx = agendaData.day1.findIndex(s => s.titleKey === "agenda.d1.tbd.title");
-    expect(gordanaIdx).toBe(darioIdx - 1);
-    expect(session?.endTime).toBe(agendaData.day1[darioIdx]?.time);
+    expect(gordanaIdx).toBe(darioIdx + 1);
+    expect(session?.endTime).toBe(agendaData.day1.find(s => s.titleKey === "agenda.d1.s5.title")?.time);
   });
 
-  it("gives the 10:30 talk its title, speaker and description", () => {
+  it("gives the Dario Car talk its title, speaker and description", () => {
     const session = agendaData.day1.find(s => s.titleKey === "agenda.d1.tbd.title");
     expect(session?.type).toBe("talk");
     expect(session?.speaker).toBe("Dario Car - Co-founder & Organizational Development Expert, DeeP Project");
