@@ -63,6 +63,12 @@ describe("November 26, 2026 schedule", () => {
     expect(session?.panelists).toContain("Drago Cmuk - Founder & Partner, Forvis Mazars");
   });
 
+  it("adds Vjekoslav Golubović to the d1.s10 panel", () => {
+    const session = agendaData.day1.find(s => s.titleKey === "agenda.d1.s10.title");
+    expect(session?.panelists).toContain("Vjekoslav Golubović - Principal HR Consultant, DeeP Project");
+    expect(session?.moderator).toBe("Nikola Milosavljević - Managing Partner & Senior HR Consultant, HR Fabrika");
+  });
+
   it("replaces Maja Bušljeta with Emira Duratbegović as the d1.s7 moderator", () => {
     const session = agendaData.day1.find(s => s.titleKey === "agenda.d1.s7.title");
     expect(session?.moderator).toBe("Emira Duratbegović - Strategic Leadership & Organizational Effectiveness Advisor");
