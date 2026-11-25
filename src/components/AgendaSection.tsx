@@ -37,7 +37,7 @@ export const agendaData: Record<string, Session[]> = {
       moderator: "Emira Duratbegović - Strategic Leadership & Organizational Effectiveness Advisor", moderatorLabel: "moderatorica" },
     { time: "12:15", endTime: "13:45", titleKey: "agenda.d1.s8.title", type: "networking" },
     { time: "13:45", endTime: "14:30", titleKey: "agenda.d1.s10.title", type: "panel", locationKey: "agenda.loc.main", descKey: "agenda.d1.s10.desc",
-      panelists: ["Mirela Kotarac - HR Director & Member of the Management Board, Cemex Croatia", "Mirta Pađen Lee - Vice President of People, INFOBIP", "Jasmina Lukačević - Member of the Board, SD Worx Adriatic"],
+      panelists: ["Mirta Pađen Lee - Vice President of People, INFOBIP", "Jasmina Lukačević - Member of the Board, SD Worx Adriatic"],
       moderator: "Nikola Milosavljević - Managing Partner & Senior HR Consultant, HR Fabrika", moderatorLabel: "moderator" },
     { time: "14:30", endTime: "14:50", titleKey: "agenda.d1.s11.title", type: "break" },
     { time: "14:50", endTime: "15:10", titleKey: "agenda.d1.s12.title", speaker: "Suzana Plečko - Human Resources Director, Franck", type: "talk", locationKey: "agenda.loc.main", descKey: "agenda.d1.s12.desc" },
