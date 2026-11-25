@@ -22,9 +22,10 @@ const KeynoteSection = () => {
         <div className="max-w-3xl mx-auto">
           <div>
             <span className="text-accent font-semibold text-xs uppercase tracking-[0.25em]">{t("keynote.label")}</span>
-            <h2 className="text-4xl md:text-5xl font-bold text-primary-foreground mt-4 mb-8 leading-tight">
+            <h2 className="text-4xl md:text-5xl font-bold text-primary-foreground mt-4 mb-4 leading-tight">
               {title || "\u00A0"}
             </h2>
+            <p className="text-primary-foreground/70 text-lg md:text-xl italic mb-8 font-light leading-snug">{t("keynote.subtitle")}</p>
             <p className="text-primary-foreground/60 text-lg leading-relaxed mb-4 font-light min-h-[5.5rem]">{paragraphOne || "\u00A0"}</p>
             <p className="text-primary-foreground/40 text-base mb-10 font-light min-h-[4rem]">{paragraphTwo || "\u00A0"}</p>
             <div

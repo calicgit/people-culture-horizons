@@ -8,6 +8,7 @@ interface Session {
   time: string;
   endTime: string;
   titleKey?: string;
+  subtitleKey?: string;
   speaker?: string;
   speakerKey?: string;
   locationKey?: string;
@@ -23,7 +24,7 @@ interface Session {
 export const agendaData: Record<string, Session[]> = {
   day1: [
     { time: "08:00", endTime: "09:00", titleKey: "agenda.d1.s1.title", type: "break" },
-    { time: "09:00", endTime: "09:30", titleKey: "agenda.d1.s3.title", speaker: "Josip Funda - Senior Economist, World Bank Group", type: "keynote", keynoteKind: "talk", locationKey: "agenda.loc.main", descKey: "agenda.d1.s3.desc" },
+    { time: "09:00", endTime: "09:30", titleKey: "agenda.d1.s3.title", subtitleKey: "agenda.d1.s3.subtitle", speaker: "Josip Funda - Senior Economist, World Bank Group", type: "keynote", keynoteKind: "talk", locationKey: "agenda.loc.main", descKey: "agenda.d1.s3.desc" },
     { time: "09:30", endTime: "10:10", titleKey: "agenda.d1.s4.title", type: "keynote", keynoteKind: "panel", locationKey: "agenda.loc.main", descKey: "agenda.d1.s4.desc",
       panelists: ["Andrej Krvavica - General Manager, GrECo Croatia", "Snježana M. Lohninger - CFO, Porsche Inter Auto", "Marija Felkel - Group HR Director & Member of the Executive Committee, Perutnina Ptuj Group"],
       moderator: "Vjekoslav Golubović - Principal HR Consultant, DeeP Project", moderatorLabel: "moderator" },
@@ -176,6 +177,9 @@ const AgendaSection = () => {
                     return m ? (<>{m[1]}<em className="font-normal italic text-muted-foreground">{m[2]}</em></>) : title;
                   })() : "\u00A0"}
                 </h3>
+                {session.subtitleKey && (
+                  <p className="text-muted-foreground text-sm italic mt-1 font-light leading-snug">{t(session.subtitleKey)}</p>
+                )}
                 {(session.speakerKey || session.speaker) && (
                   <p className="text-muted-foreground text-sm mt-0.5 font-light whitespace-pre-line">{session.speakerKey ? t(session.speakerKey) : session.speaker}</p>
                 )}
